@@ -1,4 +1,5 @@
 #pragma once
+
 #include <Windows.h>
 #include <map>
 #include <string>
@@ -71,8 +72,6 @@ public:
 	GameEngineInput(GameEngineInput&& _Other) noexcept = delete;
 	GameEngineInput& operator=(const GameEngineInput& _Other) = delete;
 	GameEngineInput& operator=(GameEngineInput&& _Other) noexcept = delete;
-
-	static float4 MousePos();
 
 	static void InputInit();
 	static void Update(float _DeltaTime);

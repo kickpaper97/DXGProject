@@ -1,7 +1,6 @@
+#include "PreCompile.h"
 #include "GameEngineRandom.h"
 #include <iostream>
-
-GameEngineRandom GameEngineRandom::MainRandom;
 
 GameEngineRandom::GameEngineRandom() 
 {

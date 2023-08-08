@@ -1,3 +1,4 @@
+#include "PreCompile.h"
 #include "GameEngineDirectory.h"
 #include "GameEngineDebug.h"
 #include "GameEngineString.h"
@@ -10,12 +11,12 @@ GameEngineDirectory::~GameEngineDirectory()
 {
 }
 
-GameEngineDirectory::GameEngineDirectory(const std::string& _path) 
+GameEngineDirectory::GameEngineDirectory(const std::string_view& _path) 
 	: GameEnginePath(_path)
 {
 	if (false == IsDirectory())
 	{
-		MsgBoxAssert("디렉토리 경로가 아닙니다." + _path);
+		MsgBoxAssert("디렉토리 경로가 아닙니다." + std::string(_path));
 	}
 
 

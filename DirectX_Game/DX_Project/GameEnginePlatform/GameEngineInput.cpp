@@ -1,3 +1,4 @@
+#include "PreCompile.h"
 #include "GameEngineInput.h"
 #include <GameEngineBase/GameEngineDebug.h>
 
@@ -10,6 +11,18 @@ GameEngineInput::GameEngineInput()
 GameEngineInput::~GameEngineInput()
 {
 }
+
+
+class InputSystemCreator
+{
+public:
+	InputSystemCreator()
+	{
+		GameEngineInput::InputInit();
+	}
+};
+
+InputSystemCreator InputInitInst;
 
 void GameEngineInput::InputInit()
 {
