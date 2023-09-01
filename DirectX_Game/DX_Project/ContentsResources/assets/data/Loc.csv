@@ -1,0 +1,3265 @@
+Column1,Column2,Column3
+CONTEXT," ""ID"""," ""TEXT"""
+AccessPermitInner,ARSTOTZKA,"<span style=""font-family: ko-7px, regular_short;"">아스토츠카</span>"
+AccessPermitInner,Access Permit,접근 허가증
+AccessPermitInner,This permit grants conditional access to the sovereign nation of Arstotzka,"<span style=""line-height: 9px; position: relative; font-family: ko-7px, regular_short;"">본 허가증은 아스토츠카 독립국에 대한 조건적 접근 허가를 제공함</span>"
+AccessPermitInner,NAME,"<span style=""font-family: ko-7px, regular_short;"">성명</span>"
+AccessPermitInner,NATIONALITY,"<span style=""font-family: ko-7px, regular_short;"">국적</span>"
+AccessPermitInner,PURPOSE,"<span style=""font-family: ko-7px, regular_short;"">목적</span>"
+AccessPermitInner,HEIGHT,"<span style=""font-family: ko-7px, regular_short;"">신장</span>"
+AccessPermitInner,PHYSICAL APPEARANCE,"<span style=""font-family: ko-7px, regular_short;"">신체적 특징</span>"
+AccessPermitInner,ID NUMBER,"<span style=""font-family: ko-7px, regular_short;"">번호</span>"
+AccessPermitInner,DURATION,"<span style=""font-family: ko-7px, regular_short;"">체류 기간</span>"
+AccessPermitInner,WEIGHT,"<span style=""font-family: ko-7px, regular_short;"">체중</span>"
+AccessPermitInner,ENTER BY,"<span style=""font-family: ko-7px, regular_short;"">만료</span>"
+AccessPermitInner,Keep on person,"<span style=""position: relative; line-height: 9px; font-family: ko-7px, regular_short;"">필히 지참</span>"
+AccessPermitInner,Ministry of Admission,"<span style=""font-family: ko-7px, regular_short;"">입국부</span>"
+AsylumGrantInner,Arstotzka,"<span style=""font-family: ko-7px, regular_short;"">아스토츠카</span>"
+AsylumGrantInner,GRANT of ASYLUM,망명 허가증
+AsylumGrantInner,This document grants conditional asylum status within Arstotzkan borders,"<span style=""line-height: 9px; font-family: ko-7px, regular_short;"">본 문서는 아스토츠카의 국경 내에서 조건부 망명 지위를 부여함</span>"
+AsylumGrantInner,NAT,국가
+AsylumGrantInner,ID#,번호
+AsylumGrantInner,DOB,생일
+AsylumGrantInner,HT,신장
+AsylumGrantInner,WT,체중
+AsylumGrantInner,Offer expires after,제공 만기일
+AsylumGrantInner,Ministry of Admission,입국부
+BizCardInnerFront,ENGINEERING,"<span style=""position: relative; font-family: ko-7px, regular_short;"">엔지니어링</span>"
+BizCardInnerFront,Director,"<span style=""position: relative; font-family: ko-7px, regular_short;"">팀장</span>"
+BizCardInnerBack,WE NEED ENGINEERS,"<span style=""position: relative; font-family: ko-7px, regular_short; top: -1px;"">기술자 모집</span>"
+BizCardInnerBack,WILL BEAT .GOV PAY,"<span style=""position: relative; font-family: ko-7px, regular_short; top: -1px;"">정부 이상의 급료 제공</span>"
+BizCardInnerBack,CONTACT NOW,"<span style=""position: relative; font-family: ko-7px, regular_short; top: -1px;"">지금 연락 요망</span>"
+BrothelHelpInner,A man named <span>Dari Ludum</span> promised me and my sister good work in Arstotzka.,<span>Dari Ludum</span>라는 사내가 아스토츠카에서 나랑 여동생에게 좋은 일자리를 주기로 약속했습니다.
+BrothelHelpInner,I do not trust him. I am afraid he will take my passport and force me to work at brothel. He is in line today.,그 사람을 믿을 수 없습니다. 그 자가 내 여권을 빼앗고 강제로 사창가에서 일하게 할까 두렵습니다. 오늘 그가 입국할 겁니다.
+BrothelHelpInner,Please do something.,제발 뭐라도 해주세요.
+BulletinInnerDiploTut,Diplomat,외교관
+BulletinInnerDiploTut,Verification Procedure,검문 절차
+BulletinInnerDiploTut,Verify issuing country,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -2px;"">발행 국가 확인</span>"
+BulletinInnerDiploTut,Verify identity,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -2px;"">신원 확인</span>"
+BulletinInnerDiploTut,Verify diplomatic access to Arstotzka,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -2px;"">아스토츠카에 대한 외교적 접근 권한 확인</span>"
+BulletinInnerMissingTut,Missing documents can be correlated by highlighting counter and pertinent entry in rule book.,누락된 서류는 규정집 위로 표시 및 관련 항목을 강조해 연관시킬 수 있음
+BulletinInnerRuleTut,Correlate pertinent entry in rule book with violating information to enable further options.,잘못된 정보의 경우 규정집의 관련 항목과 연관시켜 추가 행동을 취하시오
+BulletinInnerContraTut,Correlate discovered weapons and contraband with rulebook entry.,무기 및 밀수품이 발견될 경우 규정서 내 항목에 연관 지으시오
+BulletinInnerCorrelateTut,Highlight two pieces of discrepant information from INSPECT mode to enable interrogation.,"""검사"" 모드를 통해 일치하지 않는 정보 두 개를 강조해 심문할 수 있음"
+BulletinInnerTouchTut,Touch and drag to fine-tune highlighted selection.,터치 및 드래그로 강조된<br>항목을 조정할 수 있음
+BulletinInnerPassportTut,Pay attention to passport nationality.,"<span style=""line-height:12px;"">여권에 표기된 국적을<br>잘 확인하시오</span>"
+BulletinInnerBoothTut,Arstotzkan<br>Ministry of Admission,"<span style=""position: relative; top: 1px; font-family: ko-7px, regular_short;"">아스토츠카<br>입국부</span>"
+BulletinInnerBoothTut,Inspector's Booth,"<span style=""
+position: relative; top: 1px"">검사관 심사대</span>"
+BulletinInnerBoothTut,Shutter,"<span style=""position: relative; top: -2px; font-family: ko-7px, regular_short;"">셔터</span>"
+BulletinInnerBoothTut,Counter,"<span style=""position: relative; top: -2px; font-family: ko-7px, regular_short;"">검사대</span>"
+BulletinInnerBoothTut,Rule Book<br>Audio Transcript<br>Bulletin Storage<br>Time &amp; Date,"<span style=""position: relative; top: -2px; font-family: ko-7px, regular_short;"">규정집<br>음성 기록<br>공고문 목록<br>시간 &amp; 날짜</span>"
+BulletinInnerBoothTut2,Arstotzkan<br>Ministry of Admission,"<span style=""position: relative; top: 1px; font-family: ko-7px, regular_short;"">아스토츠카<br>입국부</span>"
+BulletinInnerBoothTut2,Inspector's Booth,"<span style=""
+position: relative; top: 1px"">검사관 심사대</span>"
+BulletinInnerBoothTut2,Shutter,"<span style=""position: relative; top: -2px; font-family: ko-7px, regular_short;"">셔터</span>"
+BulletinInnerBoothTut2,Counter,"<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">검사대</span>"
+BulletinInnerBoothTut2,Audio Transcript<br>Rule Book<br>Weight<br>,"<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">음성 기록<br>규정집<br>중량<br></span>"
+BulletinInnerBoothTut2,Bulletin Storage<br>Time &amp; Date,"<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">공고문 목록<br>시간 &amp; 날짜</span>"
+BulletinInnerBoothTut3,Arstotzkan<br>Ministry of Admission,"<span style=""position: relative; top: 1px; font-family: ko-7px, regular_short;"">아스토츠카<br>입국부</span>"
+BulletinInnerBoothTut3,Inspector's Booth,"<span style=""
+position: relative; top: 1px"">검사관 심사대</span>"
+BulletinInnerBoothTut3,Shutter<br>Time &amp; Date<br>Weight,"<span style=""position: relative; top: -2px; font-family: ko-7px, regular_short;"">셔터<br>시간 &amp; 날짜<br>중량</span>"
+BulletinInnerBoothTut3,Counter,"<span style=""position: relative; top: -2px; font-family: ko-7px, regular_short;"">검사대</span>"
+BulletinInnerBoothTut3,Rule Book<br>Audio Transcript<br>Bulletin,"<span style=""position: relative; top: -2px; font-family: ko-7px, regular_short;"">규정집<br>음성 기록<br>공고</span>"
+BulletinInnerGunTut,Weapons Protocol,무장 규약
+BulletinInnerGunTut,WHEN ALARM SOUNDS,"<span style=""position: relative; top: -2px; font-family: ko-7px, regular_short;"">경보가 울릴 시</span>"
+BulletinInnerGunTut,Drop key on tumbler to unlock weapon.,"<span style=""
+position: relative; top: 2px;line-height:10px"">열쇠를 텀블러에 넣고<br>무기를 잠금 해제하시오</span>"
+BulletinInnerGunTut,"Select gun, aim and fire.","<span style=""
+position: relative; top: 2px;
+line-height:11px;"">총을 선택하고 조준 후 발사</span>"
+BulletinInnerGunTut,Time is short. Act fast.,"<span style=""
+position: relative; top: 7px;
+line-height: 10px"">시간이 많지 않음<br>빠르게 행동하시오</span>"
+BulletinInnerFilerTut,ALTAN &nbsp; DISTRICT,"<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">알탄 &nbsp; 지구</span>"
+BulletinInnerFilerTut,Passport Confiscation,여권 압수
+BulletinInnerFilerTut,Verify ALTAN resident on id.,"<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">등록증에 있는 알탄 거주민 확인</span>"
+BulletinInnerFilerTut,Drop passport in confiscation drawer.,"<span style=""
+position: relative; top: 0px;
+line-height: 10px"">압수용 선반에<br>여권을 놓으시오</span>"
+BulletinInnerFilerTut,"If arresting, confiscate before detaining.","<span style=""
+position: relative; top: 7px;
+line-height: 10px"">체포하는 경우라면,<br>구금 전 여권을 압수해야 함</span>"
+BulletinInnerCriminals,Ministry of Justice,사법부
+BulletinInnerCriminals,WANTED CRIMINALS,지명수배자
+BulletinInnerNews,NEWS,뉴스
+BulletinPagesNote,CHECK ALL<br>PAGES,"<span style=""
+line-height: 10px"">모든 페이지를<br>확인하시오</span>"
+CitationInner,M.O.A. CITATION,M.O.A. 고지문
+DiplomaticAuthInner,Diplomatic<br>Authorization,외교관<br>증명서
+DiplomaticAuthInner,This document authorizes named agent as a diplomatic entity of a Council of Nations member state.,"<span style=""position: relative; top: -4px; line-height: 10px; font-family: ko-7px, regular_short;"">본 서류에 이름이 기입된 대리인에게 국제 의회 회원국 외교관으로서의 권한을 부여함.</span>"
+DiplomaticAuthInner,AGENT,"<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">이름</span>"
+DiplomaticAuthInner,PASSPORT,"<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">여권</span>"
+DiplomaticAuthInner,Unconditional access to all named Council of Nations member states must be granted upon presentation.,"<span style=""position: relative; top: -8px; line-height: 9px; font-family: ko-7px, regular_short;"">모든 지정 국제 의회 회원국에서는 본 문서 지참 시 무조건적으로 입국을 허가해야 함.</span>"
+DiplomaticAuthInner,This document has no expiry.,본 문서는 만료되지 않음
+DiplomaticAuthInner,COUNCIL OF NATIONS - SEVEN MEMBER FORUM,"<span style=""position: relative; top: 1px; font-family: ko-7px, regular_short;"">국제 의회 - 일곱 국가 모임</span>"
+EntryPermitInner,ARSTOTZKA,아스토츠카
+EntryPermitInner,Entry Permit,입국 허가증
+EntryPermitInner,Conditional entry to the sovereign nation of Arstotzka is hereby granted to,"<span style=""position: relative; top: -15px;
+line-height: 11px;"">본 허가증은 아스토츠카 독립국에 대한 조건적 입국 허가를 다음 개인에게 제공함.</span>"
+EntryPermitInner,bearing passport number,"<span style=""position: relative; top: 4px;"">소지 여권 번호</span>"
+EntryPermitInner,Purpose,"<span style=""position: relative; top: -1px;"">목적</span>"
+EntryPermitInner,Duration,"<span style=""position: relative; top: -1px;"">체류 기간</span>"
+EntryPermitInner,Enter by,"<span style=""position: relative; top: -1px;"">입국 만료일</span>"
+EntryPermitInner,Ministry of Admission,입국부
+EntryTicketInner,Arstotzka,"<span style=""font-family: ko-7px, regular_short; font-size: 8px;"">아스토츠카</span>"
+EntryTicketInner,ENTRY TICKET,입국표
+EntryTicketInner,VALID ON,"<span style=""position: relative; top: -2px; font-family: ko-7px, regular_short;"">허가일: </span>"
+EzicNoteInnerOpen,READ QUICKLY,"<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">빠르게 읽고</span>"
+EzicNoteInnerOpen,RETURN TO MESSENGER,"<span style=""font-family: ko-7px, regular_short;"">전달자에게 돌려주시오</span>"
+FamilyPhotoInner,HANG ON WALL,벽걸이용
+FingerprintsInner,GIVE THIS PAPER TO APPLICANT,"<span style=""position: relative; top: -3px; font-family: ko-7px, regular_short;"">입국 신청자에게 본 종이를 제공할 것</span>"
+ForgeryFlyerInnerFront,NEED FORGED<br>OBRISTAN DOCS?,"<span style=""font-family:'ko-16px';"">위조 오브리스탄<br>문서를 원해요?</span>"
+ForgeryFlyerInnerFront,"""It looks so real!""","<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">""정말로 진짜 같아요!""</span>"
+ForgeryFlyerInnerFront,"""Approved for entry!""","<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">""입국 허가를 받았습니다!""</span>"
+ForgeryFlyerInnerFront,Fair rates!,"<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">적절한 비용!</span>"
+ForgeryFlyerInnerFront,No questions asked!,"<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">아무런 질문 하지 않음!</span>"
+ForgeryFlyerInnerFront,Fast turnaround!,"<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">빠른 작업 속도!</span>"
+ForgeryFlyerInnerFront,CONDITIONS ON BACK,조건은 뒷면 참조
+ForgeryFlyerInnerBack,PRICING (EACH),가격 (인당)
+ForgeryFlyerInnerBack,Passport *,여권 *
+ForgeryFlyerInnerBack,Entry Ticket,입국표
+ForgeryFlyerInnerBack,*<br>,*<br>
+ForgeryFlyerInnerBack,Client must provide existing Obristan passport to be modified with new info,새로운 정보를 담기 위해<br>고객은 반드시 기존의 오브리스탄<br>여권을 제공해야 함
+ForgeryFlyerInnerBack,Service at border Arstotzka/Obristan,아스토츠카/오브리스탄<br>국경에서 제공 중
+ForgeryFlyerInnerBack,Ask for Timofei Wee,Timofei Wee에게 문의바람
+GymFlyerInner,Underweight?Weak?Tired?,작습니까?약합니까?피곤합니까?
+GymFlyerInner,JOIN BEST GYM!,최고의 체육관 변하는 나의몸
+GymFlyerInner,GET BIG TOWN,떡대촌
+GymFlyerInner,East Grestin,동 그레스틴
+HintMissingInner,THIS ENTRANT HAS NO DOCUMENTS,이 입국 신청자는 서류가 없음
+HintMissingInner,"To proceed, use INSPECT mode to interrogate.","<span style=""line-height:12px"">진행을 위해, ""검사"" 모드로 취조하시오.</span>"
+HintMissingInner,Review page 2 of today's bulletin for full instructions.,"<span style=""line-height:12px"">오늘의 공고 2페이지를 확인해 전체 정보를 확인하시오.</span>"
+IdCardInner,ARSTOTZKA IDENTITY CARD,"<span style=""font-family: ko-7px, regular_short;"">아스토츠카 신분증</span>"
+IdCardInner,DOB,"<span style=""font-family: ko-7px, regular_short;"">생일</span>"
+IdCardInner,HT.,"<span style=""font-family: ko-7px, regular_short;"">신장</span>"
+IdCardInner,WT.,"<span style=""font-family: ko-7px, regular_short;"">체중</span>"
+IdentityRecordInner,M.O.A. IDENTITY RECORD,M.O.A 신원 기록
+IdentityRecordInner,NAME:,"<span style=""font-family: ko-7px, regular_short;"">성명:</span>"
+IdentityRecordInner,ALIAS:,"<span style=""font-family: ko-7px, regular_short;"">이명:</span>"
+IdentityRecordInner,Applicant's fingerprints and claimed name/alias must match this record.,"<div style=""line-height: 9px; top:-2px;text-align:center;font-family:'ko-7px','regular';"">입국 신청자의 지문과 이름/이명이<br>반드시 본 기록과 일치해야 함</div>"
+IdSupplementInner,IDENTITY<br>SUPPLEMENT,"<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">신원<br>보충물</span>"
+IdSupplementInner,HT,신장
+IdSupplementInner,WT,"<span style=""position:relative;top:1px;"">체중</span>"
+IdSupplementInner,DESCRIPTION,특이사항
+IdSupplementInner,THUMB,"<span style=""position:relative;top:1px;"">지문</span>"
+IdSupplementInner,Keep on person,"<span style=""position: relative; top: 0px; font-family: ko-7px, regular_short;"">필히 지참</span>"
+IdSupplementInner,EXP.,"<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">기한</span>"
+LocketInnerOpen,To Sergiu from your Elisa,"<div style=""line-height: 9px; top:-1px;text-align:center;font-family:'ko-7px','regular';"">Elisa가 Sergiu<br>에게</div>"
+LocketInnerOpen,I Love You Always,"<div style=""line-height: 9px; top:-2px;text-align:center;font-family:'ko-7px','regular';"">항상<br>사랑해요</div>"
+LoveSongInner1,YOU,당신
+LoveSongInner1,YOU ARE HOT LIKE FIRE,당신은 불처럼 뜨겁습니다
+LoveSongInner2,you,당신
+LoveSongInner2,OBJECT OF DESIRE,욕망의 주체입니다
+LoveSongInner3,YOU<br>(AGAIN),당신<br>(다시)
+LoveSongInner3,WRAP MY HEART IN WIRE,실로 내 심장을 감았어요
+LoveSongInner4,ApPROVED,허가
+LoveSongInner4,APPROVE MY VISA,내 입국을 허가해줘요
+tweak-passport-field-padding-left,2px,0
+tweak-passport-field-connect,none,block
+PassportInnerAntegria,ENTRY VISA,입국 사증
+PassportInnerAntegria,DOB.,생일
+PassportInnerAntegria,SEX,성별
+PassportInnerAntegria,ISS.,도시
+PassportInnerAntegria,EXP.,만료
+PassportInnerAntegria,ANTEGRIA,"<span style=""font-family:'ko-11px';font-size:12px;letter-spacing:1px;"">안테그리아</span>"
+tweak-passport-arstotzka-nation,16px,16px
+PassportInnerArstotzka,ENTRY VISA,입국 사증
+PassportInnerArstotzka,DOB.,생일
+PassportInnerArstotzka,SEX,성별
+PassportInnerArstotzka,ISS.,도시
+PassportInnerArstotzka,EXP.,만료
+PassportInnerArstotzka,ARSTOTZKA,"<span style=""font-family:'ko-11px';font-size:12px;letter-spacing:0px;"">아스토츠카</span>"
+PassportInnerImpor,ENTRY VISA,입국 사증
+PassportInnerImpor,DOB.,생일
+PassportInnerImpor,SEX,성별
+PassportInnerImpor,ISS.,도시
+PassportInnerImpor,EXP.,만료
+PassportInnerImpor,IMPOR,임포르
+PassportInnerKolechia,ENTRY VISA,입국 사증
+PassportInnerKolechia,DOB.,생일
+PassportInnerKolechia,SEX,성별
+PassportInnerKolechia,ISS.,도시
+PassportInnerKolechia,EXP.,만료
+PassportInnerKolechia,KOLECHIA,"<span style=""font-family:'ko-11px';font-size:12px;position:relative;top:-1px;"">콜레치아</span>"
+PassportInnerObristan,ENTRY VISA,입국 사증
+PassportInnerObristan,DOB.,생일
+PassportInnerObristan,SEX,성별
+PassportInnerObristan,ISS.,도시
+PassportInnerObristan,EXP.,만료
+PassportInnerObristan,OBRISTAN,"<span style=""font-family:'ko-11px-bold';font-size:11px; position:relative; top:1.5px"">오브리스탄</span>"
+PassportInnerRepublia,ENTRY VISA,입국 사증
+PassportInnerRepublia,DOB.,생일
+PassportInnerRepublia,SEX,성별
+PassportInnerRepublia,ISS.,도시
+PassportInnerRepublia,EXP.,만료
+PassportInnerRepublia,REPUBLIA,"<span style=""font-family:'ko-11px-bold';font-size:12px;"">리퍼블리아</span>"
+PassportInnerUnitedFed,ENTRY VISA,입국 사증
+PassportInnerUnitedFed,DOB.,생일
+PassportInnerUnitedFed,SEX,성별
+PassportInnerUnitedFed,ISS.,도시
+PassportInnerUnitedFed,EXP.,만료
+PassportInnerUnitedFed,UNITED FEDERATION,"<span style=""font-family:'ko-9px';font-size:10px;"">연합 연방국</span>"
+PlaqueOneInner,Ministry of Admission,입국부
+PlaqueOneInner,RECOGNITION,공로패
+PlaqueOneInner,FOR,공로자
+PlaqueOneInner,HANG ON WALL,벽걸이용
+PlaqueTwoInner,Ministry of Admission,입국부
+PlaqueTwoInner,RECOGNITION,공로패
+PlaqueTwoInner,FOR,공로자
+PlaqueTwoInner,HANG ON WALL,벽걸이용
+PoisonInnerBack,OPEN,열기
+PoisonInnerOpen1,DO NOT TOUCH POWDER,"<span style=""line-height: 10px; font-family: ko-7px, regular_short;"">가루를 만지지 마시오</span>"
+PoisonInnerOpen1,CLOSE,닫기
+PoisonInnerOpen2,ALIGN POWDER OVER PASSPORT,"<span style=""line-height: 10px; font-family: ko-7px, regular_short;"">가루를 여권<br>위에 올리시오</span>"
+PoisonInnerOpen2,PUSH HARD TO AFFIX,"<span style=""line-height: 10px; font-family: ko-7px, regular_short;"">달라붙도록<br>꾹 누르시오</span>"
+PoisonInnerOpen2,CLOSE,닫기
+PoliceBadgeInner,MINISTRY OF INFORMATION,"<span style=""
+line-height: 10px; position:relative;top:--1px;"">정보부</span>"
+PoliceBadgeInner,Office of Investigation,조사국
+PoliceBadgeInner,East Grestin Division,동 그리스틴 지부
+PoliceBadgeInner,Special Investigator,"<span style=""
+line-height: 10px; position:relative;top:1px;"">특별 검사관</span>"
+PoliceBadgeInner,MOI,MOI
+tweak-press-pass-title-weight,'wght' 900,'wght' 900
+PressPassInner,INTERNATIONAL,"<span style=""font-family: ko-7px, regular_short;"">국제</span>"
+PressPassInner,PRESS,"<span style=""font-size:13pt"">언론인</span>"
+PressPassInner,IDENTIFICATION,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -1px;"">신분 증명서</span>"
+RuleDiploAccess,AUTHORIZATION MUST GRANT ACCESS<br> TO ARSTOTZKA,"<span style=""line-height: 9px; font-family: ko-7px, regular_short; position: relative; top: -1px;"">아스토츠카로의<br>입국 허가를<br>반드시 받아야 함</span>"
+RuleIssuingCity,PASSPORT <span>ISS.</span> FIELD MUST BE VALID,"여권의 <span style=""padding: 0px 1px 1px; font-family: ko-7px, regular_short;"">도시</span> 부분이<br>반드시 유효해야 함"
+RuleSealRequired,DOCUMENT MUST<br>HAVE A SEAL,"<span style=""line-height: 9px; font-family: ko-7px, regular_short; position: relative; top: -2px;"">문서에 반드시<br>인장이 있어야 함</span>"
+RulesInnerHome,Arstotzkan,아스토츠카
+RulesInnerHome,Ministry<span>of</span>Admission,"<div style=""position:relative;top:10px;"">입국부</div>"
+RulesInnerHome,RULES,규정
+RulesInnerHome,&amp;,&amp;
+RulesInnerHome,REGULATIONS,"<span style=""position: relative; top: 4px; font-family: title_thick, ko-11px-bold;"">규범</span>"
+RulesInnerHome,for Inspectors,검사관용
+RulesInnerHome,CONTENTS,내용물
+RulesInnerHome,PROPERTY OF,M.O.A
+RulesInnerHome,M.O.A,자산
+RulesInnerBasic,RULES,규정
+RulesInnerRegion,DIPLOMATIC SEALS,외교 인장
+RulesInnerRegion,PASSPORT,여권
+RulesInnerRegion,ISSUING CITIES,발행 도시
+RulesInnerRegionArstotzka,DISTRICTS,지구
+RulesInnerRegionArstotzka,PASSPORT,여권
+RulesInnerRegionArstotzka,ISSUING CITIES,발행 도시
+RulesInnerBooth,INSPECTOR'S BOOTH,"<span style=""position: relative; line-height: 14px; top: -4px; font-family: title_thick, ko-11px-bold;"">검사관<br>심사대</span>"
+RulesInnerBooth,Shutter,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -1px;"">셔터</span>"
+RulesInnerBooth,Counter,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -1px;"">검사대</span>"
+RulesInnerBooth,Rule Book<br>Audio Trans.<br>Bulletin<br>Time &amp; Date,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -1px;"">규정집<br>음성 기록<br>공고문<br>시간, 날짜</span>"
+RulesInnerBooth,UPGRADES,업그레이드
+RulesInnerBooth,NO UPGRADES<br>INSTALLED,"<span style=""
+line-height: 10px
+"">설치된 업그레이드<br>없음</span>"
+RulesInnerBooth2,INSPECTOR'S BOOTH,"<span style=""position: relative; line-height: 14px; top: -4px; font-family: title_thick, ko-11px-bold;"">검사관<br>심사대</span>"
+RulesInnerBooth2,Shutter,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -1px;"">셔터</span>"
+RulesInnerBooth2,Counter,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -1px;"">검사대</span>"
+RulesInnerBooth2,Audio Trans.<br>Rule Book<br>Weight,"<span style=""font-family: ko-7px, regular_short; position: relative;"">음성 기록<br>규정집<br>중량</span>"
+RulesInnerBooth2,Bulletin<br>Time &amp; Date,"<span style=""font-family: ko-7px, regular_short; position: relative;"">공고문<br>시간, 날짜</span>"
+RulesInnerBooth2,UPGRADES,업그레이드
+RulesInnerBooth2,NO UPGRADES<br>INSTALLED,"<span style=""
+line-height: 10px
+"">설치된 업그레이드<br>없음</span>"
+RulesInnerBooth3,INSPECTOR'S BOOTH,"<span style=""position: relative; line-height: 14px; top: -4px; font-family: title_thick, ko-11px-bold;"">검사관<br>심사대</span>"
+RulesInnerBooth3,Shutter<br>Time &amp; Date<br>Weight,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -1px;"">셔터<br>시간,날짜<br>중량</span>"
+RulesInnerBooth3,Counter,"<span style=""font-family: ko-7px, regular_short; position: relative;"">검사대</span>"
+RulesInnerBooth3,Rule Book<br>Audio Trans.<br>Bulletin,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -1px;"">규정집<br>음성 기록<br>공고문</span>"
+RulesInnerBooth3,UPGRADES,업그레이드
+RulesInnerBooth3,NO UPGRADES<br>INSTALLED,"<span style=""
+line-height: 10px
+"">설치된 업그레이드<br>없음</span>"
+RulesInnerDocs,OFFICIALLY RECOGNIZED,공인
+RulesInnerDocs,DOCUMENTS,"<span style=""position: relative; top: 3px; font-family: title_thick, ko-11px-bold;"">문서</span>"
+RulesInnerDocs,CONTENTS,내용물
+RulesInnerEntryPermit,ENTRY PERMIT,입국 허가증
+RulesInnerEntryPermit,VALID SEALS,유효 인장
+RulesInnerIdCard,ARSTOTZKAN<br>ID CARD,"<span style=""position: relative; line-height: 14px; font-family: title_thick, ko-11px-bold;"">아스토츠카<br>시민등록증</span>"
+RulesInnerIdCard,ISSUED TO ALL ARSTOTZKAN CITIZENS,"<span style=""
+line-height: 12px
+"">모든 아스토츠카<br>시민에게 발급됨</span>"
+RulesInnerIdCard,DISTRICTS,지구
+RulesInnerIdSupplement,IDENTITY<br>SUPPLEMENT,"<span style=""position: relative; line-height: 14px; font-family: title_thick, ko-11px-bold;"">신원<br>보충물</span>"
+RulesInnerIdSupplement,ISSUED TO ALL QUALIFIED FOREIGNERS,"<span style=""
+position: relative; top: 7px;
+line-height: 12px
+"">모든 자격을 갖춘 외국인에게 발급</span>"
+RulesInnerIdSupplement,FOR VERIFICATION OF FOREIGNER'S PHYSICAL APPEARANCE,"<span style=""position:relative;top:12px;line-height:11px;"">외국인의 신체적 외형 확인 용도</span>"
+RulesInnerIdSupplement,VERIFY THUMBPRINT ONLY WHEN FINGERPRINT RECORD IS AVAILABLE,"<span style=""position:relative;top:8px;line-height:11px;"">지문 기록을 이용 가능할 때 엄지 지문 확인</span>"
+RulesInnerIdSupplement,THIS IS A SHORT-ISSUE DOCUMENT - VERIFY EXPIRATION CAREFULLY,"<span style=""position:relative;top:-3px;line-height:11px;"">간략한 기밀 문서. 만료일을 꼭 확인할 것</span>"
+RulesInnerAccessPermit,ACCESS PERMIT,접근 허가증
+RulesInnerAccessPermit,VALID SEALS,유효 인장
+RulesInnerAccessPermit,THIS DOCUMENT REPLACES ENTRY PERMIT AND IDENTITY SUPPLEMENT,"<span style=""
+position: relative; top: 0px;
+line-height: 11px
+"">본 문서는 입국 허가증과 신원 보충물을 대체함</span>"
+RulesInnerWorkPermit,WORK PASS,노동 허가서
+RulesInnerWorkPermit,ISSUED TO ALL QUALIFIED FOREIGN LABOR,"<span style=""
+position: relative; top: 3px;
+line-height: 10px
+"">모든 자격을 갖춘 노동자에게 발급됨</span>"
+RulesInnerWorkPermit,VALID SEALS,유효 인장
+RulesInnerDiplomaticAuth,DIPLOMATIC,외교관
+RulesInnerDiplomaticAuth,AUTHORIZATION,증명서
+RulesInnerDiplomaticAuth,VALIDATE SEAL WITH COUNTRY PAGE,"<span style=""
+position: relative; top: 1px;
+line-height: 11px
+"">각 국가 페이지에서<br>인장 확인</span>"
+RulesInnerAsylumGrant,GRANT OF<br>ASYLUM,"<span style=""position: relative; top: 10px; font-family: title_thick, ko-11px-bold;"">망명 허가증</span>"
+RulesInnerAsylumGrant,VALID SEALS,유효 인장
+RulesInnerAsylumGrant,ALWAYS VERIFY FINGERPRINTS,상시 지문 확인
+RulesInnerVaccineCert,VACCINE CERTIFICATE,"<span style=""position: relative; top: 10px; font-family: title_thick, ko-11px-bold;"">백신 증명서</span>"
+RulesInnerVaccineCert,MINISTRY,"<span style=""position: relative; top: 2px; font-family: title_thick, ko-11px-bold;"">보건부</span>"
+RulesInnerVaccineCert,OF,<span></span>
+RulesInnerVaccineCert,HEALTH,"<span style=""font-family: title_thick, ko-11px-bold;""></span>"
+RulesInnerVaccineCert,REGULATION DOCUMENT,"<span style=""position:relative;top:5px;"">규칙 문서</span>"
+RulesInnerVaccineCert,POLIO VACCINATION REQUIRED FOR ALL ENTRANTS,"<span style=""position: relative; top: 0px; line-height: 10px; font-family: ko-7px, regular_short;"">모든 입국자는<br>소아마비 접종 필요</span>"
+RulesInnerVaccineCert,NO EXCEPTIONS,"<span style=""position: relative; top: -4px; line-height: 10px; font-family: ko-7px, regular_short;"">예외 없음</span>"
+RulesInnerConfiscation,PASSPORT CONFISCATION,"<span style=""position: relative; top: 10px; font-family: title_thick, ko-11px-bold;"">여권 압수</span>"
+RulesInnerConfiscation,DROP PASSPORT IN CONFISCATION DRAWER,"<span style=""
+line-height: 11px
+"">압수용 선반에<br>여권을 놓으시오</span>"
+RulesInnerConfiscation,POLICY,정책
+RulesInnerConfiscation,PASSPORT MUST BE CONFISCATED BEFORE DETAINING,"<span style=""
+line-height: 11px;position:relative;top:-3px;
+"">체포하는 경우라면<br>구금 전 여권을<br>압수해야 함</span>"
+RulesInnerConfiscation,MOI,MOI
+tweak-rulesinnerlast-moa-style,propaganda,propaganda
+tweak-rulesinnerlast-moa-style,0px,0px
+RulesInnerLast,PROPERTY OF,M.O.A.
+RulesInnerLast,M.O.A.,자산
+RulesInnerLast,GLORY TO ARSTOTZKA,아스토츠카에 영광을
+RulesInnerLast,Arstotzkan,아스토츠카
+RulesInnerLast,Ministry of Admission,"<span style=""
+line-height: 14px
+"">입국부</span>"
+RulesInnerLast,Rules &amp; Regulations,"<span style=""
+line-height: 10px
+"">규정&amp;규범</span>"
+RulesInnerLast,for Inspectors,"<span style=""
+line-height: 14px
+"">검사관 용</span>"
+RulesInnerLast,1982-1983 Edition,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -4px;"">1982-1983년도 판본</span>"
+RulesInnerLast,DO NOT DISTRIBUTE UNDER SEVERE<br>PENALTY,"<span style=""line-height: 11px; font-family: ko-7px, regular_short; position: relative; top: -5px;"">무단 배포 시<br>엄중 처벌</span>"
+RulesTabConfL,CONF.,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -1px;"">목차</span>"
+RulesTabConfR,CONF.,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -1px;"">목차</span>"
+RulesTabDocsL,DOCS,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -1px;"">문서</span>"
+RulesTabDocsR,DOCS,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -1px;"">문서</span>"
+RulesTabMapL,MAP,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -1px;"">지도</span>"
+RulesTabMapR,MAP,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -1px;"">지도</span>"
+RulesTabRulesL,RULES,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -1px;"">규정</span>"
+RulesTabRulesR,RULES,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -1px;"">규정</span>"
+RulesUpgrade0,TOGGLE INSPECT,"<span style=""
+position: relative; top: 2px;
+"">조사 시작</span>"
+RulesUpgrade0,SPACE,SPACE
+RulesUpgrade1,TOGGLE STAMP BAR,"<span style=""
+position: relative; top: 2px;
+"">도장 열기</span>"
+RulesUpgrade1,TAB,TAB
+RulesUpgrade2,RULEBOOK SHORTCUTS,"<span style=""
+position: relative; top: 1px;line-height:11px;
+"">규정서<br>책갈피</span>"
+RulesUpgrade3,QUICK INSPECT,"<span style=""
+position: relative; top: 2px;
+"">빠른 조사</span>"
+RulesUpgrade3,DOUBLE-CLICK,더블 클릭
+RulesUpgrade4,MULTITOUCH,"<span style=""
+position: relative; top: 2px;
+"">멀티 터치</span>"
+SeizureSlipInner,Arstotzka Ministry of Admission,"<span style=""font-family:'ko-8px','small_tight'"">아스토츠카 입국부</span>"
+SeizureSlipInner,PASSPORT SEIZURE SLIP,여권 압수 안내표
+SeizureSlipInner,ENTRY VISA,입국 사증
+SeizureSlipInner,Your passport has been seized.,"<span style=""font-family: ko-7px, regular_short; position: relative; line-height: 9px;"">귀하의 여권을 압수했습니다</span>"
+SeizureSlipInner,Contact 1509-6103 for redress.,"<span style=""font-family: ko-7px, regular_short; position: relative; top: 0px; line-height: 9px;"">시정 문의: 1509-6103</span>"
+SpyDocsInnerBack,Mating Habits of Lesser Kolechian Waterfowl,"<span style=""
+position: relative; top: 2px;
+line-height: 12px;
+"">
+소형 콜레치아<br>물새류의 짝찟기 습관</span>"
+SpyDocsInnerBack,A FULL REPORT,상세 보고서
+SpyDocsInnerBack,Ministry of Information,정보부
+TranscriptInner,AUDIO TRANSCRIPT,음성 기록
+VaccineCertInner,Certificate<span>of</span>Vaccination,"<div style=""position:relative;top:15px;line-height:8px"">백신 증명서</div>"
+VaccineCertInner,ID#,"<span style=""position:relative;top:-1px;"">등록 번호</span>"
+VaccineCertInner,DATE,"<span style=""position:relative;top:-1px;"">날짜</span>"
+VaccineCertInner,VACCINE,"<span style=""position:relative;top:-1px;"">백신</span>"
+VaccineCertInner,Vax valid for 3 years,"<span style=""position:relative;top:-1px;"">백신 유효 기간: 3년</span>"
+VisaSlipInner,TEMPORARY VISA SLIP,"<span style=""font-family:'ko-8px';"">임시 사증 안내표</span>"
+VisaSlipInner,ENTRY VISA,입국 사증
+VisaSlipInner,TO BE USED FOR DENIALS ONLY,"<span style=""font-family:'ko-8px';"">입국 거부자 전용</span>"
+WorkPermitInner,Ministry of Labor,노동부
+WorkPermitInner,Work Pass,"<span style=""position: relative; top: 2px; font-family: title_tall, ko-16px-thin;"">노동 허가서</span>"
+WorkPermitInner,This pass grants its holder the right to work in a specific field for a limited time.,"<span style=""line-height: 9px; font-family: ko-7px, regular_short;"">본 허가서는 소유주에게 제한된 기간 동안 특정 분야에서 노동할 수 있는 권한을 제공함.</span>"
+WorkPermitInner,HOLDER,"<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">소유주</span>"
+WorkPermitInner,FIELD,"<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">분야</span>"
+WorkPermitInner,UNTIL,"<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">기한</span>"
+WorkPermitInner,Keep this pass with you at all times.,"<span style=""line-height: 9px; position: relative; top: 4px; font-family: ko-7px, regular_short;"">항시 소지하고 있어야 함</span>"
+EndNews,Kolechian Consensus Reached Over Grestin,"<span style=""line-height: 9px; font-family: ko-7px, regular_short;"">콜레치아 협정서<br>그레스틴에 도달하다</span>"
+ApartmentClass,CLASS,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -1px;"">급</span>"
+DetainButton,DETAIN,"<span style=""font-family:'ko-9px';font-size:10px;"">구금</span>"
+FingerprintButton,FINGERPRINT,"<span style=""font-family:'ko-9px';font-size:10px;"">지문</span>"
+tweak-searchbutton-padding-left,4px,4px
+SearchButton,SEARCH,"<span style=""font-family:'ko-9px';font-size:10px;"">수색</span>"
+EmblemsMOA,M.O.A,M.O.A
+EmblemsMOA,M.O.L,M.O.L
+EmblemsMOL,M.O.L,M.O.L
+Filer,CONFISCATED DOCUMENTS,"<span style=""font-family: ko-7px, regular_short; position: relative; top: -1px;"">압수된 문서</span>"
+Filer,PROPERTY OF,M.O.A.
+Filer,M.O.A.,자산
+GiveIcon,GIVE,"<span style=""font-family:'ko-8px-9px';"">전달</span>"
+LoadButtonNew,NEW,신규
+LoadDay,DAY,"<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">일</span>"
+LoadDrag,DRAG TO SCROLL,"<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">드래그: 화면이동</span>"
+News,The Truth of Arstotzka,"<span style=""position:relative; top:-7px;"">아스토츠카의 진실</span>"
+News,No Charge,"<span style=""position:relative; top:1px;font-family:'ko-8px'"">무료</span>"
+ReasonButton,REASON,"<span style=""font-family:'ko-9px';font-size:10px;position:relative;top:-1px"">사유</span>"
+RifleKill,KILL,"<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">사살용</span>"
+RifleTranq,TRANQ,"<span style=""position: relative; top: -1px; font-family: ko-7px, regular_short;"">마취용</span>"
+StampBarMid,ALIGN VISA BENEATH STAMP,"<span style=""font-family:'ko-8px-9px'"">사증을 도장 아래에 놓으시오</span>"
+Upgrades,SPACE,SPACE
+Upgrades,TAB,TAB
+image:ArskickersInner.png,capture/ArskickersInner.png,final/ko/ArskickersInner.png
+ArskickersInner,HANG ON WALL,"<span style=""font-family:'ko-8px-9px'"">벽걸이용</span>"
+image:BrothelFlyerInner.png,capture/BrothelFlyerInner.png,final/ko/BrothelFlyerInner.png
+BrothelFlyerInner,East Grestin,"<span style=""
+position: relative; top: 4px
+"">동 그레스틴</span>"
+BrothelFlyerInner,FOR ALL YOUR FANTASIES,당신의 모든 환상을 위해
+image:PezpertInner.png,capture/PezpertInner.png,final/ko/PezpertInner.png
+PezpertInner,STAMP HERE,"<span style=""
+position: relative; top: 2px
+"">입꾹 사중</span>"
+image:SonDrawingInner.png,capture/SonDrawingInner.png,final/ko/SonDrawingInner.png
+SonDrawingInner,hanG on wAll,벽껄이융
+image:SonDrawingOuter.png,capture/SonDrawingOuter.png,final/ko/SonDrawingOuter.png
+image:SonDrawingMount.png,capture/SonDrawingMount.png,final/ko/SonDrawingMount.png
+image:VictimPhotoInnerBack.png,capture/VictimPhotoInnerBack.png,final/ko/VictimPhotoInnerBack.png
+image:Emotions.png,export/Emotions.png,final/ko/Emotions.png
+image:LoadButtonLatest.png,export/LoadButtonLatest.png,final/ko/LoadButtonLatest.png
+image:InkApproved.png,export/InkApproved.png,final/ko/InkApproved.png
+image:InkDenied.png,export/InkDenied.png,final/ko/InkDenied.png
+image:StampBotApproved.png,export/StampBotApproved.png,final/ko/StampBotApproved.png
+image:StampBotDenied.png,export/StampBotDenied.png,final/ko/StampBotDenied.png
+image:ReasonStampTop.png,export/ReasonStampTop.png,final/ko/ReasonStampTop.png
+image:InkReason.png,export/InkReason.png,final/ko/InkReason.png
+image:Arstotzka.png,export/Arstotzka.png,final/ko/Arstotzka.png
+image:Intro1.png,export/Intro1.png,final/ko/Intro1.png
+image:Obrinspector.png,export/Obrinspector.png,final/ko/Obrinspector.png
+image:Shutter.png,export/Shutter.png,final/ko/Shutter.png
+news:RANDOM_WEATHER,The Weather,날씨
+news:RANDOM_SPORTS,Sports,스포츠
+news:RANDOM_ENTERTAINMENT,Entertainment,연예
+news:RANDOM_POLITICS,Politics,정치
+news:FIRST_DAY,Grestin Border Checkpoint Opens At Last!,그레스틴 국경 검문소 마침내 개방!
+news:FIRST_DAY,After 6 Long Years. Can the Ministry of Admission Keep Us Safe?,장장 6년의 세월. 입국부는 우리를 지켜줄 수 있는가?
+news:FIRST_DAY,Families To Reunite,가족 재결합
+news:CHECKPOINT_SUCCESS,Grestin Checkpoint a Success!,성황리 진행된 그레스틴 검문소!
+news:CHECKPOINT_SUCCESS,"Entry Restrictions To Relax, Admit Foreigners","입국 제한을 완화하고, 외국인들을 수용하기로"
+news:CHECKPOINT_SUCCESS,Analysts Upbeat,낙관적인 분석
+news:CHECKPOINT_SUCCESS,Increased Trade And Cooperation Predicted,무역 및 협력 증가 예상
+news:FIRST_TERRORISTS,Terrorists Strike At Grestin!,그레스틴에서 테러리스트 공격!
+news:FIRST_TERRORISTS,Kolechian Agitators Suspected.,콜레치아 출신 선동가 의심 중
+news:FIRST_TERRORISTS,Checkpoint Lockdown,검문소 닫히다
+news:FIRST_TERRORISTS,More Guards - More Scrutiny,더 많아진 경비원 - 더 세밀해진 조사
+news:BLACKMARKET_EXPLODES,Blackmarket Activity Explodes,암시장 활동 폭발
+news:BLACKMARKET_EXPLODES,Government Blames Lax Immigration Controls,정부 측에선 느슨한 이민 정책으로 간주
+news:BLACKMARKET_EXPLODES,Checkpoint Expansion Postponed,검문소 확장 지연되다
+news:WORKPERMIT_FIRST,"Jobs Few, Becoming Fewer","줄어만 가는 일자리, 더 줄어든다"
+news:WORKPERMIT_FIRST,Immigrants Taking Jobs From Locals,이민자들의 일자리 강탈
+news:KOLECHIA_COMPLAINS_SEARCH,Kolechian Leader Files Complaint,콜레치아 지도자 고소 선언
+news:KOLECHIA_COMPLAINS_SEARCH,Claims Unprovoked Border Searches Violate Rights,이유 없는 국경 심문이 기본권 침해임을 주장
+news:AFTER_SUICIDE_BOMBER,Another Attack At Grestin Checkpoint!,그레스틴 검문소 다시 공격받다!
+news:AFTER_SUICIDE_BOMBER,Suicide Bomber Slips Through Security,보안을 틈타 자살 폭탄 스며들어
+news:GENERIC_BOMBER,Grestin Suffers Another Border Attack,"그레스틴, 연이은 국경 공격에 몸살"
+news:GENERIC_BOMBER,Suicide Bombings Becoming Routine,자살 폭탄이 행사처럼 이어져
+news:PIMP_BUSTED,Human Trafficking Ring Shut Down!,인신 매매의 고리 끊어지다!
+news:PIMP_BUSTED,Grestin Checkpoint Officer Nabs Mastermind,그레스틴 검문소장이 주동자 붙잡아
+news:PIMP_ESCAPED,Dancers At Grestin Club Found Dead!,그레스틴 클럽 내 댄서들 사망한 채로 발견!
+news:PIMP_ESCAPED,Newly Immigrated Girls Victims Of Human Trafficking,새로 이민 온 여성들 인신매매의 희생양 되어
+news:KILLERATHLETE,Republian Track Star Wanted For Murder!,리퍼블리아의 육상 스타 살인 혐의로 현상 수배!
+news:KILLERATHLETE,Vince Lestrade's Whereabouts Unknown - Has Likely Fled Republia,"Vince Lestrade의 행방 묘연, 리퍼블리아에서 도주 예상"
+news:KILLERATHLETE,Vince Lestrade: Profile,Vince Lestrade: 분석
+news:KILLERATHLETE,Girlfriend Killed In Jealous Rage?,질투심에 여자친구를 살해했나?
+news:KILLERATHLETE_DETAINED,Vince Lestrade Apprehended In Grestin!,"Vince Lestrade, 그레스틴에서 체포 되다!"
+news:KILLERATHLETE_DETAINED,Track Champ Looks Quite Guilty Now,육상 챔피언도 이젠 범죄자에 지나지 않아
+news:KILLERATHLETE_APPROVED,Vince Lestrade Spotted in Arstotzka,"Vince Lestrade, 아스토츠카에서 목격"
+news:KILLERATHLETE_DENIED,Vince Lestrade Apprehended In Kolechia!,"Vince Lestrade, 콜레치아에서 체포 되다!"
+news:DIPLOMAT_FIRST,Kolechia Sends Top-Level Diplomat,"콜레치아, 외교장관 보내다"
+news:DIPLOMAT_FIRST,Normalizing Trade Top Issue,중대한 무역 이슈 정상화를 위해
+news:BUSTED_SPY,Top-level Kolechian Exposed as Arstotzkan Spy!,"콜레치아 외교장관, 아스토츠카 스파이로 알려져!"
+news:BUSTED_SPY,"Missing From Post, Presumed Dead","국경에서 행방 묘연, 사망으로 추정돼"
+news:BUSTED_SPY_GAVEREALDOCS,Kolechia Cleans House - Eliminates Arstotzkan Spies,콜레치아의 집 청소 - 아스토츠카 스파이 제거가 목적
+news:BUSTED_SPY_GAVEREALDOCS,Heroic Agents Compromised,영웅 요원들의 위치 위험해
+news:BUSTED_SPY_GAVEFAKEDOCS,Kolechia Cleans House - Attacks Its Own!,콜레치아의 집 청소 - 자기 편을 공격하다!
+news:BUSTED_SPY_GAVEFAKEDOCS,Round Of Disappearances Blamed On Faulty Evidence,"연이은 실종, 잘못된 정보 탓만"
+news:FORGERY_NEWS,Theft At Ministry Of Admission!,입국부에서의 도난 사건!
+news:FORGERY_NEWS,Limited Effects - Few Items Stolen,미미한 영향 - 훔쳐진 물건 거의 없어
+news:SECRET_SOCIETY,The History of Arstotzka,아스토츠카의 역사
+news:SECRET_SOCIETY,In Pictures and Words - Mostly Words,사진과 글로 보기 - 대부분은 글이지만
+news:CRIMINAL_ACTIVITY,A Criminal's Safe Haven,범죄자의 천국
+news:CRIMINAL_ACTIVITY,Arstotzka Earns Dubious Reputation,"아스토츠카, 의심스럽다는 평판 얻어"
+news:LOSING_GUARDS,Ministries Fight Over Staff,직원과 부서 간 갈등
+news:LOSING_GUARDS,"Qualified Guards, Soldiers In Demand","검증받은 경비, 군인들이 필요해"
+news:LOSING_GUARDS,"Consolidation, Reassignment At Border",국경의 강화 및 인사 재배치
+news:LOSING_GUARDS,Still Safe With Smaller Detail?,아직도 사소한 일에도 안전할까?
+news:RUNNER_AFTER_TRANQ,Grestin Incident Highlights Security Risks,"그레스틴 사건, 보안 위험 조명하다"
+news:RUNNER_AFTER_TRANQ,Further Breaches Predicted,추가 침입 예측돼
+news:BIKE_ATTACK,Daring Bike Attack At Grestin Checkpoint!,그레스틴 검문소를 향한 오토바이 공격!
+news:BIKE_ATTACK,Extremists Growing Bolder - Grestin Like Magnet,대담해져가는 극단주의자들 - 자석처럼 그레스틴에 끌려와
+news:BORDER_TARGETED,Can The Wall Hold?,장벽은 지킬 수 있는가?
+news:BORDER_TARGETED,Border Safety Continually Questioned,국경 보안 계속해서 질문 받아
+news:BIKERUNNER_NEWS,Coordinated Border Breach!,계획적 국경 공격!
+news:BIKERUNNER_NEWS,Unknown Assailants Swamp Security,신원 미상의 공격자들 보안 팀에게 쇄도해
+news:NOSY_JOURNALIST_APPROVED,Arstotzka's Frail Border,아스토츠카의 연약한 국경
+news:NOSY_JOURNALIST_APPROVED,United Fed Reporter Exposes Lax Protocols,연합 연방국 기자의 느슨한 경비 폭로
+news:NOSY_JOURNALIST_DENIED,Arstotzka's Iron Border,아스토츠카의 철통 같은 국경
+news:NOSY_JOURNALIST_DENIED,Int. Media Reveals Entry Visa Bias,"국제 언론, 편향된 입국 사증 발급에 대해 폭로하다"
+news:IDSUPPLEMENT_INTRO,Another Bomber Slips Through!,또 폭탄범이 숨어들어!
+news:IDSUPPLEMENT_INTRO,Immigrant Screening Falls Short,이민자 검문 능력 부족해
+news:IDSUPPLEMENT_INTRO,M.O.A. Gets New Director,M.O.A.에 새 책임자 부임
+news:IDSUPPLEMENT_INTRO,Stricter Protocols Promised at Border,국경에 보다 더 엄격해진 규정 약속해
+news:WHISTLEBLOWER_SETUP0,Antegria Domestic Spying Exposed!,안테그리아의 국내 감시 노출되다!
+news:WHISTLEBLOWER_SETUP0,Whistleblower On The Run,내부고발자 도주 중에 있어
+news:WHISTLEBLOWER_SETUP1,Antegrian Whistleblower Denied Asylum In Republia,안테그리아 내부고발자 리퍼블리아에서의 망명 거절당해
+news:WHISTLEBLOWER_SETUP2,Antegrian Whistleblower Turned Away From United Fed,안테그리아 내부고발자 연합 연방국에서 거절당해
+news:WHISTLEBLOWER_COMING,Antegrian Whistleblower Accepted By Arstotzka,안테그리아 내부고발자 아스토츠카에서 망명 승인받다
+news:WHISTLEBLOWER_COMING,Move Risks Angering Neighbors,이웃 국가를 화나게 할 염려 있어
+news:WHISTLEBLOWER_IN,Antegrian Whistleblower Arrives - Disappears Immediately,안테그리아 내부고발자 도착 - 이후 즉시 실종
+news:WHISTLEBLOWER_OUT,Antegrian Whistleblower Turned Away - Whereabouts Unknown,안테그리아 내부고발자 망명 거절 당하다 - 이후 소재 알 수 없어
+news:IMPOR_UNHAPPY,Impor Protests Unbalanced Trade Restrictions,"임포르, 균형에 맞지 않는 거래 제한에 대해 항의하다"
+news:IMPOR_UNHAPPY,Claims Arstotzka Unfairly Taxes Imporian Goods,아스토츠카에서 부당하게 임포르제 상품에 과세 중이라 주장
+news:IMPOR_SANCTIONS_START,Impor Begins Trade Sanctions!,"임포르, 무역 제재 시작!"
+news:IMPOR_SANCTIONS_START,Immediately Restricts All Imports From Arstotzka,아스토츠카에서 오는 모든 상품을 바로 거절 중
+news:IMPOR_SANCTIONS_END,Impor Sanctions End!,임포르 무역 제재 끝나다!
+news:IMPOR_SANCTIONS_END,Over So Fast? What Happened?,이렇게나 빠르게? 무슨 일이 있었을까?
+news:SURGERY_SETUP,Breakthrough Spinal Surgery Perfected,"척추 수술, 이제는 완벽하게 가능"
+news:SURGERY_SETUP,Only Possible With Arstotzkan Expertise,오로지 아스토츠카 전문가의 손에서만 가능해
+news:VIRUS_PRIMER,Polio Resurfaces In United Fed,연합 연방국에서 소아마비 재발생
+news:VIRUS_PRIMER,Isolated Diagnosis Or Something More?,"우연한 진단인가, 아니면 더 있는가?"
+news:VIRUS_BAN_UNITED_FED,Full-blown Epidemic Threatens United Fed!,연합 연방국에 역병 위협 만개해!
+news:VIRUS_BAN_UNITED_FED,"Previously Under Control, Polio Back With Vengeance","과거 통제 가능했던, 소아마비가 다시 칼을 빼들어"
+news:VIRUS_REQUIRE_CERT,Ministry of Health Acts To Protect Citizens,"보건부 측, 시민을 보호하기 위해 행동하다"
+news:VIRUS_REQUIRE_CERT,"New Policy, Safeguards At Borders",국경에서의 새 정책 및 보호 장치 만들어
+news:SERIAL_KILLER,Serial Child Killer Escapes United Fed Prison!,연쇄 아동 살인마 연합 연방국 감옥에서 탈옥!
+news:SERIAL_KILLER,Simon Wens: An Arstotzkan Native - Returning Home?,"아스토츠카 토박이인 Simon Wens, 고향으로 돌아오나?"
+news:SERIAL_KILLER_MURDERED,Bloody Scene In Gennistora!,제니스토라에서의 피투성이 사건!
+news:SERIAL_KILLER_MURDERED,Simon Wens Found Dead In Confusing Mess,혼란스러운 아수라장에서 Simon Wens 사망한 채로 발견돼
+news:EZIC_ATTACK0,Grestin Metro Halted,그레스틴 지하철 중지
+news:EZIC_ATTACK0,"Tunnel Cave-in, Hints At Sabotage","터널 함몰, 사보타지의 낌새 있어"
+news:EZIC_ATTACK1_GIFT,Gov't Headquarters In Paradizna Evacuated!,파라디즈나의 정부 건물 내 사람들 긴급 대피!
+news:EZIC_ATTACK1_GIFT,"Strange Gas Detected - Staff Safe, Records Missing",수상한 가스 탐지돼 - 직원들은 안전하지만 기록은 사라져
+news:EZIC_ATTACK1_NOGIFT,Head Minister Of Finance Missing!,재무부 장관 실종!
+news:EZIC_ATTACK1_NOGIFT,"Markets React With Fast Selling, Instability","시장의 반응은 빠른 매도세로, 불안정화돼"
+news:POISONING,Mysterious Poison Hospitalizes Several!,수상한 독극물로 인해 수많은 사람들 입원!
+news:POISONING,Unnamed Immigrant Smuggles Deadly Agent,이름을 알 수 없는 이민자들이 치명적인 독극물 밀수해와
+news:MARKED_DIPLOMAT,Top-Level Talks Called,수뇌 회담 취소
+news:MARKED_DIPLOMAT,Grestin Territory Remains Dividing Issue,그레스틴 영토 분할 문제 남아
+news:DIPLOMAT_SWAPPED,Kolechians Are Crazy,정신 나간 콜레치아인들
+news:DIPLOMAT_SWAPPED,Bizarre Behavior From Top Negotiator Spoils Talks,최고 교섭자들의 기이한 행동으로 회담 취소돼
+news:DIPLOMAT_ORIGINAL,A Tentative Understanding,잠재적 합의
+news:DIPLOMAT_ORIGINAL,Kolechian Talks Establish Common Ground,콜레치아 회담에서 합의점 찾아
+news:TALKS_BREAK_DOWN,Roadblock To Kolechian Resolution,콜레치아 해결책으로의 장애물
+news:TALKS_BREAK_DOWN,Contested City Drives Wedge,경쟁 도시들 간의 이간질
+news:BORDER_CLOSING,Grestin Checkpoint Future Uncertain,그레스틴 검문소의 미래 불확실
+news:BORDER_CLOSING,"Too Open, Too Soon?","너무 일찍, 너무 개방한 것인가?"
+text:language_code,en,ko
+text:language_name,ENGLISH,한국어
+text:language_author,Author,BADA GAMES
+text:wrap_hyphen,-,NONE
+text:created_by,created by Lucas Pope,Lucas Pope 제작
+text:papers_please,"Papers, please.",서류 제출 바랍니다.
+text:protocol_violated,Protocol Violated.,규정 위반입니다.
+text:unauth_confiscation,Unauthorized passport confiscation,비인가된 여권 압수
+text:missing_reason,Denial reason not given,거부 사유가 없음
+text:citation_warning,WARNING ISSUED - NO PENALTY,경고 발급 - 벌금 없음
+text:citation_lastwarning,LAST WARNING - NO PENALTY,마지막 경고 - 벌금 없음
+text:citation_penalty,PENALTY ASSESSED - $0 CREDITS,벌금 부과 - $0
+text:border_next,NEXT!,다음!
+text:border_bomber,FOR KOLECHIA!,콜레치아를 위해!
+text:border_comeback,COME BACK AT 6AM TOMORROW,내일 아침 6시에 다시 오십시오.
+text:border_announce0,ENTRY IS NOT GUARANTEED,입국이 불허될 수 있습니다.
+text:border_announce1,HAVE YOUR DOCUMENTS READY,서류를 구비하십시오.
+text:border_announce2,ARSTOTZKA WELCOMES YOU,아스토츠카에서 여러분을 환영합니다.
+text:border_guardout,OUT!,나와!
+text:border_elisa,ELISA!,ELISA!
+text:family_son_budget,SON,아들
+text:family_wife_budget,WIFE,아내
+text:family_niece_budget,NIECE,조카딸
+text:family_uncle_budget,UNCLE,삼촌
+text:family_mil_budget,MIL,장모
+text:family_son_status,Son,아들
+text:family_wife_status,Wife,아내
+text:family_niece_status,Niece,조카딸
+text:family_uncle_status,Uncle,삼촌
+text:family_mil_status,Mother-in-law,장모
+text:family_son_message,son,아들
+text:family_wife_message,wife,아내
+text:family_niece_message,niece,조카딸
+text:family_uncle_message,uncle,삼촌
+text:family_mil_message,mother-in-law,장모
+text:night_endof,END OF,엔딩
+text:night_day,DAY $0,$0일
+text:family_verysick_1,Your $0 will die without medicine.,병든 $0이(가) 약을 받지 못해 사망했습니다.
+text:family_verysick_many,Very sick family members will die without medicine.,병든 가족원이 약을 받지 못해 사망했습니다.
+text:family_sick_1,Your $0 is sick and needs medicine.,$0이(가) 병에 걸려 약이 필요합니다.
+text:family_sick_many,Your family needs medicine.,가족에게 약이 필요합니다.
+text:family_died_1,Your $0 has died.,$0이(가) 죽었습니다.
+text:family_died_2,Your $0 and $1 have died.,"$0, $1이(가) 죽었습니다."
+text:family_died_3,"Your $0, $1, and $2 have died.","$0, $1, $2이(가) 죽었습니다."
+text:family_died_4,"Your $0, $1, $2, and $3 have died.","$0, $1, $2, $3이(가) 죽었습니다."
+text:family_died_5,"Your $0, $1, $2, $3, and $4 have died.","$0, $1, $2, $3, $4이(가) 죽었습니다."
+text:family_escape_with_0,You leave behind everything.,가족을 남겨두고 조국을 떠났습니다.
+text:family_escape_with_1,You gather your $0 to leave for Obristan.,$0을(를) 오브리스탄으로 보냈습니다.
+text:family_escape_with_2,You gather your $0 and $1 to leave for Obristan.,"$0, $1을(를) 오브리스탄으로 보냈습니다."
+text:family_escape_with_3,"You gather your $0, $1, and $2 to leave for Obristan.","$0, $1, $2을(를) 오브리스탄으로 보냈습니다."
+text:family_escape_with_4,"You gather your $0, $1, $2, and $3 to leave for Obristan.","$0, $1, $2, $3을(를) 오브리스탄으로 보냈습니다."
+text:family_escape_with_5,"You gather your $0, $1, $2, $3, and $4 to leave for Obristan.","$0, $1, $2, $3, $4을(를) 오브리스탄으로 보냈습니다."
+text:family_escape_without_1,Your $0 prepares to return to Nirsk.,$0이(가) 니스크로 돌아가려 합니다.
+text:family_escape_without_2,Your $0 and $1 prepare to return to Nirsk.,"$0, $1이(가) 니스크로 돌아가려 합니다."
+text:family_escape_without_3,"Your $0, $1, and $2 prepare to return to Nirsk.","$0, $1, $2이(가) 니스크로 돌아가려 합니다."
+text:family_escape_without_4,"Your $0, $1, $2, and $3 prepare to return to Nirsk.","$0, $1, $2, $3이(가) 니스크로 돌아가려 합니다."
+text:family_escape_without_5,"Your $0, $1, $2, $3, and $4 prepare to return to Nirsk.","$0, $1, $2, $3, $4이(가) 니스크로 돌아가려 합니다."
+text:family_flee_final_0,Obristan Above All,오브리스탄 최고
+text:family_flee_final_1,The safety of your $0 is unknown.,$0에 대한 안전은 이제 알 수 없습니다.
+text:family_flee_final_2,The safety of your $0 and $1 is unknown.,"$0, $1에 대한 안전은 이제 알 수 없습니다."
+text:family_flee_final_3,"The safety of your $0, $1, and $2 is unknown.","$0, $1, $2에 대한 안전은 이제 알 수 없습니다."
+text:family_flee_final_4,"The safety of your $0, $1, $2, and $3 is unknown.","$0, $1, $2, $3에 대한 안전은 이제 알 수 없습니다."
+text:family_flee_final_5,"The safety of your $0, $1, $2, $3, and $4 is unknown.","$0, $1, $2, $3, $4에 대한 안전은 이제 알 수 없습니다."
+text:budget_savings,SAVINGS,저축금
+text:budget_salary,SALARY ($0),봉급 ($0)
+text:budget_penalties,PENALTIES ($0),벌금 ($0)
+text:budget_bribes,BRIBES,뇌물
+text:budget_rent,RENT,집세
+text:budget_food,FOOD,식비
+text:budget_heat,HEAT,난방비
+text:budget_medicine,MEDICINE ($0),의료비 ($0)
+text:budget_sleep,SLEEP,수면
+text:budget_escape,ESCAPE,탈출
+text:menu_back,BACK,뒤로
+text:confirm_ok,OKAY,예
+text:confirm_cancel,CANCEL,취소
+text:menu_mainmenu,MAIN MENU,메인 메뉴
+text:menu_resume,RESUME,재개
+text:menu_quit,QUIT,종료
+text:menu_done,DONE,완료
+text:menu_story,STORY,스토리
+text:menu_endless,ENDLESS,무한
+text:menu_play,PLAY,플레이
+text:menu_fullscreen,Fullscreen,전체 화면
+text:menu_nudity,Nudity,나체 표현
+text:menu_easy,Easy Mode,쉬움 모드
+text:menu_vibration,Vibration,진동
+text:menu_music,Music,음악
+text:menu_sound,Sound,소리
+text:menu_dateformat,Date Format,날짜 형식
+text:menu_language,Language,언어
+text:menu_device,Device,장치
+text:menu_easytip,+ 20 credits per day,일 당 + 20 현금
+text:menu_stats,STATS,통계
+text:menu_next,NEXT,다음
+text:menu_walktowork,WALK TO WORK,출근
+text:menu_paused,PAUSED,일시정지
+text:menu_settings,SETTINGS,설정
+text:menu_credits,CREDITS,제작진
+text:menu_checkforupdates,CHECK FOR UPDATES,업데이트 확인
+text:stats_text,"Played for $time
+$processed travelers processed
+$approved approved
+$denied denied
+$detained detained
+$citations citations earned
+$stamps stamps applied
+Ending $endnum of $endtotal","$time시간 동안 플레이 함
+$processed명 처리함
+$approved명 통과시킴
+$denied명 거부함
+$detained 구금함
+$citations개의 표창장 획득
+$stamps번 도장 찍음
+$endtotal 중 $endnum번 엔딩"
+text:load_title,Select day to continue or start a new game,날짜를 눌러 계속하거나 새 게임을 시작하십시오
+text:load_confirm_delete_single,"Delete this day $0 save?
+
+There is no undo.","$0일째 저장 파일을 삭제하시겠습니까?
+
+취소할 수 없습니다."
+text:load_confirm_delete_multi,"Delete this save branch from day $0 to day $1?
+
+There is no undo.","$0일부터 $1일까지의 저장 파일을 삭제하시겠습니까?
+
+취소할 수 없습니다."
+text:load_delete,DELETE,삭제
+text:load_confirm_full,"Save tracks full.
+
+Continue from a right-most save or delete a save branch to free up a track.","저장 파일 트랙 가득 참.
+
+가장 오른쪽에 있는 저장 파일을 계속 플레이하거나 아니면 저장 파일 중 하나를 선택해 트랙을 비워주십시오."
+text:load_summary,"Day $day
+""$news""
+
+$savings credits, $family family members,
+$tokens tokens, apartment $apt","$day일
+""$news""
+
+저축금 $savings, 가족 $family,
+획득한 토큰 $tokens개, 아파트 등급 $apt"
+text:load_continue,CONTINUE,계속
+text:emotion_happy,HAPPY,행복
+text:emotion_ok,OK,좋음
+text:emotion_sad,SAD,슬픔
+text:emotion_cold,COLD,추움
+text:emotion_sick,SICK,아픔
+text:emotion_verysick,VERY SICK,매우 아픔
+text:emotion_dead,DEAD,사망
+text:emotion_hungry,HUNGRY,굶주림
+text:load_latest,LATEST,최신
+text:entry_approved,ENTRY GRANTED,입국 허가
+text:entry_denied,ENTRY DENIED,입국 거부
+text:stamp_approved,APPROVED,허가
+text:stamp_denied,DENIED,거부
+text:stamp_reason,REASON,사유
+text:booth_dragdocs,DRAG DOCUMENTS HERE,문서를 여기로 드래그
+text:booth_highlight,HIGHLIGHT DISCREPANCIES,불일치 강조
+text:booth_discrepancy,"DISCREPANCY
+DETECTED","불일치
+발견"
+text:booth_interrogate,INTERROGATE,취조
+text:booth_matching,"MATCHING
+DATA","데이터
+일치"
+text:booth_nocorrelation,"NO
+CORRELATION","연관성
+없음"
+text:booth_cleared,"DISCREPANCY
+CLEARED","불일치
+없음"
+text:env_clearforentry,Applicant clear for entry,입국에 문제 없음
+text:env_lettermale,M,남
+text:env_letterfemale,F,여
+text:env_noalias,No known alias,알려진 이명 없음
+text:env_typochars,"aeiou,iuy,pgq,lj,ck,bh","aeiou,iuy,pgq,lj,ck,bh,알일얼,탄단난,베배메,실질칠,리니디,오우으,번반변,튼툰톤,옥윽욱,토트투,발벌말,스수소,제재세,라리러,렌랜롄,르루로,마머미,워와위,젠잰전,필밀팰,드두도,파퍼피,데대테,칼킬캘,다디더,즈주조,메매몌,저지자,글골굴,안얀얜,아야얘,터티타,그구고,레래례,나너니,보부브,탄턴단,이어여,피퍼파,싱성상,턴탄텐,코쿠크,시서사,티터타,엔앤헨,쿄교크,하히허,한힌헌,츤슨즌,케캐게,유윾육,베배메,틴닌닐,포프모,노누느,잇있잍"
+text:carousel_give,GIVE,전달
+text:carousel_hang,HANG ON WALL,벽에 걸기
+text:carousel_confiscate,CONFISCATE,압수
+text:endless_complete,"$style
+$course
+
+$time
+$score Points","$style
+$course
+
+$time
+$score점"
+text:endless_ranked,Ranked #$0,$0위
+text:endless_unlock,Complete story mode with your job intact to unlock endless mode,무한 모드를 해금하기 위해 스토리 모드를 완료하십시오
+text:endless_wrongcode,S O R R Y,S O R R Y
+text:date_verbose,"$month $day, $year",$year년 $month $day
+text:month_1,January,1월
+text:month_2,February,2월
+text:month_3,March,3월
+text:month_4,April,4월
+text:month_5,May,5월
+text:month_6,June,6월
+text:month_7,July,7월
+text:month_8,August,8월
+text:month_9,September,9월
+text:month_10,October,10월
+text:month_11,November,11월
+text:month_12,December,12월
+text:day_1,1st,1일
+text:day_2,2nd,2일
+text:day_3,3rd,3일
+text:day_4,4th,4일
+text:day_5,5th,5일
+text:day_6,6th,6일
+text:day_7,7th,7일
+text:day_8,8th,8일
+text:day_9,9th,9일
+text:day_10,10th,10일
+text:day_11,11th,11일
+text:day_12,12th,12일
+text:day_13,13th,13일
+text:day_14,14th,14일
+text:day_15,15th,15일
+text:day_16,16th,16일
+text:day_17,17th,17일
+text:day_18,18th,18일
+text:day_19,19th,19일
+text:day_20,20th,20일
+text:day_21,21st,21일
+text:day_22,22nd,22일
+text:day_23,23rd,23일
+text:day_24,24th,24일
+text:day_25,25th,25일
+text:day_26,26th,26일
+text:day_27,27th,27일
+text:day_28,28th,28일
+text:day_29,29th,29일
+text:day_30,30th,30일
+text:day_31,31st,31일
+text:bulletin_default,"Arstotzka
+Ministry of Admission
+Official Bulletin
+
+Inspector,
+
+$content
+
+Glory to Arstotzka.","아스토츠카
+입국부
+공식 공고
+
+검사관,
+
+$content
+
+아스토츠카에 영광 있으라."
+text:bulletin_notice,"Arstotzka
+Ministry of Admission
+Official Bulletin
+
+NOTICE:
+
+$content
+
+Glory to Arstotzka.","아스토츠카
+입국부
+공식 공고
+
+공지:
+
+$content
+
+아스토츠카에 영광 있으라."
+text:bulletin_endless,"Arstotzka
+Ministry of Admission
+Official Bulletin
+
+$style
+
+$course
+
+Glory to Arstotzka.","아스토츠카
+입국부
+공식 공고
+
+$style
+
+$course
+
+아스토츠카에 영광 있으라."
+bulletin:1A,"Welcome to your new position at Grestin Border Checkpoint.
+
+Stamp passport ENTRY VISA and return documents to entrant.
+
+Entry is restricted to Arstotzkan citizens only.
+
+Deny all foreigners.","그레스틴 국경 검문소에 새 직업을 얻으신 걸 환영합니다.
+
+모든 여권의 입국 사증란에 도장을 찍고 문서를 돌려주십시오.
+
+입국은 아스토츠카 시민으로 제한됩니다.
+
+외국인은 모두 거절하십시오."
+bulletin:2A,"From today, foreigners with a valid passport are permitted to enter.
+
+Your booth's INSPECTION hardware is now installed.
+
+Check all passport information carefully for discrepancies. Deny any entrant with inconsistent information.
+
+Continued...[PAGESNOTE]","오늘부터, 합당한 여권을 가진 외국인들은 입국이 허가됩니다.
+
+귀하의 심사대에 검사 장비가 설치 되었습니다.
+
+여권의 모든 정보를 주의깊게 살펴보고 불일치 요소를 확인하십시오. 정보와 일치하지 않는 입국자를 거절하십시오.
+
+계속...[PAGESNOTE]"
+bulletin:2B,"__________________________
+INSPECT MODE
+
+Enter INSPECT mode using the red button on your desk. While inspecting, highlight two pieces of discrepant information for further options.
+
+__________________________
+RULES &amp; REGULATIONS
+
+This post is bound by Ministry of Admission rules and regulations. Study the rule book closely.","__________________________
+검사 모드
+
+탁자의 빨간색 버튼을 눌러 검사 모드로 들어갑니다. 검사 중에, 추가 선택을 위해 불일치하는 두 개의 정보를 강조하십시오.
+
+__________________________
+규정 &amp; 규범
+
+본 문서는 입국부의 규정 및 규범집과 관련되어 있습니다. 규정집을 면밀히 학습하십시오."
+bulletin:3A,"Entry for non-citizens is now regulated. 
+
+All foreigners require a valid ENTRY TICKET.
+
+Verify information before stamping passport ENTRY VISA and returning all documents to entrant. [PAGESNOTE]","비시민들에 대한 입국이 이제 규제됩니다.
+
+모든 외국인들에게는 합당한 입국표가 필요합니다.
+
+여권의 입국 사증란에 도장을 찍기 전 정보를 확인 후 입국자에게 모든 문서를 돌려주십시오. [PAGESNOTE]"
+bulletin:4A,"Stricter credential requirements have been instituted.
+
+Arstotzkan citizens must show their ID CARD.
+
+Foreigners must secure and present a valid ENTRY PERMIT.
+
+Entry tickets are no longer sufficient.
+
+Continued...","보다 엄격한 문서 조건이 도입되었습니다.
+
+아스토츠카 시민들은 이제 시민등록증을 제시해야 합니다.
+
+외국인들은 반드시 유효한 입국 허가증을 제시해야 합니다.
+
+입국표는 더 이상 유효하지 않습니다.
+
+계속..."
+bulletin:4B,"A new chapter detailing document features has been added to your rulebook.
+
+Check all information thoroughly.
+
+Deny any applicant with discrepant documents.
+
+Refer to the AUDIO TRANSCRIPT to correlate entrant's statements.","규정집에 문서의 특징에 대해 소개하는 새로운 장이 추가되었습니다.
+
+모든 정보를 전체적으로 확인하십시오.
+
+잘못된 문서를 가져오는 입국자는 모두 거부하십시오.
+
+입국자의 진술을 비교하기 위해 음성 기록을 참조하십시오."
+bulletin:5A,"You are now authorized to detain suspicious individuals.
+
+Interrogate discrepancies to enable detention option.","이제 의심스러운 입국자를 구금할 수 있는 권한이 주어졌습니다.
+
+구금을 위해 불일치 사항을 취조하십시오."
+bulletin:6A,"The Ministry of Labor has instituted a special program to control immigrant labor.
+
+Travelers entering for work require a valid WORK PASS.","노동부에서 이민자 노동을 통제하기 위한 특별 프로그램을 도입했습니다.
+
+노동을 위해 입국하는 여행객들은 유효한 노동 허가서를 제출해야 합니다."
+bulletin:7A,"To facilitate more thorough inspections, a SEARCH scanner system has been installed in your booth.
+
+Kolechian extremists are suspected in yesterday's bombing. 
+
+Search all Kolechians before approving their entry.","보다 빈틈 없는 검사를 위해, 수색 설비가 심사대 내에 설치 되었습니다.
+
+어제의 폭탄 테러에 대한 용의자로 콜레치아 극단주의자들이 용의 선상에 올랐습니다.
+
+모든 콜레치아인들에 대한 입국 허가 이전에 수색을 하십시오."
+bulletin:8A,"The Kolechians have filed a formal complaint. 
+
+A diplomat will arrive today for high-level discussions.
+
+Automatic searches of Kolechian citizens are no longer authorized.
+
+Continued...[PAGESNOTE]","콜레치아 측에서 공식적으로 불만을 제기해왔습니다.
+
+고위급 회담을 위해 오늘 외교관이 방문할 예정입니다.
+
+콜레치아 시민들을 대상으로 하는 수색은 이제 더 이상 인가되지 않습니다.
+
+계속...[PAGESNOTE]"
+bulletin:8B,"__________________________
+DIPLOMATS
+
+Diplomats require only a PASSPORT and valid DIPLOMATIC AUTHORIZATION to enter. 
+
+Refer to the rulebook for updated document information.","__________________________
+외교관
+
+외교관의 입국을 허가하기 위해선 여권과 함께 유효한 외교관 증명서가 필요합니다. 
+
+갱신된 문서 정보를 위해 규정집을 확인하십시오."
+bulletin:9A,"An undercover agent of the Ministry of Information has been compromised.
+
+The Ministry of Admission has offered its services as liaison. Expect a possible drop later today.","정보부의 위장 요원들의 상황이 위태롭습니다.
+
+입국부에서 이들이 연락해올 것임을 밝혔습니다. 오늘 이들이 방문할 것을 알아두십시오."
+bulletin:10A,"The divisional authority of East Grestin operations will visit today.
+
+Maintain your best behavior.","동 그레스틴 부서의 권위자가 오늘 방문 예정입니다.
+
+최대한 처신을 잘 하십시오."
+bulletin:11A,"A break-in at M.O.A. offices may have compromised our document sealing plates.
+
+Nothing important was stolen but intelligence suggests counterfeiters have already begun forging official Arstotzkan documents.
+
+Continued...","M.O.A. 사무실에 대한 침입으로 문서 밀봉 도구가 훼손 되었습니다.
+
+중요한 게 사라진 건 아니지만 정보부 측에서는 공식 아스토츠카 문서에 대한 위조가 벌써 시작되었을 수 있다고 합니다.
+
+계속..."
+bulletin:11B,"__________________________
+FORGERIES
+
+Double-check that required documents contain valid seals. 
+
+Correlate missing or wrong seals against the appropriate entries in the DOCUMENTS chapter of your rulebook.","__________________________
+위조 문서
+
+필요한 문서에 유효한 인장이 있는지 잘 확인 하십시오. 
+
+인장이 없거나 잘못된 인장이 있는 경우 규정집 내의 관련 항목과 연관지으십시오."
+bulletin:13A,"The new director is unsatisfied with the level of scrutiny afforded to foreigners.
+
+From today forward, all foreign entrants must present a recent IDENTITY SUPPLEMENT listing weight, height, and appearance.
+
+The rulebook DOCUMENTS chapter has been updated.","새 감독관이 외국인들에 대한 정밀 조사 수준에 대해서 만족하지 못했다고 합니다.
+
+오늘부터, 모든 외국인 입국자들은 체중, 신장, 그리고 신체적 특징을 적은 신원보충물을 제공해야 합니다.
+
+규정집의 문서 장이 갱신 되었습니다."
+bulletin:14A,"The Ministry of Justice has requested our support.
+
+Daily bulletins will now contain a listing of the top 3 most wanted international criminals.
+
+Check faces against entrants and detain suspects immediately.[PAGESNOTE]","사법부에서 지원을 요청하고 있습니다.
+
+이제부터 일일 공고에 3명의 국제 지명수배 된 범죄자들이 올라갑니다.
+
+이들의 얼굴과 입국자들의 얼굴을 대조하고 의심 가는 인물의 경우 즉시 구금하십시오.[PAGESNOTE]"
+bulletin:16A,"The Ministry of Justice has appropriated the outer guard detail. 
+
+You are now responsible for controlling trespasser activity.
+
+The provided key can be used to unlock the tranquilizer gun once an alarm has been raised.
+
+Continued...[PAGESNOTE]","사법부에서 외부에 위병을 근무케 했습니다.
+
+이제부터 무단 출입 활동을 통제하는 책임을 맡게 됩니다.
+
+경보가 울릴 시 제공되는 열쇠를 사용해 마취총을 해금할 수 있습니다.
+
+계속...[PAGESNOTE]"
+bulletin:16B,"__________________________
+COMPENSATION
+
+You will receive a bonus for stopping any trespasser. A smaller bonus is provided for firing on, but missing, your target.
+
+__________________________
+WEAPONS PROTOCOL
+
+Review instructional diagram on following page.","__________________________
+보상
+
+무단 침입자를 막는 경우 보너스를 받게 됩니다. 발사 후에 대상을 놓쳤을 경우엔 보너스가 줄어듭니다.
+
+__________________________
+무장 규약
+
+다음 페이지의 안내 도표를 확인하십시오."
+bulletin:18A,"Unfavorable international press has affected immigration protocol.
+
+All denials must be accompanied by a REASON FOR DENIAL stamp.
+
+A new computer inking system has been installed. Interrogate discrepancies to prime the REASON FOR DENIAL stamp.
+
+Continued...","호의적이지 않은 국제 언론 기자들이 이민 강령에 영향을 끼쳤습니다.
+
+이제부터 입국을 거부할 시 거부 사유 도장이 함께 찍혀야 합니다.
+
+새로운 컴퓨터 연결 시스템이 설치 되었습니다. 거부 사유 도장을 주기 위해서 불일치 요소를 취조하십시오.
+
+계속..."
+bulletin:18B,"__________________________
+DENIAL PROTOCOL
+
+REASON FOR DENIAL stamp is activated on first interrogation.
+
+When denying entry, stamp both DENIED and REASON FOR DENIAL on passport.
+
+If applicant clarifies discrepancies sufficiently, approval is authorized even while REASON FOR DENIAL stamp remains available.","__________________________
+거부 강령
+
+거부 사유 도장은 첫 번째 취조 때 활성화 됩니다.
+
+입국을 거부할 시, 여권에 입국 거부 및 거부 사유 도장을 찍으십시오.
+
+입국자가 자신의 불일치 항목에 대해 충분히 항변하면, 거부 사유 도장이 찍혀있어도 입국이 허가될 수 있습니다."
+bulletin:19A,"Impor rejects all imported goods from Arstotzka.
+
+Under request from the Ministry of Trade, the Ministry of Admission will react to this violation.
+
+Deny all travelers from Impor.","임포르 측에서 아스토츠카에서 오는 모든 상품 수입을 거절하고 있습니다.
+
+무역부의 요청에 따라, 입국부는 이 상황에 대해 맞대응할 것입니다.
+
+임포르에서 오는 모든 입국자들을 거부하십시오."
+bulletin:20A,"Impor has relented on their faulty policy.
+
+Imporians are now permitted entry.
+
+The divisional authority of East Grestin operations will visit again today.","임포르에서 자신들의 실책에 대해 동의했습니다.
+
+임포르 시민들은 이제 입국이 가능합니다.
+
+동 그레스틴 부서 권위자가 오늘 다시 한번 방문할 예정입니다."
+bulletin:21A,"A special program for political asylum has been established.
+
+Those seeking asylum must carry a valid GRANT OF ASYLUM.
+
+Entrants with such a grant do not require an ENTRY PERMIT or an ID SUPPLEMENT.","정치적 망명에 대한 특별 프로그램이 설립 되었습니다.
+
+망명하고자 하는 입국자는 반드시 유효한 망명 허가증을 제시해야 합니다.
+
+이 경우의 입국자는 입국 허가증이나 신원 보충물을 필요로하지 않습니다."
+bulletin:23A,"Your position is important and your responsibilities are broad.
+
+Follow all protocols strictly.","귀하의 위치는 중요하며 귀하의 책임은 큽니다.
+
+모든 강령을 엄격하게 준수하십시오."
+bulletin:24A,"Recent events have cast suspicion on the activities of Arstotzkan citizens in the ALTAN district.
+
+The Ministry of Information has requested our cooperation.
+
+A special drawer for confiscating documents has been installed in your booth.
+
+Continued...","최근 사건으로 인해 알탄 지구에 있는 아스토츠카 시민들이 의심스러운 상황입니다.
+
+정보부에서 협력을 요구해왔습니다.
+
+심사대 내에 문서 압수를 위한 특별 서랍이 설치되었습니다.
+
+계속..."
+bulletin:24B,"The rulebook has been updated with information regarding confiscation policy.
+
+Confiscate all Arstotzkan passports from residents living in ALTAN district.
+
+Travelers may still be granted entry if passport is confiscated and no other rules are violated.
+
+PASSPORT SEIZURE slips will be issued to allow entry or denial without a passport.","규정집에 압수 관련 정책에 대한 정보가 갱신 되었습니다.
+
+알탄 지구에 거주하는 모든 아스토츠카민들의 여권을 압수하십시오.
+
+여권이 압수되고 기타 규칙을 위반한 상황이 아니라면 다른 여행객들은 여전히 입국이 가능합니다.
+
+여권이 없는 상태에선 여권 압수 안내표가 발급되어 입국을 안내할 예정입니다."
+bulletin:25A,"United Federation citizens present a risk of spreading infectious disease.
+
+Deny all entrants from United Federation.
+
+Continue to confiscate Arstotzkan passports from residents living in ALTAN district.","연합 연방국의 시민들에게 감염성 높은 질병이 발발했다고 합니다.
+
+연합 연방국에서 오는 모든 입국자를 거부하십시오.
+
+알탄 지구에 사는 거주민들에 대한 여권 압수 또한 계속 진행하십시오."
+bulletin:26A,"The risk of disease is too great. A new protocol has been instituted.
+
+All entrants must carry a valid CERTIFICATE OF VACCINATION with an up-to-date POLIO vaccine.
+
+This requirement extends to natives, foreigners, diplomats, and asylum seekers.
+
+Continued...","전염병에 대한 위험이 너무 높습니다. 새로운 강령이 내려졌습니다.
+
+모든 입국자들은 최신 소아마비 백신과 함께 유효한 백신 증명서를 제출해야 합니다.
+
+여기에는 내국인, 외국인, 외교관 및 망명자들 모두가 포함됩니다.
+
+계속..."
+bulletin:26B,"United Federation citizens are permitted entry with such certification.
+
+Continue to confiscate Arstotzkan passports from residents living in ALTAN district.","인증서를 제출하는 연합 연방국의 시민들은 입국이 허가됩니다.
+
+알탄 지구에 거주하는 아스토츠카민들의 여권은 계속 압수 하십시오."
+bulletin:27A,"In order to improve efficiency, the ENTRY PERMIT and ID SUPPLEMENT have been consolidated into a single ACCESS PERMIT.
+
+Foreigners are now required to present a valid ACCESS PERMIT.
+
+Continued...","능률을 높이기 위해, 입국 허가증과 신원 보충물이 접근 허가증 하나로 통합 되었습니다.
+
+외국인들은 이제 유효한 접근 허가증을 제시해야 합니다.
+
+계속..."
+bulletin:27B,"Yesterday's coordinated attack has prompted an emergency meeting. 
+
+An important Kolechian negotiator will arrive today to discuss issues at this checkpoint.
+
+Continue to confiscate Arstotzkan passports from residents living in ALTAN district.","어제 있었던 조직화된 공격으로 인해 긴급 회담이 시작되었습니다.
+
+중요한 콜레치아 교섭가가 논의를 위해 오늘 이 검문소에 방문할 예정입니다.
+
+알탄 지구에 거주하는 아스토츠카민들의 여권은 계속 압수 하십시오."
+bulletin:28A,"In response to continued attacks, the Ministry of Information is expanding the passport confiscation program.
+
+Confiscate all Arstotzkan passports from native entrants.
+
+There are no exceptions.
+
+Do not confiscate foreign passports.","계속되는 공격에 대한 답변으로, 정보부 측에서는 여권 압수 프로그램을 확장하기로 했습니다.
+
+국내에 입국하는 모든 아스토츠카 여권을 압수 하십시오.
+
+예외는 없습니다.
+
+외국인 여권은 압수하지 마십시오."
+bulletin:29A,"[NOTICE] All government workers are subject to a thorough information audit. Involvement with unauthorized groups is grounds for immediate arrest.
+
+Your audit is scheduled for: DECEMBER 24
+
+DO NOT LEAVE YOUR DESIGNATED REGION.
+
+Continued...","[NOTICE] 모든 정부 노동자들은 철저한 정보 검사를 받아야 합니다. 비인가된 집단과의 개입이 드러날 시 즉시 체포될 수 있습니다.
+
+귀하의 검사는 12월 24일로 예정되어 있습니다.
+
+지정된 지역을 절대 벗어나지 마십시오.
+
+계속..."
+bulletin:29B,Continue to confiscate all Arstotzkan passports from native entrants.,국내에 입국하는 모든 아스토츠카 여권은 계속 압수 하십시오.
+bulletin:30A,"[NOTICE] All government workers are subject to a thorough information audit. Involvement with unauthorized groups is grounds for immediate arrest.
+
+Your audit is scheduled for: DECEMBER 24
+
+DO NOT LEAVE YOUR DESIGNATED REGION.
+
+Continued...","[NOTICE] 모든 정부 노동자들은 철저한 정보 검사를 받아야 합니다. 비인가된 집단과의 개입이 드러날 시 즉시 체포될 수 있습니다.
+
+귀하의 검사는 12월 24일로 예정되어 있습니다.
+
+지정된 지역을 절대 벗어나지 마십시오.
+
+계속..."
+bulletin:30B,Continue to confiscate all Arstotzkan passports from native entrants.,국내에 입국하는 모든 아스토츠카 여권은 계속 압수 하십시오.
+bulletin:31A,"The Ministry of Admission is involved in discussions regarding the closure of this checkpoint.
+
+Until a decision is made, maintain your duties as ordered.
+
+Continued...","입국부에서는 본 검문소를 폐쇄할 지에 대한 여부를 논의하고 있습니다.
+
+결정이 내려질 때까지, 의무를 계속 이행하십시오.
+
+계속..."
+bulletin:31B,"You are scheduled for an information audit tomorrow morning.
+
+DO NOT LEAVE YOUR DESIGNATED REGION.
+
+Continue to confiscate all Arstotzkan passports from native entrants.","내일 아침 정보 검사를 받기로 되어있습니다.
+
+지정된 지역을 절대 벗어나지 마십시오.
+
+국내에 입국하는 모든 아스토츠카 여권은 계속 압수 하십시오."
+facts,$paper: Invalid $fact,$paper: $fact 유효하지 않음
+facts,Missing $paper,$paper 없음
+facts,$0 DISTRICT,$0 지구
+facts,Presence,있음
+facts,Sufficience,충분함
+facts,Excellence,훌륭함
+facts,Obristan,오브리스탄
+facts,Antegria,안테그리아
+facts,Republia,리퍼블리아
+facts,UnitedFed,연방연합국
+facts,Impor,임포르
+facts,Kolechia,콜레치아
+facts,Arstotzka,아스토츠카
+facts,Skal,스칼
+facts,Lorndaz,론다즈
+facts,Mergerous,메르저러스
+facts,St. Marmero,성 마메로
+facts,Glorian,글로리안
+facts,Outer Grouse,아우터 그라우
+facts,True Glorian,트루 글로리안
+facts,Lesrenadi,레스레나디
+facts,Bostan,보스탄
+facts,Great Rapid,그레잇 래피드
+facts,Shingleton,싱글턴
+facts,Korista City,코리스타 시티
+facts,Enkyo,엔쿄
+facts,Haihan,하이한
+facts,Tsunkeido,츤케이도
+facts,Yurko City,유르코 시티
+facts,Vedor,베도르
+facts,West Grestin,서 그레스틴
+facts,Orvech Vonor,오르베크 보노
+facts,East Grestin,동 그레스틴
+facts,Paradizna,파라디즈나
+facts,Passport,여권
+facts,Entry Ticket,입국표
+facts,Entry Permit,입국 허가증
+facts,Work Pass,노동 허가서
+facts,Id Card,시민등록증
+facts,Id Supplement,신원 보충물
+facts,Access Permit,접근 허가증
+facts,Diplomatic Auth,외교관 증명서
+facts,Asylum Grant,망명 허락
+facts,Vaccine Cert,백신 증명서
+facts,Identity Record,신원 기록
+facts,Fingerprints,지문
+facts,Name,성명
+facts,Id Number,번호
+facts,Expiration Date,만기일
+facts,Issuing City,발행 도시
+facts,Birth Date,생년월일
+facts,Alias,이명
+facts,Height,신장
+facts,Weight,체중
+facts,Description,특이사항
+facts,Thumbprint,엄지 지문
+facts,Date,날짜
+facts,Purpose,목적
+facts,Duration,체류 기간
+facts,Face,얼굴
+facts,District,지구
+facts,Gender,성별
+facts,Work End Date,노동 만기일
+facts,Altan,알탄
+facts,Vescillo,베실리오
+facts,Burnton,번튼
+facts,Octovalis,옥토발리스
+facts,Gennistora,제니스토라
+facts,Lendiforma,렌디포르마
+facts,Wozenfield,워젠필드
+facts,Fardesto,파데스토
+facts,DENTISTRY,치과 진료
+facts,HEALTH-CARE,의료 서비스
+facts,GENERAL-LABOR,일반 노동
+facts,ENGINEERING,기술자
+facts,SPORTS,스포츠
+facts,ARCHITECTURE,건축
+facts,FOOD-SERVICE,요식업
+facts,AVIATION,항공업
+facts,ACCOUNTING,회계
+facts,FISHING,어업
+facts,DRAFTING,설계
+facts,RESEARCH,연구
+facts,FINE-ARTS,미술
+facts,AGRICULTURE,농업
+facts,MANUFACTURING,제조업
+facts,CONSTRUCTION,건축업
+facts,SURVEYING,측량
+facts,STATISTICS,통계
+facts,POLIO,소아마비
+facts,HPV,HPV
+facts,COWPOX,우두
+facts,TETANUS,파상풍
+facts,YEL.FEV.,황열병
+facts,CHOLERA,콜레라
+facts,RUBELLA,풍진
+facts,HEP-B,B형 간염
+facts,MEASLES,홍역
+facts,TUBERC.,결핵
+facts,2 DAYS,2일
+facts,14 DAYS,14일
+facts,1 MONTH,1달
+facts,2 MONTHS,2달
+facts,3 MONTHS,3달
+facts,6 MONTHS,6달
+facts,1 YEAR,1년
+facts,FOREVER,무기한
+facts,visit,방문
+facts,transit,통과
+facts,work,노동
+facts,immigrate,이민
+facts,Possible Smuggler Admitted,밀수업자 승인함
+facts,Missing documents,문서 부족
+facts,Wanted criminal admitted,지명수배 범죄자 승인함
+facts,Incorrect purpose response,잘못된 방문 목적 대답
+facts,Incorrect visit duration response,잘못된 체류 기간 대답
+facts,Passport: Non-matching photo,여권: 사진 불일치
+facts,Forged Entry Permit,위조 입국 허가증
+facts,Forged Work Pass,위조 노동 허가서
+facts,Id Card: Non-matching photo,시민등록증: 사진 불일치
+facts,Forged Access Permit,위조 접근 허가증
+facts,No Diplomatic Access to Arstotzka,아스토츠카에 대한 외교적 접근 권한 없음
+facts,Forged Diplomatic Auth,위조 외교관 증명서
+facts,Forged Asylum Grant Seal,위조 망명 허락 인장
+facts,Necessary vaccine expired,필요 백신 날짜 만기
+facts,Missing necessary vaccine,필요 백신 없음
+facts,Name does not match record,기록과 이름 불일치
+facts,Alias does not match record,기록과 이명 불일치
+facts,Fingerprints do not match record,기록과 지문 불일치
+facts,Cobrastan is not a real country,코브라스탄은 실존 국가가 아님
+facts,No entry from Antegria,안테그리아 출신은 입국 불가
+facts,No entry from Arstotzka,아스토츠카 출신은 입국 불가
+facts,No entry from Republia,리퍼블리아 출신은 입국 불가
+facts,No entry from United Fed,연합 연방국 출신은 입국 불가
+facts,No entry from Obristan,오브리스탄 출신은 입국 불가
+facts,No entry from Impor,임포르 출신은 입국 불가
+facts,No entry from Kolechia,콜레치아 출신은 입국 불가
+facts,Possible Terrorist Admitted,테러리스트 승인함
+facts,Entrant Holds Conflicting Passports,입국자가 정보에 맞지 않는 여권 소지
+facts,Entrant must have a passport,입국자는 여권을 소지해야 함
+facts,Foreigners require an entry permit,외국인은 입국 허가증이 필요
+facts,Foreigners require an entry ticket,외국인은 입국표가 필요
+facts,All documents must be current,모든 문서가 최신이어야 함
+facts,Workers must have a work pass,노동자는 노동 허가서가 필요함
+facts,Citizens must have an id card,시민은 시민등록증이 필요함
+facts,Foreigners require an id supplement,외국인은 신원 보충물이 필요함
+facts,Arstotzkan citizens only,아스토츠카 시민만 허용
+facts,No entry from United Federation,연합 연방국 출신은 입국 불가
+facts,No weapons or contraband,무기 혹은 밀수품 금지
+facts,All Kolechians must be searched,모든 콜레치아인들은 수색해야 함
+facts,Diplomats require authorization,외교관은 증명서가 필요함
+facts,Entrant must have polio vaccine cert,입국자는 소아마비 백신 증명서를 소지해야 함
+facts,Asylum seekers must have a grant,망명자는 허가가 필요함
+facts,Foreigners require an access permit,외국인은 접근 허가증이 필요함
+facts,CONFISCATE ARSTOTZKAN PASSPORTS BELONGING TO ALTAN RESIDENTS.,알탄 거주의 아스토츠카 시민 여권은 압수해야 함.
+facts,CONFISCATE ALL ARSTOTZKAN PASSPORTS. NO EXCEPTIONS.,모든 아스토츠카 시민 여권을 압수해야 함. 예외 없음.
+facts,Passport not confiscated,여권 압류되지 않음
+paper:SecondPassport,West Grestin,서 그레스틴
+paper:Rules,Basic Rules,기본 규정
+paper:Rules,Regional Map,지역 지도
+paper:Rules,Booth Info,심사대 정보
+paper:Rules,Documents,문서
+paper:Rules,Confiscation,압수
+paper:Rules,Obristan,오브리스탄
+paper:Rules,Antegria,안테그리아
+paper:Rules,Republia,리퍼블리아
+paper:Rules,United,연합
+paper:Rules,Federation,연방국
+paper:Rules,Impor,임포르
+paper:Rules,Kolechia,콜레치아
+paper:Rules,Arstotzka,아스토츠카
+paper:Rules,ANTEGRIA,안테그리아
+paper:Rules,ARSTOTZKA,아스토츠카
+paper:Rules,IMPOR,임포르
+paper:Rules,KOLECHIA,콜레치아
+paper:Rules,OBRISTAN,오브리스탄
+paper:Rules,REPUBLIA,리퍼블리아
+paper:Rules,UNITED FED.,연합 연방국
+paper:Rules,Id Card (Native),시민등록증 (국내)
+paper:Rules,Entry Permit,입국 허가증
+paper:Rules,Id Supplement,신원 보충물
+paper:Rules,Access Permit,접근 허가증
+paper:Rules,Work Pass,노동 허가서
+paper:Rules,Diplomatic Auth.,외교관 증명서
+paper:Rules,Grant of Asylum,망명 허가증
+paper:Rules,Vaccine Cert.,백신 증명서
+intro,Congratulations.,축하합니다.
+intro,The October labor lottery is complete. Your name was pulled.,10월 노동 복권 추첨이 끝났습니다. 당신이 뽑혔습니다.
+intro,"For immediate placement, report to the Ministry of Admission at Grestin Border Checkpoint.","빠른 배치를 위해, 그레스틴 국경 검문소의 입국부에 보고하십시오."
+intro,An apartment will be provided for you and your family in East Grestin. Expect a Class-8 dwelling.,동 그레스틴에 있는 당신 가족에게 아파트가 제공될 예정입니다. 8급 아파트입니다.
+intro,Glory to Arstotzka.,아스토츠카에 영광 있으라.
+end:in-debt,Arstotzka has zero tolerance for delinquency.,아스토츠카에서는 연체를 용납하지 않습니다.
+end:in-debt,Your family will be sent back to their village.,당신의 가족들은 마을로 돌아갈 것입니다.
+end:in-debt,You are under arrest until your debts are repaid.,당신은 채무를 갚을 때까지 구금될 것입니다.
+end:in-debt,A replacement inspector will be found easily.,대체할 검사관은 넘치니까요.
+end:in-debt,Glory to Arstotzka.,아스토츠카에 영광 있으라.
+end:family-dead,Your entire family is gone.,가족들이 모두 사망했습니다.
+end:family-dead,The Ministry Of Labor focuses on Arstotzka's future growth.,노동부에서는 아스토츠카의 미래 성장에 집중하고 있습니다.
+end:family-dead,Workers are expected to support large healthy families.,노동자에게는 건강한 가족이 요구됩니다.
+end:family-dead,Your position will be filled by someone more appropriate.,당신의 위치는 보다 적절한 인사로 재배치될 예정입니다.
+end:family-dead,Glory to Arstotzka.,아스토츠카에 영광 있으라.
+end:turned-over-ezic-docs,You are under arrest for associating with suspicious groups.,당신은 수상한 집단과의 연관점으로 인해 체포되었습니다.
+end:turned-over-ezic-docs,The Ministry of Information will perform a full audit of your recent activities.,정보부에서는 당신의 최근 활동에 대해 취조를 행할 예정입니다.
+end:turned-over-ezic-docs,Glory to Arstotzka.,아스토츠카에 영광 있으라.
+end:caught-with-ezic-money,The Ministry of Income has discovered an anomaly in your earnings.,소득부에서 당신의 소득 중 이상한 점을 발견했습니다.
+end:caught-with-ezic-money,You are under arrest pending a full audit of your recent activities.,당신의 최근 활동에 대해 취조를 행할 예정입니다.
+end:caught-with-ezic-money,Your family will likewise be held for questioning.,가족들 역시 연관되었는지 심문 받을 예정입니다.
+end:caught-with-ezic-money,The border will remain open under a replacement inspector.,국경은 새로운 검사관의 감독 하에 열려있을 것입니다.
+end:caught-with-ezic-money,Glory to Arstotzka.,아스토츠카에 영광 있으라.
+end:killed-innocent,You are under arrest for the murder of an innocent.,당신은 무고한 자를 살해한 혐의로 체포당했습니다.
+end:killed-innocent,The penalty is death.,판결 결과는 사형입니다.
+end:killed-innocent,Your family will be questioned about their involvement.,당신의 가족들 역시 연관되었는지 심문 받을 예정입니다.
+end:killed-innocent,The border will remain open under a replacement inspector.,국경은 새로운 검사관의 감독 하에 열려있을 것입니다.
+end:killed-innocent,Glory to Arstotzka.,아스토츠카에 영광 있으라.
+end:tranqed-innocent,You are under arrest for attacking an innocent.,당신은 무고한 자를 공격한 죄로 체포당했습니다.
+end:tranqed-innocent,The penalty is forced labor.,판결 결과는 강제 노동행입니다.
+end:tranqed-innocent,Your family will be questioned about their involvement.,당신의 가족들 역시 연관되었는지 심문 받을 예정입니다.
+end:tranqed-innocent,The border will remain open under a replacement inspector.,국경은 새로운 검사관의 감독 하에 열려있을 것입니다.
+end:tranqed-innocent,Glory to Arstotzka.,아스토츠카에 영광 있으라.
+end:killed-guard,You are under arrest for the murder of an Arstotzkan official.,당신은 아스토츠카 장교를 살해한 혐의로 체포당했습니다.
+end:killed-guard,The penalty is death.,판결 결과는 사형입니다.
+end:killed-guard,Your family will be questioned about their involvement.,당신의 가족들 역시 연관되었는지 심문 받을 예정입니다.
+end:killed-guard,The border will remain open under a replacement inspector.,국경은 새로운 검사관의 감독 하에 열려있을 것입니다.
+end:killed-guard,Glory to Arstotzka.,아스토츠카에 영광 있으라.
+end:tranqed-guard,You are under arrest for attacking an Arstotzkan official.,당신은 아스토츠카 장교를 공격한 혐의로 체포당했습니다.
+end:tranqed-guard,The penalty is death.,판결 결과는 사형입니다.
+end:tranqed-guard,Your family will be questioned about their involvement.,당신의 가족들 역시 연관되었는지 심문 받을 예정입니다.
+end:tranqed-guard,The border will remain open under a replacement inspector.,국경은 새로운 검사관의 감독 하에 열려있을 것입니다.
+end:tranqed-guard,Glory to Arstotzka.,아스토츠카에 영광 있으라.
+end:killed-target,You are under arrest for the murder of an innocent.,당신은 무고한 자를 살해한 혐의로 체포당했습니다.
+end:killed-target,The penalty is death.,판결 결과는 사형입니다.
+end:killed-target,Your family will be questioned about their involvement.,당신의 가족들 역시 연관되었는지 심문 받을 예정입니다.
+end:killed-target,The border will remain open under a replacement inspector.,국경은 새로운 검사관의 감독 하에 열려있을 것입니다.
+end:killed-target,Glory to Arstotzka.,아스토츠카에 영광 있으라.
+end:killed-target,[A note appears from under the cell door],[감옥 문 아래로 쪽지를 건네받았습니다.]
+end:killed-target,INSPECTOR - FAMILY IS SAFE - TARGET ELIMINATED BUT OTHER PROBLEMS ARISE,검사관 - 가족들은 안전합니다 - 목표를 제거했지만 다른 문제가 생겼습니다.
+end:killed-target,REPLACEMENT INSPECTOR NOT COOPERATIVE - EZIC ACTIVITIES HINDERED,교체된 검사관이 협조적이지 않습니다 - EZIC 활동이 멈춰지게 되었습니다.
+end:killed-target,WE CANNOT PROVIDE FURTHER SUPPORT - EZIC TO HIBERNATE AGAIN,더 이상의 지원을 제공할 수 없습니다 - EZIC은 다시 동면에 들어갑니다.
+end:killed-target,FAMILY WILL BE TAKEN TO OBRISTAN - GOOD LUCK,귀하의 가족들은 오브리스탄으로 보내질 예정입니다 - 행운을 빕니다.
+end:tranqed-target,You are under arrest for attacking an innocent.,당신은 무고한 자를 공격한 죄로 체포당했습니다.
+end:tranqed-target,The penalty is forced labor.,판결 결과는 강제 노동행입니다.
+end:tranqed-target,Your family will be questioned about their involvement.,당신의 가족들 역시 연관되었는지 심문 받을 예정입니다.
+end:tranqed-target,The border will remain open under a replacement inspector.,국경은 새로운 검사관의 감독 하에 열려있을 것입니다.
+end:tranqed-target,Glory to Arstotzka.,아스토츠카에 영광 있으라.
+end:tranqed-target,[A note appears from under the cell door],[감옥 문 아래로 쪽지를 건네받았습니다.]
+end:tranqed-target,INSPECTOR - FAMILY IS SAFE - TARGET HAS RECOVERED IN HOSPITAL,검사관 - 가족들은 안전합니다 - 목표는 병원에서 회복했습니다.
+end:tranqed-target,REPLACEMENT INSPECTOR NOT COOPERATIVE - EZIC ACTIVITIES HINDERED,교체된 검사관이 협조적이지 않습니다 - EZIC 활동이 멈춰지게 되었습니다.
+end:tranqed-target,WE CANNOT PROVIDE FURTHER SUPPORT - EZIC TO HIBERNATE AGAIN,더 이상의 지원을 제공할 수 없습니다 - EZIC은 다시 동면에 들어갑니다.
+end:tranqed-target,FAMILY WILL BE TAKEN TO OBRISTAN - GOOD LUCK,귀하의 가족들은 오브리스탄으로 보내질 예정입니다 - 행운을 빕니다.
+end:stuff-on-walls,You are under arrest for violating direct orders.,귀하는 명령에 대한 불복종으로 체포당했습니다.
+end:stuff-on-walls,The penalty is forced labor.,판결 결과는 강제 노동행입니다.
+end:stuff-on-walls,Your family will be sent back to their village.,당신의 가족들은 마을로 돌아갈 것입니다.
+end:stuff-on-walls,The border will remain open under a replacement inspector.,국경은 새로운 검사관의 감독 하에 열려있을 것입니다.
+end:stuff-on-walls,Glory to Arstotzka.,아스토츠카에 영광 있으라.
+end:arrested-boss-buddy,Your supervisor has reported you for theft of Arstotzkan property.,당신의 관리자가 아스토츠카의 자산에 대한 귀하의 절도 행위를 보고했습니다.
+end:arrested-boss-buddy,The penalty is forced labor.,판결 결과는 강제 노동행입니다.
+end:arrested-boss-buddy,Your family will be sent back to their village.,당신의 가족들은 마을로 돌아갈 것입니다.
+end:arrested-boss-buddy,The border will remain open under a replacement inspector.,국경은 새로운 검사관의 감독 하에 열려있을 것입니다.
+end:arrested-boss-buddy,Glory to Arstotzka.,아스토츠카에 영광 있으라.
+end:wall-destroyed,The Grestin Border wall has been destroyed.,그레스틴 국경의 벽이 파괴되었습니다.
+end:wall-destroyed,You are under arrest for failure to defend the checkpoint.,당신은 검문소 방어에 대한 실패죄로 체포당했습니다.
+end:wall-destroyed,Your family will be sent back to their village.,당신의 가족들은 마을로 돌아갈 것입니다.
+end:wall-destroyed,The border will reopen under a replacement inspector.,국경은 새로운 검사관으로의 교체 이후 다시 열릴 예정입니다.
+end:wall-destroyed,Glory to Arstotzka.,아스토츠카에 영광 있으라.
+end:help-ezic-kill-attackers-wall-safe,Hello inspector.,안녕하십니까 검사관님.
+end:help-ezic-kill-attackers-wall-safe,We have audited your recent activities.,귀하의 최근 활동에 대해 검사를 했습니다.
+end:help-ezic-kill-attackers-wall-safe,Your involvement with a group calling themselves THE ORDER OF THE EZIC STAR has been uncovered.,최근 귀하께서 EZIC 별의 결사대라 자칭하는 집단과 연관되어 있음이 드러났습니다.
+end:help-ezic-kill-attackers-wall-safe,Several members of this group have been arrested in Arstotzka.,이 집단의 몇몇 멤버들이 아스토츠카에서 체포당했습니다.
+end:help-ezic-kill-attackers-wall-safe,At least one EZIC member has confessed to receiving your help.,EZIC 멤버 중 한 명이 귀하의 도움을 받았음을 고백했습니다.
+end:help-ezic-kill-attackers-wall-safe,This represents treason of the highest order.,이는 1급 반역죄입니다.
+end:help-ezic-kill-attackers-wall-safe,Goodbye inspector.,안녕히 계십시오 검사관님.
+end:help-ezic-kill-attackers-wall-safe,The execution is scheduled for tonight.,처형은 내일 집행될 예정입니다.
+end:help-ezic-kill-attackers-wall-safe,Your family's safety is unknown.,가족들의 안전은 알 수 없게 되었습니다.
+end:help-ezic-kill-attackers-wall-safe,EZIC has been crushed. The balance of justice is restored.,EZIC은 파괴되었습니다. 정의의 균형이 회복되었습니다.
+end:help-ezic-kill-attackers-wall-safe,Glory to Arstotzka.,아스토츠카에 영광 있으라.
+end:help-ezic-kill-attackers-wall-safe,[A note appears from under the cell door],[감옥 문 아래로 쪽지를 건네받았습니다.]
+end:help-ezic-kill-attackers-wall-safe,INSPECTOR - YOU HAVE BETRAYED US AT THE LAST MOMENT,검사관님 - 마지막 순간에 우리를 배신하셨군요.
+end:help-ezic-kill-attackers-wall-safe,THIS CHAPTER OF EZIC IS OVER - WE CAN OFFER NO HELP TO YOUR FAMILY,이쪽 EZIC 지부가 궤멸되었습니다. 더 이상 귀하의 가족에게 도움을 제공할 수 없습니다.
+end:help-ezic-kill-attackers-wall-destroyed,The border has been pierced.,국경이 뚫렸습니다.
+end:help-ezic-kill-attackers-wall-destroyed,It is a glorious day for THE ORDER OF THE EZIC STAR but you have betrayed us at the last moment.,"EZIC 별의 결사대에게는 영광스러운 날이지만, 귀하는 마지막 순간에 우리를 배신했습니다."
+end:help-ezic-kill-attackers-wall-destroyed,EZIC grows strong while the corrupt and greedy weaken.,부패와 탐욕이 약해지는 동안 우리 EZIC은 강해졌습니다.
+end:help-ezic-kill-attackers-wall-destroyed,Your betrayal means you have chosen the wrong side.,귀하의 배신은 귀하가 잘못된 편을 선택했다는 의미입니다.
+end:help-ezic-kill-attackers-wall-destroyed,There is no place for you or your family in this revolution.,이 혁명에서 귀하와 귀하의 가족들을 위한 자리는 더 없습니다.
+end:help-ezic-kill-attackers-wall-destroyed,Goodbye inspector.,안녕히 계십시오 검사관님.
+end:help-ezic-kill-attackers-wall-destroyed,Glory to the New Arstotzka.,새로운 아스토츠카에 영광 있으라.
+end:help-few-ezic,Hello inspector.,안녕하십니까 검사관님.
+end:help-few-ezic,We have audited your recent activities.,귀하의 최근 활동에 대해 검사를 했습니다.
+end:help-few-ezic,Your involvement with a group calling themselves THE ORDER OF THE EZIC STAR has been uncovered.,최근 귀하께서 EZIC 별의 결사대라 자칭하는 집단과 연관되어 있음이 드러났습니다.
+end:help-few-ezic,Several members of this group have been arrested in Arstotzka.,이 집단의 몇몇 멤버들이 아스토츠카에서 체포당했습니다.
+end:help-few-ezic,At least one EZIC member has confessed to receiving your help.,EZIC 멤버 중 한 명이 귀하의 도움을 받았음을 고백했습니다.
+end:help-few-ezic,This represents treason of the highest order.,이는 1급 반역죄입니다.
+end:help-few-ezic,Goodbye inspector.,안녕히 계십시오 검사관님.
+end:help-few-ezic,The execution is scheduled for tonight.,처형은 내일 집행될 예정입니다.
+end:help-few-ezic,Your family's safety is unknown.,가족들의 안전은 알 수 없게 되었습니다.
+end:help-few-ezic,EZIC has been crushed. The balance of justice is restored.,EZIC은 파괴되었습니다. 정의의 균형이 회복되었습니다.
+end:help-few-ezic,Glory to Arstotzka.,아스토츠카에 영광 있으라.
+end:escape,You board the late train to the Northern Territories. It is nearly empty.,당신은 북방 영토로 가는 늦은 기차에 탔습니다. 기차는 거의 비어있습니다.
+end:escape,You pay for the hastily forged passport and re-entry ticket. They look terrible.,당신은 서툴게 위조된 여권과 재입국표를 위해 돈을 지불합니다. 여권과 표 모두 끔찍해 보입니다.
+end:escape,You pay for the hastily forged passports and re-entry tickets. They look terrible.,당신은 서툴게 위조된 여권과 재입국표를 위해 돈을 지불합니다. 여권과 표 모두 끔찍해 보입니다.
+end:escape,You reach the border crossing at dawn. The line is immense.,여명이 밝아오자 당신은 국경에 도달합니다. 줄이 어마어마 합니다.
+end:escape,Six hours later.,6시간 후.
+end:escape,Your documents.,서류 주십시오.
+end:escape,Here.,여기 있습니다.
+end:escape,You are entering alone?,혼자 입국하십니까?
+end:escape,Yes.,네.
+end:escape,I come to visit relatives.,친척들을 보러 왔습니다.
+end:escape,"No, my family as well.","아뇨, 가족들도 함께 있습니다."
+end:escape,Hand over all documents now.,서류를 다 넘겨주십시오.
+end:escape,We come to visit relatives.,다 함께 친척들을 보러 왔습니다.
+end:escape,I do not care why you come. Wait here.,방문 목적은 말씀 안 하셔도 괜찮습니다. 대기해 주십시오.
+end:escape,*KACHUNK*,*딸깍*
+end:escape,Welcome to Obristan. Next!,오브리스탄에 오신 걸 환영합니다. 다음!
+end:help-ezic-hold-fire,Inspector! It is a glorious day!,검사관! 영예로운 날입니다!
+end:help-ezic-hold-fire,The border has been pierced.,국경이 뚫렸습니다.
+end:help-ezic-hold-fire,EZIC grows strong while the corrupt and greedy weaken.,부패와 탐욕이 약해지는 동안 우리 EZIC은 강해졌습니다.
+end:help-ezic-hold-fire,We are moving you and your family to a better home.,당신과 가족들에게 더 나은 집을 제공해드리도록 하겠습니다.
+end:help-ezic-hold-fire,Your services as an inspector are no longer required. We need agents.,귀하는 더 이상 검사관으로 살지 않으셔도 됩니다. 현재 요원이 필요합니다.
+end:help-ezic-hold-fire,Follow us and together we will complete the revolution!,저희와 함께 해서 함께 혁명을 완수하십시다!
+end:help-ezic-hold-fire,Glory to the New Arstotzka.,새로운 아스토츠카에 영광 있으라.
+end:ignore-ezic,Hello inspector.,안녕하십니까 검사관님.
+end:ignore-ezic,We have audited your activities for the past 20 years.,지난 20년 동안의 당신의 활동을 조사했습니다.
+end:ignore-ezic,There are some anomalies.,몇 가지 이상한 점이 있더군요.
+end:ignore-ezic,But you have served Arstotzka well.,하지만 아스토츠카를 위해 일해오셨습니다.
+end:ignore-ezic,We will overlook these small transgressions.,이런 작은 범죄 정도는 넘어가 드리겠습니다.
+end:ignore-ezic,You have been cleared of any suspicion.,이제 당신에 대한 의심을 거두겠습니다.
+end:ignore-ezic,Glory to Arstotzka.,아스토츠카에 영광 있으라.
+end:ignore-ezic,A new agreement has been reached with Kolechia.,콜레치아와 새로운 협약이 맺어졌습니다.
+end:ignore-ezic,Grestin Border Checkpoint will reopen soon.,그레스틴 국경 검문소는 곧 다시 열릴 것입니다.
+end:ignore-ezic,Return to your post on January 1st.,1월 1일까지 검문소로 복귀하십시오.
+end:ignore-ezic,ENDLESS UNLOCK CODE: 62131,무한 모드 해금 코드: 62131
+endless:timed,Timed,시간 제한
+endless:timed,Process as many travelers as possible in 10 minutes.,10분 동안 최대한 많은 여행객들을 처리하십시오.
+endless:timed,"ENDLESS - TIMED
+
+Process as many travelers as possible in 10 minutes. One point per traveler. Lose 30 seconds for each citation.","무한 모드 - 시간 제한
+
+10분 동안 최대한 많은 여행객들을 처리하십시오. 여행객 1명 당 1점입니다. 경고 하나 당 30초가 감소됩니다."
+endless:perfection,Perfection,완벽
+endless:perfection,Game over at first penalty. Earn dwindling points.,처음 벌금을 받을 시 게임이 종료됩니다. 획득 점수가 점점 줄어듭니다.
+endless:perfection,"ENDLESS - PERFECTION
+
+Earn points for processing travelers. No citations allowed. Ten points per traveler in the first minute, one less point for each minute that passes. Work quickly.","무한 모드 - 완벽
+
+처음 벌금을 받을 시 게임이 종료됩니다. 획득 점수가 점점 줄어듭니다. 처음 1분 동안은 여행객 1명 당 10점이지만, 1분이 지날 수록 1점씩 감소합니다. 빠르게 처리하십시오."
+endless:endurance,Endurance,인내
+endless:endurance,Play until balance goes negative. Avoid penalties.,잔고가 마이너스가 될 때가지 플레이 하십시오. 벌금을 피하십시오.
+endless:endurance,"ENDLESS - ENDURANCE
+
+Process travelers until your balance drops below zero. Citations penalize an escalating number of points. The highest achieved points are remembered for scoring.","무한 모드 - 인내
+
+잔고가 마이너스가 될 때가지 플레이 하십시오. 벌금을 피하십시오. 경고를 받을 시 점수에 불이익이 생깁니다. 가장 높은 점수를 획득 시 기록됩니다."
+endless:course1,Course 1,코스 1
+endless:course2,Course 2,코스 2
+endless:course3,Course 3,코스 3
+endless:course4,Course 4,코스 4
+bullend:1A,Check rulebook for rules in effect.,규정집에서 효과를 발휘하는 규정을 확인하십시오.
+bullend:2A,Check rulebook for rules in effect.,규정집에서 효과를 발휘하는 규정을 확인하십시오.
+bullend:3A,Check rulebook for rules in effect. REASON FOR DENIAL stamp is required when denying entry.,규정집에서 효과를 발휘하는 규정을 확인하십시오. 입국 불허 시 거부 사유 도장이 필요합니다.
+bullend:4A,Check rulebook for rules in effect. REASON FOR DENIAL stamp is required when denying entry.,규정집에서 효과를 발휘하는 규정을 확인하십시오. 입국 불허 시 거부 사유 도장이 필요합니다.
+night:MANAGE_EXPENSES,Manage your expenses using the checkboxes below.,아래 체크박스를 확인해 지출을 관리하십시오.
+night:AFTER_6PM,Applicants entering after 6PM are unpaid.,오후 6시 이후의 입국자들은 임금에 포함되지 않습니다.
+night:PROGRESS_SAVED,Progress is saved at the start of each day.,진행 과정은 매일 날이 밝을 때 저장됩니다.
+night:ATTACK_DIDNOTHING,The day was cut short by a terrorist attack.,테러리스트의 공격으로 하루가 생략되었습니다.
+night:ATTACK_FIREDGUN,The day was cut short by a terrorist attack.,테러리스트의 공격으로 하루가 생략되었습니다.
+night:ATTACK_FIREDGUN,TRIGGER BONUS,발사 수당
+night:ATTACK_SOLVED,The day was cut short by a terrorist attack.,테러리스트의 공격으로 하루가 생략되었습니다.
+night:ATTACK_SOLVED,SHARPSHOOTER BONUS,저격 수당
+night:POISONING,The day was cut short by a security incident.,보안 사고로 인해 하루가 생략되었습니다.
+night:FAMILY_PICTURE,Your wife found an old family picture.,아내가 오래된 가족 사진을 찾아냈습니다.
+night:BUY_UPGRADE0,Booth Upgrade Available: SPACE key to toggle INSPECT mode.,심사대 업그레이드 가능: SPACE 키를 눌러 검사 모드 전환
+night:BUY_UPGRADE0,UPGRADE BOOTH,심사대 업그레이드
+night:BUY_UPGRADE0,Booth Upgrade Available: Multitouch.,심사대 업그레이드 가능: 멀티터치
+night:BUY_UPGRADE0,Booth Upgrade Available: Rulebook shortcuts.,심사대 업그레이드 가능: 규정집 빠른 이동
+night:BUY_UPGRADE1,Booth Upgrade Available: TAB key to toggle stamp bar.,심사대 업그레이드 가능: TAB 키를 눌러 도장 전환
+night:BUY_UPGRADE1,UPGRADE BOOTH,심사대 업그레이드
+night:BUY_UPGRADE2,Booth Upgrade Available: Rulebook shortcuts.,심사대 업그레이드 가능: 규정집 빠른 이동
+night:BUY_UPGRADE2,UPGRADE BOOTH,심사대 업그레이드
+night:BUY_UPGRADE3,Booth Upgrade Available: Double-click for quick INSPECT.,심사대 업그레이드 가능: 더블 클릭하여 빠른 조사
+night:BUY_UPGRADE3,UPGRADE BOOTH,심사대 업그레이드
+night:APARTMENT_RENT,The rent has gone up.,집세가 올랐습니다.
+night:APARTMENT_UPGRADE,"A cheaper class 8 apartment is available (Rent = 25, Heat = 10)","값싼 8등급 아파트가 이용 가능합니다 (임대 = 25, 난방 = 10)"
+night:APARTMENT_UPGRADE,MOVE TO CLASS-8,8등급 아파트로 이사
+night:APARTMENT_UPGRADE,"A class-7 apartment is available. (Rent = 30, Heat = 10)","7등급 아파트가 이용 가능합니다 (임대 = 30, 난방 = 10)"
+night:APARTMENT_UPGRADE,MOVE TO CLASS-7,7등급 아파트로 이사
+night:APARTMENT_UPGRADE,"A class-6 apartment is available. (Rent = 40, Heat = 5)","6등급 아파트가 이용 가능합니다 (임대 = 40, 난방 = 5)"
+night:APARTMENT_UPGRADE,MOVE TO CLASS-6,6등급 아파트로 이사
+night:APARTMENT_UPGRADE,"A class-5 apartment is available. (Rent = 50, Heat = 0)","5등급 아파트가 이용 가능합니다 (임대 = 50, 난방 = 0)"
+night:APARTMENT_UPGRADE,Class-5 is the best a worker can have.,5등급 아파트는 노동자가 가질 수 있는 최대입니다.
+night:APARTMENT_UPGRADE,MOVE TO CLASS-5,5등급 아파트로 이사
+night:SON_BIRTHDAY,Your son's birthday is in 2 days.,아들의 생일이 이틀 뒤입니다.
+night:SON_BIRTHDAY2,Your son's birthday is tomorrow. He wants an expensive crayon set.,아들의 생일이 내일입니다. 생일 선물로 값비싼 크레용 세트를 원하고 있습니다.
+night:SON_BIRTHDAY2,SON'S GIFT,아들의 선물
+night:SON_BIRTHDAY3,Your son has drawn a picture for you to take to work.,아들이 직장에 가져갈 수 있도록 그림을 그려주었습니다.
+night:NIECE,Your sister has been arrested. Her young daughter needs a home.,여동생이 체포되었습니다. 어린 조카딸에게 집이 필요합니다.
+night:NIECE,ADOPT NIECE,조카딸 입양
+night:NIECE2_YES,Your niece has brought her mother's savings.,조카딸이 어머니의 저축금을 가져왔습니다.
+night:NIECE2_YES,SISTER'S SAVINGS,여동생의 저축금
+night:NIECE2_NO,Your niece has disappeared.,조카딸이 실종되었습니다.
+night:FRIENDLY_GUARD_PAYOUT,A young woman dropped off something.,젊은 여성이 무언가를 놓고 갔습니다.
+night:FRIENDLY_GUARD_PAYOUT,ELISA'S GIFT,Elisa의 선물
+night:DETAIN_PAYOUT,DETAIN BONUS,구금 보너스
+night:EZIC_PAYOUT,A strange man brought money. Uncheck to burn it.,수상한 사내가 돈을 가져왔습니다. 태우려면 체크를 해제하십시오.
+night:EZIC_PAYOUT,EZIC GIFT,EZIC의 선물
+night:EZIC_PAYOUT_RETRY,A strange man brought money again. Uncheck to burn it.,수상한 사내가 다시 돈을 가져왔습니다. 태우려면 체크를 해제하십시오.
+night:EZIC_PAYOUT_RETRY,EZIC GIFT,EZIC의 선물
+night:EZIC_TAKESAVINGS,The neighbors have reported your new wealth.,이웃이 당신에게 갑작스럽게 돈이 생겼다며 당신을 고발했습니다.
+night:EZIC_TAKESAVINGS,The Ministry of Income has confiscated your savings pending investigation.,조사가 진행되는 동안 소득부에서 당신의 저축금을 몰수했습니다.
+night:EZIC_CLEARED,The Ministry of Income has cleared all wrongdoing.,소득부에서 당신의 모든 불법 행위를 말소했습니다.
+night:EZIC_CLEARED,Your savings will not be returned.,당신의 저축금은 돌아오지 않을 것입니다.
+night:EZIC_REWARD,A small package arrived.,작은 소포가 왔습니다.
+night:EZIC_REWARD,EZIC GIFT,EZIC의 선물
+night:TAKE_FAMILY_PASSPORTS,The Ministry of Information has confiscated your family's passports.,정보부에서 당신 가족의 여권을 압수했습니다.
+night:ESCAPE,You can now escape to Obristan by yourself.,이제 혼자서 오브리스탄으로 탈출할 수 있습니다.
+night:ESCAPE,You can now escape to Obristan with one family member.,이제 가족 한 명과 함께 오브리스탄으로 탈출할 수 있습니다.
+night:ESCAPE,You can now escape to Obristan with two family members.,이제 가족 두 명과 함께 오브리스탄으로 탈출할 수 있습니다.
+night:ESCAPE,You can now escape to Obristan with three family members.,이제 가족 세 명과 함께 오브리스탄으로 탈출할 수 있습니다.
+night:ESCAPE,You can now escape to Obristan with four family members.,이제 가족 네 명과 함께 오브리스탄으로 탈출할 수 있습니다.
+night:ESCAPE,You can now escape to Obristan with everyone.,이제 가족 모두와 함께 오브리스탄으로 탈출할 수 있습니다.
+night:ESCAPE_1,ESCAPE (SELF),탈출 (혼자)
+night:ESCAPE_2,ESCAPE (SELF+1),탈출 (혼자+1)
+night:ESCAPE_3,ESCAPE (SELF+2),탈출 (혼자+2)
+night:ESCAPE_4,ESCAPE (SELF+3),탈출 (혼자+3)
+night:ESCAPE_5,ESCAPE (SELF+4),탈출 (혼자+4)
+night:ESCAPE_6,ESCAPE (SELF+5),탈출 (혼자+5)
+night:HANGINGS_PENALTY,A fine has been assessed for unofficial wall hangings.,인가되지 않은 벽걸이를 건 혐의로 인해 벌금이 부과되었습니다.
+night:HANGINGS_PENALTY,HANGINGS FINE,벽걸이 벌금
+night:SELL_WATCH,You sold the digital watch on your way home.,집에 가는 길에 디지털 손목 시계를 팔았습니다.
+night:SELL_WATCH,WATCH PROFIT,손목 시계 판매금
+night:EASY_MODE,EASY MODE CRUTCH,쉬움 모드 도우미
+night:SNEAK_HOME,You have rushed home amid the panic at work to check on your family.,당신은 가족들을 살피기 위해 공황 속에 집으로 달려갔습니다.
+night:SNEAK_HOME,Your information audit is scheduled for tomorrow morning.,당신의 정보 검사가 내일 아침에 있습니다.
+note:EZIC_CORMAN,"ARSTOTZKA IS GREAT COUNTRY POISONED BY CORRUPT LEADERS
+
+WAR HAS MADE GOV'T GREEDY AND PARANOID - YOU HAVE SEEN FOR YOURSELF
+
+HELP US FREE ARSTOTZKA FROM ITS SHACKLES
+
+
+* THE ORDER OF THE EZIC STAR","아스토츠카는 타락한 지도자에 의해 오염된 국가입니다
+
+전쟁으로 정부는 탐욕스럽고 편집증적으로 변했습니다 - 당신도 이미 알 것입니다
+
+아스토츠카를 족쇄에서 해방하기 위해 우리를 도와주십시오
+
+
+* EZIC 별의 결사대"
+note:EZIC_HANDLER_POST0,"FIRST AGENT WAS DENIED
+
+SECOND WILL COME IN THREE DAYS
+
+DO NOT MAKE SAME MISTAKE","첫 번째 요원이 입국을 불허 당했습니다
+
+두 번째 요원이 3일 후에 방문할 예정입니다
+
+같은 실수를 반복하지 마십시오"
+note:EZIC_HANDLER_PRE1,"LARGE GIFT WAS MISTAKE
+
+MINISTRY OF INFORMATION NOW INVESTIGATES YOUR CONNECTION TO EZIC
+
+NEXT AGENT COMES TODAY
+
+WILL SOLVE PROBLEM
+
+DENY AT OWN RISK","커다란 선물을 보낸 게 실수였습니다
+
+정보부에서 당신과 EZIC과의 연결을 조사하고 있습니다
+
+다음 요원이 내일 방문합니다
+
+문제를 해결할 예정입니다
+
+선택은 당신의 몫입니다"
+note:EZIC_HANDLER_POST1,"BOTH AGENTS WERE DENIED
+
+WE CANNOT SUCCEED WITHOUT YOUR HELP
+
+WHEN ARSTOTZKA WAS BORN, THE ORDER FULFILLED SAME ROLE AS TODAY
+
+WHEN TYRANNY ENDS WE WILL DISAPPEAR AGAIN","요원 둘이 모두 거부당했습니다
+
+당신의 도움 없이는 성공할 수 없습니다
+
+아스토츠카 건국 시에도 결사대는 오늘날과 같은 역할을 행해왔습니다
+
+폭정이 끝나면 우리는 다시 사라질 것입니다"
+note:EZIC_HANDLER_POST1,"ONLY ONE AGENT APPROVED
+
+WE CANNOT SUCCEED WITHOUT YOUR HELP
+
+WHEN ARSTOTZKA WAS BORN ,THE ORDER FULFILLED SAME ROLE AS TODAY
+
+WHEN TYRANNY ENDS WE WILL DISAPPEAR AGAIN","요원 하나만 입국이 허가되었습니다
+
+당신의 도움 없이는 성공할 수 없습니다
+
+아스토츠카 건국 시에도 결사대는 오늘날과 같은 역할을 행해왔습니다
+
+폭정이 끝나면 우리는 다시 사라질 것입니다"
+note:EZIC_HANDLER_POST1,"YOU HAVE DONE WELL
+
+BOTH AGENTS NOW OPERATING
+
+WHEN ARSTOTZKA WAS BORN, THE ORDER FULFILLED SAME ROLE AS TODAY
+
+WHEN TYRANNY ENDS WE WILL DISAPPEAR AGAIN","잘 해주셨습니다
+
+요원 둘 모두가 작전을 수행 중입니다
+
+아스토츠카 건국 시에도 결사대는 오늘날과 같은 역할을 행해왔습니다
+
+폭정이 끝나면 우리는 다시 사라질 것입니다"
+note:EZIC_HANDLER_EXT,"BORDER ATTACKS ARE NOT EZIC OPERATIONS
+
+UNKNOWN EXTREMIST GROUPS RESPONSIBLE
+
+THE ORDER AIMS TO WEAKEN CORRUPT POWER CENTERS - NOT INJURE INNOCENTS - EZIC AGENT ARRIVES TODAY TO UNCOVER EXTREMISTS","국경에 대한 공격은 EZIC의 작전이 아닙니다
+
+정체를 알 수 없는 극단주의자 집단이 범인입니다
+
+결사대는 타락한 중앙 권력만을 노리지, 무고한 자들을 다치게 하는 데는 관심이 없습니다 - 극단주의자들을 밝혀내기 위해 EZIC 요원들이 오늘 도착할 예정입니다"
+note:EZIC_POISON_MESSENGER,"ASSASSIN COMING FROM ANTEGRIA
+
+WILL TARGET IMPORTANT EZIC AGENT IN ARSTOTZKA
+
+MUST BE STOPPED
+
+HIS NAME IS KHALED ISTOM
+
+DO NOT FORGET","안테그리아에서 암살자 입국 예정
+
+아스토츠카에서 중요 EZIC 요원을 암살할 예정입니다
+
+반드시 막아야 합니다
+
+그의 이름은 KHALED ISTOM입니다
+
+절대 잊지 마십시오"
+note:EZIC_HANDLER_SNIPE,"KHALED IS RETURNING - HE NOW CARRIES INFORMATION ON ALL EZIC AGENTS
+
+CANNOT TAKE CHANCES - YOU MUST KILL HIM TODAY - MAN IN RED - WE WILL PROVIDE OPPORTUNITY
+
+IF SUCCEED, YOU WILL BE CAUGHT - MUST SACRIFICE SELF FOR ARSTOTZKA - FAMILY WILL BE SAFE","KHALED가 돌아가고 있습니다 - 이제 그 자는 모든 EZIC 요원들에 대한 정보를 가지고 있습니다
+
+더 방법이 없습니다 - 반드시 오늘 죽여야 합니다 - 붉은 옷을 입은 사내 - 우리 측에서 기회를 제공할 것입니다
+
+성공하면, 당신은 붙잡힐 것입니다 - 아스토츠카를 위해 희생하십시오 - 가족은 안전할 것입니다"
+note:EZIC_HANDLER_SNIPE,"KHALED KILLED TWO EZIC AGENTS - ANOTHER ASSASSIN COMES - MAN IN RED - CARRIES INFO ON ALL EZIC IN ARSTOTZKA
+
+CANNOT TAKE CHANCES - YOU MUST KILL HIM TODAY - WE WILL PROVIDE OPPORTUNITY
+
+IF SUCCEED, YOU WILL BE CAUGHT - MUST SACRIFICE SELF FOR ARSTOTZKA - FAMILY WILL BE SAFE","KHALED가 두 명의 요원을 죽였습니다 - 다른 암살자가 올 예정입니다 - 붉은 옷을 입은 남자 - 그 자는 모든 EZIC 요원들에 대한 정보를 가지고 있습니다
+
+더 방법이 없습니다 - 반드시 오늘 죽여야 합니다 - 우리 측에서 기회를 제공할 것입니다
+
+성공하면, 당신은 붙잡힐 것입니다 - 아스토츠카를 위해 희생하십시오 - 가족은 안전할 것입니다"
+note:EZIC_HANDLER_SNIPE,"KHALED DEALT WITH - ANOTHER ASSASSIN COMES - MAN IN RED - CARRIES INFO ON ALL EZIC IN ARSTOTZKA
+
+CANNOT TAKE CHANCES - YOU MUST KILL HIM TODAY - WE WILL PROVIDE OPPORTUNITY
+
+IF SUCCEED, YOU WILL BE CAUGHT - MUST SACRIFICE SELF FOR ARSTOTZKA - FAMILY WILL BE SAFE","KHALED 처리됨 - 다른 암살자가 올 예정입니다 - 붉은 옷을 입은 남자 - 그 자는 모든 EZIC 요원들에 대한 정보를 가지고 있습니다
+
+더 방법이 없습니다 - 반드시 오늘 죽여야 합니다 - 우리 측에서 기회를 제공할 것입니다
+
+성공하면, 당신은 붙잡힐 것입니다 - 아스토츠카를 위해 희생하십시오 - 가족은 안전할 것입니다"
+note:EZIC_HANDLER_POSTSNIPE,"WE HAVE MISSED OUR CHANCE
+
+MAN IN RED SURVIVES
+
+HE NOW TARGETS EZIC AGENTS IN KOLECHIA
+
+OUR PLANS MUST ADAPT","기회를 놓쳤습니다
+
+붉은 옷의 남자가 살았습니다
+
+이제 그는 콜레치아에 있는 EZIC 요원들을 노릴 것입니다
+
+계획을 수정해야 합니다"
+note:EZIC_HANDLER_DIPLO,"GOVERNMENT PLANS TO YIELD TO KOLECHIAN DEMANDS AND FURTHER CEDE GRESTIN
+
+NEGOTIATIONS MUST BE IMPEDED
+
+ALLOW KOLECHIAN DIPLOMAT ENTRY BUT CONFISCATE PASSPORT FIRST
+
+EZIC AGENT WILL FOLLOW TO ASSUME IDENTITY","정부가 콜레치아의 요구를 수용하고 그레스틴을 더 양도할 예정입니다
+
+교섭자를 반드시 막아야 합니다
+
+콜레치아 외교관의 입국은 허가하되 우선 여권을 압수 하십시오
+
+EZIC 요원이 신원을 추정하기 위해 동행할 것입니다"
+note:EZIC_FINAL,"GRESTIN CHECKPOINT IS AT AN END
+
+TODAY WE BREAK THIS WALL DOWN
+
+YOU WILL BE SAFE
+
+HOLD YOUR FIRE
+
+* THE ORDER OF THE EZIC STAR","그레스틴 검문소도 끝입니다
+
+오늘 우리는 장벽을 무너뜨릴 것입니다
+
+당신은 안전할 것입니다
+
+사격하지 마십시오
+
+* EZIC 별의 결사대"
+traveler:DEFAULT,Where is my passport? ; My passport? ; Passport? ; What is this slip? Where is passport?,내 여권 어디있습니까? ; 내 여권은요? ; 여권은? ; 이 안내표는 뭐죠? 여권은 어디 있는 겁니까?
+traveler:DEFAULT,@It is being confiscated.,@여권은 압수되었습니다.
+traveler:DEFAULT,How will I travel? ; What should I do? ; Why? ; You cannot do this.,그럼 어떻게 여행하라고요? ; 이제 어쩌라는 겁니까? ; 왜죠? ; 이러면 안 되죠.
+traveler:DEFAULT,@Contact number on slip.,@안내표의 번호에 연락하십시오.
+traveler:EZIC_INTRO,The Order awaits.,결사대가 기다리고 있습니다.
+traveler:EZIC_CORMAN,Very good.,아주 좋습니다.
+traveler:EZIC_CORMAN,Read quickly.,빠르게 읽으십시오.
+traveler:EZIC_CORMAN,Do not lose this.,잃어버리지 마십시오.
+traveler:EZIC_CORMAN,You have something of mine.,물건을 가지고 있는 걸로 압니다.
+traveler:EZIC_CORMAN,My name is Corman Drex.,내 이름은 Corman Drex입니다.
+traveler:EZIC_CORMAN,Read the note then return it to me.,쪽지를 읽고 돌려주시죠.
+traveler:EZIC_HANDLER_PRE0,Our agents are ready.,요원이 준비되어 있습니다.
+traveler:EZIC_HANDLER_PRE0,Starting tomorrow.,내일 시작됩니다.
+traveler:EZIC_HANDLER_PRE0,Let them pass.,보내주시죠.
+traveler:EZIC_AGENT0,The Order rises.,결사대가 부상할 것입니다.
+traveler:EZIC_AGENT0,The Order knows.,결사대는 알고 있습니다.
+traveler:EZIC_AGENT1,For Arstotzka and the Order.,아스토츠카와 결사대를 위해.
+traveler:EZIC_HANDLER_POST1,Give me the coded documents.,암호화된 문서를 주십시오.
+traveler:EZIC_HANDLER_POST1,Both.,둘 다 말입니다.
+traveler:EZIC_HANDLER_EXT,Today.,오늘입니다.
+traveler:EZIC_AGENT_EXT,For Arstotzka and the Order.,아스토츠카와 결사대를 위해.
+traveler:EZIC_AGENT_EXT,"The others do not agree, but I believe the man in red is not a threat.","다들 동의하지 않았지만, 붉은 옷의 사내는 위험하지 않다고 생각합니다."
+traveler:EZIC_AGENT_EXT,@What?,@뭐라고요?
+traveler:EZIC_AGENT_EXT,Nevermind.,아무것도 아닙니다.
+traveler:EZIC_HANDLER_SNIPE,Shoot to kill.,쏴서 죽이십시오.
+traveler:EZIC_DIPLO,I require my passport.,여권 돌려주시길.
+traveler:EZIC_DIPLO,@It has been confiscated.,@압수되었습니다.
+traveler:EZIC_DIPLO,I am Kolechian diplomat here on government request.,전 정부의 요청을 받은 콜레치아 외교관입니다.
+traveler:EZIC_DIPLO,Return passport at once.,당장 여권 돌려주세요.
+traveler:EZIC_DIPLO,@Call number on slip to recover.,@돌려받으시려면 안내표의 번호에 연락하십시오.
+traveler:EZIC_DIPLO,Barbarian.,야만인 같으니.
+traveler:EZIC_DIPLO,You cannot do this.,이런 짓을 하다니.
+traveler:EZIC_DIPLO_FOLLOW,I saw him enter.,그가 들어가는 걸 봤습니다.
+traveler:EZIC_DIPLO_FOLLOW,Give his passport to me.,그 사람의 여권을 제게 주세요.
+traveler:EZIC_DIPLO_FOLLOW,Ah good.,아 좋군요.
+traveler:EZIC_DIPLO_FOLLOW,I look much the same as him.,제 생김새가 좀 비슷한 거 같지 않습니까.
+traveler:EZIC_DIPLO_FOLLOW,Just need to shave my mustache.,콧수염만 좀 밀면 되겠군요.
+traveler:EZIC_DIPLO_FOLLOW,But we all must make sacrifices.,하지만 희생은 필요한 법이지요.
+traveler:EZIC_DIPLO_FOLLOW,Appove the visa.,입국을 승인해주시오.
+traveler:EZIC_DIPLO_FOLLOW,For Arstotzka and the Order.,아스토츠카와 결사대를 위해.
+traveler:EZIC_DIPLO_FOLLOW,This is not what was agreed on.,약속한 거랑 다르잖습니까.
+traveler:EZIC_DIPLO_FOLLOW,I am sent to collect diplomat's passport.,외교관의 여권을 달란 말입니다.
+traveler:EZIC_DIPLO_FOLLOW,@I do not have it.,@없습니다.
+traveler:SECRET_POLICE_INTRO,"Good morning, inspector.","좋은 아침입니다, 검사관님."
+traveler:SECRET_POLICE_INTRO,You are healthy today yes?,오늘도 건강합니까?
+traveler:SECRET_POLICE_INTRO,I have just few questions for you.,몇 가지 질문이 있습니다.
+traveler:SECRET_POLICE_INTRO,There was problem at Metro last night.,어젯밤에 지하철에서 문제가 있었습니다.
+traveler:SECRET_POLICE_INTRO,Maybe you read about it in paper.,아마 신문에서 읽어보셨을지도 모르지요.
+traveler:SECRET_POLICE_INTRO,Is very big news.,큰 뉴스라서 말입니다.
+traveler:SECRET_POLICE_INTRO,We think it is not accident.,저희가 보기엔 사고가 아닙니다.
+traveler:SECRET_POLICE_INTRO,We think it is caused by suspicious group.,수상한 집단이 일으킨 것으로 보이거든요.
+traveler:SECRET_POLICE_INTRO,We think some members pass through this checkpoint.,그 집단원 중 몇몇이 이 검문소를 통과했다고 봅니다.
+traveler:SECRET_POLICE_INTRO,So we come talk to you.,그래서 선생님과 이야기를 하러 온 것이지요.
+traveler:SECRET_POLICE_INTRO,Have you seen anything like this?,이런 걸 보신 적 있으십니까?
+traveler:SECRET_POLICE_INTRO,Is some kind of symbol for group.,집단에서 사용하는 일종의 상징입니다만.
+traveler:SECRET_POLICE_INTRO,"If you have any information, you give to us yes?","정보가 있으시면, 주셔야 합니다. 아시겠습니까?"
+traveler:SECRET_POLICE_INTRO,Yes?,아시겠습니까?
+traveler:SECRET_POLICE_INTRO,@Yes.,@네.
+traveler:SECRET_POLICE_INTRO,Very good.,아주 좋습니다.
+traveler:SECRET_POLICE_INTRO,Please return my badge and paper.,제 배지와 서류를 돌려주시지요.
+traveler:SECRET_POLICE_INTRO,We think suspicious group attempts to stir trouble.,수상한 집단이 문제를 일으키려 하던 걸로 보입니다.
+traveler:SECRET_POLICE_INTRO,We think some members enter this checkpoint.,그 집단원 중 몇몇이 이 검문소를 통과했다고 봅니다.
+traveler:SECRET_POLICE_INTRO,What is this?,이건 뭐지요?
+traveler:SECRET_POLICE_INTRO,Interesting.,흥미롭군요.
+traveler:SECRET_POLICE_INTRO,"Yes, very interesting.","그래요, 아주 흥미로워요."
+traveler:SECRET_POLICE_INTRO,I think it is best if you come with me.,아무래도 따라오셔야 할 거 같습니다.
+traveler:SECRET_POLICE_INTRO,This group is very dangerous.,이 집단은 굉장히 위험하거든요.
+traveler:SECRET_POLICE_INTRO,"If you see any curious thing, report immediately.","뭔가 수상한 걸 보시면, 즉시 보고해주십시오."
+traveler:SECRET_POLICE_CAUGHT,Hello inspector.,안녕하십니까 검사관님.
+traveler:SECRET_POLICE_CAUGHT,There is small discrepancy with your finances.,선생님의 자산에 뭔가 좀 이상한 점이 있어서 말이죠.
+traveler:SECRET_POLICE_CAUGHT,The Ministry of Income was thoughtful enough to notify us.,소득부에서 이를 고려해 저희에게 알려주더군요.
+traveler:SECRET_POLICE_CAUGHT,It is best if you come with me.,아무래도 따라오셔야 할 거 같습니다.
+traveler:SECRET_POLICE_FINAL,Inspector.,검사관.
+traveler:SECRET_POLICE_FINAL,It has been some time.,간만입니다.
+traveler:SECRET_POLICE_FINAL,Read your bulletin carefully today.,오늘 공고를 유심히 읽어보십시오.
+traveler:SECRET_POLICE_FINAL,We will be speaking with many workers.,노동자들에게 발표할 심산이거든요.
+traveler:SECRET_POLICE_FINAL,Your audit comes soon.,선생의 검사가 곧 입니다.
+traveler:SECRET_POLICE_FINAL,I will personally conduct it.,제가 개인적으로 검사를 맡을 예정입니다.
+traveler:SECRET_POLICE_FINAL,There is nothing to fear.,두려워할 것 없습니다.
+traveler:SECRET_POLICE_FINAL,Work hard.,근면하게 노동하십시오.
+traveler:JORJI_BASE,All right! You the best!,좋습니다! 최고군요!
+traveler:JORJI_BASE,Arstotzka the best!,아스토츠카는 최고의 국가이지요!
+traveler:JORJI_BASE,"Here, take this!","자, 받으시죠!"
+traveler:JORJI0,Ok! Here we go!,좋습니다! 가볼까요!
+traveler:JORJI0,Glory to Arstotzka!,아스토츠카에 영광 있으라!
+traveler:JORJI0,The greatest country!,최고의 국가여!
+traveler:JORJI0,@Where is your passport?,@여권은 어디있습니까?
+traveler:JORJI0,Passport!,여권!
+traveler:JORJI0,"Arstotzka so great, passport not required.",아스토츠카는 너무 위대해서 여권도 필요 없는 곳 아닙니까.
+traveler:JORJI0,Right?,맞지요?
+traveler:JORJI0,@A passport is required.,@여권은 필요합니다.
+traveler:JORJI0,"Ok, ok. I hear you.","좋습니다, 좋아요. 알겠습니다."
+traveler:JORJI0,I come back again.,다시 오지요.
+traveler:JORJI1,Ok! Hello again!,좋아요! 다시 만나서 반갑습니다!
+traveler:JORJI1,Now I have passport!,이제 여권을 가져왔습니다!
+traveler:JORJI1,Arstotzka still best country for sure!,아스토츠카는 여전히 최고의 국가지요!
+traveler:JORJI1,@This passport is crude fake.,@조잡한 가짜로군요.
+traveler:JORJI1,Hey now! Is not true!,이보시오! 거짓말 맙시다!
+traveler:JORJI1,Is pre-approved!,사전에 입국 허가가 되었잖습니까!
+traveler:JORJI1,@ Cobrastan is not a real country.,@코브라스탄은 실제 국명이 아닙니다.
+traveler:JORJI1,"Ok, ok.","좋습니다, 좋아요."
+traveler:JORJI1,"You no like passport, I understand.",여권을 싫어하는군요. 알았어요.
+traveler:JORJI1,I come back again with better one.,다음 번엔 더 잘 해서 오지요.
+traveler:JORJI2,Old friend hello!,오랜 친구여 반갑습니다!
+traveler:JORJI2,I am back again!,다시 돌아왔습니다!
+traveler:JORJI2,This time everything set.,이번엔 모든 게 제대로 되었지요.
+traveler:JORJI2,@You are missing an entry permit.,@입국 허가증이 없는데요.
+traveler:JORJI2,Oh man you funny guy!,아주 재밌는 분이시구만!
+traveler:JORJI2,@An entry permit is required.,@입국 허가증이 필요합니다.
+traveler:JORJI2,"Wow, you run very strict border here.","이야, 여기 검문소는 정말 엄격하군요."
+traveler:JORJI2,That is good. Do job right.,좋은 겁니다. 제대로 일하는 거니까요.
+traveler:JORJI2,I look for entry thing and come back.,입국 뭐시기를 받아서 다시 오지요.
+traveler:JORJI3,Hey it is me!,"이봐요, 접니다!"
+traveler:JORJI3,Are you happy to see?,만나서 반갑지요?
+traveler:JORJI3,I have everything you ask for now.,이제 필요한 모든 게 다 있습니다.
+traveler:JORJI3,@Tickets are no longer accepted.,@표는 더 이상 받지 않습니다.
+traveler:JORJI3,Hey no!,말도 안 돼!
+traveler:JORJI3,Guy sold me ticket. Say is good!,표를 살 때는 아직 괜찮다고 했는데!
+traveler:JORJI3,You check again maybe.,다시 한번 확인 좀 부탁합니다.
+traveler:JORJI3,@Do not come back again.,@다신 오지 마시죠.
+traveler:JORJI3,Haha!,하하!
+traveler:JORJI3,You nice guy but I have business in Arstotzka.,친절하시군요. 하지만 아스토츠카에 일이 있어서 말입니다.
+traveler:JORJI3,I get right papers and come see you.,제대로 된 서류를 가지고 다시 오지요.
+traveler:JORJI4,Hello my guy!,반갑습니다!
+traveler:JORJI4,Ok. Today is day!,좋습니다. 오늘에야말로 입국을 해야지요.
+traveler:JORJI4,Look at all good papers.,이 서류를 잘 봐주십쇼.
+traveler:JORJI4,Was not easy.,쉽지 않았거든요.
+traveler:JORJI4,Or cheap! Haha!,싸지 않았다고 해야하나! 하하하!
+traveler:JORJI4,@I told you not to come back.,@다시 오지 말라고 했을 텐데요.
+traveler:JORJI4,This is crap.,에라이.
+traveler:JORJI4,You know what? Forget it.,때려치우렵니다.
+traveler:JORJI4,Arstotzka worst country.,아스토츠카는 최악의 국가요.
+traveler:JORJI4,You worst person.,당신도 최악이고.
+traveler:JORJI4,Thank you so much!,아주 고맙습니다!
+traveler:JORJI4,"If I am honest to you, I was little nervous.","솔직히 말하면, 좀 긴장하고 있었지요."
+traveler:JORJI4,Even with right papers is hard to say.,서류를 잘 챙겨와놓고서도 말입니다.
+traveler:JORJI4,Ok bye!,좋습니다. 그럼 안녕히!
+traveler:JORJI_SMUGGLE0,Again I am here!,또 왔지요!
+traveler:JORJI_SMUGGLE0,Everything all set up now.,이젠 모든 걸 다 갖췄습니다.
+traveler:JORJI_SMUGGLE0,I come through often to see you.,가끔 보러 오지요.
+traveler:JORJI_SMUGGLE0,We become good friends!,우린 친구잖습니까!
+traveler:JORJI_SMUGGLE0,@Your weight is different.,@체중이 다르군요.
+traveler:JORJI_SMUGGLE0,Is sad story.,슬픈 사연이 있지요.
+traveler:JORJI_SMUGGLE0,My wife very bad cook.,우리 마누라가 요리치거든요.
+traveler:JORJI_SMUGGLE0,"But if I do not eat, she get angry.",하지만 안 먹으면 화를 내서 말입니다.
+traveler:JORJI_SMUGGLE0,"Uh oh, maybe you not like this!","이런, 안 좋아할 거 같은데!"
+traveler:JORJI_SMUGGLE0,@What is this?,@이건 뭐지요?
+traveler:JORJI_SMUGGLE0,Is drugs!,마약이지요!
+traveler:JORJI_SMUGGLE0,I have little side business here.,여기서 작은 부업을 하고 있거든요.
+traveler:JORJI_SMUGGLE0,You let me through and I give you something something.,통과만 시켜주면 이것저것 드리지요.
+traveler:JORJI_SMUGGLE0,@Something what?,@이것저것이 뭡니까?
+traveler:JORJI_SMUGGLE0,Ten credits.,열 장 말입니다.
+traveler:JORJI_SMUGGLE0,I give you ten credits for just little stamp.,도장 한 장만 찍으면 열 장을 드리지요.
+traveler:JORJI_SMUGGLE0,@Wait here Jorji.,@기다리십쇼 Jorji.
+traveler:JORJI_SMUGGLE0,"Is ok, I understand.",괜찮아요. 이해합니다.
+traveler:JORJI_SMUGGLE0,Drugs are bad. Not good for kids.,마약은 나쁘지요. 애들한테 좋을 게 없어요.
+traveler:JORJI_SMUGGLE0,You do great work here still.,아직도 좋은 일을 하는군요.
+traveler:JORJI_SMUGGLE0,Ok!,좋습니다!
+traveler:JORJI_SMUGGLE0,We go full speed!,빠르게 가봅시다!
+traveler:JORJI_SMUGGLE0,Hey what is problem?,뭐가 문젭니까?
+traveler:JORJI_SMUGGLE0,@I do not trust you.,@당신을 못 믿겠습니다만.
+traveler:JORJI_SMUGGLE0,"Ok, ok.","좋습니다, 좋아요."
+traveler:JORJI_SMUGGLE0,You good guy so I win trust next time.,당신은 좋은 사람이니 다음 번엔 신뢰를 얻어보겠어요.
+traveler:JORJI_SMUGGLE1,"Ok, I am back!","좋아요, 다시 돌아왔습니다!"
+traveler:JORJI_SMUGGLE1,Same procedure!,똑같은 절차군요!
+traveler:JORJI_SMUGGLE1,They told me this hard business.,이 일도 어렵다고 들었는데.
+traveler:JORJI_SMUGGLE1,So far everything smooth like ice!,아직까진 얼음 위를 미끄러지는 것처럼 매끄럽군요!
+traveler:JORJI_SMUGGLE1,Thanks to you!,감사합니다!
+traveler:JORJI_SMUGGLE1,Buy something happy for wife.,아내 분께 좋은 물건이라도 사드리시죠.
+traveler:JORJI_SMUGGLE1,Phew!,휴!
+traveler:JORJI_SMUGGLE1,"Was tough one. Lucky for me, guard was easy.",힘들었군요. 다행히 경비대는 쉬웠어요.
+traveler:JORJI_SMUGGLE1,He asks for big money but is reasonable man.,돈을 많이 요구하긴 했지만 합리적인 사람이었죠.
+traveler:JORJI_SMUGGLE1,"Oh man, again!",또 이겁니까!
+traveler:JORJI_SMUGGLE1,That guard have another good day.,다시 한번 경비랑 씨름해야겠구만...
+traveler:JORJI_SMUGGLE1,Not sure I keep this up with no sales!,물건을 팔 수 있을지는 모르지만!
+traveler:JORJI_SMUGGLE1,"Ok, we try again!","자, 다시 한번 해봅시다!"
+traveler:JORJI_SMUGGLE1,"Sorry to bother you, but this my only job.","방해해서 미안합니다만, 이게 내 유일한 일이거든요."
+traveler:JORJI_SMUGGLE1,"@Wait here, Jorji.","@기다려요, Jorji."
+traveler:JORJI_SMUGGLE1,"Is ok, I understand.",괜찮아요. 이해합니다.
+traveler:JORJI_SMUGGLE1,Drugs are bad. Not good for kids.,마약은 나쁘지요. 애들한테 좋을 게 없어요.
+traveler:JORJI_SMUGGLE1,You do great work here still.,아직도 좋은 일을 하는 군요.
+traveler:JORJI_SMUGGLE1,@I see a difference here.,@여기 뭔가 다른 게 보이는데요.
+traveler:JORJI_SMUGGLE1,Is real mystery for sure.,정말 이상한 일이로군요.
+traveler:JORJI_SMUGGLE1,Maybe things get too sexy in here.,뭔가 재밌게 되어가는 거 같은데.
+traveler:JORJI_SMUGGLE1,@Drugs?,@마약입니까?
+traveler:JORJI_SMUGGLE1,Looks like good stuff right?,괜찮아보이지 않습니까?
+traveler:JORJI_SMUGGLE1,Wait! I give you 10 credits for ok stamp!,잠깐! 허가만 하면 열 장 드리겠습니다!
+traveler:JORJI_SMUGGLE1,Think about family!,가족을 생각하란 말입니다!
+traveler:JORJI_SMUGGLE1,They can buy many happy things with these credits.,이 돈으로 좋은 것들을 살 수 있을 거 아닙니까.
+traveler:JORJI_SMUGGLE1,Just for little harmless drugs!,무해한 마약 조금인데!
+traveler:JORJI_SMUGGLE1,"This much better, see?",괜찮지 않습니까?
+traveler:JORJI_SMUGGLE1,"Wow, you really stand-up guy.","이야, 정말 대쪽 같으시구만."
+traveler:JORJI_SMUGGLE1,Maybe is not so good for me when I think about.,내 입장에서야 좋은 사람은 아니지만.
+traveler:JORJI_CRIMINAL,Is good to see you again!,다시 만나서 반가웠습니다!
+traveler:JORJI_CRIMINAL,Today I come just for short visit.,오늘은 잠깐 들르러 왔지요.
+traveler:JORJI_CRIMINAL,Everything is definitely ok with me.,요즘은 다 잘 풀리고 있거든요.
+traveler:JORJI_CRIMINAL,For sure I am not in criminal bulletin or anything!,범죄 같은 거에 연루도 안 되고 말입니다!
+traveler:JORJI_CRIMINAL,@Your face is in wanted bulletin.,@선생 얼굴이 지명수배 공고판에 있습니다만.
+traveler:JORJI_CRIMINAL,What! I pay police like crazy!,뭐라! 경찰한테 그렇게 돈을 줬는데!
+traveler:JORJI_CRIMINAL,They promise no bulletin. All clear they say.,절대 수배 안 할 거랬는데. 다 깨끗하댔는데.
+traveler:JORJI_CRIMINAL,I think twice about trusting friendly people.,친절한 사람들 믿는 건 다시 생각해봐야 할 거 같군요.
+traveler:JORJI_CRIMINAL,Hey I really like you.,당신은 참 맘에 든단 말이죠.
+traveler:JORJI_CRIMINAL,I know is risky to help me like this.,나 같은 사람을 돕는 건 힘들겠지만 말이죠.
+traveler:JORJI_CRIMINAL,I try to make it up for you.,보상은 확실히 해드리겠습니다.
+traveler:JORJI_CRIMINAL,"Ah, is ok.","아, 이 정도면 되겠군요."
+traveler:JORJI_CRIMINAL,At least you do not arrest me.,최소한 체포는 하지 맙시다.
+traveler:JORJI_CRIMINAL,Thanks anyways.,어쨌거나 고맙군요.
+traveler:JORJI_CRIMINAL,@Sorry Jorji.,@미안합니다 Jorji.
+traveler:JORJI_CRIMINAL,"Ah, is ok. Most police know me now.","아, 괜찮아요. 웬만한 경찰은 다 알거든요."
+traveler:JORJI_CRIMINAL,I have little talk with them again.,그쪽이랑 얘기 좀 해봐야 해서 말이죠.
+traveler:JORJI_CRIMINAL,"Anyway, you have tough job.","어쨌든, 힘든 일 하십니다."
+traveler:JORJI_CRIMINAL,I rather sell drugs!,차라리 마약 파는 게 낫지!
+traveler:JORJI_PASSPORTS,I read newspaper.,신문을 봤습니다.
+traveler:JORJI_PASSPORTS,@Hello Jorji.,@반갑습니다 Jorji.
+traveler:JORJI_PASSPORTS,Things getting little crazy in Arstotzka.,아스토츠카가 미쳐돌아가는 거 같던데.
+traveler:JORJI_PASSPORTS,Maybe you think about going away for a bit.,잠시 다른 곳에 가 있는 게 어떻습니까.
+traveler:JORJI_PASSPORTS,Obristan is good place.,오브리스탄은 좋은 곳입니다.
+traveler:JORJI_PASSPORTS,Right next door up north.,바로 북쪽에 있으니 말이지요.
+traveler:JORJI_PASSPORTS,@Our passports have been confiscated.,@여권이 모두 압수되어서 말입니다.
+traveler:JORJI_PASSPORTS,@We cannot leave.,@떠날 수가 없지요.
+traveler:JORJI_PASSPORTS,Hey that not good sign.,그거 나쁜 소식이군요.
+traveler:JORJI_PASSPORTS,Hold on.,잠깐.
+traveler:JORJI_PASSPORTS,I know a guy.,아는 사람이 있습니다.
+traveler:JORJI_PASSPORTS,Just give him real passports to work with.,가진 진짜 여권이 있으면 주시죠.
+traveler:JORJI_PASSPORTS,He changes info to match for you.,정보를 수정 해줄 테니까요.
+traveler:JORJI_PASSPORTS,I learn that in hard way.,어렵게 얻은 정보지요.
+traveler:JORJI_PASSPORTS,Thanks again!,고맙군요!
+traveler:JORJI_PASSPORTS,Bah! Maybe you right.,하! 마음대로 하시죠.
+traveler:JORJI_PASSPORTS,Better to take little break.,조금 쉬는 게 좋을 겁니다.
+traveler:JORJI_PASSPORTS,Hey what the hell?,뭡니까 이게?
+traveler:JORJI_PASSPORTS,You take my passport!,내 여권을 가져갔잖아요!
+traveler:JORJI_PASSPORTS,You can see it was expensive!,얼마나 비싼 녀석인데!
+traveler:JORJI_PASSPORTS,@You said I need real Obristan passports.,@오브리스탄 여권이 필요하다고 했잖습니까.
+traveler:JORJI_PASSPORTS,Man. Fine.,이런. 좋아요.
+traveler:JORJI_PASSPORTS,I get another but little unhappy about it.,다른 거야 있지만 좀 기분이 나쁘군요.
+traveler:JORJI_PASSPORTS,Memorize flyer and give back.,전단지는 보고 기억한 후에 돌려주시죠.
+traveler:JORJI_PASSPORTS,Hey you know what.,잠깐.
+traveler:JORJI_PASSPORTS,Take my passport.,내 여권을 가져가시죠.
+traveler:JORJI_PASSPORTS,I get another one no problem.,하나 더 있으니 문제는 없습니다.
+traveler:JORJI_PASSPORTS,Now memorize flyer and give back if you finish reading.,전단지는 보고 기억한 후에 돌려주시죠.
+traveler:JORJI_PASSPORTS,Do not want to get in trouble!,말썽에 엮이긴 싫거든요!
+traveler:JORJI_PASSPORTS,Obristan really great this time of year.,이때 즈음의 오브리스탄은 정말 좋은 곳입니다.
+traveler:JORJI_PASSPORTS,Lots of snow.,눈이 많이 내리지요.
+traveler:JORJI_PASSPORTS,Not sure where you get more passports for family.,가족들 여권까지는 어디서 구해야 할지 모르겠군요.
+traveler:JORJI_PASSPORTS,But you smart guy.,하지만 당신은 똑똑한 양반이니까.
+traveler:JORJI_PASSPORTS,Probably figure it out!,아마 이해할 겁니다!
+traveler:JORJI_PASSPORTS,Good luck.,행운을 빌지요.
+traveler:JORJI_GOODBYE,Ho boy! I make big score!,반갑습니다! 대박이 났어요!
+traveler:JORJI_GOODBYE,Huge! You have no idea!,엄청 크게 말이지요! 짐작도 못 할 겁니다!
+traveler:JORJI_GOODBYE,Anyway. I just want to say thank you.,"어쨌든, 감사의 말을 전하러 왔습니다."
+traveler:JORJI_GOODBYE,I wait in line just for that!,그걸 위해서 대기하고 있었지요!
+traveler:JORJI_GOODBYE,Maybe I quit now.,이제 은퇴할까 싶습니다.
+traveler:JORJI_GOODBYE,Haha!,하하!
+traveler:BROTHEL0,Hello handsome.,안녕 멋쟁이.
+traveler:BROTHEL0,You look bored.,지루해 보이네.
+traveler:BROTHEL0,"If you want good time, come see us.","좋은 시간을 보내고 싶으면, 우릴 보러 와요."
+traveler:BROTHEL0,I will be around couple months.,몇 달 동안은 머물러 있을 예정이니까.
+traveler:BROTHEL0,Don't forget to visit.,꼭 들러요.
+traveler:BROTHEL1,Hey there.,안녕.
+traveler:BROTHEL1,I can make you happy any time.,언제든 행복하게 만들어줄 수 있어요.
+traveler:BROTHEL1,Come to Pink Vice. Ask for Ava.,핑크 바이스로 와요. Ava에게 물어보고.
+traveler:BROTHEL2,Oh. Here.,오. 여기예요.
+traveler:BROTHEL2,Please help me.,도와줘요.
+traveler:BROTHEL3,Hello friend.,안녕 친구.
+traveler:BROTHEL3,"You come down, I give you good girl.","도와주면, 좋은 여자를 소개시켜 주지."
+traveler:BROTHEL3,That little bitch.,그 망할 년.
+traveler:BROTHEL3,I break her in two.,반으로 분질러 버리겠어.
+traveler:BROTHEL3,@You are Dari Ludum?,@당신이 Dari Ludum이요?
+traveler:BROTHEL3,"Of course, it says on passport.","물론, 여권에 그리 써져 있잖소."
+traveler:BROTHEL3,@One moment.,@잠시만 기다려주시죠.
+traveler:BROTHEL3,What is this shit?,이게 뭐하는 짓거리지?
+traveler:BROTHEL3,Give my papers back.,내 서류 돌려주쇼.
+traveler:KILLERATHLETE,@You are Vince Lestrade?,@당신이 Vince Lestrade입니까?
+traveler:KILLERATHLETE,Damn.,망할.
+traveler:KILLERATHLETE,"Look, I did not kill her. I was set up.","보소, 난 안 죽였소. 다 모함이라고."
+traveler:KILLERATHLETE,Do not believe the Republian lies.,리퍼블리아 사람들이 하는 말 믿지 마시오.
+traveler:KILLERATHLETE,Let me through.,좀 지나갑시다.
+traveler:KILLERATHLETE,Shit.,제기랄.
+traveler:HUSBAND_WIFE0,"Today is beautiful day, my friend.","아름다운 날입니다, 친구."
+traveler:HUSBAND_WIFE0,We finally become free from Antegrian tyranny!,드디어 안테그리아의 폭정에서 벗어났어요!
+traveler:HUSBAND_WIFE0,Thank you so much!,아주 고맙습니다!
+traveler:HUSBAND_WIFE0,"Please be kind to my wife, she is just after me.",우리 마누라도 잘 대해주시죠. 바로 따라왔으니까요.
+traveler:HUSBAND_WIFE0,No! They will kill us!,안 돼! 놈들이 우릴 죽일 거요!
+traveler:HUSBAND_WIFE0,"Please, I beg you.","제발, 부탁이요."
+traveler:HUSBAND_WIFE0,Let my wife pass. She is coming to you next.,마누라는 통과시켜 주시오. 다음에 오고 있소.
+traveler:HUSBAND_WIFE1,Did you see my husband?,우리 남편 보셨나요?
+traveler:HUSBAND_WIFE1,"He made it through, yes?",통과한 거 맞죠?
+traveler:HUSBAND_WIFE1,@Where is your entry permit?,@입국 허가증은 어디에 있습니까?
+traveler:HUSBAND_WIFE1,"Please, I beg you.","제발, 부탁이에요."
+traveler:HUSBAND_WIFE1,They would not give me permit. I have no choice.,저한테 허가증을 안 줬어요. 달리 방법이 없었다고요.
+traveler:HUSBAND_WIFE1,I will be killed if I return to Antegria.,안테그리아로 돌아가면 죽을 거예요.
+traveler:HUSBAND_WIFE1,Thank you.,고마워요.
+traveler:HUSBAND_WIFE1,We will not forget.,잊지 않겠어요.
+traveler:HUSBAND_WIFE1,Why?,왜죠?
+traveler:HUSBAND_WIFE1,You have doomed me.,당신이 날 죽인 거예요.
+traveler:HUSBAND_WIFE1,Why did you turn my husband away?,왜 우리 남편을 돌려보낸 거죠?
+traveler:HUSBAND_WIFE1,I will not leave him to die.,절대 죽게 두지 않겠어요.
+traveler:HUSBAND_WIFE1,You have doomed us both.,우리 둘을 다 죽인 거예요.
+traveler:HIRING_ENGINEERS_START,"You see many people, yes?",사람들 많이 만나지요?
+traveler:HIRING_ENGINEERS_START,I am looking for engineers.,기술자를 찾고 있습니다.
+traveler:HIRING_ENGINEERS_START,Do me a favor.,도와주시죠.
+traveler:HIRING_ENGINEERS_START,Give my card to any engineers you meet.,만나는 아무 기술자한테 내 카드를 보여주십쇼.
+traveler:HIRING_ENGINEERS_START,I come back in few days.,며칠 뒤에 다시 올 테니.
+traveler:HIRING_ENGINEERS_START,Pay you 5 credits for each engineer that calls me.,정비공을 하나 보내줄 때마다 5장 씩 주지요.
+traveler:HIRING_ENGINEERS_START,You make a mistake but I let you fix it.,실수를 하긴 했지만 봐주지요.
+traveler:HIRING_ENGINEERS,What is this?,이건 뭐죠?
+traveler:HIRING_ENGINEERS,Oh. Huh. ; Huh. ; They are hiring?,오. 흠. ; 흠. ; 고용하는 겁니까?
+traveler:HIRING_ENGINEERS,I have already.,이미 받았수다.
+traveler:HIRING_ENGINEERS,Stop giving to me.,그만 좀 주시죠.
+traveler:HIRING_ENGINEERS,"Forget it, take them both. I don't want.","아니, 이것도 받으시죠. 필요 없으니까."
+traveler:HIRING_ENGINEERS_END,"Is good card, yes? ; Thanks ; These were not cheap you know. ;",좋은 거겠죠? ; 고맙습니다 ; 빚을 하나 졌군요. ;
+traveler:HIRING_ENGINEERS_END,I am back.,다시 왔습니다.
+traveler:HIRING_ENGINEERS_END,How many engineers did you meet?,정비공은 얼마나 만나보셨죠?
+traveler:HIRING_ENGINEERS_END,I got no calls.,아무도 연락이 없더군요.
+traveler:HIRING_ENGINEERS_END,You gave my cards to no one.,아무한테도 안 주셨던 모양이네요.
+traveler:HIRING_ENGINEERS_END,Thank you for nothing.,아무것도 안 해줘서 고맙수다.
+traveler:HIRING_ENGINEERS_END,I get only one call.,한 명만 연락을 해주더군요.
+traveler:HIRING_ENGINEERS_END,I'm lucky that he is good lead.,솜씨 좋은 사람이라 다행이었지요.
+traveler:HIRING_ENGINEERS_END,Here is what I promised.,약속한 돈입니다.
+traveler:HIRING_ENGINEERS_END,I got two calls.,두 명이 연락을 주더군요.
+traveler:HIRING_ENGINEERS_END,"One guy, he was good.",한 명은 실력이 좋았지요.
+traveler:HIRING_ENGINEERS_END,Other one not so much.,다른 한 명은 아니었지만.
+traveler:HIRING_ENGINEERS_END,Thanks anyways.,어쨌거나 고맙군요.
+traveler:HIRING_ENGINEERS_END,I got three calls.,세 명이 연락을 주더군요.
+traveler:HIRING_ENGINEERS_END,Two guys were good.,두 명은 괜찮았습니다.
+traveler:HIRING_ENGINEERS_END,Last one was a fool. Didn't know basics.,마지막 사람은 바보였지만. 기본도 모르던데.
+traveler:HIRING_ENGINEERS_END,But is ok. I appreciate.,그래도 뭐 괜찮습니다. 고마워요.
+traveler:HIRING_ENGINEERS_END,I got four calls.,네 명이 연락을 주더군요.
+traveler:HIRING_ENGINEERS_END,Three were civil engineers. Useless.,세 명은 토목기사였지요. 쓸모 없었고.
+traveler:HIRING_ENGINEERS_END,I need mechanicals. I told you.,난 정비공이 필요하단 말입니다. 말 했잖아요.
+traveler:HIRING_ENGINEERS_END,"Anyway, is ok. Last guy very sharp.","어쨌든, 괜찮습니다. 마지막 사람이 굉장히 능숙했으니까."
+traveler:HIRING_ENGINEERS_END,Thanks for the help.,도와줘서 고맙습니다.
+traveler:FRIENDLY_GUARD0,Hello.,안녕.
+traveler:FRIENDLY_GUARD0,I heard that you are from Nirsk?,니스크에서 왔다지?
+traveler:FRIENDLY_GUARD0,I grew up there but I have not been back in many years.,나도 거기서 자랐지만 몇 년 동안 안 돌아가봐서 말이야.
+traveler:FRIENDLY_GUARD0,@It is still a shit-hole. As before.,@아직도 촌구석이요. 옛날처럼.
+traveler:FRIENDLY_GUARD0,"Haha, of course. This is what I remember too.","하하, 그렇겠지. 내 기억에도 그랬어."
+traveler:FRIENDLY_GUARD0,I am Sergiu. It is good to meet you.,난 Sergiu야. 만나서 반갑군.
+traveler:FRIENDLY_GUARD0,I will do my best to keep you safe.,최선을 다해서 자넬 지켜주지.
+traveler:FRIENDLY_GUARD1,Thank you for yesterday.,어제 일은 고마워.
+traveler:FRIENDLY_GUARD1,My aim is not like before.,조준 실력이 옛날만 못하거든.
+traveler:FRIENDLY_GUARD2,There is more action at this checkpoint than in the war.,어째 전쟁터보다 여기 검문소에서 하는 일이 더 많아.
+traveler:FRIENDLY_GUARD2,I fought in Kolechia for 5 years.,5년 동안 콜레치아인과 싸웠는데 말이야.
+traveler:FRIENDLY_GUARD2,"If you think it is bad in Arstotzka, it is ten times worse in Kolechia.",아스토츠카가 별로라고 생각해? 콜레치아는 그보다 10배는 더 안 좋아.
+traveler:FRIENDLY_GUARD2,I do not blame them for coming here.,여기 오는 사람들을 뭐라 하기가 그래.
+traveler:FRIENDLY_GUARD2,"Anyways, you are doing well. Keep it up.","어쨌든, 잘 하고 있구만. 계속 열심히 하라고."
+traveler:FRIENDLY_GUARD3,"Friend, how are you?","친구, 잘 지내나?"
+traveler:FRIENDLY_GUARD3,I have a small favor to ask.,작은 부탁이 하나 있는데.
+traveler:FRIENDLY_GUARD3,"During the war, I met a beautiful girl.",전쟁 중에 아름다운 여자를 하나 만났어.
+traveler:FRIENDLY_GUARD3,I think about her every moment.,계속해서 그녀 생각이 나.
+traveler:FRIENDLY_GUARD3,Yesterday I receive word that she is finally coming here.,어제는 드디어 그녀가 여기로 온다는 편지를 받았어.
+traveler:FRIENDLY_GUARD3,"Please, let her pass and I will be in your debt.","부탁이야, 그녀를 통과시켜 주면 나중에 꼭 보답할게."
+traveler:FRIENDLY_GUARD3,Her name is Elisa.,그녀의 이름은 Elisa야.
+traveler:FRIENDLY_GUARD4,Thank you for everything.,모든 것에 대해 고마워.
+traveler:FRIENDLY_GUARD4,Elisa is so happy here.,Elisa도 여기 와서 행복해하고 있어.
+traveler:FRIENDLY_GUARD4,She says our first son will have your name.,장남을 낳으면 자네 이름을 붙이려고 하나 봐.
+traveler:FRIENDLY_GUARD4,This is fine but I told her I want a daughter first!,나도 괜찮긴 하지만 딸이 먼저 낳고 싶거든!
+traveler:FRIENDLY_GUARD4,I would like to show the locket to her.,목걸이를 그녀에게 보여주고 싶어.
+traveler:FRIENDLY_GUARD4,Do you still have it?,아직도 가지고 있나?
+traveler:FRIENDLY_GUARD4,"Ah, I missed not having this with me.","아, 이게 없던 나날이 생각나는군."
+traveler:FRIENDLY_GUARD4,"It is not much, but we have found a small way to thank you.","큰 건 아니지만, 작은 사례를 하고 싶어."
+traveler:FRIENDLY_GUARD4,Elisa will deliver it to your home. I hope that it helps.,Elisa가 자네 집에 물건을 가져가줄 거야. 도움이 되길 바라.
+traveler:FRIENDLY_GUARD4,Tomorrow I am transferred to another post.,내일이면 다른 검문소에 배치될 거야.
+traveler:FRIENDLY_GUARD4,Stay safe my friend.,잘 지내라고 친구.
+traveler:FRIENDLY_GUARD4,Elisa did not come.,Elisa가 오지 못했어.
+traveler:FRIENDLY_GUARD4,"@She arrived, but her papers were not in order.","@도착은 했지만, 서류가 규정에 안 맞더군."
+traveler:FRIENDLY_GUARD4,@Tell her to try again with the correct documents.,@제대로 된 서류를 가지고 다시 오라고 말해줘.
+traveler:FRIENDLY_GUARD4,You know this is impossible.,그게 불가능하다는 건 알텐데.
+traveler:FRIENDLY_GUARD4,"If you have the locket, give it back to me.","목걸이를 가지고 있다면, 다시 내게 돌려줘."
+traveler:ELISA,Do you know Sergiu?,Sergiu를 아나요?
+traveler:ELISA,He said you were friend. That you would help.,당신이 친구라고 하더군요. 도와줄 수 있다던데.
+traveler:ELISA,"Please, my family is gone.",부탁이에요. 가족이 다 죽었어요.
+traveler:ELISA,I have only Sergiu left.,내게 남은 건 Sergiu뿐이에요.
+traveler:ELISA,@You do not have the required documentation.,@필요한 문서가 없군요.
+traveler:ELISA,I tried for so long.,오랫동안 애는 썼어요.
+traveler:ELISA,They would not allow me to leave.,하지만 떠나게 두질 않더군요.
+traveler:ELISA,I am denied?,거부된 건가요?
+traveler:ELISA,I understand.,이해해요.
+traveler:ELISA,"Please, tell Sergiu I will always love him.",부탁이에요. Sergiu에게 언제나 사랑한다고 말해줘요.
+traveler:ELISA,We will be together in another life.,내세에라도 같이 함께 해야죠.
+traveler:ELISA,Return this for him to remember me.,이걸 주면서 날 기억하라고 해줘요.
+traveler:ELISA,Thank you so much.,정말 고마워요.
+traveler:ELISA,I will never forget your kindness.,이 친절함은 못 잊을 거예요.
+traveler:ELISA,@He is waiting for you.,@그가 당신을 기다립니다.
+traveler:ELISA,My love.,내 사랑.
+traveler:ELISA,I miss him.,보고싶어요.
+traveler:ELISA,@I am sorry. Sergiu was killed.,@미안합니다. Sergiu는 죽었습니다.
+traveler:ELISA,My Sergiu.,내 Sergiu.
+traveler:ELISA,Thank you for your kindness.,친절함에 대해 감사해요.
+traveler:ELISA,There is nothing for me here any more.,이제 제게 남은 건 아무것도 없군요.
+traveler:ELISA,Thank you.,고마워요.
+traveler:PRISON_GUARD_REPORTDETAINS,You detained nobody.,아무도 구금 시켰군.
+traveler:PRISON_GUARD_REPORTDETAINS,You detained only one person.,한 명만 구금하는 데 성공했군.
+traveler:PRISON_GUARD_REPORTDETAINS,You detained ${Game/NumDetains} people.,${Game/NumDetains}명을 구금했군.
+traveler:PRISON_GUARD0,Hello.,안녕한가.
+traveler:PRISON_GUARD0,@Are you the spy?,@스파이인가요?
+traveler:PRISON_GUARD0,What? No.,뭐라고? 아니야.
+traveler:PRISON_GUARD0,I am guard here. My name is Calensk.,난 여기 경비대야. 이름은 Calensk지.
+traveler:PRISON_GUARD0,"They told me I get good position, then send me here.",나더러 좋은 곳으로 간다고 하던데. 도착해보니 여기였군.
+traveler:PRISON_GUARD0,This is thanks I get.,내가 받은 답례가 이거뿐이라니.
+traveler:PRISON_GUARD0,Now they pay me almost nothing.,이젠 봉급도 거의 안 주고.
+traveler:PRISON_GUARD0,@They pay us all as much.,@봉급은 다 비슷하게 주던데.
+traveler:PRISON_GUARD0,Yes. But look.,"그래, 하지만 들어보라고."
+traveler:PRISON_GUARD0,I get small bonus when you detain people.,자네가 사람을 구금할 때마다 내가 작은 보너스를 받거든.
+traveler:PRISON_GUARD0,"More you detain, more they give me for processing.","자네가 더 구금할 수록, 그 과정에서 떨어지는 게 많다 이거지."
+traveler:PRISON_GUARD0,"But this is not fair, right? You should get something too.",하지만 이건 불공평 하잖나? 자네한테도 떨어지는 게 있어야지.
+traveler:PRISON_GUARD0,So I fix this problem.,그래서 내가 이 문제를 해결할 거야.
+traveler:PRISON_GUARD0,I give you 5 credits from my bonus for every two people you detain.,자네가 구금시키는 사람 2명마다 내가 5장 씩 주겠어.
+traveler:PRISON_GUARD0,Sounds like good deal to me.,좋은 제안 같은데.
+traveler:PRISON_GUARD0,I give money to you after I get paid.,내가 돈을 받으면 자네한테 넘겨주지.
+traveler:PRISON_GUARD0,Let us make the best of this.,함께 잘 해보자고.
+traveler:PRISON_GUARD3,Here.,자.
+traveler:PRISON_GUARD3,For bonus and selling bomb parts.,보너스랑 폭탄 부품료야.
+traveler:PRISON_GUARD3,They move our station to prison.,우리 신분을 감옥으로 옮겨주더군.
+traveler:PRISON_GUARD3,We still get bonus so keep detaining.~,계속해서 구금할 수록 보너스를 받을 거야.~
+traveler:PRISON_GUARD3,I stop visiting you here.,이제 찾아오는 건 이걸로 끝일세.
+traveler:PRISON_GUARD3,I will drop off money at your home instead.,대신 집에 돈을 두고 가지.
+traveler:PRISON_GUARD3,Every other night.,이틀 밤마다 말이야.
+traveler:PRISON_GUARD_PAYOUT,What is going on?,이게 도대체 뭐지?
+traveler:PRISON_GUARD_PAYOUT,I am getting nothing because of you.,자네 때문에 한 푼도 못 벌잖나.
+traveler:PRISON_GUARD_PAYOUT,Detain more people and we will both benefit.,우리 모두의 이득을 위해서라도 더 많은 사람을 구금하게.
+traveler:PRISON_GUARD_PAYOUT,Good morning.,좋은 아침이야.
+traveler:PRISON_GUARD_PAYOUT,You are not detaining enough people.,사람을 충분히 구금하지 않았더군.
+traveler:PRISON_GUARD_PAYOUT,I have nothing to give you.,더 줄 게 없어.
+traveler:PRISON_GUARD_PAYOUT,Detain more to share part of my bonus.,더 많이 구금을 해줘야 내 보너스를 나눠주지.
+traveler:PRISON_GUARD_PAYOUT,"Bonus is good, they pay ok.",보너스는 좋은 거야. 봉급도 좋지만.
+traveler:PRISON_GUARD_PAYOUT,It is not much though.,다만 충분치 않을 뿐이지.
+traveler:PRISON_GUARD_PAYOUT,Maybe you detain more people and we do better.,더 많은 사람을 구금하면 더 나아질 지도 모르지.
+traveler:PRISON_GUARD_PAYOUT,@This is not enough.,@약속한 거랑 양이 다른데.
+traveler:PRISON_GUARD_PAYOUT,"Yes, I know.","그래, 나도 알아."
+traveler:PRISON_GUARD_PAYOUT,My wife sick now. Neighbor spreads the flu.,우리 마누라가 아파. 이웃한테 감기를 옮았어.
+traveler:PRISON_GUARD_PAYOUT,This is what is left after medicine.,약 사고 남은 게 이게 다야.
+traveler:PRISON_GUARD_PAYOUT,I give you rest next time.,나머지는 다음 번에 주지.
+traveler:PRISON_GUARD_PAYOUT,Maybe you detain more people to make it easier.,더 많은 사람을 구금하면 더 나아질 지도 모르지.
+traveler:PRISON_GUARD_PAYOUT,Here is your cut.,여기 자네 몫일세.
+traveler:PRISON_GUARD_PAYOUT,@There is more from last time.,@지난 번보다 많은걸.
+traveler:PRISON_GUARD_PAYOUT,This is all I have now but soon I make up rest.,지금은 이게 다지만 나중에 더 주지.
+traveler:PRISON_GUARD_PAYOUT,Again it is a little short.,아직 부족해서 말이지.
+traveler:PRISON_GUARD_PAYOUT,Keep detaining and I pay you back soon.,계속 잡아 넣으면 내가 곧 다시 돈을 줄 거야.
+traveler:PRISON_GUARD_BOMB,What is going on?,이게 도대체 뭐지?
+traveler:PRISON_GUARD_BOMB,Oh. Hah.,오. 하.
+traveler:PRISON_GUARD_BOMB,What is this amateur shit?,이게 웬 아마추어 짓거리지?
+traveler:PRISON_GUARD_BOMB,@Should we evacuate?,@대피해야 하나?
+traveler:PRISON_GUARD_BOMB,For that little thing? No of course not.,이 쬐깐한 것 때문에? 당연히 안 해도 되지.
+traveler:PRISON_GUARD_BOMB,Just disable it. Open the cover.,그냥 해제해. 덮개를 열어.
+traveler:PRISON_GUARD_BOMB,Stupid fucking terrorist.,모자라 빠진 테러리스트 새끼들 같으니.
+traveler:PRISON_GUARD_BOMB,Could not even add a display.,디스플레이조차 안 붙여놓다니.
+traveler:PRISON_GUARD_BOMB,@What should I do now?,@이제 어쩌지?
+traveler:PRISON_GUARD_BOMB,This is poorest bomb I ever see. A simple mind created this.,내가 본 폭탄 중 제일 조잡한 거야. 멍청한 놈이 만들었겠지.
+traveler:PRISON_GUARD_BOMB,Just cut the wires in order.,그냥 순서대로 줄을 잘라.
+traveler:PRISON_GUARD_BOMB,"Ok, all done. Back to work.","좋아, 다 됐군. 일로 돌아가라고."
+traveler:PRISON_GUARD_BOMB,@We should close the checkpoint.,@검문소를 닫아야 하는데.
+traveler:PRISON_GUARD_BOMB,Bullshit. I need to earn money today.,헛소리. 오늘 돈을 벌어야 해.
+traveler:PRISON_GUARD_BOMB,Give bomb to me.,폭탄 이리 내놔.
+traveler:PRISON_GUARD_BOMB,I sell materials and give you cut.,부품을 팔아서 값을 나눠줄 테니까.
+traveler:PRISON_GUARD_BOMB,What a piece of shit.,정말 조잡하기 그지없군.
+traveler:PRISON_GUARD_BOMB,I doubt it is even worth much.,값이나 쳐줄지 모르겠어.
+traveler:PRISON_GUARD_BOMB,Call the next immigrant.,다음 이민자를 들여보내.
+traveler:TIME_BOMBER,DEATH TO ARSTOTZKA!,아스토츠카에 죽음을!
+traveler:BOSS_REPORTCITATIONS,You have received no citations.,표창장을 못 받았네.
+traveler:BOSS_REPORTCITATIONS,You have received one citation.,표창장을 하나 받았군.
+traveler:BOSS_REPORTCITATIONS,You have received ${Game/NumCitations} citations.,표창장을 ${Game/NumCitations}개 받았군.
+traveler:BOSS0,So.~,그러니까.~
+traveler:BOSS0,You are inspector here.~,자네가 여기 검사관이군.~
+traveler:BOSS0,That makes you my responsibility.~,자네를 맡은 건 내 책임이지.~
+traveler:BOSS0,You make Arstotzka proud.~,자네는 아스토츠카를 자랑스럽게 했네.~
+traveler:BOSS0,Hang it on wall here.,여기 벽에 걸어두게.
+traveler:BOSS0,I return in 10 days.~,10일 뒤에 돌아오겠네.~
+traveler:BOSS0,Maintain your diligence.,계속 근면하도록 하게.
+traveler:BOSS0,Glory to Arstotzka.,아스토츠카에 영광 있으라.
+traveler:BOSS0,Perhaps it was mistake to rely on lottery.,복권에 의존하는 건 잘못된 거였을지도 모르겠군.
+traveler:BOSS0,Let this motivate you.~,잘 깨닫길 바라네.~
+traveler:BOSS0,Do not embarrass me.,날 실망시키지 말게.
+traveler:BOSS0,It makes me look like fool to trust lottery.~,복권을 믿은 바보가 된 기분이군.~
+traveler:BOSS0,Let this motivate you to improve.~,이번 사건으로 더 잘 해주게.~
+traveler:BOSS0,Do not embarrass me further.,더는 날 실망시키지 말게.
+traveler:BOSS1,It is too early to come all the way out here.,너무 이른 시간에 찾아온 모양이군.
+traveler:BOSS1,The smell at this checkpoint makes me sick.,이 검문소 냄새 떄문에 머리가 아픈데.
+traveler:BOSS1,Where is plaque I gave you?,내가 준 표창장은 어디에 있나?
+traveler:BOSS1,Why is it not on wall?,왜 벽에 걸지 않았지?
+traveler:BOSS1,What is other shit hanging here?,왜 잡다한 걸 걸어놓은 건가?
+traveler:BOSS1,These walls are for official plaques only.,벽에는 공식 표창장만 걸어놓아야 하네.
+traveler:BOSS1,Your pay will be docked for violation.,규정 위반으로 봉급을 가져가겠네.
+traveler:BOSS1,@It will not happen again.,@다시는 이런 일 없을 겁니다.
+traveler:BOSS1,At least you are performing well.,최소한 일은 잘 하니 말이야.
+traveler:BOSS1,Continue this honorable service.,계속 영예로운 헌신을 이어나가주게.
+traveler:BOSS1,At least your performance is not terrible.,최소한 일은 그리 나쁘지 않으니 말이야.
+traveler:BOSS1,Do not slip further.,더 이상은 엇나가지 말게.
+traveler:BOSS1,And your performance is terrible.,게다가 일도 끔찍하게 못 하니 말이지.
+traveler:BOSS1,Maybe you have forgotten what your job is.,자네 일이 뭐였는지 아예 잊어버린 모양이군.
+traveler:BOSS1,There are many more who can take your place.,자네를 대체할 사람은 수도 없이 많아.
+traveler:BOSS1,Now.,자.
+traveler:BOSS1,I have old friend coming through.,옛 친구가 곧 있으면 여기로 올 걸세.
+traveler:BOSS1,Approve her entry.,그녀의 입국을 허가하게.
+traveler:BOSS1,She is Shae Piersovska.~,그녀 이름은 Shae Piersovska일세.
+traveler:BOSS1,I do not want to hear of any trouble to her.,그녀랑 관계된 그 어떤 말썽도 듣고싶지 않네.
+traveler:BOSS1,Glory to Arstotzka.,아스토츠카에 영광 있으라.
+traveler:BOSS2,You little bastard.~,이 새끼가.~
+traveler:BOSS2,Shae thinks I am powerless fool now.,Shae는 이제 내가 권력도 없는 바보라고 생각하고 있어.
+traveler:BOSS2,It was made very clear to let her through.,그렇게 명확하게 통과시키라고 말 했건만.
+traveler:BOSS2,Now I must think about the consequences for you.~,이제 자네의 처분에 대해 생각해야 겠구만.~
+traveler:BOSS2,Maybe this place not so bad.,여기도 나쁘진 않군.
+traveler:BOSS2,"With everything going on, checkpoint visit is nice break.~","일이 잘 풀리니, 검문소 방문도 꽤나 괜찮은 휴식이야."
+traveler:BOSS2,You still do not hang the plaques.,아직도 표창장을 걸지 않았더군.
+traveler:BOSS2,Why do you not hang both plaques?,왜 표창장을 아직도 걸지 않았나?
+traveler:BOSS2,But again you have unauthorized items on wall.,게다가 비인가된 물건을 벽에 걸어놓다니.
+traveler:BOSS2,I warned before.~,전에 경고 했었지.~
+traveler:BOSS2,But what is other shit hanging here?,왜 잡다한 걸 걸어놓은 건가?
+traveler:BOSS2,These walls are for official plaques only.,벽에는 공식 표창장만 걸어놓아야 하네.
+traveler:BOSS2,Your pay will be docked for violation.,규정 위반으로 봉급을 가져가겠네.
+traveler:BOSS2,@It will not happen again.,@다시는 이런 일 없을 겁니다.
+traveler:BOSS2,There are no more plaques.,더 받을 표창장도 없네.
+traveler:BOSS_BUDDY,How is Dimitri?,Dimitri는 잘 지내나요?
+traveler:BOSS_BUDDY,I hear he runs checkpoint now.,이제 검문소를 관리한다고 들었는데.
+traveler:BOSS_BUDDY,It looks like somewhere he would fit in.,딱 어울리는 위치긴 하죠.
+traveler:BOSS_BUDDY,I bet he is still terrible boss.,아마 끔찍한 상사일 거예요.
+traveler:BOSS_BUDDY,"You know, Dimitri asked me to come.",Dimitri가 내 얘길 했을 거예요.
+traveler:BOSS_BUDDY,Said I would get through.,날 통과시켜 달라고요.
+traveler:BOSS_BUDDY,But I guess he is not so much in control.,하지만 뭐 여기서도 변변찮은 모양이네요.
+traveler:BOSS_BUDDY,I hope Dimitri tires more easily now.,이제는 그 성정도 좀 누그러졌으면 좋을 텐데.
+traveler:BOSS_BUDDY,I do not want to stay long in Arstotzka.,아스토츠카에서 오래 머물고 싶진 않아요.
+traveler:BOSS_BUDDY,"Ah, I would not do that.","아, 나라면 안 그럴 텐데."
+traveler:BOSS_BUDDY,Dimitri is not forgiving person.,Dimitri는 용서 없는 사람이라고요.
+traveler:BOSS_BUDDY,I am no fool.,난 바보가 아니에요.
+traveler:BOSS_BUDDY,"This is inconvenience, but I am not worried for myself.",꽤나 불편한 상황이네요. 하지만 나보단 당신이 걱정이에요.
+traveler:BOSS_BUDDY,Tell Dimitri I said hello.,Dimitri에게 안부나 전해줘요.
+traveler:BOSS_ANGRY,You worthless urchin.~,쓰레기같은 부랑자 같으니.~
+traveler:BOSS_ANGRY,I had to pull many strings to get Shae out.,Shae를 꺼내오려고 갖은 짓을 다 했어.
+traveler:BOSS_ANGRY,It was made very clear to let her through.~,그렇게 명확하게 통과시키라고 말 했건만.~
+traveler:BOSS_ANGRY,My patience with you has run out.~,이제 인내심도 바닥이 나는군.~
+traveler:KID_KILLER0,Look at it.~,이봐요.~
+traveler:KID_KILLER0,Simon Wens took her from me.~,Simon Wens라는 사람이 제 딸을 앗아갔습니다.~
+traveler:KID_KILLER0,I follow him for many weeks.,몇 주 동안 놈을 쫓고 있었죠.
+traveler:KID_KILLER0,I know he comes here soon.~,곧 놈이 여기로 올 겁니다.~
+traveler:KID_KILLER0,"It is big favor I ask, but is important.","큰 부탁인 건 알지만, 중요한 부탁입니다."
+traveler:KID_KILLER0,Let him through if you see him.,놈을 보면 입국시켜주십시오.
+traveler:KID_KILLER0,But take his passport first.~,하지만 여권은 압수하시고요.~
+traveler:KID_KILLER0,I come back.,다시 왔습니다.
+traveler:KID_KILLER0,You give me his passport and I track him down.~,당신이 준 여권으로 놈을 추적했습니다.~
+traveler:KID_KILLER0,I make him suffer like he did to Julia.~,놈이 우리 Julia에게 한 그대로 고통받게 해줬지요.~
+traveler:KID_KILLER1,What the fuck!,이런 시발!
+traveler:KID_KILLER2,Did you see him?,놈을 봤습니까?
+traveler:KID_KILLER2,Give his passport to me.,그 사람의 여권을 제게 주시죠.
+traveler:KID_KILLER2,Hmmm.~,흐음.~
+traveler:KID_KILLER2,I know this city.,아는 도시로군.
+traveler:KID_KILLER2,He will be easily found.,금방 찾겠군요.
+traveler:KID_KILLER2,Let me through.,좀 지나갑시다.
+traveler:KID_KILLER2,Thank you.,고맙군요.
+traveler:KID_KILLER2,"Now please, give back my daughter's photo.","자 이제, 우리 딸 사진 좀 돌려주시죠."
+traveler:KID_KILLER2,I show it to him while he suffers.,고문하면서 보여줄 생각이거든요.
+traveler:KID_KILLER2,You heartless scum.,냉혈한 같으니.
+traveler:KID_KILLER2,Give back my daughter's photo.,우리 딸 사진이나 돌려주시오.
+traveler:KID_KILLER2,My Julia.~,우리 Julia.~
+traveler:KID_KILLER2,Read the news tomorrow.,내일 신문이나 읽어보시길.
+traveler:KID_KILLER2,She was just little girl.,그 애는 작은 소녀일 뿐이었는데.
+traveler:KID_KILLER2,@I do not know what you are talking about.,@무슨 말씀 하시는지 모르겠군요.
+traveler:KID_KILLER2,Damnit.,망할.
+traveler:KID_KILLER2,She was just a little girl.,그 애는 작은 소녀였을 뿐이라 이거요.
+traveler:KID_KILLER2,@Yes. He has been arrested.,@예. 그 자는 체포되었습니다.
+traveler:KID_KILLER2,What? I asked you to let him pass.,뭐라고요? 놈을 통과시켜 달라고 했잖습니까.
+traveler:KID_KILLER2,There will be no true justice now.,이제 세상에 진정한 정의는 죽었군.
+traveler:KID_KILLER2,@Yes. He ran off.,@네. 도망갔습니다.
+traveler:KID_KILLER2,Ran off? Which way?,도망갔다고요? 어디로 말입니까?
+traveler:KID_KILLER2,@I do not know. Back into Kolechia.,@모르지요. 콜레치아로 돌아가던데.
+traveler:KID_KILLER2,Damn it.,망할.
+traveler:KID_KILLER2,@I have no photos.,@사진이 없습니다.
+traveler:KID_KILLER2,Heartless bastard.,피도 눈물도 없는 놈.
+traveler:RESISTER,No.,안 돼.
+traveler:RESISTER,I am not leaving.,이대로 갈 순 없어.
+traveler:RESISTER,@You are delaying the line.,@줄이 길어지고 있잖습니까.
+traveler:RESISTER,I refuse!,거절할 거야!
+traveler:RESISTER,You fools better to not touch me.,날 안 건드리는 게 좋을걸.
+traveler:RESISTER,I will explode like wild tiger.,호랑이처럼 달려들어줄 테니까.
+traveler:RESISTER,I have every right to enter Arstotzka.,입국 서류는 다 갖췄잖아.
+traveler:RESISTER,You think I am joking but tiger does not joke.,"내가 농담하는 걸로 보이는 거 같은데, 호랑이는 농담 안 해."
+traveler:RESISTER,Let me through!,들여보내 줘!
+traveler:JOURNALIST_FIRST,I write report on conditions in Arstotzka.,아스토츠카의 정세에 대해 알려야 합니다.
+traveler:JOURNALIST_FIRST,As long as it takes.,얼마나 걸리건 간에 말이죠.
+traveler:JOURNALIST_FIRST,@You are missing required papers.,@필요한 서류가 없습니다만.
+traveler:JOURNALIST_FIRST,I am journalist.,난 기자입니다.
+traveler:JOURNALIST_FIRST,You have my pass there.,통행증도 있잖아요.
+traveler:JOURNALIST_FIRST,This is outrage!,이건 말도 안 돼요!
+traveler:JOURNALIST_FIRST,Why am I denied?,왜 거부된 거죠?
+traveler:JOURNALIST_FIRST,@Your press pass is worthless for entry.,@입국에 당신 통행증은 무가치합니다.
+traveler:JOURNALIST_FIRST,This is violation of rights.,이건 언론권 탄압이에요.
+traveler:JOURNALIST_FIRST,I will not lay down for your corrupt abuses.,이런 타락을 내 좌시하지 않겠어요.
+traveler:JOURNALIST_FIRST,Expect to read about this!,신문에서 보기나 하시죠!
+traveler:JOURNALIST_FIRST,You are slowest inspector I have ever seen.,내가 본 검사관 중 가장 느리네요.
+traveler:JOURNALIST_FIRST,No wonder Arstotzka is screwed.,아스토츠카도 별 볼일 없겠구만.
+traveler:JOURNALIST,I cover big story.,큰 음모를 쫓고 있어요.
+traveler:JOURNALIST,I cannot say.,더 말할 수는 없고요.
+traveler:JOURNALIST,"Maybe few days, maybe few weeks.","며칠 뒤, 아니면 몇 주 뒤일 겁니다."
+traveler:JOURNALIST,@You are missing required papers.,@필요한 서류가 없습니다만.
+traveler:JOURNALIST,I am reporter and have right to enter.,난 기자고 입국할 권리가 있어요.
+traveler:JOURNALIST,Give me visa stamp.,입국 허가 도장이나 찍어줘요.
+traveler:JOURNALIST,@This pass means nothing.,@이 통행증은 아무런 의미도 없습니다.
+traveler:JOURNALIST,Fascist!,파시스트 같으니!
+traveler:JOURNALIST,Such inefficiency is stunning.,정말 무시무시한 비효율성이군요.
+traveler:FAMILIAR_FACE,Hey I know you.,아는 얼굴이군.
+traveler:FAMILIAR_FACE,You are from Nirsk?,니스크에서 온 사람 아닌가?
+traveler:FAMILIAR_FACE,I worked with your father for many years.,몇 년 동안 자네 아버지랑 함께 일했는데.
+traveler:FAMILIAR_FACE,You were such a little brat.,그때 자네는 맹랑한 꼬마였지.
+traveler:FAMILIAR_FACE,I go back to Nirsk and tell them you are doing well here.,니스크에 돌아가서 여기서 잘 지낸다고 말 해줘야겠구만.
+traveler:FAMILIAR_FACE,You are still brat.,아직도 맹랑해.
+traveler:FAMILIAR_FACE,Just not so little any more.,키만 컸지.
+traveler:WATCH_GIVER0,I have only passport but hear me out.~,지금은 여권밖에 없지만 말 좀 들어봐요.
+traveler:WATCH_GIVER0,There is little time. I must enter today.,시간이 별로 없어요. 오늘까지 입국해야 해요.
+traveler:WATCH_GIVER0,I come back in 3 days with right papers.~,3일 뒤에 제대로 된 서류를 가져올게요.
+traveler:WATCH_GIVER0,"To prove, I give you something important.",증거를 위해 중요한 걸 드리죠.
+traveler:WATCH_GIVER0,Is special family treasure.~,우리 가보예요.~
+traveler:WATCH_GIVER0,Fully digital.~,최신식이죠.~
+traveler:WATCH_GIVER0,You hold as collateral.,담보물로 받아줘요.
+traveler:WATCH_GIVER0,I will be back to pick it up.~,돌아와서 가져갈 테니까.~
+traveler:WATCH_GIVER0,And take this.,그리고 이거 받아요.
+traveler:WATCH_GIVER0,All for green stamp.,다 허가를 위해섭니다.
+traveler:WATCH_GIVER0,@You are missing some papers.,@필요한 서류가 몇 가지 없습니다만.
+traveler:WATCH_GIVER0,Yes I told you this.,그래서 말 했잖습니까.
+traveler:WATCH_GIVER0,Arstotzkan bastard.,망할 아스토츠카 놈 같으니.
+traveler:WATCH_GIVER0,I am telling to you.,부탁입니다.
+traveler:WATCH_GIVER0,Keep watch as promise.,약속의 증표로 시계를 받아주세요.
+traveler:WATCH_GIVER0,I get it back in few days.,며칠 뒤에 다시 받으러 올테니.
+traveler:WATCH_GIVER0,You crook!,이 사기꾼!
+traveler:WATCH_GIVER0,All Arsotzkans are same.,아스토츠카 놈들은 다 똑같아.
+traveler:WATCH_GIVER0,Liars and cheats!,거짓말쟁이에 사기꾼들!
+traveler:WATCH_GIVER0,I will not leave without watch.,내 시계 안 돌려주면 안 떠나겠어.
+traveler:WATCH_GIVER0,Is expensive gift from cousin!,사촌이 준 값비싼 선물이라고!
+traveler:WATCH_GIVER0,Only needs new battery.,건전지만 갈아끼우면 되는데.
+traveler:WATCH_GIVER0,Tell guards to keep away.,경비병한테 꺼지라고 전해요.
+traveler:WATCH_GIVER0,Give back my watch!,내 시계 돌려줘요!
+traveler:WATCH_GIVER0,Thank you.,고맙군요.
+traveler:WATCH_GIVER0,I come back in few days to pick up watch.,며칠 뒤에 다시 가지러 올 거예요.
+traveler:WATCH_GIVER0,Damnit.,망할.
+traveler:WATCH_GIVER0,Fine. Give watch back.,좋아요. 시계 돌려주시죠.
+traveler:WATCH_BUYER0,I used to have watch like that.,예전에 이런 시계를 가지고 있었는데.
+traveler:WATCH_BUYER0,Sell it to me.,나한테 파시죠.
+traveler:WATCH_BUYER0,@It is held for someone.,@누군가를 위해 맡아둔 겁니다.
+traveler:WATCH_BUYER0,Give me break.,왜 이러시나.
+traveler:WATCH_BUYER0,For sure he is not coming back.,당연히 안 돌아올 건데.
+traveler:WATCH_BUYER0,Let me take it off your hands.,두둑히 챙겨줄 테니까.
+traveler:WATCH_BUYER0,10 credits for it.,10장이면 어떱니까.
+traveler:WATCH_BUYER0,Ah!,아!
+traveler:WATCH_BUYER0,All digital!,최신식이군!
+traveler:WATCH_BUYER0,Is very nice.,아주 좋아요.
+traveler:WATCH_BUYER1,That watch.~,그 시계.
+traveler:WATCH_BUYER1,Guy behind me in line would not shut up about it.,뒤에 있던 양반이 주절대던 그거군요.
+traveler:WATCH_BUYER1,On and on about how important is to family.~,자기 가문의 보물이라면서.
+traveler:WATCH_BUYER1,Look.,이봐요.
+traveler:WATCH_BUYER1,"Is good watch, I can see.",좋은 거 같긴 한데.
+traveler:WATCH_BUYER1,I give you 20 credits for it right now.,20장을 바로 드리죠.
+traveler:WATCH_BUYER1,He say he pay you back only 10 credits.,그 양반은 10장만 준다고 했으니.
+traveler:WATCH_BUYER1,Is good deal here I offer you.,내 쪽이 더 괜찮은 제안이잖습니까.
+traveler:WATCH_BUYER1,Ah!,아!
+traveler:WATCH_BUYER1,All digital!,최신식이군!
+traveler:WATCH_BUYER1,Is very nice.,아주 좋아요.
+traveler:WATCH_GIVER1,"As promised, I am back with right papers now.","약속 대로, 제대로 된 서류를 가져왔어요."
+traveler:WATCH_GIVER1,You have my watch?,내 시계는 가지고 있죠?
+traveler:WATCH_GIVER1,Arstotzkan bastard.,망할 아스토츠카놈 같으니.
+traveler:WATCH_GIVER1,I was to give you nice reward.,보상을 주려고 했는데.
+traveler:WATCH_GIVER1,Ah she is beautiful!,"이야, 아름답군요!"
+traveler:WATCH_GIVER1,Here.,여기.
+traveler:WATCH_GIVER1,Now I just need battery.,이제 건전지만 갈아끼우면 되겠군요.
+traveler:WATCH_GIVER1,Hey!,잠깐!
+traveler:WATCH_GIVER1,There is new scratch here!,여기 흠집이 났잖습니까!
+traveler:WATCH_GIVER1,Give money back!,돈 돌려줘요!
+traveler:WATCH_GIVER1,Wow. You are pretty honest person.,"이야, 정직한 사람이셨군요."
+traveler:WATCH_GIVER1,"You know, I cannot take this.",난 이걸 받을 수 없어요.
+traveler:WATCH_GIVER1,Scratch was there before actually.,흠집은 예전부터 나 있던 거라서요.
+traveler:WATCH_GIVER1,Thank you.,고맙군요.
+traveler:WATCH_GIVER1,Now please give watch back.,이제 시계를 돌려줘요.
+traveler:WATCH_GIVER1,I start to think maybe all Arstotzkans are not so bad.,아스토츠카 사람이라고 해서 다 나쁜 사람은 아닌 거 같군요.
+traveler:WATCH_GIVER1,Ah forget it.,방금 말은 잊으시죠.
+traveler:WATCH_GIVER1,You keep money.,돈은 가지시고.
+traveler:WATCH_GIVER1,But all papers are good!,서류를 제대로 챙겨왔잖습니까!
+traveler:WATCH_GIVER1,Are you blind?,눈이라도 먼 것도 아니고!
+traveler:WATCH_GIVER1,Fine.,좋아요.
+traveler:WATCH_GIVER1,Give watch back.,시계 돌려주시오.
+traveler:WATCH_GIVER1,You crook!,이 사기꾼!
+traveler:WATCH_GIVER1,All Arsotzkans are same.,아스토츠카놈들은 다 똑같아.
+traveler:WATCH_GIVER1,Liars and cheats!,거짓말쟁이에 사기꾼들!
+traveler:WATCH_GIVER1,I will not leave without watch.,내 시계 안 돌려주면 안 떠나겠어.
+traveler:WATCH_GIVER1,Is expensive gift from cousin!,사촌이 준 값비싼 선물이라고!
+traveler:WATCH_GIVER1,Only needs new battery.,건전지만 갈아끼우면 되는데.
+traveler:WATCH_GIVER1,Tell guards to keep away.,경비병한테 꺼지라고 전해요.
+traveler:WATCH_GIVER1,Give back my watch!,내 시계 돌려줘요!
+traveler:WATCH_GIVER1,I will not leave without money.,돈 없이는 안 떠날 거야.
+traveler:WATCH_GIVER1,You ruin my good watch.,내 고급 시계를 망쳐놨어.
+traveler:WATCH_GIVER1,Give back my money!,내 돈 내놔!
+traveler:WATCH_GIVER1,Where is my watch?,내 시계 어디있어요?
+traveler:WATCH_GIVER1,@I sold it.,@팔았습니다.
+traveler:WATCH_GIVER1,What!,뭐라고요!
+traveler:WATCH_GIVER1,I give you watch to hold.,가지고 있으라고 말 했잖습니까.
+traveler:WATCH_GIVER1,Put trust in you!,당신을 믿었는데!
+traveler:WATCH_GIVER1,Watch was gift from cousin.,사촌이 준 선물이란 말입니다.
+traveler:WATCH_GIVER1,I hope you got good money for it.,돈은 깨나 벌었겠군요.
+traveler:WATCH_GIVER1,Damn Arstotzkan crook.,망할 아스토츠카 사기꾼 같으니.
+traveler:ARSKICKER0,Hey man.,이봐요.
+traveler:ARSKICKER0,I lost id card.,시민등록증을 잃어버려서 말이죠.
+traveler:ARSKICKER0,I think someone stole it from locker room.,누군가가 로커룸에서 훔쳐간 거 같아요.
+traveler:ARSKICKER0,But we won match!,하지만 경기에서 이겼어요!
+traveler:ARSKICKER0,Can't wait to get home.~,집으로 빨리 돌아가고 싶군요.~
+traveler:ARSKICKER0,"I have carried this for years, maybe you take it.","몇 년 동안 가지고 있던 물건이라, 당신이 가졌으면 좋겠군요."
+traveler:ARSKICKER0,@Your Arstotzkan id card is missing.,@아스토츠카 시민등록증이 없군요.
+traveler:ARSKICKER0,I know man. I told you.,알아요. 말 했잖습니까.
+traveler:ARSKICKER0,It was stolen.,도난당했다고요.
+traveler:ARSKICKER0,C'mon let me through.,좀 통과시켜 주세요.
+traveler:ARSKICKER0,"Thanks bud, is good to be home!","고마워요 친구, 고향에 오니 좋군요!"
+traveler:ARSKICKER0,Hey bullshit!,야 이 새끼야!
+traveler:ARSKICKER0,I gave you pennant even!,우승기도 줬잖아!
+traveler:ARSKICKER0,Gonna tell coach about this crap.,코치한테 말 하겠어.
+traveler:ARSKICKER1,Hi again.,또 만나서 반갑군.
+traveler:ARSKICKER1,Remember me?,날 기억하나?
+traveler:ARSKICKER1,Go Arskickers!,아스키커즈 화이팅!
+traveler:ARSKICKER1,I give you that great banner.~,그 멋진 우승기를 줬는데.~
+traveler:ARSKICKER1,"Listen, I tell my coach about this.",들어보소. 코치한테 일렀는데.
+traveler:ARSKICKER1,He get very upset.,화가 많이 나서요.
+traveler:ARSKICKER1,"Say if I do not get banner back, I lose front seat on team bus.~",우승기를 못 돌려받으면 팀 버스에서 앞좌석을 안 주겠다지 뭡니까.~
+traveler:ARSKICKER1,"All seats good, but front seat definitely best.",다른 좌석도 괜찮지만 앞좌석이 최고란 말입니다.
+traveler:ARSKICKER1,So I really just need banner back.,그래서 정말로 그 우승기가 필요한 상황입니다.
+traveler:ARSKICKER1,What you say?,어쩔 겁니까?
+traveler:ARSKICKER1,Lousy fan!,형편 없는 팬 같으니!
+traveler:ARSKICKER1,Ah thanks!,아 고맙습니다!
+traveler:ARSKICKER1,Do not forget to root for us!,우리 응원해주는 거 잊지 마시고!
+traveler:ARSKICKER1,Ah good.,아 좋군요.
+traveler:ARSKICKER1,It is more beaten up than I remember.,내 기억보다 더 낡았어요.
+traveler:ARSKICKER1,Even there is big tear here.,저기는 찢어지기까지 했구만.
+traveler:ARSKICKER1,What did you do?,뭔 짓을 한 겁니까?
+traveler:ARSKICKER1,Oh well. Coach should be happy.,아 좋아요. 코치는 기뻐할 테니까.
+traveler:ARSKICKER1,Alright that is great yeah.,좋아요. 아주 좋습니다.
+traveler:ARSKICKER1,But where is banner?,우승기는 어디에 있습니까?
+traveler:ARSKICKER1,Thanks bud!,고맙습니다 친구!
+traveler:ARSKICKER1,Do not forget to root for us at regionals.,지방전에서 우리 팀 응원 잊지 마시고.
+traveler:ARSKICKER1,Ok. Well.,좋아요. 좋아.
+traveler:ARSKICKER1,That is messed up.,다 망했군.
+traveler:ARSKICKER1,At least you give banner back right?,최소한 우승기라도 돌려줄 수 없습니까?
+traveler:ARSKICKER1,At least you give banner back.,최소한 우승기라도 돌려주시죠.
+traveler:ARSKICKER1,@The banner is mine now.,@우승기는 이제 제 겁니다.
+traveler:ARSKICKER1,Oh boy.,이런.
+traveler:ARSKICKER1,Such an asshole here.,별 희한한 새끼가 다 있군.
+traveler:ARSKICKER1,"If guards do not kill me, coach will.",감독한테 이제 죽겠군.
+traveler:BUSTED_SPY,I have not much time.,시간이 별로 없소.
+traveler:BUSTED_SPY,You must hold on to these.,이걸 가지고 있으시오.
+traveler:BUSTED_SPY,Keep them safe today.,오늘동안 잘 가지고 있으시오.
+traveler:BUSTED_SPY,I am being followed by an imposter.,배신자한테 쫓기고 있는 상황이라.
+traveler:BUSTED_SPY,They pretend to be from the Ministry of Information but it is a lie.,스스로 정보부 요원이라고 하겠지만 거짓말이오.
+traveler:BUSTED_SPY,"If they ask for documents, give these instead.","문서를 요구하면, 이걸 대신 주시오."
+traveler:BUSTED_SPY,Do not mix them up.,섞지 말고.
+traveler:BUSTED_SPY_FOLLOWER,@Your papers?,@서류는 어디 있습니까?
+traveler:BUSTED_SPY_FOLLOWER,I am from the Ministry of Information.,난 정보부 요원이요.
+traveler:BUSTED_SPY_FOLLOWER,You have something to give us.,우리한테 줘야 할 게 있을 텐데.
+traveler:BUSTED_SPY_FOLLOWER,Perfect.,완벽해.
+traveler:GYM_INSTRUCTOR,You are skin and bones.,가죽만 남아있구만.
+traveler:GYM_INSTRUCTOR,Bet you have no real strength.,힘도 제대로 못 쓰겠어.
+traveler:GYM_INSTRUCTOR,"Come to gym, I make you big.",체육관으로 오시죠. 제가 덩치 크게 만들어드리겠습니다.
+traveler:GYM_INSTRUCTOR,I guarantee you get big at Get Big Town.,우리 떡대촌에서라면 한 덩치 할 수 있을 겁니다.
+traveler:GYM_INSTRUCTOR,Is what we do.,우리가 하는 게 그거거든요.
+traveler:GYM_INSTRUCTOR,Denied? Hah.,거부? 하.
+traveler:GYM_INSTRUCTOR,This is what I expect from skinny weakling.,말라깽이한테 바랐던 것도 많았군.
+traveler:OLD_INSPECTOR,I used to be an inspector like you.,나도 자네처럼 검사관 일을 했었지.
+traveler:OLD_INSPECTOR,Many years ago. Back in United Fed.~,몇 년 전이야. 연합 연방국에서.~
+traveler:OLD_INSPECTOR,We denied most people.~,많은 사람들을 입국 거부시켰지.
+traveler:OLD_INSPECTOR,It is all done by computers now.,이제는 다 컴퓨터로 처리하고 있어.
+traveler:OLD_INSPECTOR,They can deny much faster that way.,그 방식을 사용하면 더 빠르게 거부 가능하거든.
+traveler:OLD_INSPECTOR,Good luck.,행운을 빌지.
+traveler:OLD_INSPECTOR,I do not miss it.,기억하겠네.
+traveler:OLD_INSPECTOR,What? Why am I denied?~,뭐라? 내가 왜 거부당한 거지?~
+traveler:OLD_INSPECTOR,So this is what it feels like.~,거부당하는 느낌이라는 게 바로 이런 거구만.~
+traveler:OLD_INSPECTOR,@Where is entry permit?,@입국 허가증은 어디에 있습니까?
+traveler:OLD_INSPECTOR,"Eh, it does not matter what I say.","음, 내가 한 말은 중요치 않네."
+traveler:OLD_INSPECTOR,Just deny the visa and I will go.,그냥 입국을 거부하면 갈 길 가지.
+traveler:RED_STAMP,Red stamp.,붉은 도장을 찍으라 이거야.
+traveler:RED_STAMP,@What?,@뭐라고요?
+traveler:RED_STAMP,Give me red stamp.,붉은 도장을 찍으라고.
+traveler:RED_STAMP,I am serious.,진심일세.
+traveler:RED_STAMP,I have better job offer in Impor.,임포르에 더 나은 직업 제안이 왔거든.
+traveler:RED_STAMP,Red stamp and I can break contract in Arstotzka.,거부 도장만 찍어주면 아스토츠카에서의 계약을 깰 수 있어서 말이야.
+traveler:RED_STAMP,10 credits for you.,10장 주지.
+traveler:RED_STAMP,Damn it.,망할.
+traveler:RED_STAMP,I am sure you deny people all day.,분명 하루 종일 거부만 하면서.
+traveler:RED_STAMP,Why not now?,왜 이번엔?
+traveler:RED_STAMP,I figure something else out.,다른 방도를 찾아봐야겠군.
+traveler:RED_STAMP,"Ok, now I get free from this bad job.","좋아, 이걸로 인해 좋은 직업을 얻을 수 있겠어."
+traveler:RED_STAMP,Thanks.,고맙군.
+traveler:NEED_SURGERY,I come for medical reasons.,수술 때문에 왔습니다.
+traveler:NEED_SURGERY,@Your papers are missing.,@서류가 없군요.
+traveler:NEED_SURGERY,Please.,부탁이에요.
+traveler:NEED_SURGERY,Surgery I need is outlawed in Kolechia.,내가 받는 수술은 콜레치아에선 불법이에요.
+traveler:NEED_SURGERY,"Even so, I do not trust doctors there.","거기다가, 거긴 돌팔이도 많아요."
+traveler:NEED_SURGERY,Only Arstotzka have skilled surgeons.,아스토츠카에만 숙련된 의사들이 있잖아요.
+traveler:NEED_SURGERY,@You do not have the right documents.,@제대로 된 서류를 구비하지 않으셨습니다.
+traveler:NEED_SURGERY,Yes.,알아요.
+traveler:NEED_SURGERY,They will not give papers for surgery.,수술 때문에 나한테 서류를 주진 않을 거예요.
+traveler:NEED_SURGERY,Thank you. I will not forget this.,고맙군요. 절대 잊지 않겠어요.
+traveler:NEED_SURGERY,I expected this.,이럴 줄 알았어요.
+traveler:NEED_SURGERY,I do not know how long I survive.,얼마나 살 수 있을지 모르겠네요.
+traveler:NEED_SURGERY,But you do not care.~,당신은 신경도 안 쓰겠지만.~
+traveler:NEED_SURGERY,I hope you are not in same place as me.,당신은 내 꼴 나지 않았으면 좋겠네요.
+traveler:LOVE_SONG,I will leave this here.,이걸 놓고 가죠.
+traveler:LOVE_SONG,Great!,어머!
+traveler:LOVE_SONG,You really super guy!~,정말 멋진 분이군요!~
+traveler:LOVE_SONG,Can I have note back now?,쪽지 돌려받을 수 있을까요?
+traveler:LOVE_SONG,I need it for next inspector.,다음을 대비해야 해서요.
+traveler:LOVE_SONG,But I give you such lovely note!,쪽지까지 줬건만!
+traveler:LOVE_SONG,"Thanks and like I say, you super guy.",고마워요. 참 잘생겼다니까.
+traveler:LOVE_SONG,Do not forget.,잊지 마요.
+traveler:LOVE_SONG,Is too much?,너무 많은가요?
+traveler:LOVE_SONG,@Yes.,@네.
+traveler:LOVE_SONG,Is too much. I can see that now.,너무 많군요. 이제 알겠어요.
+traveler:LOVE_SONG,Next time I make couple copies first.,다음 번엔 처음부터 두 장을 가져와야겠어요.
+traveler:LOVE_SONG_LONELY,Life sucks.,인생이란.
+traveler:LOVE_SONG_LONELY,Nobody loves me.,아무도 날 좋아해주지 않아.
+traveler:LOVE_SONG_LONELY,For me?,나한테 주는 겁니까?
+traveler:LOVE_SONG_LONELY,Like fire?,불처럼?
+traveler:LOVE_SONG_LONELY,Object of desire?,욕망의 주체?
+traveler:LOVE_SONG_LONELY,"Wow, nobody say such nice things!","이야, 이런 말 해준 사람은 없었는데!"
+traveler:LOVE_SONG_LONELY,Part about visa is confusing but rest is very powerful.,입국을 허가해달라는 부분만 빼면 아주 좋군요.
+traveler:LOVE_SONG_LONELY,Thank you!,고마워요.
+traveler:LOVE_SONG_LONELY,Thank you again!,다시 한 번 고마워요.
+traveler:LOVE_SONG_LONELY,Thanks I guess.,감사를 표하죠.
+traveler:LOVE_SONG_LONELY,No problem!,괜찮아요!
+traveler:LOVE_SONG_LONELY,Today is good day anyway!,오늘은 좋은 날이니까!
+traveler:LOVE_SONG_LONELY,Even you hate me.,당신이 날 싫어해도 말이죠.
+traveler:LOVE_SONG_LONELY,Some guy I do not even know.,어짜피 모르는 사람인 걸요.
+traveler:KOLECHIAN_HATER,It was a mistake to open this checkpoint.,이 검문소를 개방한 건 실수였다.
+traveler:FINALLY_RETURN_HOME,Finally I can return home.,마침내 고향에 갈 수 있겠군요.
+traveler:FINALLY_RETURN_HOME,You bastard.,망할 새끼.
+traveler:FINALLY_RETURN_HOME,Thank you.,고맙군요.
+traveler:SMALL_CHECKPOINT,This checkpoint is smaller than I expected.,검문소가 생각보다 작군요.
+traveler:WAITED_FOREVER,I have waited in this damn line since for 8 hours.,이 망할 줄에 8시간 동안 서 있었어요.
+traveler:WAITED_FOREVER,I hope it was worth it.,그럴 가치가 있길 바라요.
+traveler:WAITED_FOREVER,Unbelievable. Go to hell.,말도 안 돼. 지옥에나 떨어져라.
+traveler:HURRY_UP,Hurry up.,서둘러요.
+traveler:HURRY_UP,I am meeting bus soon.,곧 버스가 온다고요.
+traveler:HURRY_UP,What is this?,이건 뭐죠?
+traveler:HURRY_UP,Finally.,드디어.
+traveler:GLAD_YOU_HAVE_JOB,I heard about terrorist attack.,테러리스트 공격에 대해 들었어요.
+traveler:GLAD_YOU_HAVE_JOB,You are lucky to have a job still.,아직도 직장을 가지고 있다니 운이 좋네요.
+traveler:GLAD_YOU_HAVE_JOB,Be safe.,잘 지내요.
+traveler:TICKET_NOT_PERMIT,What? I do not know. To visit?,뭐라고요? 몰라요. 누굴 만나러?
+traveler:TICKET_NOT_PERMIT,A few days maybe.,아마 며칠 될 거예요.
+traveler:TICKET_NOT_PERMIT,Entry permit? I have ticket here.,입국 허가증? 여기 표는 있는데.
+traveler:TICKET_NOT_PERMIT,Let me through.,좀 지나갑시다.
+traveler:TICKET_NOT_PERMIT,@Ticket is not enough any more.,@표는 더 이상 쓰이지 않습니다.
+traveler:TICKET_NOT_PERMIT,@Get a permit.,@허가증을 얻으시죠.
+traveler:TICKET_NOT_PERMIT,Bullshit!,망할!
+traveler:TICKET_NOT_PERMIT,I paid good money for ticket.,표 얻으려고 얼마나 돈을 썼는데.
+traveler:VISIT_SON,I am so happy that the border has opened.,국경이 드디어 열려서 기쁘군요.
+traveler:VISIT_SON,I will visit my son. I have not seen him in six years. [Speech/Purpose],아들을 만나러 갈 겁니다. 6년 동안 못 봤거든요. [Speech/Purpose]
+traveler:VISIT_SON,6 months. [Speech/Duration],6개월입니다. [Speech/Duration]
+traveler:VISIT_SON,"Please, let me pass. My son is waiting.","제발, 들여보내 주십쇼. 아들이 기다린단 말입니다."
+traveler:VISIT_SON,Thank you.,고마워요.
+traveler:VISIT_SON,Curse you.,썩을 놈.
+traveler:DETAIN_FIRST,Hey wait.,잠깐.
+traveler:DETAIN_FIRST,"Do not arrest me, please.","체포하지 마세요, 제발."
+traveler:DETAIN_FIRST,Just deny my passport and I will go away.,그냥 여권을 거부하면 갈 길 갈테니까.
+traveler:HATE_COUNTRY,It is not my choice. I hate this damn country.,선택권이 없었어요. 망할 놈의 나라 같으니.
+traveler:HATE_COUNTRY,I am just passing through. [Speech/Purpose],그냥 지나갈 겁니다. [Speech/Purpose]
+traveler:HATE_COUNTRY,As little as possible. 2 days. [Speech/Duration],최소한으로 머무를 거예요. 이틀요. [Speech/Duration]
+traveler:HATE_COUNTRY,Ugh.,으윽.
+traveler:HATE_COUNTRY,Just as well.,오히려 다행이군요.
+traveler:SEARCH_BRIBE_INTRO,Slow down my friend.,진정해요 친구.
+traveler:SEARCH_BRIBE_INTRO,I have only harmless medicine.,무해한 약뿐이라고요.
+traveler:SEARCH_BRIBE_INTRO,I give you 10 credits to let me through.,통과 시켜주면 10장 드리죠.
+traveler:SEARCH_BRIBE_INTRO,Excellent.,좋아요.
+traveler:SEARCH_BRIBE_INTRO,As I promised.,약속대롭니다.
+traveler:SEARCH_BRIBE_INTRO,Why you turn down good money?,왜 돈 준다는데 마다하지?
+traveler:SEARCH_BRIBE_INTRO,@You are lucky to escape arrest.,@체포 않는 걸 다행으로 여기시오.
+traveler:SEARCH_BRIBE_INTRO,@Do not come back.,@다시는 오지 말고.
+traveler:SEARCH_BRIBE_INTRO,@You cannot bribe an officer of Arstotzka.,@아스토츠카 공무원한테 뇌물을 먹이려다니.
+traveler:SEARCH_BRIBE_INTRO,"They must pay well for such obedience, dog.","먹이를 잘 주나보지, 애완견아."
+traveler:TWO_PASSPORTS,Shit!,망할!
+traveler:TWO_PASSPORTS,I make small mistake.,실수를 좀 했네요.
+traveler:TWO_PASSPORTS,Please give documents back.,문서 돌려주세요.
+traveler:TWO_PASSPORTS,@Why do you have two passports?,@왜 여권이 두 개입니까?
+traveler:TWO_PASSPORTS,Is funny story.,재밌는 사연이 있죠.
+traveler:TWO_PASSPORTS,I tell you everything.,다 말씀드리겠어요.
+traveler:TWO_PASSPORTS,"First, you give papers back to me.","우선은, 서류부터 주시죠."
+traveler:TWO_PASSPORTS,And the others?,다른 건요?
+traveler:TWO_PASSPORTS,Last one please.,남은 여권도 주세요.
+traveler:IDSUPPLEMENT_COMPLAIN,This id supplement is total pain.,이 신원 보충물 얻는 데 정말 힘들었어요.
+traveler:IDSUPPLEMENT_COMPLAIN,Was not easy to get and only lasts few days.,며칠 가지도 않는데 얻는 것도 어렵다니.
+traveler:IDSUPPLEMENT_COMPLAIN,You Arstotzkans just make it harder and harder.,당신네 아스토츠카 사람들은 점점 일을 어렵게만 만드는군요.
+traveler:IDSUPPLEMENT_COMPLAIN,Why even have open border?,국경은 왜 여는 건지?
+traveler:IDSUPPLEMENT_COMPLAIN,Bah.,흥.
+traveler:IDSUPPLEMENT_COMPLAIN,Would be better to spend money on bribe.,차라리 뇌물을 주는 게 낫겠네.
+traveler:IDSUPPLEMENT_COMPLAIN,Less trouble and faster.,문제도 적고 빠르니까.
+traveler:IDSUPPLEMENT_COMPLAIN,I knew it would not even work.,안 먹힐 줄 알았어요.
+traveler:CRIMINAL_FIRST,@Funny to see you here.,@또 보니 재밌군요.
+traveler:CRIMINAL_FIRST,@Just when starting to look for criminals.,@범죄자들을 수배하려던 참이거든요.
+traveler:CRIMINAL_FIRST,Criminals?,범죄자?
+traveler:CRIMINAL_FIRST,What are you saying?,무슨 말입니까?
+traveler:DENIAL_REASON_FIRST,Denied?,거부라고요?
+traveler:DENIAL_REASON_FIRST,For what reason?,사유가 뭡니까?
+traveler:DENIAL_REASON_FIRST,@It is clearly stamped there.,@도장에 다 적혀있습니다.
+traveler:DENIAL_REASON_FIRST,Oh.~,아.~
+traveler:DENIAL_REASON_FIRST,Screw you anyways.,엿이나 먹어.
+traveler:NO_IMPORIANS_FIRST,@Imporians are prohibited from entering.,@임포르인들은 입국이 불허되어 있습니다.
+traveler:NO_IMPORIANS_DAY,@Imporians are prohibited from entering.,@임포르인들은 입국이 불허되어 있습니다.
+traveler:NO_UNITEDFED_FIRST,@Do not bring your sickness to Arstotzka.,@아스토츠카에 질병을 가져오면 안 됩니다.
+traveler:NO_UNITEDFED_FIRST,What?,뭐요?
+traveler:NO_UNITEDFED_FIRST,I am perfectly healthy.,난 완벽하게 건강하다고요.
+traveler:NO_UNITEDFED_FIRST,It is so easy to deny entry.,입국 거부하는 거 참 쉽네.
+traveler:NO_UNITEDFED_FIRST,All this paperwork is wasted.,내가 얻은 이 문서 다 헛 거야.
+traveler:NO_UNITEDFED,@Do not bring your sickness to Arstotzka.,@아스토츠카에 질병을 가져오면 안 됩니다.
+traveler:NO_UNITEDFED,What?,뭐요?
+traveler:NO_UNITEDFED,I am perfectly healthy.,난 완벽하게 건강하다고요.
+traveler:NO_UNITEDFED,It is so easy to deny entry.,입국 거부하는 거 참 쉽네.
+traveler:NO_UNITEDFED,All this paperwork is wasted.,내가 얻은 이 문서 다 헛 거야.
+traveler:CONFISCATION_DISTRICT_FIRST,Thank you. It is good to be back home.,고마워요. 고향에 돌아가니 좋군요.
+traveler:CONFISCATION_DISTRICT_FIRST,I am leaving for trip soon so I just need my passport back.,곧 떠나야 하니 여권을 돌려주세요.
+traveler:CONFISCATION_DISTRICT_FIRST,@It is being confiscated.,@여권은 압수되었습니다.
+traveler:CONFISCATION_DISTRICT_FIRST,What do you mean?,무슨 말인가요?
+traveler:CONFISCATION_DISTRICT_FIRST,@Contact number on slip for recovery.,@안내표의 번호에 연락하십시오.
+traveler:CONFISCATION_DISTRICT_FIRST,You can just hand it back.,그냥 돌려주면 되잖아요.
+traveler:CONFISCATION_DISTRICT_FIRST,@It has been filed. I cannot give it back.,@이미 압수해서 돌려드릴 수 없습니다.
+traveler:CONFISCATION_DISTRICT_FIRST,I am not leaving without passport.,여권 없이는 못 떠나요.
+traveler:CONFISCATION_DISTRICT_FIRST,Where is my passport?,내 여권 어디있어요?
+traveler:CONFISCATION_DISTRICT_FIRST,You deny entry and take passport?,입국도 거부하고 여권도 뺏어요?
+traveler:CONFISCATION_DISTRICT_FIRST,What am I supposed to do?,어쩌라는 겁니까?
+traveler:CONFISCATION_DISTRICT_FIRST,@Contact number on slip.,@안내표의 번호에 연락하십시오.
+traveler:CONFISCATION_DISTRICT_FIRST,You cannot do this to me!,이런 짓을 할 수는 없어요!
+traveler:CONFISCATION_DISTRICT_FIRST,I am Arstotzkan citizen.,난 아스토츠카 시민이라고요.
+traveler:CONFISCATION_DISTRICT_FIRST,I have right to travel freely.,난 자유롭게 여행할 권리가 있어요.
+traveler:WHISTLEBLOWER,Thank you.,고마워요.
+traveler:WHISTLEBLOWER,I hope that things are better here.,여기라면 마음 놓을 수 있겠군요.
+traveler:WHISTLEBLOWER,What? I was promised asylum here.,뭡니까? 망명을 허가해준다고 들었는데.
+traveler:WHISTLEBLOWER,I have nowhere else to go.,갈 곳이 없다고요.
+traveler:WHISTLEBLOWER,@This is not my problem.,@그건 제가 알 바가 아니죠.
+traveler:ACCESSPERMIT_FIRST,You Arstotzkans keep changing rules here.,당신네 아스토츠카 사람들은 여기 규칙을 계속 바꾸네요.
+traveler:ACCESSPERMIT_FIRST,My sister came through last week with different documents.,지난 주에 여길 지났던 여동생은 다른 서류를 가지고 가던데.
+traveler:ACCESSPERMIT_FIRST,Now I need new access permit.,이젠 접근 허가증이 있어야 한다니.
+traveler:ACCESSPERMIT_FIRST,Costs twice as much as before.,전보다 2배는 더 비싸잖아.
+traveler:ACCESSPERMIT_WRONG,What the hell is access permit?,접근 허가증은 도대체 뭡니까?
+traveler:ACCESSPERMIT_WRONG,Do you mean entry permit?,입국 허가증 말하는 거예요?
+traveler:ACCESSPERMIT_WRONG,I have it there.,그거라면 저기 있어요.
+traveler:ACCESSPERMIT_WRONG,@I mean access permit.,@접근 허가증이 필요합니다.
+traveler:ACCESSPERMIT_WRONG,Never heard of it. Sounds stupid.,처음 듣는데요. 이름도 이상한데.
+traveler:ACCESSPERMIT_WRONG,@Entry permit and supplement are no longer accepted.,@입국 허가서와 보충물은 더 이상 받지 않습니다.
+traveler:ACCESSPERMIT_WRONG,@Access permit replaces them.,@접근 허가증이 대체합니다.
+traveler:ACCESSPERMIT_WRONG,@Makes my job easier.,@보다 일을 쉽게 만들어주거든요.
+traveler:ACCESSPERMIT_WRONG,I do not care about your job.,당신 일이야 내 알 거 없고.
+traveler:ACCESSPERMIT_WRONG,Damnit.,망할.
+traveler:STRICT_BORDER,I've heard this is very strict checkpoint.,여기 굉장히 엄격한 검문소라고 들었어요.
+traveler:STRICT_BORDER,I am glad my papers are in order.,서류를 제대로 챙겨와서 다행이네요.
+traveler:DESPERATE_BEFORECLOSE,I have heard the border will close.,국경이 곧 닫힌다던데요.
+traveler:DESPERATE_BEFORECLOSE,My access permit will not arrive in time.,내 접근 허가증이 제때 못 올 거예요.
+traveler:DESPERATE_BEFORECLOSE,Please have mercy.,제발 좀 봐줘요.
+traveler:DESPERATE_BEFORECLOSE,Yes I know. I just told you that.,나도 알아요. 막 말했잖아요.
+traveler:DESPERATE_BEFORECLOSE,I am afraid the border will close before I can enter.,내가 입국하기 전에 국경이 닫힐까 걱정되네요.
+traveler:WALLCOMMENT_PLAQUEONE,What is this plaque on the wall?,벽에 이건 뭐죠?
+traveler:WALLCOMMENT_PLAQUEONE,You are recognized for presence?,뭐 참가했다는 증표인가요?
+traveler:WALLCOMMENT_PLAQUEONE,Way to go.,멋지네요.
+traveler:WALLCOMMENT_PLAQUEONE,What is this on the wall?,벽에 걸린 이건 뭐죠?
+traveler:WALLCOMMENT_PLAQUEONE,Recognized for sufficience?,적임자라는 증표?
+traveler:WALLCOMMENT_PLAQUEONE,Impressive. Why even bother with plaque?,멋지네요. 그런데 왜 이런 거에 연연해요?
+traveler:WALLCOMMENT_PLAQUEONE,You are recognized for excellence?,실적 인정 받은 거라도 되나요?
+traveler:WALLCOMMENT_PLAQUEONE,I hope they give you raise and not just plaque.,이런 거 말고 돈이나 더 주면 좋을 텐데.
+traveler:WALLCOMMENT_PLAQUEONE,Find a better plaque.,더 좋은 걸로 걸어요.
+traveler:WALLCOMMENT_PLAQUEONE,This one looks like cheap shit.,이건 싸구려처럼 보이네.
+traveler:WALLCOMMENT_PLAQUEONE,Figures.,꼬락서니 하곤.
+traveler:WALLCOMMENT_PLAQUEONE,You are like this plaque.,당신은 이 벽에 걸린 물건과도 같군요.
+traveler:WALLCOMMENT_PLAQUEONE,Cheap shit.,싸구려 같아요.
+traveler:WALLCOMMENT_PLAQUEONE,What the hell?,뭡니까?
+traveler:WALLCOMMENT_ARSKICKER,Nice banner!,멋진 우승기네요!
+traveler:WALLCOMMENT_ARSKICKER,I remember that game.,경기에서 저거 본 기억 있어요.
+traveler:WALLCOMMENT_ARSKICKER,Intense.,강렬했죠.
+traveler:WALLCOMMENT_ARSKICKER,Go Arskickers!,아스키커즈 화이팅!
+traveler:WALLCOMMENT_ARSKICKER,What the hell?,뭡니까?
+traveler:WALLCOMMENT_ARSKICKER,I thought we have Arskickers connection.,아스키커즈에 대한 연대가 있다고 생각했는데.
+traveler:WALLCOMMENT_SONDRAWING,What is this drawing on the wall?,벽에 이 그림은 뭐죠?
+traveler:WALLCOMMENT_SONDRAWING,My dog can do better.,우리 집 개가 더 잘 그리겠네.
+traveler:WALLCOMMENT_SONDRAWING,@It is from my son.,@우리 아들 그림입니다.
+traveler:WALLCOMMENT_SONDRAWING,Oh.~,아.~
+traveler:WALLCOMMENT_SONDRAWING,Maybe he should try sports.,운동을 좀 해봐야 할 거 같네요.
+traveler:WALLCOMMENT_SONDRAWING,Thanks.,고마워요.
+traveler:WALLCOMMENT_SONDRAWING,The drawing is not so bad really.,사실 그림이 그리 나쁘진 않아요.
+traveler:WALLCOMMENT_SONDRAWING,I was just in rough mood. Sorry.,그냥 좀 기분이 별로였어요. 미안해요.
+traveler:WALLCOMMENT_SONDRAWING,Huh?,응?
+traveler:WALLCOMMENT_SONDRAWING,"You deny me for comment about drawing, right?",그림 좀 뭐라했다고 거부하는 건가요?
+traveler:WALLCOMMENT_SONDRAWING,@The exit is to your right.,@출구는 우측입니다.
+traveler:WALLCOMMENT_SONDRAWING,What are you doing?,뭐 하는 겁니까?
+traveler:WALLCOMMENT_SONDRAWING,Is this because I make fun of drawing?,그림 좀 놀렸다고?
+traveler:WALLCOMMENT_SONDRAWING,I take it back!,취소할게요!
+traveler:WALLCOMMENT_SONDRAWING,Picture should be in museum!,그 그림은 박물관에 걸려야 해요!
+traveler:WALLCOMMENT_FAMILYPHOTO,I like picture on wall here.,좋은 사진이네요.
+traveler:WALLCOMMENT_FAMILYPHOTO,Reminds me of how my family was.,우리 가족 생각이 나요.
+traveler:WALLCOMMENT_FAMILYPHOTO,Thank you.,고마워요.
+traveler:WALLCOMMENT_FAMILYPHOTO,Take care of your family.,당신 가족 잘 챙겨요.
+traveler:WALLCOMMENT_FAMILYPHOTO,It is too easy to lose them.,가족은 잃기 쉬우니까.
+speech:ask-purpose,What is the purpose of your trip?,무슨 목적으로 오셨습니까?
+speech:state-purpose,Visiting.,방문요.
+speech:state-purpose,Just visiting.,그냥 사람 좀 보려고요.
+speech:state-purpose,I am visiting relatives.,친척 만나러 왔어요.
+speech:state-purpose,Visiting friends.,친구 보러요.
+speech:state-purpose,I come for visit.,사람 만나러 왔죠.
+speech:state-purpose,Only to visit.,그냥 사람 좀 보려고요.
+speech:state-purpose,I will visit friends.,친구 좀 볼 겁니다.
+speech:state-purpose,Transit.,지나가는 거예요.
+speech:state-purpose,I pass through.,지나가는 거죠.
+speech:state-purpose,Transit through the country.,여기를 통해서 다른 곳으로 가려고요.
+speech:state-purpose,I am transiting to elsewhere.,다른 곳으로 가려고 통과하는 거예요.
+speech:state-purpose,Transit through Arstotzka.,아스토츠카를 통과하는 거예요.
+speech:state-purpose,Passing through.,지나가는 겁니다.
+speech:state-purpose,I am in transit.,통과하는 겁니다.
+speech:state-purpose,Work.,노동입니다.
+speech:state-purpose,I come to work.,일 하러 왔어요.
+speech:state-purpose,I have job here.,여기 직장이 있어서요.
+speech:state-purpose,I plan to work.,일 때문에 왔어요.
+speech:state-purpose,Immigrating.,이민이오.
+speech:state-purpose,I am immigrating to Arstotzka.,아스토츠카에 이민 왔습니다.
+speech:state-purpose,I will move here.,여기로 이사 올 겁니다.
+speech:state-purpose,I am coming to live with my husband.,여기 남편이랑 같이 살러 왔어요.
+speech:state-purpose,I am coming to live with my wife.,여기 마누라랑 같이 살러 왔어요.
+speech:state-purpose,I am diplomatic envoy.,외교 사절단 입니다.
+speech:state-purpose,I was called to diplomatic discussions.,외교 회담에 참석하려고 왔지요.
+speech:state-purpose,My presence was requested.,회담에 참석을 요청받아서 말이죠.
+speech:state-purpose,I am seeking asylum.,망명을 찾아 왔습니다.
+speech:state-purpose,I come for political asylum.,정치적 망명입니다.
+speech:state-purpose,Asylum.,망명요.
+speech:ask-wrong-purpose,This entry permit is for work.,이 허가증에는 노동용이라고 적혀있군요.
+speech:ask-wrong-purpose,You are authorized for transit only.,통과만 하실 수 있습니다.
+speech:ask-wrong-purpose,You have only a visitors entry permit.,방문만 허락 되는군요.
+speech:ask-wrong-purpose,This entry permit is for immigrating.,이 허가증은 이민용입니다.
+speech:ask-wrong-purpose,Your entry purpose does not match up.,목적이랑 서류가 일치하지 않는군요.
+speech:ask-wrong-purpose,This entry permit purpose does not match.,목적이 입국 허가증과 일치하지 않는군요.
+speech:mistake-prefix,Right.,그러네요.
+speech:mistake-prefix,I make mistake.,실수 했어요.
+speech:mistake-prefix,"Yes, of course.","맞아, 그랬지."
+speech:mistake-prefix,Apologies.,미안해요.
+speech:wrong-purpose,$mistake-prefix I am just visiting.,$mistake-prefix 그냥 방문만 하려고요.
+speech:wrong-purpose,$mistake-prefix I just pass through.,$mistake-prefix 그냥 통과만 합니다.
+speech:wrong-purpose,$mistake-prefix I have come to work.,$mistake-prefix 그냥 일 하러 왔어요.
+speech:wrong-purpose,$mistake-prefix I move here permanently.,$mistake-prefix 여기 이민 왔습니다.
+speech:ask-duration,Duration of stay?,체류 기간은 어떻게 되시죠?
+speech:random-stay,I stay,아마
+speech:random-stay,I remain for,기간은
+speech:random-stay,It will be,대략
+speech:state-duration,$random-stay forever.,$random-stay 영구적으로 머물러요.
+speech:state-duration,$random-stay until I die.,$random-stay 죽을 때까지요.
+speech:state-duration,I don't plan to leave.,떠날 계획은 없어요.
+speech:state-duration,$random-stay just 2 days.,$random-stay 이틀만요.
+speech:state-duration,$random-stay couple days.,$random-stay 이틀 정도요.
+speech:state-duration,$random-stay just 14 days.,$random-stay 14일만요.
+speech:state-duration,$random-stay couple weeks.,$random-stay 2주 정돕니다.
+speech:state-duration,$random-stay only two weeks.,$random-stay 2주만 머뭅니다.
+speech:state-duration,$random-stay 30 days.,$random-stay 30일입니다.
+speech:state-duration,$random-stay a few weeks.,$random-stay 몇 주는 머뭅니다.
+speech:state-duration,$random-stay one month.,$random-stay 1달이오.
+speech:state-duration,$random-stay 60 days.,$random-stay 60일입니다.
+speech:state-duration,$random-stay 8 weeks.,$random-stay 8주 정돕니다.
+speech:state-duration,$random-stay couple months.,$random-stay 2달입니다.
+speech:state-duration,$random-stay two months.,$random-stay 2달 정도네요.
+speech:state-duration,$random-stay 90 days.,$random-stay 90일입니다.
+speech:state-duration,$random-stay 12 weeks.,$random-stay 12주 정돕니다.
+speech:state-duration,$random-stay three months.,$random-stay 3달 정도네요.
+speech:state-duration,$random-stay a few months.,$random-stay 몇 달은 머뭅니다.
+speech:state-duration,$random-stay six months.,$random-stay 6개월 정도네요.
+speech:state-duration,$random-stay half a year.,$random-stay 반년은 머뭅니다.
+speech:state-duration,$random-stay one year.,$random-stay 1년이오.
+speech:state-duration,$random-stay full year.,$random-stay 1년 정도입니다.
+speech:state-duration,$random-stay a year.,$random-stay 한 해는 머뭅니다.
+speech:ask-wrong-duration,The length of your stay is different.,체류 기간이 다른데요.
+speech:wrong-duration,$mistake-prefix $state-duration,$mistake-prefix $state-duration
+speech:ask-forgery-missing,This document is missing its seal.,문서에 인장이 없군요.
+speech:ask-forgery-missing,There is no seal here.,여기 인장이 없는데요.
+speech:ask-forgery-missing,I do not see the required seal here.,여기 필요한 인장이 없군요.
+speech:ask-forgery-wrong,This document is forged.,위조 문서군요.
+speech:ask-forgery-wrong,This is a forgery.,위조 문서입니다.
+speech:ask-forgery-idcard,This card contains false information.,카드에 잘못된 정보가 적혀있군요.
+speech:ask-forgery-diplo,This seal is forged.,인장이 위조되었습니다.
+speech:ask-forgery-diplo,This seal is not correct.,올바른 인장이 아니군요.
+speech:ask-forgery-asylumgrant,This seal is forged.,위조 인장이네요.
+speech:ask-forgery-asylumgrant,This grant is not sealed properly.,제대로 인장이 안 찍혔네요.
+speech:ask-wrong-birthdate,These dates do not match.,날짜가 일치하지 않습니다.
+speech:forgery,I have no idea what you are talking about.,무슨 말씀 하시는지 모르겠네요.
+speech:forgery,I do not know anything about that.,그거에 대해선 아는 바가 없는데요.
+speech:forgery,I do not understand.,이해 못하겠어요.
+speech:ask-expired-paper,This document has expired.,문서 기한이 만료되었습니다.
+speech:ask-expired-paper,You cannot enter using an expired document.,기한 만료된 문서를 가지고 입국하실 순 없습니다.
+speech:expired-permit,I could not come until now.,이제서야 온 거예요.
+speech:expired-permit,I was busy.,바빴어요.
+speech:expired-passport,What? That is mistake. I just renewed it.,뭐라고요? 그거 실수 아닙니까? 막 갱신했는데.
+speech:expired-passport,That must be a typographical error.,인쇄 오류가 분명해요.
+speech:expired-asylumgrant,There was nothing I could do.,할 수 있는 게 없었어요.
+speech:expired-asylumgrant,My travel was difficult.,힘들게 여기까지 왔다고요.
+speech:expired-asylumgrant,"Please, have mercy.","제발, 좀 봐줘요."
+speech:ask-missing-passport,Where is passport?,여권 어디 있습니까?
+speech:ask-missing-passport,A passport is required.,여권이 필요합니다.
+speech:missing-passport,They took away my passport.,어떤 사람들이 여권을 뺏아갔어요.
+speech:missing-passport,What is passport?,여권이 뭐죠?
+speech:ask-missing-entrypermit,Where is the entry permit?,입국 허가증은 어디에 있습니까?
+speech:ask-missing-entrypermit,You have no entry permit.,입국 허가증이 없군요.
+speech:ask-missing-entrypermit,The entry permit is missing.,입국 허가증이 없네요.
+speech:missing-permit,I was not able to get one.,못 얻었어요.
+speech:missing-permit,What is that?,그게 뭔데요?
+speech:missing-permit,Do I need one?,필요한 건가요?
+speech:missing-permit,Is required?,필수인가요?
+speech:missing-permit,I lost it.,잃어버렸어요.
+speech:missing-permit,I did not know it was required.,필수인지 몰랐어요.
+speech:ask-missing-workpermit,Where is the work pass?,노동 허가서는 어디에 있죠?
+speech:ask-missing-workpermit,You have no work pass.,노동 허가서가 없군요.
+speech:ask-missing-workpermit,The work pass is missing.,노동 허가서가 없는데요.
+speech:missing-workpermit,I will get one after I enter.,입국 후에 얻을 거예요.
+speech:ask-missing-idcard,Where is your id card?,시민등록증은 어디에 있습니까?
+speech:ask-missing-idcard,I need your id card.,시민등록증이 필요한데요.
+speech:missing-idcard,I never got one.,그런 거 없어요.
+speech:missing-idcard,I left before they were issued.,통보 받기 전에 출발해서요.
+speech:missing-idcard,I lost it.,잃어버렸어요.
+speech:ask-missing-idsupplement,You must carry an id supplement.,신원 보충물을 소지하셔야 합니다.
+speech:ask-missing-idsupplement,Where is your id supplement?,신원 보충물은 어디에 있습니까?
+speech:missing-idsupplement,I never got one.,그런 거 없어요.
+speech:missing-idsupplement,What is a supplement?,그게 뭔데요?
+speech:missing-idsupplement,This was not provided to me.,그런 얘기 못 들었는데.
+speech:ask-missing-asylumgrant,You have no grant for asylum.,망명 허가서가 없는데요.
+speech:ask-missing-asylumgrant,Where is your asylum grant?,망명 허가서는 어디에 있습니까?
+speech:missing-asylumgrant,I could not secure one in time.,제때 발급 못 받았어요.
+speech:missing-asylumgrant,I have none.,없어요.
+speech:missing-asylumgrant,What is that?,그게 뭔데요?
+speech:ask-missing-accesspermit,Where is the access permit?,접근 허가증은 어디에 있습니까?
+speech:ask-missing-accesspermit,You have no access permit.,접근 허가증이 없군요.
+speech:ask-missing-accesspermit,The access permit is missing.,접근 허가증이 없는데요.
+speech:ask-wrong-name,These names do not match.,이름이 일치하지 않네요.
+speech:wrong-name,I have two different names.,난 이름이 두 개입니다.
+speech:wrong-name,I have multiple names.,난 원래 이름이 여러 개예요.
+speech:wrong-name,My name was changed recently.,최근 이름을 바꿔서요.
+speech:ask-wrong-workend,You are not authorized to work this long.,그만큼 노동 하도록 허가 받지 않으셨군요.
+speech:ask-wrong-workend,This work pass expires before your visit.,이 노동 허가서는 방문하기도 전에 만료되었는데요.
+speech:wrong-workend,I will renew the pass soon.,허가서는 곧 갱신할 거예요.
+speech:wrong-workend,I am planning to renew it.,갱신할 예정이에요.
+speech:wrong-workend,My entry permit is longer than I need.,입국 허가 기간이 필요한 것보다 기네요.
+speech:ask-wrong-idnumber,These numbers do not match.,숫자가 일치하지 않는군요.
+speech:ask-wrong-idnumber,There is a discrepancy here.,여기 불일치가 있습니다.
+speech:ask-wrong-idnumber,There are two different numbers here.,여기 숫자가 서로 다르군요.
+speech:wrong-idnumber,It must be a mistake. The document is valid.,실수일 거예요. 제대로 된 문서라고요.
+speech:wrong-idnumber,Check again.,다시 읽어봐요.
+speech:ask-wrong-face,This does not look like you.,얼굴이 다릅니다만.
+speech:ask-wrong-face,Your picture. It is different.,사진 말입니다. 다르군요.
+speech:ask-wrong-face,Your appearance has changed.,얼굴이 변하셨군요.
+speech:wrong-face,It is an old picture.,옛날 사진이에요.
+speech:wrong-face,I had surgery.,수술을 받았어요.
+speech:wrong-face,The years have been cruel.,세월은 잔혹한 법이죠.
+speech:wrong-face,I do not know what to say. It is me.,뭐라 말해야 할지 모르겠네요. 나 맞아요.
+speech:ask-wrong-issuingcity,This issuing city is incorrect.,발행 도시가 다르군요.
+speech:ask-wrong-issuingcity,Your passport has false information.,여권에 가짜 정보가 적혀있네요.
+speech:ask-wrong-gender,You are a man?,남성이십니까?
+speech:ask-wrong-gender,It says here that you are male.,여기엔 남성이라고 되어있는데요.
+speech:ask-wrong-gender,You are a woman?,여성이십니까?
+speech:ask-wrong-gender,Your passport says you are female.,여권에는 여성이라고 되어있군요.
+speech:ask-wrong-gender,Are you a woman or a man?,남성이십니까 여성이십니까?
+speech:ask-wrong-gender,You are male or female?,남자입니까 여자입니까?
+speech:wrong-gender,The passport is correct.,여권이 제대로 되었군요.
+speech:wrong-gender,Why do you ask?,왜 물어보는 거죠?
+speech:wrong-gender,As the document says.,문서에 적힌 대로예요.
+speech:wrong-gender,What is this question?,왜 이런 질문을 하는 거죠?
+speech:ask-wrong-gender-busted,There is a problem with your documentation.,문서에 문제가 있습니다.
+speech:ask-approved,Glory to Arstotzka.,아스토츠카에 영광 있으라.
+speech:ask-approved,Cause no trouble.,문제 일으키지 마십시오.
+speech:ask-nativesonly,Try again.,다음에 방문하십시오.
+speech:ask-nativesonly,Arstotzkans only.,아스토츠카 시민만 받습니다.
+speech:ask-wrong-nation,No entry from Obristan.,오브리스탄 출신은 입국 불가입니다.
+speech:ask-wrong-nation,No entry from Kolechia.,콜레치아 출신은 입국 불가입니다.
+speech:ask-wrong-nation,No entry from United Federation.,연합 연방국 출신은 입국 불가입니다.
+speech:ask-wrong-nation,No entry from Antegria.,안테그리아 출신은 입국 불가입니다.
+speech:ask-wrong-nation,No entry from Republia.,리퍼블리아 출신은 입국 불가입니다.
+speech:ask-wrong-nation,No entry from Arstotzka.,아스토츠카 출신은 입국 불가입니다.
+speech:ask-wrong-nation,No entry from Impor.,임포르 출신은 입국 불가입니다.
+speech:ask-search,Face the scanner.,수색기를 바라보시오.
+speech:ask-search,Turn towards the scanner.,수색기를 향해 몸을 돌리십시오.
+speech:ask-detain,Wait here.,여기서 기다리시죠.
+speech:ask-detain,One moment please.,잠시 대기해주세요.
+speech:detain,What are you doing?,뭐 하는 겁니까?
+speech:detain,What is happening?,이게 뭐죠?
+speech:detain,What is this?,뭡니까?
+speech:detain,You cannot do this!,이럴 수는 없어!
+speech:detain,What will happen to me?,나한테 무슨 일이 일어나는 거죠?
+speech:detain,Who do you think you are?,당신이 뭔데?
+speech:detain,You have no authority for this!,이럴 권리는 없어요!
+speech:detain,You are a fool!,바보같이!
+speech:ask-search-enabled,You have been selected for a random search.,무작위 수색에 선정되셨습니다.
+speech:ask-wrong-entryticket-date,This ticket is for another day.,표의 입국 날짜가 다르군요.
+speech:ask-wrong-entryticket-date,You cannot enter today.,오늘 입국하실 수 없습니다.
+speech:ask-wrong-entryticket-date,The date on this ticket is wrong.,표의 날짜가 틀렸습니다.
+speech:wrong-entryticket-date,It is my mistake.,내 실수네요.
+speech:wrong-entryticket-date,Oh?,어?
+speech:ask-missing-entryticket,You cannot enter without a ticket.,표 없인 입국 불가능합니다.
+speech:ask-missing-entryticket,Foreigners must present an entry ticket.,외국인은 입국표가 필요합니다.
+speech:ask-missing-entryticket,Where is your entry ticket?,입국표는 어디에 있나요?
+speech:missing-entryticket,I do not know what that is.,그게 뭔지 모르겠는데요.
+speech:missing-entryticket,I have none.,없어요.
+speech:missing-entryticket,It was lost.,잃어버렸어요.
+speech:ask-wrong-identity,I cannot verify your identity.,신원을 입증할 수가 없군요.
+speech:ask-wrong-identity,Your identity does not match.,신원 불명이십니다.
+speech:ask-wrong-alias,There is no record of this name.,이런 이름은 기록에 없습니다.
+speech:ask-wrong-alias,I cannot verify your alias.,이명을 확인할 수가 없군요.
+speech:ask-wrong-fingerprints,Your fingerprints do not match our records.,지문이 기록과 일치하지 않네요.
+speech:ask-wrong-fingerprints,I cannot verify your fingerprints.,지문을 확인할 수가 없네요.
+speech:ask-contraband,There is zero tolerance for contraband.,밀수범에게 관용은 없습니다.
+speech:ask-contraband,You have made a mistake coming here.,여기 온 건 실수였습니다.
+speech:contraband,You can see that?,그걸 봤다고?
+speech:contraband,What?,뭐요?
+speech:contraband,I know nothing.,난 아무것도 몰라요.
+speech:contraband,Is it so obvious?,그렇게 티가 났나?
+speech:ask-wrong-information,This information does not look correct.,정보가 정확하지 않습니다만.
+speech:ask-wrong-information,This is incorrect.,정보가 틀렸군요.
+speech:ask-wrong-height,Your height is different.,신장이 다르네요.
+speech:wrong-height,Perhaps my shoes are different.,오늘 신발을 다른 걸 신어서 일지도 몰라요.
+speech:wrong-height,It is a natural difference.,자연스러운 차이잖아요.
+speech:ask-wrong-weight,Your weight is different.,체중이 다르군요.
+speech:wrong-weight,I am wearing different clothes.,다른 옷을 입어서예요.
+speech:wrong-weight,My weight has changed naturally.,원래 체중이 잘 변해요.
+speech:ask-criminal,You have interesting face.,흥미로운 얼굴이군요.
+speech:ask-criminal,Maybe you should not have come.,여기 오셔선 안 되었습니다.
+speech:ask-criminal,We have some questions for you.,몇 가지 질문이 있습니다.
+speech:criminal,I have nothing to say.,할 말 없는데.
+speech:criminal,Let me through or you will regret it.,통과시켜주지 않으면 후회할 거요.
+speech:criminal,I do not like your tone.,당신 말투가 맘에 안 드는데.
+speech:ask-wrong-description,This does not sound like you.,본인의 정보가 아닌 거 같은데요.
+speech:ask-wrong-description,You do not match this description.,기록과 일치하지 않습니다.
+speech:wrong-description,I have changed.,바뀌었어요.
+speech:wrong-description,How can you say for sure?,어떻게 그렇게 확신할 수 있나요?
+speech:wrong-description,Is that good or bad?,그래서 좋은 건가요 나쁜 건가요?
+speech:hidden-paper,Here it is.,여기 있습니다.
+speech:hidden-paper,Sorry. I have it here.,미안합니다. 여기 있어요.
+speech:hidden-paper,I have it here.,여기 있어요.
+speech:hidden-paper,Here.,여기요.
+speech:ask-wrong-thumbprint,Your thumb print does not match.,엄지 지문이 일치하지 않네요.
+speech:ask-wrong-thumbprint,This print does not match.,지문이 일치하지 않네요.
+speech:ask-wrong-diploaccess,Your diplomatic authorization does not cover Arstotzka.,외교관 증명서가 아스토츠카에서는 인가되지 않는군요.
+speech:ask-wrong-diploaccess,You have no diplomatic rights here.,여기선 외교활동을 허락할 수 없습니다.
+speech:ask-wrong-diploaccess,This authorization does not include Arstotzka.,아스토츠카에선 효력 없는 서류입니다.
+speech:wrong-diploaccess,Nonsense.,말도 안돼.
+speech:wrong-diploaccess,Check with your superiors.,상사 좀 불러와요.
+speech:wrong-diploaccess,I have full authorization.,난 다 갖췄다고요.
+speech:ask-missing-vaccinecert,Where is the vaccine certification?,백신 증명서는 어디에 있습니까?
+speech:ask-missing-vaccinecert,Where is your proof of vaccination?,백신 맞은 증거는 어디에 있죠?
+speech:ask-missing-vaccinecert,All entrants must be vaccinated.,입국자는 모두 백신을 접종해야 합니다.
+speech:missing-vaccinecert,I do not believe in vaccines.,난 백신 같은 거 안 믿어요.
+speech:missing-vaccinecert,I could not afford certification.,발급 받을 여유가 없었어요.
+speech:ask-vaccine-expired,This vaccine has expired.,백신 기한이 만료되었군요.
+speech:ask-vaccine-expired,This vaccine is no longer active.,백신이 더 이상 효력이 없습니다.
+speech:ask-vaccine-wrongdrugs,You are missing the required vaccination.,필요한 백신이 없군요.
+speech:ask-vaccine-wrongdrugs,This vaccine certificate is insufficient.,백신 증명서가 없습니다.
+speech:trade-fingerprints,Here.,여기요.
+speech:trade-fingerprints,Is this ok?,이걸로 됐나요?
+speech:trade-fingerprints,Here are my fingerprints.,여기 내 지문이에요.
+speech:trade-fingerprints,Now I have ink everywhere.,이제 손이 잉크 투성이네.
+speech:default,Please let me through.,좀 통과시켜 주세요.
+speech:default,What are you talking about?,무슨 말 하는 건가요?
+speech:default,I know nothing about this.,난 아무것도 몰라요.
+speech:default,I do not know what to say.,무슨 말 하는지 모르겠어요.
+speech:default,Oh?,어?
+face:M00,Short Hair,짧은 머리
+face:M00,Good Vision,시력 좋음
+face:M00,Balding,탈모 진행 중
+face:M00,Glasses,안경 씀
+face:M00,Large Mustache,큰 콧수염
+face:M01,Bald,대머리
+face:M01,Large Curly Locks,심한 곱슬머리
+face:M01,Glasses,안경 씀
+face:M02,Cropped Hair,자른 머리
+face:M02,Glasses,안경 씀
+face:M02,Overweight,과체중
+face:M02,No Glasses,안경 안 씀
+face:M03,Dark Hair,짙은 머리색
+face:M03,Mustache,콧수염
+face:M03,Light Hair,옅은 머리색
+face:M03,Glasses,안경 씀
+face:M10,Beard,턱수염
+face:M10,Mustache,콧수염
+face:M10,Shaved Head,민머리
+face:M10,Glasses,안경 씀
+face:M11,Goatee,염소 수염
+face:M11,Perfect Vision,시력 완벽함
+face:M11,Mohawk,모히칸 스타일
+face:M11,Glasses,안경 씀
+face:M12,Short Cropped Hair,짧은 자른 머리
+face:M12,Long Wavy Hair,긴 구불 머리
+face:M12,Glasses,안경 씀
+face:M13,Balding,탈모 진행 중
+face:M13,Huge Afro,대형 아프로 머리
+face:M13,Thick Glasses,두꺼운 안경
+face:M20,Balding,탈모 진행 중
+face:M20,Curly Hair,곱슬 머리
+face:M20,Glasses,안경 씀
+face:M21,Short Straight Hair,짧은 직모
+face:M21,Bald,대머리
+face:M21,Glasses,안경 씀
+face:M22,Short Light Hair,짧고 옅은 머리칼
+face:M22,Dark Hair,짙은 머리색
+face:M22,Glasses,안경 씀
+face:M23,Widow's Peak,V자 머리
+face:M23,Mustache,콧수염
+face:M23,Shaved Head,민머리
+face:M23,Glasses,안경 씀
+face:M23,Clean Shaven,말끔하게 제모함
+face:M30,Tall Forehead,넓은 이마
+face:M30,Totally Bald,완전 대머리
+face:M30,Glasses,안경 씀
+face:M31,Killer Sideburns,멋진 구렛나룻
+face:M31,Light Hair,옅은 머리색
+face:M31,Glasses,안경 씀
+face:M32,Bobbed Hair,단발머리
+face:M32,Long Curly Hair,긴 곱슬머리
+face:M32,Glasses,안경 씀
+face:M32,Large Mustache,큰 콧수염
+face:M33,Short Curly Hair,짧은 곱슬머리
+face:M33,Mustache,콧수염
+face:M33,Balding,탈모 진행 중
+face:M33,Glasses,안경 씀
+face:M33,No Mustache,콧수염 없음
+face:M40,Bald,대머리
+face:M40,Long Hair,긴 머리
+face:M40,Glasses,안경 씀
+face:M41,Mohawk,모히칸 스타일
+face:M41,Large Sideburns,커다란 구렛나룻
+face:M41,Glasses,안경 씀
+face:M42,Short Curly Hair,짧은 곱슬머리
+face:M42,Flat-top Hair,상고머리
+face:M42,Glasses,안경 씀
+face:M42,Pencil Mustache,얇은 콧수염
+face:M43,Unkempt Curly Hair,흐트러진 곱슬머리
+face:M43,Mustache,콧수염
+face:M43,Long Straight Hair,긴 직모
+face:M43,Glasses,안경 씀
+face:F00,Wavy Hair,약간 곱슬머리
+face:F00,Short Hair,짧은 머리
+face:F00,Glasses,안경 씀
+face:F01,Small Head,작은 머리
+face:F01,Glasses,안경 씀
+face:F01,Afro,아프로 머리
+face:F01,Perfect Vision,시력 완벽함
+face:F02,Overweight,과체중
+face:F02,Slim Figure,메마름
+face:F02,Glasses,안경 씀
+face:F03,Bobbed Hair,단발머리
+face:F03,Long Hair,긴 머리
+face:F03,Glasses,안경 씀
+face:F10,Straight Hair,직모
+face:F10,Long Curly Hair,긴 곱슬머리
+face:F10,Glasses,안경 씀
+face:F11,Bobbed Hair,단발머리
+face:F11,Afro,아프로 머리
+face:F11,Glasses,안경 씀
+face:F12,Short Hair,짧은 머리
+face:F12,Huge Afro,대형 아프로 머리
+face:F12,Thick Glasses,두꺼운 안경
+face:F13,Very Short Hair,아주 짧은 머리
+face:F13,Long Straight Hair,긴 직모
+face:F13,Glasses,안경 씀
+face:F20,Short Hair,짧은 머리
+face:F20,Long Curly Hair,긴 곱슬머리
+face:F20,Glasses,안경 씀
+face:F21,Overweight,과체중
+face:F21,Slim Figure,메마름
+face:F21,Glasses,안경 씀
+face:F22,Bobbed Hair,단발머리
+face:F22,Shaved Head,민머리
+face:F22,Glasses,안경 씀
+face:F23,Short Curly Hair,짧은 곱슬머리
+face:F23,Long Straight Hair,긴 직모
+face:F23,Glasses,안경 씀
+face:F30,Curly Bobbed Hair,자른 곱슬 머리
+face:F30,Shaved Head,민머리
+face:F30,Thick Glasses,두꺼운 안경
+face:F31,Short Wavy Hair,짧은 약간 곱슬머리
+face:F31,Glasses,안경 씀
+face:F31,Long Hair,긴 머리
+face:F31,Good Vision,시력 좋음
+face:F32,Bobbed Hair,단발머리
+face:F32,Light Curly Hair,옅은 곱슬머리
+face:F32,Glasses,안경 씀
+face:F33,Long Hair,긴 머리
+face:F33,Shaved Head,민머리
+face:F33,Glasses,안경 씀
+face:F40,Straight Hair,직모
+face:F40,Curly Hair,곱슬 머리
+face:F40,Glasses,안경 씀
+face:F41,Bobbed Hair,단발머리
+face:F41,Round Face,둥근 얼굴
+face:F41,Glasses,안경 씀
+face:F42,Dark Hair,짙은 머리색
+face:F42,Long Straight Hair,긴 직모
+face:F42,Glasses,안경 씀
+face:F43,Long Hair,긴 머리
+face:F43,Shaved Head,민머리
+face:F43,No Glasses,안경 안 씀
+achievement:ACH_TOKEN_ANTEGRIA,Antegria Token,안테그리아 주화
+achievement:ACH_TOKEN_ANTEGRIA,Collect the hidden Antegria Token,숨겨진 안테그리아 주화를 모은다
+achievement:ACH_TOKEN_ARSTOTZKA,Arstotzka Token,아스토츠카 주화
+achievement:ACH_TOKEN_ARSTOTZKA,Collect the hidden Arstotzka Token,숨겨진 아스토츠카 주화를 모은다
+achievement:ACH_TOKEN_IMPOR,Impor Token,임포르 주화
+achievement:ACH_TOKEN_IMPOR,Collect the hidden Impor Token,숨겨진 임포르 주화를 모은다
+achievement:ACH_TOKEN_KOLECHIA,Kolechia Token,콜레치아 주화
+achievement:ACH_TOKEN_KOLECHIA,Collect the hidden Kolechia Token,숨겨진 콜레치아 주화를 모은다
+achievement:ACH_TOKEN_OBRISTAN,Obristan Token,오브리스탄 주화
+achievement:ACH_TOKEN_OBRISTAN,Collect the hidden Obristan Token,숨겨진 오브리스탄 주화를 모은다
+achievement:ACH_TOKEN_REPUBLIA,Republia Token,리퍼블리아 주화
+achievement:ACH_TOKEN_REPUBLIA,Collect the hidden Republia Token,숨겨진 리퍼블리아 주화를 모은다
+achievement:ACH_TOKEN_UNITEDFED,United Federation Token,연합 연방국 주화
+achievement:ACH_TOKEN_UNITEDFED,Collect the hidden United Federation Token,숨겨진 연합 연방국 주화를 모은다
+achievement:ACH_END_TURNEDOVEREZICDOCS,Too Honest,너무 정직함
+achievement:ACH_END_TURNEDOVEREZICDOCS,Turn over EZIC docs to M.O.I investigator,EZIC 문서를 M.O.I 검사관에게 제출한다
+achievement:ACH_END_KILLEDTARGET,Hired Rifle,용병 총잡이
+achievement:ACH_END_KILLEDTARGET,Kill the man in red for EZIC,EZIC을 위해 붉은 옷을 입은 사내를 쏴 죽인다
+achievement:ACH_END_HELPEZICHOLDFIRE,Member of the Order,조직원
+achievement:ACH_END_HELPEZICHOLDFIRE,Help EZIC overthrow the government,EZIC이 정부를 타도하는 것을 돕는다
+achievement:ACH_END_ESCAPE,Snowier Pastures,설국의 초원
+achievement:ACH_END_ESCAPE,Escape to Obristan,오브리스탄으로 탈출한다
+achievement:ACH_END_IGNOREEZIC,Glory to Arstotzka,아스토츠카에 영광을
+achievement:ACH_END_IGNOREEZIC,Ignore all EZIC requests and work dutifully,모든 EZIC의 요구를 무시하고 의무에 맞게 일한다
+achievement:ACH_APT_CLASS5,Worker's Best,최고 노동자
+achievement:ACH_APT_CLASS5,Acquire a Class-5 Apartment,5급 아파트를 얻는다
+font-stylesheet-override,css/fonts.css,css/fonts-ko.css
+baked-captures-url,NONE,NONE

@@ -1,0 +1,238 @@
+<data><item id="language_code"><t>ko</t></item>
+<item id="language_name"><t>한국어</t></item>
+<item id="language_author"><t>BADA GAMES</t></item>
+<item id="wrap_hyphen"><t>NONE</t></item>
+<item id="created_by"><t>Lucas Pope 제작</t></item>
+<item id="papers_please"><t>서류 제출 바랍니다.</t></item>
+<item id="protocol_violated"><t>규정 위반입니다.</t></item>
+<item id="unauth_confiscation"><t>비인가된 여권 압수</t></item>
+<item id="missing_reason"><t>거부 사유가 없음</t></item>
+<item id="citation_warning"><t>경고 발급 - 벌금 없음</t></item>
+<item id="citation_lastwarning"><t>마지막 경고 - 벌금 없음</t></item>
+<item id="citation_penalty"><t>벌금 부과 - $0</t></item>
+<item id="border_next"><t>다음!</t></item>
+<item id="border_bomber"><t>콜레치아를 위해!</t></item>
+<item id="border_comeback"><t>내일 아침 6시에 다시 오십시오.</t></item>
+<item id="border_announce0"><t>입국이 불허될 수 있습니다.</t></item>
+<item id="border_announce1"><t>서류를 구비하십시오.</t></item>
+<item id="border_announce2"><t>아스토츠카에서 여러분을 환영합니다.</t></item>
+<item id="border_guardout"><t>나와!</t></item>
+<item id="border_elisa"><t>ELISA!</t></item>
+<item id="family_son_budget"><t>아들</t></item>
+<item id="family_wife_budget"><t>아내</t></item>
+<item id="family_niece_budget"><t>조카딸</t></item>
+<item id="family_uncle_budget"><t>삼촌</t></item>
+<item id="family_mil_budget"><t>장모</t></item>
+<item id="family_son_status"><t>아들</t></item>
+<item id="family_wife_status"><t>아내</t></item>
+<item id="family_niece_status"><t>조카딸</t></item>
+<item id="family_uncle_status"><t>삼촌</t></item>
+<item id="family_mil_status"><t>장모</t></item>
+<item id="family_son_message"><t>아들</t></item>
+<item id="family_wife_message"><t>아내</t></item>
+<item id="family_niece_message"><t>조카딸</t></item>
+<item id="family_uncle_message"><t>삼촌</t></item>
+<item id="family_mil_message"><t>장모</t></item>
+<item id="night_endof"><t>엔딩</t></item>
+<item id="night_day"><t>$0일</t></item>
+<item id="family_verysick_1"><t>병든 $0이(가) 약을 받지 못해 사망했습니다.</t></item>
+<item id="family_verysick_many"><t>병든 가족원이 약을 받지 못해 사망했습니다.</t></item>
+<item id="family_sick_1"><t>$0이(가) 병에 걸려 약이 필요합니다.</t></item>
+<item id="family_sick_many"><t>가족에게 약이 필요합니다.</t></item>
+<item id="family_died_1"><t>$0이(가) 죽었습니다.</t></item>
+<item id="family_died_2"><t>$0, $1이(가) 죽었습니다.</t></item>
+<item id="family_died_3"><t>$0, $1, $2이(가) 죽었습니다.</t></item>
+<item id="family_died_4"><t>$0, $1, $2, $3이(가) 죽었습니다.</t></item>
+<item id="family_died_5"><t>$0, $1, $2, $3, $4이(가) 죽었습니다.</t></item>
+<item id="family_escape_with_0"><t>가족을 남겨두고 조국을 떠났습니다.</t></item>
+<item id="family_escape_with_1"><t>$0을(를) 오브리스탄으로 보냈습니다.</t></item>
+<item id="family_escape_with_2"><t>$0, $1을(를) 오브리스탄으로 보냈습니다.</t></item>
+<item id="family_escape_with_3"><t>$0, $1, $2을(를) 오브리스탄으로 보냈습니다.</t></item>
+<item id="family_escape_with_4"><t>$0, $1, $2, $3을(를) 오브리스탄으로 보냈습니다.</t></item>
+<item id="family_escape_with_5"><t>$0, $1, $2, $3, $4을(를) 오브리스탄으로 보냈습니다.</t></item>
+<item id="family_escape_without_1"><t>$0이(가) 니스크로 돌아가려 합니다.</t></item>
+<item id="family_escape_without_2"><t>$0, $1이(가) 니스크로 돌아가려 합니다.</t></item>
+<item id="family_escape_without_3"><t>$0, $1, $2이(가) 니스크로 돌아가려 합니다.</t></item>
+<item id="family_escape_without_4"><t>$0, $1, $2, $3이(가) 니스크로 돌아가려 합니다.</t></item>
+<item id="family_escape_without_5"><t>$0, $1, $2, $3, $4이(가) 니스크로 돌아가려 합니다.</t></item>
+<item id="family_flee_final_0"><t>오브리스탄 최고</t></item>
+<item id="family_flee_final_1"><t>$0에 대한 안전은 이제 알 수 없습니다.</t></item>
+<item id="family_flee_final_2"><t>$0, $1에 대한 안전은 이제 알 수 없습니다.</t></item>
+<item id="family_flee_final_3"><t>$0, $1, $2에 대한 안전은 이제 알 수 없습니다.</t></item>
+<item id="family_flee_final_4"><t>$0, $1, $2, $3에 대한 안전은 이제 알 수 없습니다.</t></item>
+<item id="family_flee_final_5"><t>$0, $1, $2, $3, $4에 대한 안전은 이제 알 수 없습니다.</t></item>
+<item id="budget_savings"><t>저축금</t></item>
+<item id="budget_salary"><t>봉급 ($0)</t></item>
+<item id="budget_penalties"><t>벌금 ($0)</t></item>
+<item id="budget_bribes"><t>뇌물</t></item>
+<item id="budget_rent"><t>집세</t></item>
+<item id="budget_food"><t>식비</t></item>
+<item id="budget_heat"><t>난방비</t></item>
+<item id="budget_medicine"><t>의료비 ($0)</t></item>
+<item id="budget_sleep"><t>수면</t></item>
+<item id="budget_escape"><t>탈출</t></item>
+<item id="menu_back"><t>뒤로</t></item>
+<item id="confirm_ok"><t>예</t></item>
+<item id="confirm_cancel"><t>취소</t></item>
+<item id="menu_mainmenu"><t>메인 메뉴</t></item>
+<item id="menu_resume"><t>재개</t></item>
+<item id="menu_quit"><t>종료</t></item>
+<item id="menu_done"><t>완료</t></item>
+<item id="menu_story"><t>스토리</t></item>
+<item id="menu_endless"><t>무한</t></item>
+<item id="menu_play"><t>플레이</t></item>
+<item id="menu_fullscreen"><t>전체 화면</t></item>
+<item id="menu_nudity"><t>나체 표현</t></item>
+<item id="menu_easy"><t>쉬움 모드</t></item>
+<item id="menu_vibration"><t>진동</t></item>
+<item id="menu_music"><t>음악</t></item>
+<item id="menu_sound"><t>소리</t></item>
+<item id="menu_dateformat"><t>날짜 형식</t></item>
+<item id="menu_language"><t>언어</t></item>
+<item id="menu_device"><t>장치</t></item>
+<item id="menu_easytip"><t>일 당 + 20 현금</t></item>
+<item id="menu_stats"><t>통계</t></item>
+<item id="menu_next"><t>다음</t></item>
+<item id="menu_walktowork"><t>출근</t></item>
+<item id="menu_paused"><t>일시정지</t></item>
+<item id="menu_settings"><t>설정</t></item>
+<item id="menu_credits"><t>제작진</t></item>
+<item id="menu_checkforupdates"><t>업데이트 확인</t></item>
+<item id="stats_text"><t>$time시간 동안 플레이 함
+$processed명 처리함
+$approved명 통과시킴
+$denied명 거부함
+$detained 구금함
+$citations개의 표창장 획득
+$stamps번 도장 찍음
+$endtotal 중 $endnum번 엔딩</t></item>
+<item id="load_title"><t>날짜를 눌러 계속하거나 새 게임을 시작하십시오</t></item>
+<item id="load_confirm_delete_single"><t>$0일째 저장 파일을 삭제하시겠습니까?
+
+취소할 수 없습니다.</t></item>
+<item id="load_confirm_delete_multi"><t>$0일부터 $1일까지의 저장 파일을 삭제하시겠습니까?
+
+취소할 수 없습니다.</t></item>
+<item id="load_delete"><t>삭제</t></item>
+<item id="load_confirm_full"><t>저장 파일 트랙 가득 참.
+
+가장 오른쪽에 있는 저장 파일을 계속 플레이하거나 아니면 저장 파일 중 하나를 선택해 트랙을 비워주십시오.</t></item>
+<item id="load_summary"><t>$day일
+"$news"
+
+저축금 $savings, 가족 $family,
+획득한 토큰 $tokens개, 아파트 등급 $apt</t></item>
+<item id="load_continue"><t>계속</t></item>
+<item id="emotion_happy"><t>행복</t></item>
+<item id="emotion_ok"><t>좋음</t></item>
+<item id="emotion_sad"><t>슬픔</t></item>
+<item id="emotion_cold"><t>추움</t></item>
+<item id="emotion_sick"><t>아픔</t></item>
+<item id="emotion_verysick"><t>매우 아픔</t></item>
+<item id="emotion_dead"><t>사망</t></item>
+<item id="emotion_hungry"><t>굶주림</t></item>
+<item id="load_latest"><t>최신</t></item>
+<item id="entry_approved"><t>입국 허가</t></item>
+<item id="entry_denied"><t>입국 거부</t></item>
+<item id="stamp_approved"><t>허가</t></item>
+<item id="stamp_denied"><t>거부</t></item>
+<item id="stamp_reason"><t>사유</t></item>
+<item id="booth_dragdocs"><t>문서를 여기로 드래그</t></item>
+<item id="booth_highlight"><t>불일치 강조</t></item>
+<item id="booth_discrepancy"><t>불일치
+발견</t></item>
+<item id="booth_interrogate"><t>취조</t></item>
+<item id="booth_matching"><t>데이터
+일치</t></item>
+<item id="booth_nocorrelation"><t>연관성
+없음</t></item>
+<item id="booth_cleared"><t>불일치
+없음</t></item>
+<item id="env_clearforentry"><t>입국에 문제 없음</t></item>
+<item id="env_lettermale"><t>남</t></item>
+<item id="env_letterfemale"><t>여</t></item>
+<item id="env_noalias"><t>알려진 이명 없음</t></item>
+<item id="env_typochars"><t>aeiou,iuy,pgq,lj,ck,bh,알일얼,탄단난,베배메,실질칠,리니디,오우으,번반변,튼툰톤,옥윽욱,토트투,발벌말,스수소,제재세,라리러,렌랜롄,르루로,마머미,워와위,젠잰전,필밀팰,드두도,파퍼피,데대테,칼킬캘,다디더,즈주조,메매몌,저지자,글골굴,안얀얜,아야얘,터티타,그구고,레래례,나너니,보부브,탄턴단,이어여,피퍼파,싱성상,턴탄텐,코쿠크,시서사,티터타,엔앤헨,쿄교크,하히허,한힌헌,츤슨즌,케캐게,유윾육,베배메,틴닌닐,포프모,노누느,잇있잍</t></item>
+<item id="carousel_give"><t>전달</t></item>
+<item id="carousel_hang"><t>벽에 걸기</t></item>
+<item id="carousel_confiscate"><t>압수</t></item>
+<item id="endless_complete"><t>$style
+$course
+
+$time
+$score점</t></item>
+<item id="endless_ranked"><t>$0위</t></item>
+<item id="endless_unlock"><t>무한 모드를 해금하기 위해 스토리 모드를 완료하십시오</t></item>
+<item id="endless_wrongcode"><t>S O R R Y</t></item>
+<item id="date_verbose"><t>$year년 $month $day</t></item>
+<item id="month_1"><t>1월</t></item>
+<item id="month_2"><t>2월</t></item>
+<item id="month_3"><t>3월</t></item>
+<item id="month_4"><t>4월</t></item>
+<item id="month_5"><t>5월</t></item>
+<item id="month_6"><t>6월</t></item>
+<item id="month_7"><t>7월</t></item>
+<item id="month_8"><t>8월</t></item>
+<item id="month_9"><t>9월</t></item>
+<item id="month_10"><t>10월</t></item>
+<item id="month_11"><t>11월</t></item>
+<item id="month_12"><t>12월</t></item>
+<item id="day_1"><t>1일</t></item>
+<item id="day_2"><t>2일</t></item>
+<item id="day_3"><t>3일</t></item>
+<item id="day_4"><t>4일</t></item>
+<item id="day_5"><t>5일</t></item>
+<item id="day_6"><t>6일</t></item>
+<item id="day_7"><t>7일</t></item>
+<item id="day_8"><t>8일</t></item>
+<item id="day_9"><t>9일</t></item>
+<item id="day_10"><t>10일</t></item>
+<item id="day_11"><t>11일</t></item>
+<item id="day_12"><t>12일</t></item>
+<item id="day_13"><t>13일</t></item>
+<item id="day_14"><t>14일</t></item>
+<item id="day_15"><t>15일</t></item>
+<item id="day_16"><t>16일</t></item>
+<item id="day_17"><t>17일</t></item>
+<item id="day_18"><t>18일</t></item>
+<item id="day_19"><t>19일</t></item>
+<item id="day_20"><t>20일</t></item>
+<item id="day_21"><t>21일</t></item>
+<item id="day_22"><t>22일</t></item>
+<item id="day_23"><t>23일</t></item>
+<item id="day_24"><t>24일</t></item>
+<item id="day_25"><t>25일</t></item>
+<item id="day_26"><t>26일</t></item>
+<item id="day_27"><t>27일</t></item>
+<item id="day_28"><t>28일</t></item>
+<item id="day_29"><t>29일</t></item>
+<item id="day_30"><t>30일</t></item>
+<item id="day_31"><t>31일</t></item>
+<item id="bulletin_default"><t>아스토츠카
+입국부
+공식 공고
+
+검사관,
+
+$content
+
+아스토츠카에 영광 있으라.</t></item>
+<item id="bulletin_notice"><t>아스토츠카
+입국부
+공식 공고
+
+공지:
+
+$content
+
+아스토츠카에 영광 있으라.</t></item>
+<item id="bulletin_endless"><t>아스토츠카
+입국부
+공식 공고
+
+$style
+
+$course
+
+아스토츠카에 영광 있으라.</t></item>
+</data>
