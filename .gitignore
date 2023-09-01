@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/DirectX_Game/DX_Project/GameEnginePlatform/ThirdParty/FMOD/lib/x64/fmodL.dll
+/DirectX_Game/DX_Project/GameEnginePlatform/ThirdParty/FMOD/lib/x64/fmodL.dll
+/DirectX_Game/DX_Project/GameEnginePlatform/ThirdParty/FMOD/lib/x64/fmodL_vc.lib
