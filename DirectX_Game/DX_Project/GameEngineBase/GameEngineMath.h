@@ -38,6 +38,7 @@ public:
 	static const float4 FORWARD;
 	static const float4 BACKWARD;
 
+	static const float4 WHITE;
 	static const float4 RED;
 	static const float4 GREEN;
 	static const float4 BLUE;
@@ -47,12 +48,29 @@ public:
 		float Arr1D[4] = { 0.0f, 0.0f, 0.0f, 1.0f };
 
 		struct 
-
 		{
 			float X;
 			float Y;
 			float Z;
 			float W;
+		};
+
+
+		struct
+		{
+			float R;
+			float G;
+			float B;
+			float A;
+		};
+
+
+		struct
+		{
+			float Pos2DX;
+			float Pos2DY;
+			float Scale2DX;
+			float Scale2DY;
 		};
 
 		float Arr2D[1][4];
@@ -79,6 +97,16 @@ public:
 	inline int iY() const
 	{
 		return static_cast<int>(Y);
+	}
+
+	inline UINT uiX() const
+	{
+		return static_cast<unsigned int>(X);
+	}
+
+	inline UINT uiY() const
+	{
+		return static_cast<unsigned int>(Y);
 	}
 
 	inline float hX() const
@@ -384,7 +412,7 @@ public:
 
 	// GetUnitVectorFromDeg(45)
 
-	static float4 LerpClimp(const float4& Start, const float4& _End, float _Ratio)
+	static float4 LerpClamp(const float4& Start, const float4& _End, float _Ratio)
 	{
 		if (1.0f <= _Ratio)
 		{
