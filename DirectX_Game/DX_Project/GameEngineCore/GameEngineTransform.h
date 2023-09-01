@@ -37,7 +37,7 @@ public:
 	float4x4 ViewPort;
 
 	// 로컬 => 월드 => 뷰 => 프로젝션 
-	float4x4 WorldViewPorjectionMatrix;
+	float4x4 WorldViewProjectionMatrix;
 
 	void LocalCalculation()
 	{
@@ -50,7 +50,7 @@ public:
 
 	void WorldViewProjectionCalculation()
 	{
-		WorldViewPorjectionMatrix = WorldMatrix * ViewMatrix * ProjectionMatrix;
+		WorldViewProjectionMatrix = WorldMatrix * ViewMatrix * ProjectionMatrix;
 	}
 };
 
@@ -111,7 +111,6 @@ public:
 	{
 		TransData.Position += _Value;
 		TransformUpdate();
-		
 	}
 
 
@@ -173,6 +172,11 @@ public:
 	}
 
 	void CalChilds();
+
+	float4x4 GetWorldViewProjectionMatrix()
+	{
+		return TransData.WorldViewProjectionMatrix;
+	}
 
 protected:
 

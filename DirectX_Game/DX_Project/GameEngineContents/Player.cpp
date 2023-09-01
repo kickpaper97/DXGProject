@@ -1,6 +1,7 @@
 #include "PreCompile.h"
 #include "Player.h"
-#include <GameEngineCore/GameEngineRenderer.h>
+#include <GameEngineCore/GameEngineSpriteRenderer.h>
+#include <GameEngineCore/GameEngineTexture.h>
 
 Player::Player() 
 {
@@ -14,27 +15,10 @@ Player::~Player()
 void Player::Start()
 {
 	{
-		std::shared_ptr<GameEngineRenderer> Renderer = CreateComponent<GameEngineRenderer>(0);
-		Renderer->Transform.SetLocalPosition({ 0, 150, 0 });
-		Renderer->Transform.SetLocalScale({ 50, 50, 100 });
-	}
 
-	{
-		std::shared_ptr<GameEngineRenderer> Renderer = CreateComponent<GameEngineRenderer>(0);
-		Renderer->Transform.SetLocalPosition({ 0, -150, 0 });
-		Renderer->Transform.SetLocalScale({ 50, 50, 100 });
-	}
+		MainSpriteRenderer = CreateComponent<GameEngineSpriteRenderer>();
+		MainSpriteRenderer->SetSprite("TestPlayer.png", 5);
 
-	{
-		std::shared_ptr<GameEngineRenderer> Renderer = CreateComponent<GameEngineRenderer>(0);
-		Renderer->Transform.SetLocalPosition({ -150, 0, 0 });
-		Renderer->Transform.SetLocalScale({ 50, 50, 100 });
-	}
-
-	{
-		std::shared_ptr<GameEngineRenderer> Renderer = CreateComponent<GameEngineRenderer>(0);
-		Renderer->Transform.SetLocalPosition({ 150, 0, 0 });
-		Renderer->Transform.SetLocalScale({ 50, 50, 100 });
 	}
 }
 

@@ -38,11 +38,16 @@ public:
 	static const float4 FORWARD;
 	static const float4 BACKWARD;
 
+	static const float4 RED;
+	static const float4 GREEN;
+	static const float4 BLUE;
+
 	union 
 	{
 		float Arr1D[4] = { 0.0f, 0.0f, 0.0f, 1.0f };
 
 		struct 
+
 		{
 			float X;
 			float Y;
