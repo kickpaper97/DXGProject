@@ -1,19 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="PreCompile.cpp" />
     <ClCompile Include="ContentsCore.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="PlayLevel.cpp" />
     <ClCompile Include="PlayMap.cpp" />
-    <ClCompile Include="TitleLevel.cpp" />
+    <ClCompile Include="PlayLevel.cpp">
+      <Filter>Level</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleLevel.cpp">
+      <Filter>Level</Filter>
+    </ClCompile>
+    <ClCompile Include="DayOffLevel.cpp">
+      <Filter>Level</Filter>
+    </ClCompile>
+    <ClCompile Include="PreCompile.cpp">
+      <Filter>PreCompile</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicActor.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
+    <ClCompile Include="StartIntroLevel.cpp">
+      <Filter>Level</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PreCompile.h" />
     <ClInclude Include="ContentsCore.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="PlayLevel.h" />
     <ClInclude Include="PlayMap.h" />
-    <ClInclude Include="TitleLevel.h" />
+    <ClInclude Include="PlayLevel.h">
+      <Filter>Level</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleLevel.h">
+      <Filter>Level</Filter>
+    </ClInclude>
+    <ClInclude Include="DayOffLevel.h">
+      <Filter>Level</Filter>
+    </ClInclude>
+    <ClInclude Include="PreCompile.h">
+      <Filter>PreCompile</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicActor.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="StartIntroLevel.h">
+      <Filter>Level</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Level">
+      <UniqueIdentifier>{351d4393-9100-467d-8364-c454d51e225f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PreCompile">
+      <UniqueIdentifier>{6eb03e34-f7bc-4c51-bc0f-9d65d7c95a97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global">
+      <UniqueIdentifier>{e4fd6a23-9de0-4112-9032-60b2b0e5c2d4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

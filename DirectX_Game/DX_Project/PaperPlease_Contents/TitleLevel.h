@@ -23,6 +23,8 @@ protected:
 	void LevelEnd(GameEngineLevel* _NextLevel) override;
 
 private:
-
+	bool isAnimation = true;
+	std::shared_ptr<class BasicActor> Logo = nullptr;
+	
 };
 

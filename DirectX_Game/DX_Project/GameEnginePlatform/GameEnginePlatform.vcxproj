@@ -212,12 +212,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ThirdParty\FMOD\lib\x64\fmod.dll">
+    <CopyFileToFolders Include="ThirdParty\FMOD\lib\x64\fmod.dll">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
-    </None>
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
     <CopyFileToFolders Include="ThirdParty\FMOD\lib\x64\fmodL.dll">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
