@@ -3,9 +3,6 @@
   <ItemGroup>
     <ClCompile Include="ContentsCore.cpp" />
     <ClCompile Include="PlayMap.cpp" />
-    <ClCompile Include="PlayLevel.cpp">
-      <Filter>Level</Filter>
-    </ClCompile>
     <ClCompile Include="TitleLevel.cpp">
       <Filter>Level</Filter>
     </ClCompile>
@@ -24,13 +21,13 @@
     <ClCompile Include="StartIntroLevel.cpp">
       <Filter>Level</Filter>
     </ClCompile>
+    <ClCompile Include="PlayLevel.cpp">
+      <Filter>Level\DAY</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
     <ClInclude Include="PlayMap.h" />
-    <ClInclude Include="PlayLevel.h">
-      <Filter>Level</Filter>
-    </ClInclude>
     <ClInclude Include="TitleLevel.h">
       <Filter>Level</Filter>
     </ClInclude>
@@ -49,6 +46,9 @@
     <ClInclude Include="StartIntroLevel.h">
       <Filter>Level</Filter>
     </ClInclude>
+    <ClInclude Include="PlayLevel.h">
+      <Filter>Level\DAY</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Level">
@@ -59,6 +59,9 @@
     </Filter>
     <Filter Include="Global">
       <UniqueIdentifier>{e4fd6a23-9de0-4112-9032-60b2b0e5c2d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level\DAY">
+      <UniqueIdentifier>{f62110df-f179-420b-83d4-7fd34e0b8d2b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

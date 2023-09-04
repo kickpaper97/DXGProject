@@ -75,11 +75,13 @@ void TitleLevel::Update(float _Delta)
 	if (GameEngineInput::IsPress('W'))
 	{
 		Logo->Transform.AddLocalPosition(float4::UP);
+		Logo->Off();
 	}
 
 	if (GameEngineInput::IsPress('S'))
 	{
 		Logo->Transform.AddLocalPosition(float4::DOWN);
+		Logo->Release();
 	}
 
 
