@@ -30,8 +30,10 @@ void TitleLevel::Start()
 			GameEngineDirectory& ChildDir = Directorys[i];
 			GameEngineSprite::CreateFolder(ChildDir.GetStringPath());
 		}
-		GameEngineSprite::CreateSingle("Title.png");
+
 	}
+
+	GameEngineSprite::CreateSingle("Title.png");
 
 
 	GetMainCamera()->Transform.SetLocalPosition({GameEngineCore::MainWindow.GetScale().hX() , GameEngineCore::MainWindow.GetScale().hY(), -500.0f});
@@ -43,7 +45,7 @@ void TitleLevel::Start()
 	{
 		
 
-	Logo = CreateActor<BasicActor>(1);
+	Logo = CreateActor<BasicActor>(RenderOrder::BackGround);
 	Logo->GetSpriteRenderer()->SetSprite("Title.Png");
 	std::shared_ptr<GameEngineTexture> Tex = GameEngineTexture::Find("Title.Png");
 	Logo->GetSpriteRenderer()->AutoSpriteSizeOn();
@@ -51,7 +53,7 @@ void TitleLevel::Start()
 	float check =Tex.get()->GetScale().hY();
 	Logo->Transform.SetLocalPosition({ WindowSize.hX(),-check ,-500.0f});
 	
-	Tex.reset();
+	
 	}
 
 
@@ -61,33 +63,72 @@ void TitleLevel::Start()
 
 void TitleLevel::Update(float _Delta)
 {
-	if (GameEngineInput::IsDown(VK_RETURN) ||
-		GameEngineInput::IsDown(VK_LBUTTON))
-	{
-		isAnimation = false;
-	}
 
+	float4 WindowSize = GameEngineCore::MainWindow.GetScale();
 	if (true == isAnimation)
 	{
+		if (GameEngineInput::IsDown(VK_RETURN) ||
+			GameEngineInput::IsDown(VK_LBUTTON)||
+			(GameEngineCore::MainWindow.GetScale().Half().Y+ GameEngineCore::MainWindow.GetScale().Half().Half().hY()) <=Logo->Transform.GetWorldPosition().Y
+			)
+		{
+			float4 Logopos={GameEngineCore::MainWindow.GetScale().hX(), GameEngineCore::MainWindow.GetScale().Half().Y + GameEngineCore::MainWindow.GetScale().Half().Half().hY()};
+			Logo->Transform.SetLocalPosition(Logopos);
+			isAnimation = false;
+		}
+
+		if (false == isAnimaitonPause)
+		{
+			Logo->Transform.AddLocalPosition(AnimationDir /2);
+		}
+
+
+		float y = Logo->Transform.GetWorldPosition().Y;
 
 	}
-
-	if (GameEngineInput::IsPress('W'))
+	else
 	{
-		Logo->Transform.AddLocalPosition(float4::UP);
-		Logo->Off();
+		if (false == isAnimaitonPause)
+		{
+			Logo->Transform.AddLocalPosition(AnimationDir/2);
+		}
 	}
 
-	if (GameEngineInput::IsPress('S'))
-	{
-		Logo->Transform.AddLocalPosition(float4::DOWN);
-		Logo->Release();
-	}
+
 
 
 	if (GameEngineInput::IsPress('P'))
 	{
 		GameEngineCore::ChangeLevel("PlayLevel");
+	}
+
+	DeltaCheck -= _Delta;
+	if (0.0f >= DeltaCheck)
+	{
+		
+
+
+		if (true == isAnimaitonPause)
+		{
+			isAnimaitonPause = false;
+			if (false == isAnimation)
+			{
+				if (float4::UP == AnimationDir)
+				{
+					AnimationDir = float4::DOWN;
+				}
+				else if (float4::DOWN == AnimationDir)
+				{
+					AnimationDir = float4::UP;
+				}
+			}
+		}
+		else
+		{
+			isAnimaitonPause = true;
+		}
+
+		DeltaCheck = 0.5f;
 	}
 }
 

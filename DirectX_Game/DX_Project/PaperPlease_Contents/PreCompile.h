@@ -2,6 +2,8 @@
 
 #include <GameEngineCore/PreCompile.h>
 
+#include "ContentsEnum.h"
+
 #include <GameEngineCore/GameEngineCore.h>
 #include <GameEngineCore/GameEngineObject.h>
 #include <GameEngineCore/GameEngineActor.h>

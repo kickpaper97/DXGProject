@@ -23,7 +23,11 @@ protected:
 	void LevelEnd(GameEngineLevel* _NextLevel) override;
 
 private:
+	float DeltaCheck = 0.5f;
+	float4 AnimationDir = float4::UP;
 	bool isAnimation = true;
+	bool isAnimaitonPause = false;
+
 	std::shared_ptr<class BasicActor> Logo = nullptr;
 	
 };

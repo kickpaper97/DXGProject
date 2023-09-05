@@ -201,6 +201,7 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="ContentsCore.h" />
+    <ClInclude Include="ContentsEnum.h" />
     <ClInclude Include="DayOffLevel.h">
       <SubType>
       </SubType>

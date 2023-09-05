@@ -4,6 +4,12 @@
 // Ό³Έν :
 class Player : public GameEngineActor
 {
+	class PlayerData 
+	{
+	public:
+		int Savings = 0;
+		
+	};
 public:
 	// constrcuter destructer
 	Player();

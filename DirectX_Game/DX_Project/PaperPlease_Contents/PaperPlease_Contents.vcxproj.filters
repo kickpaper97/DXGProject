@@ -2,7 +2,6 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="ContentsCore.cpp" />
-    <ClCompile Include="PlayMap.cpp" />
     <ClCompile Include="TitleLevel.cpp">
       <Filter>Level</Filter>
     </ClCompile>
@@ -24,10 +23,12 @@
     <ClCompile Include="PlayLevel.cpp">
       <Filter>Level\DAY</Filter>
     </ClCompile>
+    <ClCompile Include="PlayMap.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
-    <ClInclude Include="PlayMap.h" />
     <ClInclude Include="TitleLevel.h">
       <Filter>Level</Filter>
     </ClInclude>
@@ -48,6 +49,12 @@
     </ClInclude>
     <ClInclude Include="PlayLevel.h">
       <Filter>Level\DAY</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayMap.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentsEnum.h">
+      <Filter>Global</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

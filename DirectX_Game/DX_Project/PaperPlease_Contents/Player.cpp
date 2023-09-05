@@ -16,17 +16,17 @@ Player::~Player()
 void Player::Start()
 {
 	{
-		MainSpriteRenderer = CreateComponent<GameEngineSpriteRenderer>();
-		MainSpriteRenderer->CreateAnimation("Run", "HoHoYee_AttackABC", 0.05f, -1, -1, true);
-		MainSpriteRenderer->ChangeAnimation("Run");
-		MainSpriteRenderer->SetSamplerState(SamplerOption::LINEAR);
-		MainSpriteRenderer->Transform.SetLocalPosition({ 100.0f, 0.0f, 0.0f });
+		//MainSpriteRenderer = CreateComponent<GameEngineSpriteRenderer>();
+		//MainSpriteRenderer->CreateAnimation("Run", "HoHoYee_AttackABC", 0.05f, -1, -1, true);
+		//MainSpriteRenderer->ChangeAnimation("Run");
+		//MainSpriteRenderer->SetSamplerState(SamplerOption::LINEAR);
+		//MainSpriteRenderer->Transform.SetLocalPosition({ 100.0f, 0.0f, 0.0f });
 
-		MainSpriteRenderer->SetEndEvent("Run", std::bind(&Player::TestEvent, this, std::placeholders::_1));
+		//MainSpriteRenderer->SetEndEvent("Run", std::bind(&Player::TestEvent, this, std::placeholders::_1));
 
-		// MainSpriteRenderer->Transform.SetLocalScale({5, 5});
-		MainSpriteRenderer->AutoSpriteSizeOn();
-		MainSpriteRenderer->SetAutoScaleRatio(2.0f);
+		//// MainSpriteRenderer->Transform.SetLocalScale({5, 5});
+		//MainSpriteRenderer->AutoSpriteSizeOn();
+		//MainSpriteRenderer->SetAutoScaleRatio(2.0f);
 	}
 
 	float4 HalfWindowScale = GameEngineCore::MainWindow.GetScale().Half();
