@@ -26,6 +26,12 @@
     <ClCompile Include="PlayMap.cpp">
       <Filter>Global</Filter>
     </ClCompile>
+    <ClCompile Include="BasicButton.cpp">
+      <Filter>Global\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="Cusor.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
@@ -56,6 +62,12 @@
     <ClInclude Include="ContentsEnum.h">
       <Filter>Global</Filter>
     </ClInclude>
+    <ClInclude Include="BasicButton.h">
+      <Filter>Global\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="Cusor.h">
+      <Filter>Global</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Level">
@@ -69,6 +81,9 @@
     </Filter>
     <Filter Include="Level\DAY">
       <UniqueIdentifier>{f62110df-f179-420b-83d4-7fd34e0b8d2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global\Button">
+      <UniqueIdentifier>{848968e6-258f-49bf-b8f8-02a7e1baf646}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

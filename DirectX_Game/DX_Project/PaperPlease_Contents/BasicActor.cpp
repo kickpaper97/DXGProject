@@ -17,3 +17,5 @@ void BasicActor::Start()
 	SpriteRenderer->SetSamplerState(SamplerOption::POINT);
 }
 
+
+

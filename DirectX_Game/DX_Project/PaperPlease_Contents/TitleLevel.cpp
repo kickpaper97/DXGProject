@@ -34,6 +34,13 @@ void TitleLevel::Start()
 	}
 
 	GameEngineSprite::CreateSingle("Title.png");
+	GameEngineSprite::CreateSingle();
+
+	{
+		GameEngineSprite::CreateSingle("CursorArrow.png");
+		GameEngineSprite::CreateSingle("CusorHand.png");
+
+	}
 
 
 	GetMainCamera()->Transform.SetLocalPosition({GameEngineCore::MainWindow.GetScale().hX() , GameEngineCore::MainWindow.GetScale().hY(), -500.0f});

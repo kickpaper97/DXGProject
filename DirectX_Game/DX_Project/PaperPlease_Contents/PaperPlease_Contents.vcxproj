@@ -175,7 +175,15 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="BasicButton.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="ContentsCore.cpp" />
+    <ClCompile Include="Cusor.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="DayOffLevel.cpp">
       <SubType>
       </SubType>
@@ -200,8 +208,16 @@
       <SubType>
       </SubType>
     </ClInclude>
+    <ClInclude Include="BasicButton.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="ContentsCore.h" />
     <ClInclude Include="ContentsEnum.h" />
+    <ClInclude Include="Cusor.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="DayOffLevel.h">
       <SubType>
       </SubType>
