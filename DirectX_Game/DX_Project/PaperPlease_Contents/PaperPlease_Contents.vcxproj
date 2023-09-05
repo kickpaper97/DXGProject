@@ -180,7 +180,7 @@
       </SubType>
     </ClCompile>
     <ClCompile Include="ContentsCore.cpp" />
-    <ClCompile Include="Cusor.cpp">
+    <ClCompile Include="Cursor.cpp">
       <SubType>
       </SubType>
     </ClCompile>
@@ -196,6 +196,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="QuitButton.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
     <ClCompile Include="StartIntroLevel.cpp">
       <SubType>
@@ -214,7 +218,7 @@
     </ClInclude>
     <ClInclude Include="ContentsCore.h" />
     <ClInclude Include="ContentsEnum.h" />
-    <ClInclude Include="Cusor.h">
+    <ClInclude Include="Cursor.h">
       <SubType>
       </SubType>
     </ClInclude>
@@ -226,6 +230,10 @@
     <ClInclude Include="PlayLevel.h" />
     <ClInclude Include="PlayMap.h" />
     <ClInclude Include="PreCompile.h" />
+    <ClInclude Include="QuitButton.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="StartIntroLevel.h">
       <SubType>
       </SubType>

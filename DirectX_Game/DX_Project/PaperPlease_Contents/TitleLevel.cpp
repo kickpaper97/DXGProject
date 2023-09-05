@@ -1,6 +1,9 @@
 #include "PreCompile.h"
 #include "TitleLevel.h"
 #include "BasicActor.h"
+#include "BasicButton.h"
+#include "QuitButton.h"
+#include "Cursor.h"
 
 #include <GameEngineCore/GameEngineComponent.h>
 
@@ -23,22 +26,40 @@ void TitleLevel::Start()
 		Dir.MoveChild("assets");
 		
 		
-		std::vector<GameEngineDirectory> Directorys = Dir.GetAllDirectory();
+		std::vector<GameEngineFile> Files = Dir.GetAllFile();
 
-		for (size_t i = 0; i < Directorys.size(); i++)
+		for (size_t i = 0; i < Files.size(); i++)
 		{
-			GameEngineDirectory& ChildDir = Directorys[i];
-			GameEngineSprite::CreateFolder(ChildDir.GetStringPath());
+			GameEngineFile& File = Files[i];
+			GameEngineTexture::Load(File.GetStringPath());
 		}
 
 	}
 
-	GameEngineSprite::CreateSingle("Title.png");
-	GameEngineSprite::CreateSingle();
+	{
+		GameEngineDirectory Dir;
+		Dir.MoveParentToExistsChild("GameEngineResources");
+		Dir.MoveChild("ContentsResources");
+		Dir.MoveChild("assets");
+		std::vector<GameEngineDirectory> Directorys = Dir.GetAllDirectory();
+
+		for (size_t i = 0; i < Directorys.size(); i++)
+		{
+			
+			GameEngineDirectory& Dir = Directorys[i];
+			GameEngineSprite::CreateFolder(Dir.GetStringPath());
+
+		}
+	}
+
 
 	{
+		
+		GameEngineSprite::CreateSingle("Title.png");
+		GameEngineSprite::CreateCut("ConventionQuitButton.png",1,2);
+		
 		GameEngineSprite::CreateSingle("CursorArrow.png");
-		GameEngineSprite::CreateSingle("CusorHand.png");
+		GameEngineSprite::CreateSingle("CursorHand.png");
 
 	}
 
@@ -72,6 +93,7 @@ void TitleLevel::Update(float _Delta)
 {
 
 	float4 WindowSize = GameEngineCore::MainWindow.GetScale();
+
 	if (true == isAnimation)
 	{
 		if (GameEngineInput::IsDown(VK_RETURN) ||
@@ -81,12 +103,15 @@ void TitleLevel::Update(float _Delta)
 		{
 			float4 Logopos={GameEngineCore::MainWindow.GetScale().hX(), GameEngineCore::MainWindow.GetScale().Half().Y + GameEngineCore::MainWindow.GetScale().Half().Half().hY()};
 			Logo->Transform.SetLocalPosition(Logopos);
+			std::shared_ptr<BasicActor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
+			std::shared_ptr<BasicButton> NewQuitButton = CreateActor<QuitButton>(GameObjectType::UI);
+			NewQuitButton.get()->Transform.SetLocalPosition({ 1100,600 });
 			isAnimation = false;
 		}
 
 		if (false == isAnimaitonPause)
 		{
-			Logo->Transform.AddLocalPosition(AnimationDir /2);
+			Logo->Transform.AddLocalPosition(AnimationDir/4 );
 		}
 
 
@@ -97,7 +122,7 @@ void TitleLevel::Update(float _Delta)
 	{
 		if (false == isAnimaitonPause)
 		{
-			Logo->Transform.AddLocalPosition(AnimationDir/2);
+			Logo->Transform.AddLocalPosition(AnimationDir/4);
 		}
 	}
 
@@ -135,7 +160,7 @@ void TitleLevel::Update(float _Delta)
 			isAnimaitonPause = true;
 		}
 
-		DeltaCheck = 0.5f;
+		DeltaCheck = 0.6f;
 	}
 }
 

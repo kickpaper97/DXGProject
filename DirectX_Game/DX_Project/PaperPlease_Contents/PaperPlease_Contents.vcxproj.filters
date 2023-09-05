@@ -5,9 +5,6 @@
     <ClCompile Include="TitleLevel.cpp">
       <Filter>Level</Filter>
     </ClCompile>
-    <ClCompile Include="DayOffLevel.cpp">
-      <Filter>Level</Filter>
-    </ClCompile>
     <ClCompile Include="PreCompile.cpp">
       <Filter>PreCompile</Filter>
     </ClCompile>
@@ -29,16 +26,19 @@
     <ClCompile Include="BasicButton.cpp">
       <Filter>Global\Button</Filter>
     </ClCompile>
-    <ClCompile Include="Cusor.cpp">
+    <ClCompile Include="Cursor.cpp">
       <Filter>Global</Filter>
+    </ClCompile>
+    <ClCompile Include="DayOffLevel.cpp">
+      <Filter>Level\DAY</Filter>
+    </ClCompile>
+    <ClCompile Include="QuitButton.cpp">
+      <Filter>Global\Button</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
     <ClInclude Include="TitleLevel.h">
-      <Filter>Level</Filter>
-    </ClInclude>
-    <ClInclude Include="DayOffLevel.h">
       <Filter>Level</Filter>
     </ClInclude>
     <ClInclude Include="PreCompile.h">
@@ -59,14 +59,20 @@
     <ClInclude Include="PlayMap.h">
       <Filter>Global</Filter>
     </ClInclude>
-    <ClInclude Include="ContentsEnum.h">
-      <Filter>Global</Filter>
-    </ClInclude>
     <ClInclude Include="BasicButton.h">
       <Filter>Global\Button</Filter>
     </ClInclude>
-    <ClInclude Include="Cusor.h">
+    <ClInclude Include="Cursor.h">
       <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="DayOffLevel.h">
+      <Filter>Level\DAY</Filter>
+    </ClInclude>
+    <ClInclude Include="QuitButton.h">
+      <Filter>Global\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentsEnum.h">
+      <Filter>Global\Enum</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -84,6 +90,9 @@
     </Filter>
     <Filter Include="Global\Button">
       <UniqueIdentifier>{848968e6-258f-49bf-b8f8-02a7e1baf646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global\Enum">
+      <UniqueIdentifier>{11831792-56f0-406f-88e1-13725117f3a3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

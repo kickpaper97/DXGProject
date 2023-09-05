@@ -8,6 +8,8 @@ class Player : public GameEngineActor
 	{
 	public:
 		int Savings = 0;
+		int PassPort = 0;
+		int Class = 8;
 		
 	};
 public:

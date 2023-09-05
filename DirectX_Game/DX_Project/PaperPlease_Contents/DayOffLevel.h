@@ -1,7 +1,8 @@
 
 #pragma once
+#include<GameEngineCore/GameEngineLevel.h>
 
-class DayOffLevel
+class DayOffLevel :public GameEngineLevel
 {
 public:
 	DayOffLevel();
@@ -13,9 +14,16 @@ public:
 	DayOffLevel& operator=(const DayOffLevel&& _Other) noexcept = delete;
 
 
+	void SetCurDay(int _Curday)
+	{
+		Curday = _Curday;
+	}
 protected:
+	void LevelStart(GameEngineLevel* _PrevLevel) override;
+	void LevelEnd(GameEngineLevel* _NextLevel) override;
 
 private:
+	int Curday = 0;
 
 };
 

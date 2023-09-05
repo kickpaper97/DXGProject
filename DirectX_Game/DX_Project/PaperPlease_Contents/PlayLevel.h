@@ -15,6 +15,11 @@ public:
 	PlayLevel& operator=(const PlayLevel& _Other) = delete;
 	PlayLevel& operator=(PlayLevel&& _Other) noexcept = delete;
 
+	int GetCurDay() const
+	{
+		return CurDay;
+	}
+
 protected:
 	void Start() override;
 
@@ -24,6 +29,6 @@ protected:
 	void LevelEnd(GameEngineLevel* _NextLevel) override;
 
 private:
-
+	int CurDay=-1;
 };
 
