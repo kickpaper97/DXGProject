@@ -20,7 +20,7 @@ void DayOffLevel::LevelStart(GameEngineLevel* _PrevLevel)
 
 void DayOffLevel::LevelEnd(GameEngineLevel* _NextLevel)
 {
-	_NextLevel
+	
 }
 
 

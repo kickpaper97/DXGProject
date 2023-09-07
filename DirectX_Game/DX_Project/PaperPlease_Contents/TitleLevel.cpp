@@ -56,7 +56,7 @@ void TitleLevel::Start()
 	{
 		
 		GameEngineSprite::CreateSingle("Title.png");
-		GameEngineSprite::CreateCut("ConventionQuitButton.png",1,2);
+		GameEngineSprite::CreateCut("QuitButton.png",1,2);
 		
 		GameEngineSprite::CreateSingle("CursorArrow.png");
 		GameEngineSprite::CreateSingle("CursorHand.png");
@@ -126,10 +126,18 @@ void TitleLevel::Update(float _Delta)
 		}
 	}
 
+	if (GameEngineInput::IsDown('A'))
+	{
+		Logo->GetSpriteRenderer()->On();
+	}
+
+	if (GameEngineInput::IsDown('D'))
+	{
+		Logo->GetSpriteRenderer()->Off();
+	}
 
 
-
-	if (GameEngineInput::IsPress('P'))
+	if (GameEngineInput::IsDown('P'))
 	{
 		GameEngineCore::ChangeLevel("PlayLevel");
 	}

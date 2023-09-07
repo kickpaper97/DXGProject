@@ -14,9 +14,9 @@ void QuitButton::Start()
 {
 	BasicButton::Start();
 	GameEngineSpriteRenderer* Renderer = GetSpriteRenderer();
-	Renderer->SetSprite("ConventionQuitButton.png");
-	Renderer->CreateAnimation("QuitButtonOFF", "ConventionQuitButton.png", 0.01f, 0, 0, false);
-	Renderer->CreateAnimation("QuitButtonON", "ConventionQuitButton.png", 0.01f, 1, 1, false);
+	Renderer->SetSprite("QuitButton.png");
+	Renderer->CreateAnimation("QuitButtonOFF", "QuitButton.png", 0.01f, 0, 0, false);
+	Renderer->CreateAnimation("QuitButtonON", "QuitButton.png", 0.01f, 1, 1, false);
 	Renderer->ChangeAnimation("QuitButtonOFF");
 
 	

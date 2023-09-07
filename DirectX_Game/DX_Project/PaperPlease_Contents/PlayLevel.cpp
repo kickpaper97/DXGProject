@@ -66,5 +66,7 @@ void PlayLevel::LevelStart(GameEngineLevel* _PrevLevel)
 
 void PlayLevel::LevelEnd(GameEngineLevel* _NextLevel)
 {
-	GameEngineCore::ChangeLevel("DayOffLevel");
+
+	
+
 }

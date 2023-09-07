@@ -20,7 +20,7 @@ void ContentsCore::Start()
 	GameEngineCore::MainWindow.CursorOff();
 
 	GameEngineCore::CreateLevel<TitleLevel>("TitleLevel");
-	GameEngineCore::CreateLevel<
+	GameEngineCore::CreateLevel<DayOffLevel>("DayOffLevel");
 	GameEngineCore::CreateLevel<PlayLevel>("PlayLevel");
 	GameEngineCore::ChangeLevel("TitleLevel");
 

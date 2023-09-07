@@ -17,8 +17,9 @@ public:
 protected:
 
 private:
-	void Start() override;
+	std::shared_ptr<class BasicActor>IntroPIcture;
 
+	void Start() override;
 	void Update(float _Delta) override;
 
 	void LevelStart(GameEngineLevel* _PrevLevel) override;
