@@ -41,8 +41,6 @@ void GameEngineRenderer::SetRenderOrder(int _Order)
 
 }
 
-
-
 // 날 바라보는 카메라 변경
 void GameEngineRenderer::SetCameraOrder(int _Order)
 {
@@ -51,6 +49,7 @@ void GameEngineRenderer::SetCameraOrder(int _Order)
 
 void GameEngineRenderer::Start()
 {
+	DataTransform = &Transform;
 	SetCameraOrder(0);
 }
 
@@ -108,7 +107,7 @@ void GameEngineRenderer::ResSetting()
 
 		if (nullptr != Buffer)
 		{
-			const TransformData& Data = Transform.GetConstTransformDataRef();
+			const TransformData& Data = DataTransform->GetConstTransformDataRef();
 			Buffer->ChangeData(Data);
 			Buffer->Setting(0);
 		}
