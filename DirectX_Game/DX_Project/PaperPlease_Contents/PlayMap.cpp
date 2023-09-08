@@ -20,6 +20,7 @@ void PlayMap::Start()
 		{
 			std::shared_ptr<GameEngineSpriteRenderer> OutsideRenderer = CreateComponent<GameEngineSpriteRenderer>(RenderOrder::BackGround);
 			OutsideRenderer->SetSprite("CheckpointBack.png");
+			OutsideRenderer->SetRenderOrder(RenderOrder::BackGround);
 			//OutsideRenderer->Transform.SetLocalPosition(GameEngineCore::MainWindow.GetScale().Half());
 			OutsideRenderer->AutoSpriteSizeOn();
 			OutsideRenderer->SetAutoScaleRatio(2.0f);
@@ -35,6 +36,7 @@ void PlayMap::Start()
 		{
 			std::shared_ptr<GameEngineSpriteRenderer> BoothWall = CreateComponent<GameEngineSpriteRenderer>(RenderOrder::BackGround);
 			BoothWall->SetSprite("BoothWall.png");
+			BoothWall->SetRenderOrder(RenderOrder::BackGround);
 			//OutsideRenderer->Transform.SetLocalPosition(GameEngineCore::MainWindow.GetScale().Half());
 			BoothWall->AutoSpriteSizeOn();
 			BoothWall->SetAutoScaleRatio(2.0f);
@@ -51,6 +53,7 @@ void PlayMap::Start()
 		{
 			std::shared_ptr<GameEngineSpriteRenderer> Desk = CreateComponent<GameEngineSpriteRenderer>(RenderOrder::BackGround);
 			Desk->SetSprite("Desk.png");
+			Desk->SetRenderOrder(RenderOrder::BackGround);
 			//OutsideRenderer->Transform.SetLocalPosition(GameEngineCore::MainWindow.GetScale().Half());
 			Desk->AutoSpriteSizeOn();
 			Desk->SetAutoScaleRatio(2.0f);

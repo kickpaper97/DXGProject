@@ -64,7 +64,10 @@ void TitleLevel::Start()
 	}
 
 
-	GetMainCamera()->Transform.SetLocalPosition({GameEngineCore::MainWindow.GetScale().hX() , GameEngineCore::MainWindow.GetScale().hY(), -500.0f});
+
+	float4 HalfWindowScale = GameEngineCore::MainWindow.GetScale().Half();
+
+	GetMainCamera()->Transform.SetLocalPosition({ HalfWindowScale.X, -HalfWindowScale.Y, -500.0f });
 	GetMainCamera()->SetProjectionType(EPROJECTIONTYPE::Orthographic);
 
 
@@ -78,8 +81,8 @@ void TitleLevel::Start()
 	std::shared_ptr<GameEngineTexture> Tex = GameEngineTexture::Find("Title.Png");
 	Logo->GetSpriteRenderer()->AutoSpriteSizeOn();
 	Logo->GetSpriteRenderer()->SetAutoScaleRatio(2.0f);
-	float check =Tex.get()->GetScale().hY();
-	Logo->Transform.SetLocalPosition({ WindowSize.hX(),-check ,-500.0f});
+	float check =WindowSize.Y + Tex.get()->GetScale().Y;
+	Logo->Transform.SetLocalPosition({ WindowSize.hX(),-check });
 	
 	
 	}
@@ -101,11 +104,11 @@ void TitleLevel::Update(float _Delta)
 			(GameEngineCore::MainWindow.GetScale().Half().Y+ GameEngineCore::MainWindow.GetScale().Half().Half().hY()) <=Logo->Transform.GetWorldPosition().Y
 			)
 		{
-			float4 Logopos={GameEngineCore::MainWindow.GetScale().hX(), GameEngineCore::MainWindow.GetScale().Half().Y + GameEngineCore::MainWindow.GetScale().Half().Half().hY()};
+			float4 Logopos={GameEngineCore::MainWindow.GetScale().hX(), -GameEngineCore::MainWindow.GetScale().Half().Y + GameEngineCore::MainWindow.GetScale().Half().Half().hY()};
 			Logo->Transform.SetLocalPosition(Logopos);
 			std::shared_ptr<BasicActor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
 			std::shared_ptr<BasicButton> NewQuitButton = CreateActor<QuitButton>(GameObjectType::UI);
-			NewQuitButton.get()->Transform.SetLocalPosition({ 1100,600 });
+			NewQuitButton.get()->Transform.SetLocalPosition({ 1100,-50 });
 			isAnimation = false;
 		}
 

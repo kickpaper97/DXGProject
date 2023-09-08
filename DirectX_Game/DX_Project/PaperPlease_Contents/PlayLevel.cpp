@@ -2,6 +2,7 @@
 #include "PlayLevel.h"
 #include "BasicActor.h"
 #include "PlayMap.h"
+#include "Cursor.h"
 
 PlayLevel::PlayLevel() 
 {
@@ -34,34 +35,35 @@ void PlayLevel::Start()
 		//GameEngineSprite::CreateSingle("Console.png");
 		GameEngineSprite::CreateSingle("BoothWall.png");
 
+
 	}
 
 	
-
 	float4 HalfWindowScale = GameEngineCore::MainWindow.GetScale().Half();
 
-	GetMainCamera()->Transform.SetLocalPosition({ HalfWindowScale.X, -HalfWindowScale.Y, -500.0f});
+	GetMainCamera()->Transform.SetLocalPosition({ HalfWindowScale.X, -HalfWindowScale.Y, -500.0f });
 	GetMainCamera()->SetProjectionType(EPROJECTIONTYPE::Orthographic);
 
 
+
 	{
-		//std::shared_ptr<Player> Object = CreateActor<Player>();
+		
 	}
 
 	{
-		std::shared_ptr<PlayMap> Object = CreateActor<PlayMap>();
+		std::shared_ptr<PlayMap> Object = CreateActor<PlayMap>(GameObjectType::BackGround);
 	}
 
 }
 
 void PlayLevel::Update(float _Delta)
 {
-	
+
 }
 
 void PlayLevel::LevelStart(GameEngineLevel* _PrevLevel)
 {
-	
+	std::shared_ptr<BasicActor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
 }
 
 void PlayLevel::LevelEnd(GameEngineLevel* _NextLevel)

@@ -1,6 +1,7 @@
 #include "PreCompile.h"
 #include "StartIntroLevel.h"
 #include "BasicActor.h"
+#include "Cursor.h"
 
 StartIntroLevel::StartIntroLevel()
 {
@@ -28,12 +29,17 @@ void StartIntroLevel::Start()
 
 void StartIntroLevel::Update(float _Delta)
 {
+	if (true == GameEngineInput::IsDown(VK_RETURN))
+	{
 
+	}
+	
 
 }
 
 void StartIntroLevel::LevelStart(GameEngineLevel* _PrevLevel)
 {
+	std::shared_ptr<BasicActor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
 
 }
 

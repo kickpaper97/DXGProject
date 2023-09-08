@@ -10,6 +10,7 @@ enum class RenderOrder
 
 enum class GameObjectType
 {
+	BackGround,
 	UI,
 	Cursor,
 };
@@ -17,7 +18,7 @@ enum class GameObjectType
 
 enum class CollisionOrder
 {
-	Mouse,
-	UI,
+	Cursor,
+	UI_Button,
 	Play,
 };
