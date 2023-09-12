@@ -1,6 +1,8 @@
 #include "PreCompile.h"
 #include "ContentsCore.h"
 
+#include <GameEngineCore/GameEngineSpriteRenderer.h>
+
 #include "TitleLevel.h"
 #include "PlayLevel.h"
 #include"DayOffLevel.h"
@@ -18,6 +20,7 @@ ContentsCore::~ContentsCore()
 void ContentsCore::Start()
 {
 	GameEngineCore::MainWindow.CursorOff();
+	GameEngineSpriteRenderer::SetDefaultSampler("POINT");
 
 	GameEngineCore::CreateLevel<TitleLevel>("TitleLevel");
 	GameEngineCore::CreateLevel<DayOffLevel>("DayOffLevel");
