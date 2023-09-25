@@ -196,6 +196,14 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="PaperBase.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PaperManager.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayLevel.cpp" />
     <ClCompile Include="PlayMap.cpp" />
@@ -239,6 +247,14 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="NewsLevel.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PaperBase.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PaperManager.h">
       <SubType>
       </SubType>
     </ClInclude>

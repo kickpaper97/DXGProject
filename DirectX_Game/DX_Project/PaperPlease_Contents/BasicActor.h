@@ -14,9 +14,9 @@ public:
 	BasicActor& operator=(const BasicActor&& _Other) noexcept = delete;
 
 	
-	GameEngineSpriteRenderer* GetSpriteRenderer() const
+	std::shared_ptr<class GameEngineSpriteRenderer> GetSpriteRenderer() const
 	{
-		return SpriteRenderer.get();
+		return SpriteRenderer;
 	}
 
 protected:

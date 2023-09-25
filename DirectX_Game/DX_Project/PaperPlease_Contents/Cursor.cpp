@@ -23,7 +23,7 @@ void Cursor::Start()
 
 	{
 	SetOrder(GameObjectType::Cursor);
-	GameEngineSpriteRenderer* Renderer = GetSpriteRenderer();
+	std::shared_ptr<GameEngineSpriteRenderer> Renderer = GetSpriteRenderer();
 	Renderer->SetSprite("CursorArrow.png");
 	Renderer->SetRenderOrder(RenderOrder::Cursor);
 
