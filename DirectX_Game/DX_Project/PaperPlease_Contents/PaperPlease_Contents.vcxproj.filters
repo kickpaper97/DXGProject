@@ -38,6 +38,9 @@
     <ClCompile Include="NewsLevel.cpp">
       <Filter>Level</Filter>
     </ClCompile>
+    <ClCompile Include="LevelBase.cpp">
+      <Filter>Level</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
@@ -78,6 +81,9 @@
       <Filter>Global\Enum</Filter>
     </ClInclude>
     <ClInclude Include="NewsLevel.h">
+      <Filter>Level</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelBase.h">
       <Filter>Level</Filter>
     </ClInclude>
   </ItemGroup>

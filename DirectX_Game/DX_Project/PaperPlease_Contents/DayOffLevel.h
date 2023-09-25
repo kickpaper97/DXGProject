@@ -1,8 +1,8 @@
 
 #pragma once
-#include<GameEngineCore/GameEngineLevel.h>
+#include "LevelBase.h"
 
-class DayOffLevel :public GameEngineLevel
+class DayOffLevel :public LevelBase
 {
 public:
 	DayOffLevel();

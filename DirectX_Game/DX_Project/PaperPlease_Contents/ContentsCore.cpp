@@ -20,7 +20,6 @@ ContentsCore::~ContentsCore()
 void ContentsCore::Start()
 {
 	GameEngineCore::MainWindow.CursorOff();
-	GameEngineSpriteRenderer::SetDefaultSampler("POINT");
 
 	GameEngineCore::CreateLevel<TitleLevel>("TitleLevel");
 	GameEngineCore::CreateLevel<DayOffLevel>("DayOffLevel");

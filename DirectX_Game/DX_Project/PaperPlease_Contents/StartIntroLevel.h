@@ -1,8 +1,8 @@
 
 #pragma once
-#include <GameEngineCore/GameEngineLevel.h>
+#include "LevelBase.h"
 
-class StartIntroLevel :public GameEngineLevel
+class StartIntroLevel :public LevelBase
 {
 public:
 	StartIntroLevel();

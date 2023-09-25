@@ -1,5 +1,6 @@
 
 #pragma once
+#include "LevelBase.h"
 
 class NewsLevel
 {
