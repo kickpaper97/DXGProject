@@ -13,9 +13,6 @@
     <Filter Include="Rendering">
       <UniqueIdentifier>{4afdb6fa-d703-41a3-ad2e-b32170da1064}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Rendering\Device">
-      <UniqueIdentifier>{dd2ad282-20bb-4acc-8078-88c34ab86a76}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Resources">
       <UniqueIdentifier>{4c9250a2-32dc-4d8f-9e21-8d0ff607f3ae}</UniqueIdentifier>
     </Filter>
@@ -49,6 +46,24 @@
     <Filter Include="Collision">
       <UniqueIdentifier>{ff4cb8c0-d378-4a0e-8744-6f7342eb2a43}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{24b1deff-a00a-447a-be0f-821ee7fdbd6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global">
+      <UniqueIdentifier>{01fe59ec-242f-4b91-8638-ab0c7ae8b3fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Device">
+      <UniqueIdentifier>{382e1b57-c22e-4c8a-b45c-896cb0a2fc1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Contents">
+      <UniqueIdentifier>{549d8b07-2ec4-4cc3-a7e6-164a38e2017d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Material">
+      <UniqueIdentifier>{377f42c2-6e51-4687-8a22-a8356deb0e42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Mesh">
+      <UniqueIdentifier>{28e0a1a5-bc87-4cf1-8b24-f4e2a6ad1bc0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameEngineActor.h">
@@ -78,12 +93,6 @@
     </ClInclude>
     <ClInclude Include="GameEngineCoreObject.h">
       <Filter>Object</Filter>
-    </ClInclude>
-    <ClInclude Include="GameEngineDevice.h">
-      <Filter>Rendering\Device</Filter>
-    </ClInclude>
-    <ClInclude Include="GameEngineSpriteRenderer.h">
-      <Filter>Rendering</Filter>
     </ClInclude>
     <ClInclude Include="GameEngineConstantBuffer.h">
       <Filter>Resources\Buffer</Filter>
@@ -139,6 +148,39 @@
     <ClInclude Include="GameEngineCollisionGroup.h">
       <Filter>Collision</Filter>
     </ClInclude>
+    <ClInclude Include="GameEngineDebugCore.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineDevice.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineSpriteRenderer.h">
+      <Filter>Rendering\Contents</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineTileMap.h">
+      <Filter>Rendering\Contents</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineUIRenderer.h">
+      <Filter>Rendering\Contents</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineRenderUnit.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineMesh.h">
+      <Filter>Resources\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineMaterial.h">
+      <Filter>Resources\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineEnum.h">
+      <Filter>Resources\RenderingSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineBlend.h">
+      <Filter>Resources\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineShaderResHelper.h">
+      <Filter>Resources\Shader</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameEngineActor.cpp">
@@ -168,15 +210,6 @@
     </ClCompile>
     <ClCompile Include="GameEngineCoreObject.cpp">
       <Filter>Object</Filter>
-    </ClCompile>
-    <ClCompile Include="GameEngineDevice.cpp">
-      <Filter>Rendering\Device</Filter>
-    </ClCompile>
-    <ClCompile Include="GameEngineDevice_Resources.cpp">
-      <Filter>Rendering\Device</Filter>
-    </ClCompile>
-    <ClCompile Include="GameEngineSpriteRenderer.cpp">
-      <Filter>Rendering</Filter>
     </ClCompile>
     <ClCompile Include="GameEngineTexture.cpp">
       <Filter>Resources\Texture</Filter>
@@ -228,6 +261,39 @@
     </ClCompile>
     <ClCompile Include="GameEngineCollisionGroup.cpp">
       <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineDebugCore.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineDevice.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineDevice_Resources.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineSpriteRenderer.cpp">
+      <Filter>Rendering\Contents</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineTileMap.cpp">
+      <Filter>Rendering\Contents</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineUIRenderer.cpp">
+      <Filter>Rendering\Contents</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineRenderUnit.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineMesh.cpp">
+      <Filter>Resources\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineMaterial.cpp">
+      <Filter>Resources\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineBlend.cpp">
+      <Filter>Resources\RenderingSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineShaderResHelper.cpp">
+      <Filter>Resources\Shader</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
