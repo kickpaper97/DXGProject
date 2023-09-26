@@ -11,7 +11,7 @@ Traveler::~Traveler()
 
 void Traveler::Start()
 {
-	Create
+	
 }
 
 void Traveler::Update(float _Delta)

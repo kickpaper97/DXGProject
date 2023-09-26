@@ -3,7 +3,6 @@
 
 PeopleBase::PeopleBase()
 {
-	OuterRenderer= GameEngineTexture
 
 }
 
