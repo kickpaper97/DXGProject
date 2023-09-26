@@ -47,6 +47,12 @@
     <ClCompile Include="PaperBase.cpp">
       <Filter>Paper</Filter>
     </ClCompile>
+    <ClCompile Include="Traveler.cpp">
+      <Filter>Global\People</Filter>
+    </ClCompile>
+    <ClCompile Include="PeopleBase.cpp">
+      <Filter>Global\People</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
@@ -98,6 +104,12 @@
     <ClInclude Include="PaperBase.h">
       <Filter>Paper</Filter>
     </ClInclude>
+    <ClInclude Include="Traveler.h">
+      <Filter>Global\People</Filter>
+    </ClInclude>
+    <ClInclude Include="PeopleBase.h">
+      <Filter>Global\People</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Level">
@@ -120,6 +132,9 @@
     </Filter>
     <Filter Include="Paper">
       <UniqueIdentifier>{6a7e70ab-97bc-4e4a-904d-2f4f5d8968bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global\People">
+      <UniqueIdentifier>{e3adc6a6-cc53-4ff8-83c4-1ce3ad6517ec}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
