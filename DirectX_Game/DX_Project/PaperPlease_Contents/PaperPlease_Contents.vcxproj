@@ -171,6 +171,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BasicActor.cpp" />
     <ClCompile Include="BasicButton.cpp">
       <SubType>
       </SubType>

@@ -53,6 +53,7 @@
     <ClCompile Include="RuleBook.cpp">
       <Filter>Paper\RuleBook</Filter>
     </ClCompile>
+    <ClCompile Include="BasicActor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
