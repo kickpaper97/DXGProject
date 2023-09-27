@@ -20,5 +20,6 @@ enum class CollisionOrder
 {
 	Cursor,
 	UI_Button,
+	Papers,
 	Play,
 };

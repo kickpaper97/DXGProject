@@ -9,7 +9,7 @@ PaperBase::~PaperBase()
 {
 }
 
-void PaperBase::SetTexture(std::string_view _Name)
+void PaperBase::SetPaperTexture(std::string_view _Name)
 {
 	
 	std::string Name = _Name.data();
@@ -18,6 +18,12 @@ void PaperBase::SetTexture(std::string_view _Name)
 	InnerTexture = GameEngineTexture::Find(Name+"Inner.png");
 	OuterTexture= GameEngineTexture::Find(Name + "Outer.png");
 
+}
+
+void PaperBase::SetPaperTexture(std::string_view _InnerName, std::string_view _OuterName)
+{
+	InnerTexture = GameEngineTexture::Find(_InnerName);
+	OuterTexture = GameEngineTexture::Find(_OuterName);
 }
 
 void PaperBase::Start()

@@ -15,25 +15,39 @@ public:
 	PaperBase& operator=(const PaperBase&& _Other) noexcept = delete;
 
 
-	virtual void SetTexture(std::string_view _Name);
+	virtual void SetPaperTexture(std::string_view _Name);
+	void SetPaperTexture(std::string_view _InnerName, std::string_view _OuterName);
+
 
 	std::shared_ptr<class GameEngineSpriteRenderer> GetSpriteRenderer() const
 	{
 		return PaperRenderer;
 	}
 
+
+	std::shared_ptr<class GameEngineTexture> GetInnerTexture() const
+	{
+		return InnerTexture;
+	}
+
+	std::shared_ptr<class GameEngineTexture> GetOuterTexture() const
+	{
+		return OuterTexture;
+	}
+
+
 protected:
 	void Start() override;
+private:
+
+
 
 	std::shared_ptr <class GameEngineSpriteRenderer> PaperRenderer;
 
 	std::shared_ptr<class GameEngineTexture> InnerTexture;
 	std::shared_ptr<class GameEngineTexture> OuterTexture;
 
-private:
-
-
-	
+	G
 
 };
 

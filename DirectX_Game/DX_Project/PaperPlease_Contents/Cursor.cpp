@@ -41,8 +41,8 @@ void Cursor::Update(float _Delta)
 {
 
 	{
-	float4 CusorPos = GameEngineCore::MainWindow.GetMousePos();
-	CusorPos.Y *= -1.0f;
+	float4 CusorPos = GetLevel()->GetMainCamera()->GetWorldMousePos2D();
+	
 	
 	Transform.SetLocalPosition(CusorPos);
 	

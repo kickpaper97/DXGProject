@@ -8,9 +8,6 @@
     <ClCompile Include="PreCompile.cpp">
       <Filter>PreCompile</Filter>
     </ClCompile>
-    <ClCompile Include="BasicActor.cpp">
-      <Filter>Global</Filter>
-    </ClCompile>
     <ClCompile Include="Player.cpp">
       <Filter>Global</Filter>
     </ClCompile>
@@ -52,6 +49,9 @@
     </ClCompile>
     <ClCompile Include="PeopleBase.cpp">
       <Filter>Global\People</Filter>
+    </ClCompile>
+    <ClCompile Include="RuleBook.cpp">
+      <Filter>Paper\RuleBook</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -110,6 +110,9 @@
     <ClInclude Include="PeopleBase.h">
       <Filter>Global\People</Filter>
     </ClInclude>
+    <ClInclude Include="RuleBook.h">
+      <Filter>Paper\RuleBook</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Level">
@@ -135,6 +138,12 @@
     </Filter>
     <Filter Include="Global\People">
       <UniqueIdentifier>{e3adc6a6-cc53-4ff8-83c4-1ce3ad6517ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Paper\Passport">
+      <UniqueIdentifier>{430a0ab7-da5b-4a6d-9fa0-b8bf91ccf9b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Paper\RuleBook">
+      <UniqueIdentifier>{423857b5-deb7-4f74-901d-24f3a33a3d0f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

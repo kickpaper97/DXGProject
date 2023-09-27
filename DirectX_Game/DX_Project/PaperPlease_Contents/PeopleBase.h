@@ -16,6 +16,7 @@ public:
 
 protected:
 	void Start() override;
+	void Update(float _Delta) override;
 
 private:
 	std::shared_ptr<class GameEngineSpriteRenderer> OuterRenderer;
