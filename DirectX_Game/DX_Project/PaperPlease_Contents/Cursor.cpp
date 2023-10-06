@@ -26,13 +26,18 @@ void Cursor::Start()
 	std::shared_ptr<GameEngineSpriteRenderer> Renderer = GetSpriteRenderer();
 	Renderer->SetSprite("CursorArrow.png");
 	Renderer->SetRenderOrder(RenderOrder::Cursor);
+	Renderer->SetPivotType(PivotType::LeftTop);
+	
 
 	}
 
 
 	{
-		CursorCollison = CreateComponent<GameEngineCollision>(CollisionOrder::Cursor);
-		CursorCollison->Transform.SetLocalScale({ 1.0f,1.0f,1.0f });
+		CursorCollision = CreateComponent<GameEngineCollision>(CollisionOrder::Cursor);
+		CursorCollision->Transform.SetLocalScale({ 5.0f,5.0f,1.0f });
+		CursorCollision->SetCollisionType(ColType::AABBBOX2D);
+		float4 CollisionScale = CursorCollision->Transform.GetLocalScale();
+		CursorCollision->Transform.AddLocalPosition({ CollisionScale.hX(),-CollisionScale.hY() });
 	}
 
 }
