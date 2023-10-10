@@ -227,6 +227,10 @@
       </SubType>
     </ClCompile>
     <ClCompile Include="TitleLevel.cpp" />
+    <ClCompile Include="TitleUI.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="Traveler.cpp">
       <SubType>
       </SubType>
@@ -288,6 +292,10 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="TitleLevel.h" />
+    <ClInclude Include="TitleUI.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="Traveler.h">
       <SubType>
       </SubType>

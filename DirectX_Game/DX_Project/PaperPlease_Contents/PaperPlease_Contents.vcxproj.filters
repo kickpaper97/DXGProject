@@ -54,6 +54,9 @@
       <Filter>Paper\RuleBook</Filter>
     </ClCompile>
     <ClCompile Include="BasicActor.cpp" />
+    <ClCompile Include="TitleUI.cpp">
+      <Filter>Level\UI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
@@ -114,6 +117,9 @@
     <ClInclude Include="RuleBook.h">
       <Filter>Paper\RuleBook</Filter>
     </ClInclude>
+    <ClInclude Include="TitleUI.h">
+      <Filter>Level\UI</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Level">
@@ -145,6 +151,9 @@
     </Filter>
     <Filter Include="Paper\RuleBook">
       <UniqueIdentifier>{423857b5-deb7-4f74-901d-24f3a33a3d0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level\UI">
+      <UniqueIdentifier>{39777896-6aa9-4243-a21f-4c4a1d1ee57f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

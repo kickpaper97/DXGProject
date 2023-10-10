@@ -2,8 +2,7 @@
 #include "TitleLevel.h"
 #include "BasicActor.h"
 #include "BasicButton.h"
-#include "QuitButton.h"
-#include "Cursor.h"
+#include "TitleUI.h"
 
 #include <GameEngineCore/GameEngineComponent.h>
 
@@ -106,9 +105,7 @@ void TitleLevel::Update(float _Delta)
 		{
 			float4 Logopos={GameEngineCore::MainWindow.GetScale().hX(), -GameEngineCore::MainWindow.GetScale().Half().Y + GameEngineCore::MainWindow.GetScale().Half().Half().hY()};
 			Logo->Transform.SetLocalPosition(Logopos);
-			std::shared_ptr<BasicActor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
-			std::shared_ptr<BasicButton> NewQuitButton = CreateActor<QuitButton>(GameObjectType::UI);
-			NewQuitButton.get()->Transform.SetLocalPosition({ 1100,-50 });
+			std::shared_ptr<GameEngineActor> NewUI = CreateActor<TitleUI>();
 			isAnimation = false;
 		}
 
