@@ -26,9 +26,11 @@ void Cursor::Start()
 	std::shared_ptr<GameEngineUIRenderer> Renderer;
 	Renderer = CreateComponent<GameEngineUIRenderer>();
 	Renderer->SetSprite("CursorArrow.png");
+	Renderer->Transform.SetLocalPosition({ -GameEngineCore::MainWindow.GetScale().hX(),GameEngineCore::MainWindow.GetScale().hY() });
+	Renderer->AutoSpriteSizeOn();
+	Renderer->SetAutoScaleRatio(2.0);
 	Renderer->SetRenderOrder(RenderOrder::Cursor);
 	Renderer->SetPivotType(PivotType::LeftTop);
-	
 
 	}
 
