@@ -1,8 +1,8 @@
 
 #pragma once
-#include "BasicActor.h"
 
-class BasicButton : public BasicActor
+
+class BasicButton : public GameEngineActor
 {
 public:
 	BasicButton();
@@ -13,11 +13,16 @@ public:
 	BasicButton& operator=(const BasicButton& _Other) = delete;
 	BasicButton& operator=(const BasicButton&& _Other) noexcept = delete;
 
+	std::shared_ptr<class GameEngineUIRenderer> GetSpriteRenderer() const
+	{
+		return SpriteRenderer;
+	}
 
 protected:
 	void Start() override;
 	void Update(float _Delta)override;
 private:
 
+	std::shared_ptr<class GameEngineUIRenderer> SpriteRenderer = nullptr;
 };
 

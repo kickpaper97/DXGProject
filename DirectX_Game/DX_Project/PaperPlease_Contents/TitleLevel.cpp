@@ -1,7 +1,5 @@
 #include "PreCompile.h"
 #include "TitleLevel.h"
-#include "BasicActor.h"
-#include "BasicButton.h"
 #include "QuitButton.h"
 #include "Cursor.h"
 
@@ -106,9 +104,13 @@ void TitleLevel::Update(float _Delta)
 		{
 			float4 Logopos={GameEngineCore::MainWindow.GetScale().hX(), -GameEngineCore::MainWindow.GetScale().Half().Y + GameEngineCore::MainWindow.GetScale().Half().Half().hY()};
 			Logo->Transform.SetLocalPosition(Logopos);
-			std::shared_ptr<BasicActor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
-			std::shared_ptr<BasicButton> NewQuitButton = CreateActor<QuitButton>(GameObjectType::UI);
+
+			{
+			std::shared_ptr<Cursor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
+			std::shared_ptr<BasicButton> NewQuitButton = CreateActor<QuitButton>(GameObjectType::UIButton);
 			NewQuitButton.get()->Transform.SetLocalPosition({ 1100,-50 });
+
+			}
 			isAnimation = false;
 		}
 

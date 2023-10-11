@@ -11,7 +11,7 @@ enum class RenderOrder
 enum class GameObjectType
 {
 	BackGround,
-	UI,
+	UIButton,
 	Cursor,
 };
 

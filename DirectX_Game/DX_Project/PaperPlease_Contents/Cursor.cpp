@@ -19,11 +19,12 @@ Cursor::~Cursor()
 
 void Cursor::Start()
 {
-	BasicActor::Start();
+	
 
 	{
 	SetOrder(GameObjectType::Cursor);
-	std::shared_ptr<GameEngineSpriteRenderer> Renderer = GetSpriteRenderer();
+	std::shared_ptr<GameEngineUIRenderer> Renderer;
+	Renderer = CreateComponent<GameEngineUIRenderer>();
 	Renderer->SetSprite("CursorArrow.png");
 	Renderer->SetRenderOrder(RenderOrder::Cursor);
 	Renderer->SetPivotType(PivotType::LeftTop);

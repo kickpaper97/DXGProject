@@ -13,8 +13,9 @@ BasicButton::~BasicButton()
 
 void BasicButton::Start()
 {
-	BasicActor::Start();
-	SetOrder(GameObjectType::UI);
+	SpriteRenderer = CreateComponent<GameEngineUIRenderer>();
+	
+	SetOrder(GameObjectType::UIButton);
 	GetSpriteRenderer()->SetRenderOrder(RenderOrder::UI);
 
 }

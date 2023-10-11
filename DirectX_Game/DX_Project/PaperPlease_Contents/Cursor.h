@@ -2,7 +2,7 @@
 #pragma once
 #include "BasicActor.h"
 
-class Cursor : public BasicActor
+class Cursor : public GameEngineActor
 {
 public:
 
