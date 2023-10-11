@@ -39,7 +39,7 @@ void StartIntroLevel::Update(float _Delta)
 
 void StartIntroLevel::LevelStart(GameEngineLevel* _PrevLevel)
 {
-	std::shared_ptr<BasicActor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
+	//std::shared_ptr<Cursor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
 
 }
 

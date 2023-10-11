@@ -1,7 +1,6 @@
 #include"PreCompile.h"
 #include "BasicButton.h"
 
-#include "BasicActor.h"
 
 BasicButton::BasicButton()
 {
@@ -13,9 +12,9 @@ BasicButton::~BasicButton()
 
 void BasicButton::Start()
 {
-	BasicActor::Start();
+	SpriteRenderer = CreateComponent<GameEngineUIRenderer>();
 	SetOrder(GameObjectType::UI);
-	GetSpriteRenderer()->SetRenderOrder(RenderOrder::UI);
+	SpriteRenderer->SetRenderOrder(RenderOrder::UI);
 
 }
 

@@ -1,8 +1,8 @@
 
 #pragma once
-#include "BasicActor.h"
 
-class Cursor : public BasicActor
+
+class Cursor : public GameEngineActor
 {
 public:
 
@@ -23,7 +23,7 @@ protected:
 	void Update(float _Delta) override;
 private:
 
-
+	std::shared_ptr<GameEngineSpriteRenderer> Renderer;
 	std::shared_ptr<GameEngineCollision> CursorCollision;
 
 };

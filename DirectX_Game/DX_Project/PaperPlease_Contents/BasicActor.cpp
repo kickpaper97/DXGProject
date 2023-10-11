@@ -14,7 +14,7 @@ BasicActor::~BasicActor()
 
 void BasicActor::Start()
 {
-	SpriteRenderer = CreateComponent<GameEngineSpriteRenderer>(GetOrder());
+	SpriteRenderer = CreateComponent<GameEngineUIRenderer>(GetOrder());
 	SpriteRenderer->SetAutoScaleRatio(2.0f);
 }
 
