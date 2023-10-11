@@ -13,11 +13,12 @@ public:
 	LevelBase& operator=(const LevelBase& _Other) = delete;
 	LevelBase& operator=(const LevelBase&& _Other) noexcept = delete;
 
-
+	void UIOn();
+	void UIOff();
 protected:
 
 
 private:
-
+	bool isUI = true;
 };
 

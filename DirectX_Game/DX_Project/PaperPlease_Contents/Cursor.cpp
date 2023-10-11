@@ -62,4 +62,10 @@ void Cursor::Update(float _Delta)
 	{
 	Renderer->SetSprite("CursorArrow.png");
 	}*/
+
+
+	if (GameEngineInput::IsDown(VK_RBUTTON))
+	{
+		int a = 0;
+	}
 }

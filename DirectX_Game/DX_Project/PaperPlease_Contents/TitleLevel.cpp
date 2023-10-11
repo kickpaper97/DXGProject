@@ -87,6 +87,14 @@ void TitleLevel::Start()
 
 
 
+	{
+		UIOff();
+		std::shared_ptr<Cursor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
+		std::shared_ptr<BasicButton> NewQuitButton = CreateActor<QuitButton>(GameObjectType::UIButton);
+		NewQuitButton.get()->Transform.SetLocalPosition({ 1100,-50 });
+		
+	}
+
 }
 
 
@@ -105,12 +113,7 @@ void TitleLevel::Update(float _Delta)
 			float4 Logopos={GameEngineCore::MainWindow.GetScale().hX(), -GameEngineCore::MainWindow.GetScale().Half().Y + GameEngineCore::MainWindow.GetScale().Half().Half().hY()};
 			Logo->Transform.SetLocalPosition(Logopos);
 
-			{
-			std::shared_ptr<Cursor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
-			std::shared_ptr<BasicButton> NewQuitButton = CreateActor<QuitButton>(GameObjectType::UIButton);
-			NewQuitButton.get()->Transform.SetLocalPosition({ 1100,-50 });
-
-			}
+			
 			isAnimation = false;
 		}
 
@@ -146,6 +149,18 @@ void TitleLevel::Update(float _Delta)
 	{
 		GameEngineCore::ChangeLevel("PlayLevel");
 	}
+
+
+	if (GameEngineInput::IsDown('M'))
+	{
+		UIOff();
+	}
+
+	if (GameEngineInput::IsDown('N'))
+	{
+		UIOn();
+	}
+
 
 	DeltaCheck -= _Delta;
 	if (0.0f >= DeltaCheck)

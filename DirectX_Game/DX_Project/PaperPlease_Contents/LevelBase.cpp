@@ -10,3 +10,32 @@ LevelBase::LevelBase()
 LevelBase::~LevelBase()
 {
 }
+
+void LevelBase::UIOn()
+{
+	if (true == isUI)
+	{
+		return;
+	}
+
+	std::shared_ptr<GameEngineCamera> Camera= GetCamera(static_cast<int>(ECAMERAORDER::UI));
+	
+	Camera->On();
+
+	isUI = true;
+}
+
+void LevelBase::UIOff()
+{
+
+	if (false == isUI)
+	{
+		return;
+	}
+
+	std::shared_ptr<GameEngineCamera> Camera = GetCamera(static_cast<int>(ECAMERAORDER::UI));
+	Camera->Off();
+
+	isUI = false;
+
+}
