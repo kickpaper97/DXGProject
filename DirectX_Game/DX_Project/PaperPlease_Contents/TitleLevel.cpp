@@ -50,7 +50,7 @@ void TitleLevel::Start()
 		}
 	}
 
-
+	if(nullptr==GameEngineSprite::Find("Title.png"))
 	{
 		
 		GameEngineSprite::CreateSingle("Title.png");
@@ -119,7 +119,7 @@ void TitleLevel::Update(float _Delta)
 
 		if (false == isAnimaitonPause)
 		{
-			Logo->Transform.AddLocalPosition(AnimationDir/4 );
+			Logo->Transform.AddLocalPosition(AnimationDir/4 *250*_Delta);
 		}
 
 
@@ -130,7 +130,7 @@ void TitleLevel::Update(float _Delta)
 	{
 		if (false == isAnimaitonPause)
 		{
-			Logo->Transform.AddLocalPosition(AnimationDir/4);
+			Logo->Transform.AddLocalPosition(AnimationDir/4*250*_Delta);
 		}
 	}
 
