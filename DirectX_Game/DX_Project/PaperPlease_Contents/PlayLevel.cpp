@@ -64,7 +64,7 @@ void PlayLevel::Update(float _Delta)
 
 	if (true == GameEngineInput::IsDown('C', this))
 	{
-		NewLine.get()->AddPerson();
+		NewLine->AddPerson();
 		NewLine;
 		int a = 0;
 	}
@@ -72,7 +72,7 @@ void PlayLevel::Update(float _Delta)
 	if (true == GameEngineInput::IsDown('V', this))
 	{
 		std::shared_ptr<PeopleBase> Peoplecheck;
-		Peoplecheck=NewLine.get()->CallFirstPerson();
+		Peoplecheck = NewLine->CallFirstPerson();
 		NewLine;
 		int a = 0;
 	}
@@ -85,6 +85,7 @@ void PlayLevel::LevelStart(GameEngineLevel* _PrevLevel)
 	//std::shared_ptr<RuleBook> NewRuleBook = CreateActor<RuleBook>();
 
 	{
+		GameEngineInput::AddInputObject(this);
 		NewLine = CreateActor<WaitingLine>();
 	}
 }

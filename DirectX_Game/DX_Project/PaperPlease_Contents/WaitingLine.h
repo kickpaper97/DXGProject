@@ -23,7 +23,7 @@ public:
 protected:
 
 private:
-	std::shared_ptr<std::list<std::shared_ptr<class PeopleBase>>> Waitings;
+	std::list<std::shared_ptr<class PeopleBase>> Waitings;
 
 };
 

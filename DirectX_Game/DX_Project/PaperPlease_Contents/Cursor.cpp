@@ -92,5 +92,4 @@ void Cursor::Update(float _Delta)
 	CursorCollision->CollisionEvent(CollisionOrder::Papers, Para);*/
 
 
-
 }
