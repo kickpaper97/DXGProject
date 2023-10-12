@@ -107,8 +107,8 @@ void TitleLevel::Update(float _Delta)
 
 	if (true == isAnimation)
 	{
-		if (GameEngineInput::IsDown(VK_RETURN) ||
-			GameEngineInput::IsDown(VK_LBUTTON)||
+		if (GameEngineInput::IsDown(VK_RETURN,this)||
+			GameEngineInput::IsDown(VK_LBUTTON,this)||
 			(GameEngineCore::MainWindow.GetScale().Half().Y+ GameEngineCore::MainWindow.GetScale().Half().Half().hY()) <=Logo->Transform.GetWorldPosition().Y
 			)
 		{
@@ -136,29 +136,29 @@ void TitleLevel::Update(float _Delta)
 		}
 	}
 
-	if (GameEngineInput::IsDown('A'))
+	if (GameEngineInput::IsDown('A', this))
 	{
 		Logo->GetSpriteRenderer()->On();
 	}
 
-	if (GameEngineInput::IsDown('D'))
+	if (GameEngineInput::IsDown('D', this))
 	{
 		Logo->GetSpriteRenderer()->Off();
 	}
 
 
-	if (GameEngineInput::IsDown('P'))
+	if (GameEngineInput::IsDown('P', this))
 	{
 		GameEngineCore::ChangeLevel("PlayLevel");
 	}
 
 
-	if (GameEngineInput::IsDown('M'))
+	if (GameEngineInput::IsDown('M', this))
 	{
 		UIOff();
 	}
 
-	if (GameEngineInput::IsDown('N'))
+	if (GameEngineInput::IsDown('N',this))
 	{
 		UIOn();
 	}

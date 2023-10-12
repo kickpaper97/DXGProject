@@ -40,7 +40,7 @@ void Player::TestEvent(GameEngineRenderer* _Renderer)
 }
 
 void Player::Update(float _Delta)
-{
+{/*
 	float Speed = 100.0f;
 
 	if (GameEngineInput::IsDown('A'))
@@ -77,19 +77,19 @@ void Player::Update(float _Delta)
 	if (GameEngineInput::IsPress('E'))
 	{
 		Transform.AddLocalRotation({ 0.0f, 0.0f, -360.0f * _Delta });
-	}
+	}*/
 
-	GameEngineColor Color = PlayMap::MainMap->GetColor(Transform.GetWorldPosition(), GameEngineColor::RED);
+	//GameEngineColor Color = PlayMap::MainMap->GetColor(Transform.GetWorldPosition(), GameEngineColor::RED);
 
-	if (GameEngineColor::RED != Color)
-	{
-		GrivityForce.Y -= _Delta * 100.0f;
-		Transform.AddLocalPosition(GrivityForce * _Delta);
-	}
-	else 
-	{
-		GrivityForce = 0.0f;
-	}
+	//if (GameEngineColor::RED != Color)
+	//{
+	//	GrivityForce.Y -= _Delta * 100.0f;
+	//	Transform.AddLocalPosition(GrivityForce * _Delta);
+	//}
+	//else 
+	//{
+	//	GrivityForce = 0.0f;
+	//}
 	// 땅에 딱붙게하고 싶다면 while돌려서 올려주세요.
 
 

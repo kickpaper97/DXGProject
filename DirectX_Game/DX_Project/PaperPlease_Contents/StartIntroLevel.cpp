@@ -29,10 +29,6 @@ void StartIntroLevel::Start()
 
 void StartIntroLevel::Update(float _Delta)
 {
-	if (true == GameEngineInput::IsDown(VK_RETURN))
-	{
-
-	}
 	
 
 }

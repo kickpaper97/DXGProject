@@ -93,8 +93,4 @@ void Cursor::Update(float _Delta)
 
 
 
-	if (GameEngineInput::IsDown(VK_RBUTTON))
-	{
-		int a = 0;
-	}
 }
