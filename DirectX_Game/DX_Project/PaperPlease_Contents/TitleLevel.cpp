@@ -88,7 +88,7 @@ void TitleLevel::Start()
 
 
 	{
-		UIOff();
+		
 		std::shared_ptr<Cursor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
 		std::shared_ptr<BasicButton> NewQuitButton = CreateActor<QuitButton>(GameObjectType::UIButton);
 		NewQuitButton.get()->Transform.SetLocalPosition({ 1100,-50 });

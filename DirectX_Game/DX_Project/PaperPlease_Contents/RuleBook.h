@@ -20,7 +20,8 @@ protected:
 
 private:
 	std::vector<std::shared_ptr<class GameEngineTexture>> Pages;
+	
 
-	std::shared_ptr<GameEngineCollision> Collison = nullptr;
+	
 };
 

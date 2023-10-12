@@ -3,6 +3,7 @@
 #include "BasicActor.h"
 #include "PlayMap.h"
 #include "Cursor.h"
+#include "RuleBook.h"
 
 PlayLevel::PlayLevel() 
 {
@@ -64,6 +65,8 @@ void PlayLevel::Update(float _Delta)
 void PlayLevel::LevelStart(GameEngineLevel* _PrevLevel)
 {
 	std::shared_ptr<Cursor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
+
+	std::shared_ptr<RuleBook> NewRuleBook = CreateActor<RuleBook>();
 }
 
 void PlayLevel::LevelEnd(GameEngineLevel* _NextLevel)

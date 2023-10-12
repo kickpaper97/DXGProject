@@ -19,6 +19,8 @@ ContentsCore::~ContentsCore()
 
 void ContentsCore::Start()
 {
+
+	GameEngineRenderTarget::IsDepth = false;
 	GameEngineCore::MainWindow.CursorOff();
 
 	GameEngineCore::CreateLevel<TitleLevel>("TitleLevel");

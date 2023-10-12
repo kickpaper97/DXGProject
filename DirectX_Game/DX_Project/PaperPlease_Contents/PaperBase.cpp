@@ -1,6 +1,8 @@
 #include "PreCompile.h"
 #include "PaperBase.h"
 
+#include "Cursor.h"
+
 PaperBase::PaperBase()
 {
 }
@@ -30,6 +32,17 @@ void PaperBase::Start()
 {
 	PaperRenderer = CreateComponent<GameEngineSpriteRenderer>(10);
 	PaperRenderer->SetAutoScaleRatio(2.0f);
+	
+	{
+		Collision = CreateComponent<GameEngineCollision>(CollisionOrder::Papers);
+		Collision->SetCollisionType(ColType::AABBBOX2D);
+	}
+}
+
+void PaperBase::Update(float _Delta)
+{
+	
+
 	
 
 }

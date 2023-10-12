@@ -23,7 +23,6 @@ void Cursor::Start()
 
 	{
 	SetOrder(GameObjectType::Cursor);
-	std::shared_ptr<GameEngineUIRenderer> Renderer;
 	Renderer = CreateComponent<GameEngineUIRenderer>();
 	Renderer->SetSprite("CursorArrow.png");
 	Renderer->Transform.SetLocalPosition({ -GameEngineCore::MainWindow.GetScale().hX(),GameEngineCore::MainWindow.GetScale().hY() });
@@ -55,6 +54,8 @@ void Cursor::Update(float _Delta)
 	Transform.SetLocalPosition(CusorPos);
 	
 	}
+	
+
 	/*if (콜리전조건)
 	{
 	Renderer->SetSprite("CursorHand.png");
@@ -64,6 +65,22 @@ void Cursor::Update(float _Delta)
 	{
 	Renderer->SetSprite("CursorArrow.png");
 	}*/
+
+	EventParameter Para;
+	Para.Stay = [](class GameEngineCollision* _This, class GameEngineCollision* _Other)
+		{
+
+
+			if (GameEngineInput::IsDown(VK_LBUTTON))
+			{
+			
+
+			}
+
+		};
+
+	CursorCollision->CollisionEvent(CollisionOrder::Papers, Para);
+
 
 
 	if (GameEngineInput::IsDown(VK_RBUTTON))

@@ -35,14 +35,20 @@ public:
 		return OuterTexture;
 	}
 
+	std::shared_ptr<GameEngineCollision> GetCollision() const
+	{
+		return Collision;
+	}
 
 protected:
 	void Start() override;
+	void Update(float _Delta) override;
 private:
 
 
 
 	std::shared_ptr <class GameEngineSpriteRenderer> PaperRenderer;
+	std::shared_ptr<GameEngineCollision> Collision;
 
 	std::shared_ptr<class GameEngineTexture> InnerTexture;
 	std::shared_ptr<class GameEngineTexture> OuterTexture;
