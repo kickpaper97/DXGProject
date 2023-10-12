@@ -66,13 +66,14 @@ void Cursor::Update(float _Delta)
 	Renderer->SetSprite("CursorArrow.png");
 	}*/
 
-	EventParameter Para;
+	/*EventParameter Para;
 	Para.Stay = [](class GameEngineCollision* _This, class GameEngineCollision* _Other)
 		{
 
 
 			if (GameEngineInput::IsDown(VK_LBUTTON))
 			{
+
 				std::shared_ptr<GameEngineActor> Actor = static_cast<std::shared_ptr<GameEngineActor>>(_This->GetActor());
 				_Other->GetActor()->SetParent(Actor);
 
@@ -88,7 +89,7 @@ void Cursor::Update(float _Delta)
 
 		};
 
-	CursorCollision->CollisionEvent(CollisionOrder::Papers, Para);
+	CursorCollision->CollisionEvent(CollisionOrder::Papers, Para);*/
 
 
 
