@@ -14,13 +14,15 @@ public:
 	PeopleBase& operator=(const PeopleBase&& _Other) noexcept = delete;
 
 
+
 protected:
 	void Start() override;
 	void Update(float _Delta) override;
 
-private:
 	std::shared_ptr<class GameEngineSpriteRenderer> OuterRenderer;
-	std::shared_ptr<class GameEngineSpriteRenderer> InnerRenderer;
+	std::shared_ptr<class GameEngineCollision> OuterCollision;
+private:
+	
 
 };
 

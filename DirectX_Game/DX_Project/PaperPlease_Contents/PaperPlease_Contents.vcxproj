@@ -193,6 +193,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="NomalTraveler.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="PaperBase.cpp">
       <SubType>
       </SubType>
@@ -227,7 +231,7 @@
       </SubType>
     </ClCompile>
     <ClCompile Include="TitleLevel.cpp" />
-    <ClCompile Include="Traveler.cpp">
+    <ClCompile Include="WaitingLine.cpp">
       <SubType>
       </SubType>
     </ClCompile>
@@ -256,6 +260,10 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="NewsLevel.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="NomalTraveler.h">
       <SubType>
       </SubType>
     </ClInclude>
@@ -288,7 +296,7 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="TitleLevel.h" />
-    <ClInclude Include="Traveler.h">
+    <ClInclude Include="WaitingLine.h">
       <SubType>
       </SubType>
     </ClInclude>

@@ -4,6 +4,8 @@
 #include "PlayMap.h"
 #include "Cursor.h"
 #include "RuleBook.h"
+#include "WaitingLine.h"
+#include "PeopleBase.h"
 
 PlayLevel::PlayLevel() 
 {
@@ -53,23 +55,47 @@ void PlayLevel::Start()
 		std::shared_ptr<PlayMap> Object = CreateActor<PlayMap>(GameObjectType::BackGround);
 	}
 
+	
+
 }
 
 void PlayLevel::Update(float _Delta)
 {
 
+	if (true == GameEngineInput::IsDown('C', this))
+	{
+		NewLine.get()->AddPerson();
+		NewLine;
+		int a = 0;
+	}
+
+	if (true == GameEngineInput::IsDown('V', this))
+	{
+		std::shared_ptr<PeopleBase> Peoplecheck;
+		Peoplecheck=NewLine.get()->CallFirstPerson();
+		NewLine;
+		int a = 0;
+	}
 }
 
 void PlayLevel::LevelStart(GameEngineLevel* _PrevLevel)
 {
 	std::shared_ptr<Cursor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
 
-	std::shared_ptr<RuleBook> NewRuleBook = CreateActor<RuleBook>();
+	//std::shared_ptr<RuleBook> NewRuleBook = CreateActor<RuleBook>();
+
+	{
+		NewLine = CreateActor<WaitingLine>();
+	}
 }
 
 void PlayLevel::LevelEnd(GameEngineLevel* _NextLevel)
 {
-
+	if (nullptr != NewLine)
+	{
+		NewLine.reset();
+		NewLine = nullptr;
+	}
 	
 
 }

@@ -44,9 +44,6 @@
     <ClCompile Include="PaperBase.cpp">
       <Filter>Paper</Filter>
     </ClCompile>
-    <ClCompile Include="Traveler.cpp">
-      <Filter>Global\People</Filter>
-    </ClCompile>
     <ClCompile Include="PeopleBase.cpp">
       <Filter>Global\People</Filter>
     </ClCompile>
@@ -54,6 +51,12 @@
       <Filter>Paper\RuleBook</Filter>
     </ClCompile>
     <ClCompile Include="BasicActor.cpp" />
+    <ClCompile Include="NomalTraveler.cpp">
+      <Filter>Global\People</Filter>
+    </ClCompile>
+    <ClCompile Include="WaitingLine.cpp">
+      <Filter>Global\People</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
@@ -105,14 +108,17 @@
     <ClInclude Include="PaperBase.h">
       <Filter>Paper</Filter>
     </ClInclude>
-    <ClInclude Include="Traveler.h">
-      <Filter>Global\People</Filter>
-    </ClInclude>
     <ClInclude Include="PeopleBase.h">
       <Filter>Global\People</Filter>
     </ClInclude>
     <ClInclude Include="RuleBook.h">
       <Filter>Paper\RuleBook</Filter>
+    </ClInclude>
+    <ClInclude Include="NomalTraveler.h">
+      <Filter>Global\People</Filter>
+    </ClInclude>
+    <ClInclude Include="WaitingLine.h">
+      <Filter>Global\People</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

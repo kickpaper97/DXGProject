@@ -30,5 +30,8 @@ protected:
 
 private:
 	int CurDay=-1;
+
+
+	std::shared_ptr<class WaitingLine> NewLine = nullptr;
 };
 
