@@ -15,6 +15,16 @@ PlayMap::~PlayMap()
 void PlayMap::Start()
 {
 
+	if (nullptr == GameEngineSprite::Find("CheckpointBack.png"))
+	{
+		GameEngineSprite::CreateSingle("CheckpointBack.png");
+		//GameEngineSprite::CreateCut("")
+		GameEngineSprite::CreateSingle("Desk.png");
+		//GameEngineSprite::CreateSingle("Console.png");
+		GameEngineSprite::CreateSingle("BoothWall.png");
+
+	}
+
 
 	{
 		{

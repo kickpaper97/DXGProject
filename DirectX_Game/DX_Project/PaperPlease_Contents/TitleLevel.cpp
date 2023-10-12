@@ -50,6 +50,8 @@ void TitleLevel::Start()
 		}
 	}
 
+
+	///나중에 각자의 객체로 들어가야한다
 	if(nullptr==GameEngineSprite::Find("Title.png"))
 	{
 		
