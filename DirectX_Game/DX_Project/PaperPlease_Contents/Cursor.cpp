@@ -73,7 +73,16 @@ void Cursor::Update(float _Delta)
 
 			if (GameEngineInput::IsDown(VK_LBUTTON))
 			{
-			
+				std::shared_ptr<GameEngineActor> Actor = static_cast<std::shared_ptr<GameEngineActor>>(_This->GetActor());
+				_Other->GetActor()->SetParent(Actor);
+
+			}
+
+
+			if (GameEngineInput::IsDown(VK_RBUTTON))
+			{
+				
+				
 
 			}
 
