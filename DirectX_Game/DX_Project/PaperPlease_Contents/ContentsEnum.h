@@ -3,6 +3,10 @@
 enum class RenderOrder
 {
 	BackGround,
+	BackGroundChange,
+	Car,
+	People,
+	OuterBox,
 	Play,
 	UI,
 	Cursor,
@@ -11,6 +15,7 @@ enum class RenderOrder
 enum class GameObjectType
 {
 	BackGround,
+	Play,
 	UIButton,
 	Cursor,
 };
