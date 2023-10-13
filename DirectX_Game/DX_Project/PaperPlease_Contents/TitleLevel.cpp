@@ -56,7 +56,7 @@ void TitleLevel::Start()
 	{
 		
 		GameEngineSprite::CreateSingle("Title.png");
-		GameEngineSprite::CreateCut("QuitButton.png",1,2);
+		//GameEngineSprite::CreateCut("QuitButton.png",1,2);
 		
 		GameEngineSprite::CreateSingle("CursorArrow.png");
 		GameEngineSprite::CreateSingle("CursorHand.png");
@@ -70,7 +70,7 @@ void TitleLevel::Start()
 	GetMainCamera()->Transform.SetLocalPosition({ HalfWindowScale.X, -HalfWindowScale.Y, -500.0f });
 	GetMainCamera()->SetProjectionType(EPROJECTIONTYPE::Orthographic);
 
-
+	GameEngineInput::AddInputObject(this);
 
 	float4 WindowSize=GameEngineCore::MainWindow.GetScale();
 	{
@@ -115,7 +115,8 @@ void TitleLevel::Update(float _Delta)
 			float4 Logopos={GameEngineCore::MainWindow.GetScale().hX(), -GameEngineCore::MainWindow.GetScale().Half().Y + GameEngineCore::MainWindow.GetScale().Half().Half().hY()};
 			Logo->Transform.SetLocalPosition(Logopos);
 
-			
+			std::shared_ptr<QuitButton> newbutton = CreateActor<QuitButton>();
+
 			isAnimation = false;
 		}
 

@@ -12,7 +12,16 @@ QuitButton::~QuitButton()
 
 void QuitButton::Start()
 {
+
 	BasicButton::Start();
+
+
+	if (nullptr == GameEngineSprite::Find("QuitButton.png"))
+	{
+		GameEngineSprite::CreateCut("QuitButton.png", 1,2);
+
+	}
+
 	std::shared_ptr<GameEngineSpriteRenderer> Renderer =GetSpriteRenderer();
 	Renderer->SetSprite("QuitButton.png");
 	Renderer->CreateAnimation("QuitButtonOFF", "QuitButton.png", 0.01f, 0, 0, false);
