@@ -16,6 +16,7 @@ public:
 	WaitingLine& operator=(const WaitingLine&& _Other) noexcept = delete;
 
 	void AddPerson();
+	void AddPerson(const float4& _Position);
 
 	std::shared_ptr<class PeopleBase> CallFirstPerson();
 

@@ -12,10 +12,9 @@ PeopleBase::~PeopleBase()
 
 void PeopleBase::Start()
 {
-	{
-		
-	}
 
+
+	
 }
 
 void PeopleBase::Update(float _Delta)
