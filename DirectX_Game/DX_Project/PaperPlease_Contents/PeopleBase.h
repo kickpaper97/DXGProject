@@ -1,6 +1,6 @@
 
 #pragma once
-#include <GameEngineCore/GameEngineActor.h>
+
 
 class PeopleBase : public GameEngineActor
 {
@@ -19,8 +19,8 @@ protected:
 	void Start() override;
 	void Update(float _Delta) override;
 
-	std::shared_ptr<class GameEngineSpriteRenderer> OuterRenderer;
-	std::shared_ptr<class GameEngineCollision> OuterCollision;
+	std::shared_ptr< GameEngineSpriteRenderer> OuterRenderer;
+	std::shared_ptr<GameEngineCollision> OuterCollision;
 private:
 	
 
