@@ -16,22 +16,36 @@ void PaperBase::SetPaperTexture(std::string_view _Name)
 	
 	std::string Name = _Name.data();
 	
-	
-	InnerTexture = GameEngineTexture::Find(Name+"Inner.png");
-	OuterTexture= GameEngineTexture::Find(Name + "Outer.png");
+	//std::shared_ptr< GameEngineSprite > InnerSprite= GameEngineSprite::Find(Name + "Inner.png");
+	//std::shared_ptr< GameEngineSprite > OuterSprite = GameEngineSprite::Find(Name + "Outer.png");
+
+	SetPaperTexture(Name + "Inner.png", Name + "Outer.png");
+
+	/*InnerRenderer->SetSprite(Name + "Inner.png");
+	OuterRenderer->SetSprite(Name + "Outer.png");*/
+
+
 
 }
 
 void PaperBase::SetPaperTexture(std::string_view _InnerName, std::string_view _OuterName)
 {
-	InnerTexture = GameEngineTexture::Find(_InnerName);
-	OuterTexture = GameEngineTexture::Find(_OuterName);
+	if (InnerRenderer == nullptr)
+	{
+		InnerRenderer = CreateComponent<GameEngineSpriteRenderer>();
+		OuterRenderer = CreateComponent<GameEngineSpriteRenderer>();
+	}
+
+	InnerRenderer->SetSprite(_InnerName);
+	OuterRenderer->SetSprite(_OuterName);
+
+	
 }
 
 void PaperBase::Start()
 {
-	PaperRenderer = CreateComponent<GameEngineSpriteRenderer>(10);
-	PaperRenderer->SetAutoScaleRatio(2.0f);
+	/*PaperRenderer = CreateComponent<GameEngineSpriteRenderer>(10);
+	PaperRenderer->SetAutoScaleRatio(2.0f);*/
 	
 	{
 		Collision = CreateComponent<GameEngineCollision>(CollisionOrder::Papers);

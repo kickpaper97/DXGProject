@@ -19,13 +19,13 @@ void RuleBook::Start()
 
 
 	Pages.resize(20);
-	Pages[0] = (GameEngineTexture::Find("RulesInnerHome.png"));
+	Pages[0] = (GameEngineSprite::Find("RulesInnerHome.png"));
 
 	PaperBase::Start();
 
 	SetPaperTexture(Pages[0]->GetName(), "RulesOuter.png");
-	GetSpriteRenderer()->SetSprite(GetInnerTexture()->GetName());
-	GetSpriteRenderer()->SetRenderOrder(RenderOrder::Play);
+	//InnerRenderer->SetSprite(GetInnerTexture()->GetName());
+	//InnerRenderer->SetRenderOrder(RenderOrder::Play);
 
 
 
@@ -34,8 +34,8 @@ void RuleBook::Start()
 
 	}
 	{
-		std::shared_ptr<GameEngineCollision> Collision = GetCollision();
-		float4 SpriteRenderScale = GetSpriteRenderer()->GetImageTransform().GetLocalScale();
+		
+		float4 SpriteRenderScale = InnerRenderer->GetImageTransform().GetLocalScale();
 		Collision->Transform.SetLocalScale(SpriteRenderScale);
 		
 	}

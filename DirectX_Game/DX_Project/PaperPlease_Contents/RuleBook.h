@@ -19,7 +19,7 @@ protected:
 	void Update(float _Delta) override;
 
 private:
-	std::vector<std::shared_ptr<class GameEngineTexture>> Pages;
+	std::vector<std::shared_ptr<class GameEngineSprite>> Pages;
 	
 
 	
