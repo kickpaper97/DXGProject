@@ -251,6 +251,7 @@
     </ClInclude>
     <ClInclude Include="ContentsCore.h" />
     <ClInclude Include="ContentsEnum.h" />
+    <ClInclude Include="CountryEnum.h" />
     <ClInclude Include="Cursor.h">
       <SubType>
       </SubType>

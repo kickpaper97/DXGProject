@@ -1,6 +1,8 @@
 #include "PreCompile.h"
 #include "NomalTraveler.h"
 
+
+
 NomalTraveler::NomalTraveler()
 {
 
@@ -21,6 +23,19 @@ void NomalTraveler::Start()
 	if (nullptr == GameEngineSprite::Find("NomalTravelerAni.Png"))
 	{
 		GameEngineSprite::CreateCut("NomalTravelerAni.Png", 10, 5);
+		GameEngineSprite::CreateCut("SheetF0.png",2, 2);
+		GameEngineSprite::CreateCut("SheetF1.png", 2, 2);
+		GameEngineSprite::CreateCut("SheetF2.png", 2, 2);
+		GameEngineSprite::CreateCut("SheetF3.png", 2, 2);
+		GameEngineSprite::CreateCut("SheetF4.png", 2, 2);
+
+		GameEngineSprite::CreateCut("SheetM0.png", 2, 2);
+		GameEngineSprite::CreateCut("SheetM1.png", 2, 2);
+		GameEngineSprite::CreateCut("SheetM2.png", 2, 2);
+		GameEngineSprite::CreateCut("SheetM3.png", 2, 2);
+		GameEngineSprite::CreateCut("SheetM4.png", 2, 2);
+		GameEngineSprite::CreateCut("SheetM5.png", 2, 2);
+	
 
 	}
 
@@ -63,6 +78,10 @@ void NomalTraveler::Start()
 
 		ChanageState(TravelerState::WaitingStand);
 	}
+
+	{
+		RandomSetTravelerInfo();
+	}
 	
 
 }
@@ -82,6 +101,210 @@ void NomalTraveler::Update(float _Delta)
 	float4 PoseTime = NewRand.RandomFloat(3.0f, 4.0f);*/
 
 	StateUpdate(_Delta);
+
+}
+
+
+void NomalTraveler::RandomSetTravelerInfo()
+{
+
+	int intRand = TimeRand.RandomInt(0, 1);
+	Info.Sex = intRand;
+	intRand = TimeRand.RandomInt(0, 6);
+	Info.OriginCountry = static_cast<Country>(intRand);
+	intRand = TimeRand.RandomInt(0, 2);
+	Info.City = intRand;
+
+
+	{
+
+		/*int SheetNum = -1;
+		std::string SheetName = "";
+		int SheetX = -1;
+		int SheetY = -1;
+		if (Info.Sex == 0)
+		{
+			SheetNum = TimeRand.RandomInt(0, 4);
+			SheetName = "SheetF";
+			switch (SheetNum)
+			{
+			case 0:
+				SheetName += "0";
+				break;
+			case 1:
+				SheetName += "1";
+				break;
+			case 2:
+				SheetName += "2";
+				break;
+			case 3:
+				SheetName += "3";
+				break;
+			case 4:
+				SheetName += "4";
+				break;
+			default:
+				break;
+			}
+			SheetX = TimeRand.RandomInt(0, 1);
+			SheetY = TimeRand.RandomInt(0, 1);
+
+		}
+
+		else
+		{
+			SheetNum = TimeRand.RandomInt(0, 5);
+
+			SheetName = "SheetM";
+			switch (SheetNum)
+			{
+			case 0:
+				SheetName += "0";
+				break;
+			case 1:
+				SheetName += "1";
+				break;
+			case 2:
+				SheetName += "2";
+				break;
+			case 3:
+				SheetName += "3";
+				break;
+			case 4:
+				SheetName += "4";
+				break;
+			case 5:
+				SheetName += "5";
+				break;
+			default:
+				break;
+			}
+			SheetX = TimeRand.RandomInt(0, 1);
+			SheetY = TimeRand.RandomInt(0, 1);
+		}
+		SheetName += ".png";
+		Info.Face = CreateComponent<GameEngineSpriteRenderer>();
+		Info.Face->CreateAnimation("Face", SheetName, 0.1f, SheetX, SheetY, false);
+		Info.Face->ChangeAnimation("Face");
+		*/
+
+		RandomSetFace();
+
+
+
+
+		{
+			intRand = TimeRand.RandomInt(25, 65);
+			Info.Date_of_Birth.push_back(intRand);
+			intRand = TimeRand.RandomInt(1, 12);
+			Info.Date_of_Birth.push_back(intRand);
+
+			switch (intRand)
+			{
+			case 1:
+			case 3:
+			case 5:
+			case 7:
+			case 8:
+			case 10:
+			case 12:
+				intRand = TimeRand.RandomInt(1, 31);
+				break;
+			case 4:
+			case 6:
+			case 9:
+			case 11:
+				intRand = TimeRand.RandomInt(1, 30);
+				break;
+			case 2:
+				intRand = TimeRand.RandomInt(1, 29);
+				break;
+			default:
+				break;
+			}
+			Info.Date_of_Birth.push_back(intRand);
+		}
+	}
+}
+	
+
+void NomalTraveler::RandomSetFace()
+{
+	{
+
+		int SheetNum = -1;
+		
+		if (Info.Sex == 0)
+		{
+			SheetNum = TimeRand.RandomInt(0, 4);
+			Info.Face.SheetName = "SheetF";
+			switch (SheetNum)
+			{
+			case 0:
+				Info.Face.SheetName += "0";
+				break;
+			case 1:
+				Info.Face.SheetName += "1";
+				break;
+			case 2:
+				Info.Face.SheetName += "2";
+				break;
+			case 3:
+				Info.Face.SheetName += "3";
+				break;
+			case 4:
+				Info.Face.SheetName += "4";
+				break;
+			default:
+				break;
+			}
+			Info.Face.SheetX = TimeRand.RandomInt(0, 1);
+			Info.Face.SheetY = TimeRand.RandomInt(0, 1);
+
+		}
+
+		else
+		{
+			SheetNum = TimeRand.RandomInt(0, 5);
+
+			Info.Face.SheetName = "SheetM";
+			switch (SheetNum)
+			{
+			case 0:
+				Info.Face.SheetName += "0";
+				break;
+			case 1:
+				Info.Face.SheetName += "1";
+				break;
+			case 2:
+				Info.Face.SheetName += "2";
+				break;
+			case 3:
+				Info.Face.SheetName += "3";
+				break;
+			case 4:
+				Info.Face.SheetName += "4";
+				break;
+			case 5:
+				Info.Face.SheetName += "5";
+				break;
+			default:
+				break;
+			}
+			Info.Face.SheetX = TimeRand.RandomInt(0, 1);
+			Info.Face.SheetY = TimeRand.RandomInt(0, 1);
+		}
+		Info.Face.SheetName += ".png";
+		FaceRenderer = CreateComponent<GameEngineSpriteRenderer>();
+		FaceRenderer->CreateAnimation("Face", Info.Face.SheetName, 0.1f, Info.Face.SheetX, Info.Face.SheetY, false);
+		FaceRenderer->ChangeAnimation("Face");
+		FaceRenderer->SetAutoScaleRatio(2.0f);
+		FaceRenderer->Off();
+
+
+
+	}
+
 
 }
 

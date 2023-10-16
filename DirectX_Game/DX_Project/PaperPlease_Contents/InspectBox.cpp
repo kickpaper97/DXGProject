@@ -8,3 +8,11 @@ InspectBox::InspectBox()
 InspectBox::~InspectBox()
 {
 }
+
+void InspectBox::Start()
+{
+}
+
+void InspectBox::Update(float _Delta)
+{
+}

@@ -2,7 +2,7 @@
 #pragma once
 
 
-class InspectBox 
+class InspectBox : GameEngineComponent
 {
 public:
 	InspectBox();
@@ -16,7 +16,12 @@ public:
 
 protected:
 
+	void Start() override;
+	void Update(float _Delta) override;
+
 private:
+	std::shared_ptr<GameEngineSpriteRenderer> Renderer = nullptr;
+	std::shared_ptr<GameEngineCollision> Collision = nullptr;
 
 };
 

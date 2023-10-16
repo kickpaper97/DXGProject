@@ -1,6 +1,8 @@
 
 #pragma once
 #include "PeopleBase.h"
+#include "ContentsEnum.h"
+#include <vector>
 
 enum TravelerState
 {
@@ -10,6 +12,29 @@ enum TravelerState
 	TurnStay,
 	TurnEnd,
 	Max,
+
+};
+
+
+class TravelerInfo
+{
+public:
+
+	class FaceInfo
+	{
+	public:
+		std::string SheetName="";
+		int SheetX = -1;
+		int SheetY = -1;
+
+	};
+
+
+	int Sex=-1;
+	Country OriginCountry;
+	int City=-1;
+	std::vector<int> Date_of_Birth;
+	FaceInfo Face;
 
 };
 
@@ -29,6 +54,15 @@ protected:
 	void Start() override;
 	void Update(float _Delta) override;
 
+	
+	void RandomSetTravelerInfo();
+	void RandomSetFace();
+
+	
+	std::shared_ptr<GameEngineSpriteRenderer> GetFaceRenderer()
+	{
+		return FaceRenderer;
+	}
 
 
 	void WaitingStandStart();
@@ -55,8 +89,9 @@ protected:
 private:
 	GameEngineRandom TimeRand;
 	
+	std::shared_ptr<GameEngineSpriteRenderer> FaceRenderer = nullptr;
+	TravelerInfo Info;
 
 	float StandingChangeTime = 0.0f;
 
 };
-

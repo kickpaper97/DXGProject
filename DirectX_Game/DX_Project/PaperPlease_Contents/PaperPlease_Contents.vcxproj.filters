@@ -126,6 +126,9 @@
     <ClInclude Include="InspectBox.h">
       <Filter>Global\Inspect</Filter>
     </ClInclude>
+    <ClInclude Include="CountryEnum.h">
+      <Filter>Global\Enum</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Level">
