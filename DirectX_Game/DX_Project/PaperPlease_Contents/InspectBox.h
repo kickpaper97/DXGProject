@@ -2,7 +2,7 @@
 #pragma once
 
 
-class InspectBox : public class BasicActor
+class InspectBox 
 {
 public:
 	InspectBox();
