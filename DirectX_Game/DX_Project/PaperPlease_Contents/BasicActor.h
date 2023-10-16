@@ -23,10 +23,10 @@ protected:
 
 	void Start() override;
 
+	std::shared_ptr<class GameEngineSpriteRenderer> SpriteRenderer = nullptr;
 	
 
 private:
-	std::shared_ptr<class GameEngineSpriteRenderer> SpriteRenderer = nullptr;
 
 };
 

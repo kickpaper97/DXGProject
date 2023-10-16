@@ -57,6 +57,9 @@
     <ClCompile Include="WaitingLine.cpp">
       <Filter>Global\People</Filter>
     </ClCompile>
+    <ClCompile Include="InspectBox.cpp">
+      <Filter>Global\Inspect</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
@@ -120,6 +123,9 @@
     <ClInclude Include="WaitingLine.h">
       <Filter>Global\People</Filter>
     </ClInclude>
+    <ClInclude Include="InspectBox.h">
+      <Filter>Global\Inspect</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Level">
@@ -151,6 +157,9 @@
     </Filter>
     <Filter Include="Paper\RuleBook">
       <UniqueIdentifier>{423857b5-deb7-4f74-901d-24f3a33a3d0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global\Inspect">
+      <UniqueIdentifier>{acd60b15-fd11-46a0-a85d-01fadace6837}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

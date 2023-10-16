@@ -30,6 +30,7 @@ void RuleBook::Start()
 
 
 	{
+		GameEngineInput::AddInputObject(this);
 		Transform.SetLocalPosition({ 500,-150 });
 
 	}
@@ -44,5 +45,23 @@ void RuleBook::Start()
 
 void RuleBook::Update(float _Delta)
 {
-	
+	if (GameEngineInput::IsPress('A',this))
+	{
+		Transform.AddLocalPosition(float4::LEFT * _Delta * 100);
+	}
+
+	if (GameEngineInput::IsPress('D',this))
+	{
+		Transform.AddLocalPosition(float4::RIGHT * _Delta * 100);
+	}
+
+	if (GameEngineInput::IsPress('W', this))
+	{
+		Transform.AddLocalPosition(float4::UP * _Delta * 100);
+	}
+
+	if (GameEngineInput::IsPress('S', this))
+	{
+		Transform.AddLocalPosition(float4::DOWN * _Delta * 100);
+	}
 }
