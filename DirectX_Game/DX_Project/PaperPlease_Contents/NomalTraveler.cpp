@@ -116,115 +116,41 @@ void NomalTraveler::RandomSetTravelerInfo()
 	Info.City = intRand;
 
 
+	RandomSetFace();
+
+
 	{
+		intRand = TimeRand.RandomInt(25, 65);
+		Info.Date_of_Birth.push_back(intRand);
+		intRand = TimeRand.RandomInt(1, 12);
+		Info.Date_of_Birth.push_back(intRand);
 
-		/*int SheetNum = -1;
-		std::string SheetName = "";
-		int SheetX = -1;
-		int SheetY = -1;
-		if (Info.Sex == 0)
+		switch (intRand)
 		{
-			SheetNum = TimeRand.RandomInt(0, 4);
-			SheetName = "SheetF";
-			switch (SheetNum)
-			{
-			case 0:
-				SheetName += "0";
-				break;
-			case 1:
-				SheetName += "1";
-				break;
-			case 2:
-				SheetName += "2";
-				break;
-			case 3:
-				SheetName += "3";
-				break;
-			case 4:
-				SheetName += "4";
-				break;
-			default:
-				break;
-			}
-			SheetX = TimeRand.RandomInt(0, 1);
-			SheetY = TimeRand.RandomInt(0, 1);
-
+		case 1:
+		case 3:
+		case 5:
+		case 7:
+		case 8:
+		case 10:
+		case 12:
+			intRand = TimeRand.RandomInt(1, 31);
+			break;
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+			intRand = TimeRand.RandomInt(1, 30);
+			break;
+		case 2:
+			intRand = TimeRand.RandomInt(1, 29);
+			break;
+		default:
+			break;
 		}
-
-		else
-		{
-			SheetNum = TimeRand.RandomInt(0, 5);
-
-			SheetName = "SheetM";
-			switch (SheetNum)
-			{
-			case 0:
-				SheetName += "0";
-				break;
-			case 1:
-				SheetName += "1";
-				break;
-			case 2:
-				SheetName += "2";
-				break;
-			case 3:
-				SheetName += "3";
-				break;
-			case 4:
-				SheetName += "4";
-				break;
-			case 5:
-				SheetName += "5";
-				break;
-			default:
-				break;
-			}
-			SheetX = TimeRand.RandomInt(0, 1);
-			SheetY = TimeRand.RandomInt(0, 1);
-		}
-		SheetName += ".png";
-		Info.Face = CreateComponent<GameEngineSpriteRenderer>();
-		Info.Face->CreateAnimation("Face", SheetName, 0.1f, SheetX, SheetY, false);
-		Info.Face->ChangeAnimation("Face");
-		*/
-
-		RandomSetFace();
-
-
-
-
-		{
-			intRand = TimeRand.RandomInt(25, 65);
-			Info.Date_of_Birth.push_back(intRand);
-			intRand = TimeRand.RandomInt(1, 12);
-			Info.Date_of_Birth.push_back(intRand);
-
-			switch (intRand)
-			{
-			case 1:
-			case 3:
-			case 5:
-			case 7:
-			case 8:
-			case 10:
-			case 12:
-				intRand = TimeRand.RandomInt(1, 31);
-				break;
-			case 4:
-			case 6:
-			case 9:
-			case 11:
-				intRand = TimeRand.RandomInt(1, 30);
-				break;
-			case 2:
-				intRand = TimeRand.RandomInt(1, 29);
-				break;
-			default:
-				break;
-			}
-			Info.Date_of_Birth.push_back(intRand);
-		}
+		Info.Date_of_Birth.push_back(intRand);
 	}
+
 }
 	
 
@@ -298,6 +224,7 @@ void NomalTraveler::RandomSetFace()
 		FaceRenderer = CreateComponent<GameEngineSpriteRenderer>();
 		FaceRenderer->CreateAnimation("Face", Info.Face.SheetName, 0.1f, Info.Face.SheetX, Info.Face.SheetY, false);
 		FaceRenderer->ChangeAnimation("Face");
+		FaceRenderer->AutoSpriteSizeOn();
 		FaceRenderer->SetAutoScaleRatio(2.0f);
 		FaceRenderer->Off();
 

@@ -33,11 +33,17 @@ void PaperBase::SetPaperTexture(std::string_view _InnerName, std::string_view _O
 	if (InnerRenderer == nullptr)
 	{
 		InnerRenderer = CreateComponent<GameEngineSpriteRenderer>();
+		InnerRenderer->SetMaskTexture("Desk_Mask.png");
 		OuterRenderer = CreateComponent<GameEngineSpriteRenderer>();
+		OuterRenderer->SetMaskTexture("Inner_Mask.png");
 	}
 
 	InnerRenderer->SetSprite(_InnerName);
 	OuterRenderer->SetSprite(_OuterName);
+	InnerRenderer->AutoSpriteSizeOn();
+	OuterRenderer->AutoSpriteSizeOn();
+	InnerRenderer->SetAutoScaleRatio(2.0f);
+	OuterRenderer->SetAutoScaleRatio(2.0f);
 
 	
 }

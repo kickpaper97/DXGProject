@@ -37,7 +37,7 @@ void RuleBook::Start()
 	{
 		
 		float4 SpriteRenderScale = InnerRenderer->GetImageTransform().GetLocalScale();
-		Collision->Transform.SetLocalScale(SpriteRenderScale);
+		Collision->Transform.SetLocalScale(SpriteRenderScale*2.0f);
 		
 	}
 

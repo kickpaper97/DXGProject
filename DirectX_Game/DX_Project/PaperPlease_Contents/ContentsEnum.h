@@ -1,5 +1,8 @@
 #pragma once
 
+#define LINEPOS_X float 356.0f
+#define LINEPOS_X float 434.0f
+
 enum class RenderOrder
 {
 	BackGround,
