@@ -34,17 +34,14 @@ void RuleBook::Start()
 		Transform.SetLocalPosition({ 500,-150 });
 
 	}
-	{
-		
-		float4 SpriteRenderScale = InnerRenderer->GetImageTransform().GetLocalScale();
-		Collision->Transform.SetLocalScale(SpriteRenderScale*2.0f);
-		
-	}
+	
 
 }
 
 void RuleBook::Update(float _Delta)
 {
+	PaperBase::Update(_Delta);
+
 	if (GameEngineInput::IsPress('A',this))
 	{
 		Transform.AddLocalPosition(float4::LEFT * _Delta * 100);

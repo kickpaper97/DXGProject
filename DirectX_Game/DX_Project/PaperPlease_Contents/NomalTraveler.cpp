@@ -120,6 +120,7 @@ void NomalTraveler::RandomSetTravelerInfo()
 
 
 	{
+		Info.Date_of_Birth.resize(3);
 		intRand = TimeRand.RandomInt(25, 65);
 		Info.Date_of_Birth.push_back(intRand);
 		intRand = TimeRand.RandomInt(1, 12);
@@ -222,11 +223,11 @@ void NomalTraveler::RandomSetFace()
 		}
 		Info.Face.SheetName += ".png";
 		FaceRenderer = CreateComponent<GameEngineSpriteRenderer>();
-		FaceRenderer->CreateAnimation("Face", Info.Face.SheetName, 0.1f, Info.Face.SheetX, Info.Face.SheetY, false);
+		FaceRenderer->CreateAnimation("Face", Info.Face.SheetName.c_str(), 1.0f, Info.Face.SheetX*2+ Info.Face.SheetY, Info.Face.SheetX * 2 +Info.Face.SheetY, false);
 		FaceRenderer->ChangeAnimation("Face");
 		FaceRenderer->AutoSpriteSizeOn();
 		FaceRenderer->SetAutoScaleRatio(2.0f);
-		FaceRenderer->Off();
+		FaceRenderer->On();
 
 
 
