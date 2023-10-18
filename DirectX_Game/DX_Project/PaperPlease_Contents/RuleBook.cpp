@@ -12,9 +12,12 @@ RuleBook::~RuleBook()
 void RuleBook::Start()
 {
 	
-
-	GameEngineSprite::CreateSingle("RulesInnerHome.png");
+	if (nullptr == GameEngineSprite::Find("RulesInnerHome.png"))
+	{
 	GameEngineSprite::CreateSingle("RulesOuter.png");
+	GameEngineSprite::CreateSingle("RulesInnerHome.png");
+
+	}
 
 
 
@@ -24,8 +27,7 @@ void RuleBook::Start()
 	PaperBase::Start();
 
 	SetPaperTexture(Pages[0]->GetName(), "RulesOuter.png");
-	//InnerRenderer->SetSprite(GetInnerTexture()->GetName());
-	//InnerRenderer->SetRenderOrder(RenderOrder::Play);
+	
 
 
 
