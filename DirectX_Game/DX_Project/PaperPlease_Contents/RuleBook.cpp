@@ -63,4 +63,13 @@ void RuleBook::Update(float _Delta)
 	{
 		Transform.AddLocalPosition(float4::DOWN * _Delta * 100);
 	}
+
+	if (GameEngineInput::IsPress('L', this))
+	{
+		InnerRenderer->SetMaskTexture("Outer_Mask.png");
+	}
+	if (GameEngineInput::IsPress('K', this))
+	{
+		InnerRenderer->SetMaskTexture("Inner_Mask.png");
+	}
 }

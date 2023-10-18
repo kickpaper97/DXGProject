@@ -8,7 +8,14 @@
 #pragma comment(lib, "..\\GameEngineCore\\ThirdParty\\DirectXTex\\lib\\Release\\DirectXTex.lib")
 #endif
 
-const GameEngineColor GameEngineColor::RED = {255, 0, 0, 255 };
+const GameEngineColor GameEngineColor::RED = { 255, 0, 0, 255 };
+const GameEngineColor GameEngineColor::GREEN = { 0, 255, 0, 255 };
+const GameEngineColor GameEngineColor::BLUE = { 0, 0, 255, 255 };
+const GameEngineColor GameEngineColor::MAGENTA = { 255, 0, 255, 255 };
+const GameEngineColor GameEngineColor::YELLOW = { 255, 255, 0, 255 };
+const GameEngineColor GameEngineColor::AQUA = { 0, 255, 255, 255 };
+const GameEngineColor GameEngineColor::BLACK = { 0, 0, 0, 255 };
+const GameEngineColor GameEngineColor::WHITE = { 255, 255, 255, 255 };
 
 GameEngineTexture::GameEngineTexture() 
 {
@@ -16,12 +23,12 @@ GameEngineTexture::GameEngineTexture()
 
 GameEngineTexture::~GameEngineTexture() 
 {
-
 	if (nullptr != DSV)
 	{
 		DSV->Release();
 		DSV = nullptr;
 	}
+
 	if (nullptr != SRV)
 	{
 		SRV->Release();
