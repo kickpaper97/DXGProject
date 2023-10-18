@@ -60,6 +60,9 @@
     <ClCompile Include="InspectBox.cpp">
       <Filter>Global\Inspect</Filter>
     </ClCompile>
+    <ClCompile Include="ControlManager.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
@@ -126,6 +129,9 @@
     <ClInclude Include="InspectBox.h">
       <Filter>Global\Inspect</Filter>
     </ClInclude>
+    <ClInclude Include="ControlManager.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Level">
@@ -160,6 +166,9 @@
     </Filter>
     <Filter Include="Global\Inspect">
       <UniqueIdentifier>{acd60b15-fd11-46a0-a85d-01fadace6837}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{56504f23-fd1a-401a-bb14-f4f1d1ccefd7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

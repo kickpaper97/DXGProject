@@ -54,6 +54,8 @@ protected:
 	void Start() override;
 	void Update(float _Delta) override;
 
+	void LevelEnd(GameEngineLevel* _Next) override;
+
 	
 	void RandomSetTravelerInfo();
 	void RandomSetFace();

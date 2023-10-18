@@ -5,6 +5,8 @@
 #include <GameEngineCore/GameEngineSampler.h>
 #include <GameEngineCore/GameEngineBlend.h>
 
+#include "ControlManager.h"
+
 #include "TitleLevel.h"
 #include "PlayLevel.h"
 #include"DayOffLevel.h"
@@ -52,6 +54,12 @@ void ContentsCore::Start()
 	GameEngineRenderTarget::IsDepth = false;
 	GameEngineCore::MainWindow.CursorOff();
 
+
+	{
+		UIWindow =GameEngineGUI::CreateGUIWindow<ControlManager>("ControlManager");
+		
+	}
+
 	UserRes();
 
 	GameEngineCore::CreateLevel<TitleLevel>("TitleLevel");
@@ -66,8 +74,11 @@ void ContentsCore::Start()
 
 void ContentsCore::Update(float _Delta)
 {
-
+	/*float4 MousePos = GameEngineCore::MainWindow.GetMousePos();
+	UIWindow.get()->*/
+	
 }
+
 
 void ContentsCore::Release()
 {

@@ -141,11 +141,5 @@ void PlayLevel::LevelStart(GameEngineLevel* _PrevLevel)
 
 void PlayLevel::LevelEnd(GameEngineLevel* _NextLevel)
 {
-	if (nullptr != NewLine)
-	{
-		NewLine.reset();
-		NewLine = nullptr;
-	}
-	
 
 }

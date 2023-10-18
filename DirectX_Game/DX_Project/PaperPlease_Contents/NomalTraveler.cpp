@@ -104,6 +104,11 @@ void NomalTraveler::Update(float _Delta)
 
 }
 
+void NomalTraveler::LevelEnd(GameEngineLevel* _Next)
+{
+	Death();
+}
+
 
 void NomalTraveler::RandomSetTravelerInfo()
 {
