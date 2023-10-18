@@ -7,6 +7,7 @@
 #include "WaitingLine.h"
 #include "PeopleBase.h"
 #include "NomalTraveler.h"
+#include "StampBar.h"
 
 PlayLevel::PlayLevel() 
 {
@@ -67,7 +68,7 @@ void PlayLevel::Start()
 
 	
 	{
-
+		NewStamp =CreateActor<StampBar>(GameObjectType::Stamp)
 	}
 
 }

@@ -31,7 +31,7 @@ protected:
 private:
 	int CurDay=-1;
 
-
+	std::shared_ptr<GameEngineActor> NewStamp = nullptr;
 	std::shared_ptr<class WaitingLine> NewLine = nullptr;
 };
 

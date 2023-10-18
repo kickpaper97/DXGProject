@@ -11,6 +11,9 @@ enum class RenderOrder
 	People,
 	OuterBox,
 	Play,
+	StampBarBot,
+	Stamp,
+	StampBars,
 	UI,
 	Cursor,
 };
@@ -19,6 +22,7 @@ enum class GameObjectType
 {
 	BackGround,
 	Play,
+	Stamp,
 	UIButton,
 	Cursor,
 };

@@ -63,6 +63,9 @@
     <ClCompile Include="ControlManager.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
+    <ClCompile Include="StampBar.cpp">
+      <Filter>Global\Stamp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
@@ -132,6 +135,9 @@
     <ClInclude Include="ControlManager.h">
       <Filter>GUI</Filter>
     </ClInclude>
+    <ClInclude Include="StampBar.h">
+      <Filter>Global\Stamp</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Level">
@@ -169,6 +175,9 @@
     </Filter>
     <Filter Include="GUI">
       <UniqueIdentifier>{56504f23-fd1a-401a-bb14-f4f1d1ccefd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global\Stamp">
+      <UniqueIdentifier>{e35b34de-9d03-4bd0-8b22-03a90caf31df}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
