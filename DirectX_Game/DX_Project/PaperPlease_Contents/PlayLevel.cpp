@@ -68,7 +68,7 @@ void PlayLevel::Start()
 
 	
 	{
-		NewStamp =CreateActor<StampBar>(GameObjectType::Stamp)
+		NewStamp = CreateActor<StampBar>(GameObjectType::Stamp);
 	}
 
 }
