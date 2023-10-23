@@ -286,7 +286,6 @@ public:
 		return TransData.LocalPosition;
 	}
 
-
 	// 회전 그 자체로 한 오브젝트의 앞 위 오른쪽
 	// [1][0][0][0] 오른쪽
 	// [0][1][0][0] 위
@@ -335,6 +334,11 @@ public:
 		Parent = &_Parent;
 		Parent->Childs.push_back(this);
 		TransformUpdate();
+	}
+
+	void SetTransformData(const TransformData& Data)
+	{
+		TransData = Data;
 	}
 
 	void CalChilds();
