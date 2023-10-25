@@ -1,7 +1,16 @@
 #pragma once
 #include "LevelBase.h"
+#
 
-// Ό³Έν :
+
+enum class TitleState
+{
+	Anime,
+	Waiting,
+};
+
+
+
 class TitleLevel : public LevelBase
 {
 public:
@@ -29,6 +38,7 @@ private:
 	bool isAnimaitonPause = false;
 
 	std::shared_ptr<class BasicActor> Logo = nullptr;
+	GameEngineState LevelState;
 	
 };
 

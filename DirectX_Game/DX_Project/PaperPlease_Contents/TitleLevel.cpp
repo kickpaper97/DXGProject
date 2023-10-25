@@ -58,8 +58,6 @@ void TitleLevel::Start()
 		GameEngineSprite::CreateSingle("Title.png");
 		//GameEngineSprite::CreateCut("QuitButton.png",1,2);
 		
-		GameEngineSprite::CreateSingle("CursorArrow.png");
-		GameEngineSprite::CreateSingle("CursorHand.png");
 
 	}
 
@@ -73,30 +71,149 @@ void TitleLevel::Start()
 	GameEngineInput::AddInputObject(this);
 
 	float4 WindowSize=GameEngineCore::MainWindow.GetScale();
-	{
-		
-
-	Logo = CreateActor<BasicActor>(RenderOrder::BackGround);
-	Logo->GetSpriteRenderer()->SetSprite("Title.Png");
-	std::shared_ptr<GameEngineTexture> Tex = GameEngineTexture::Find("Title.Png");
-	Logo->GetSpriteRenderer()->AutoSpriteSizeOn();
-	Logo->GetSpriteRenderer()->SetAutoScaleRatio(2.0f);
-	float check =WindowSize.Y + Tex.get()->GetScale().Y;
-	Logo->Transform.SetLocalPosition({ WindowSize.hX(),-check });
 	
-	
-	}
 
+
+
+	
 
 
 	{
+		CreateStateParameter StateParmeter;
+
 		
-		std::shared_ptr<Cursor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
-		std::shared_ptr<BasicButton> NewQuitButton = CreateActor<QuitButton>(GameObjectType::UIButton);
-		NewQuitButton.get()->Transform.SetLocalPosition({ 1100,-50 });
-		
+
+		StateParmeter.Start = [=](class GameEngineState* _Parent)
+			{
+				{
+
+					Logo = CreateActor<BasicActor>(RenderOrder::BackGround);
+					Logo->GetSpriteRenderer()->SetSprite("Title.Png");
+					std::shared_ptr<GameEngineTexture> Tex = GameEngineTexture::Find("Title.Png");
+					Logo->GetSpriteRenderer()->AutoSpriteSizeOn();
+					Logo->GetSpriteRenderer()->SetAutoScaleRatio(2.0f);
+					float check = WindowSize.Y + Tex.get()->GetScale().Y;
+					Logo->Transform.SetLocalPosition({ WindowSize.hX(),-check });
+					Logo->On();
+				}
+				
+				if (nullptr == Cursor::MainCursor)
+				{
+					std::shared_ptr<Cursor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
+					NewCursor->On();
+				}
+
+			};
+
+		StateParmeter.Stay = [=](float _Delta, class GameEngineState* _Parent)
+			{
+				
+
+				if (GameEngineInput::IsDown(VK_RETURN, this) ||
+					GameEngineInput::IsDown(VK_LBUTTON, this) ||
+					(GameEngineCore::MainWindow.GetScale().Half().Y + GameEngineCore::MainWindow.GetScale().Half().Half().hY()) <= Logo->Transform.GetWorldPosition().Y
+					)
+				{
+					_Parent->ChangeState(TitleState::Waiting);
+					return;
+				}
+
+				if (0.0f >= DeltaCheck)
+				{
+					if (false == isAnimaitonPause)
+					{
+						isAnimaitonPause = true;
+					}
+					else
+					{
+						isAnimaitonPause = false;
+					}
+
+					DeltaCheck = 0.6f;
+				}
+
+				if (false == isAnimaitonPause)
+				{
+					Logo->Transform.AddLocalPosition(AnimationDir / 4 * 250 * _Delta);
+				}
+
+
+				float y = Logo->Transform.GetWorldPosition().Y;
+
+
+
+
+				DeltaCheck -= _Delta;
+
+			};
+
+		StateParmeter.End = [=](class GameEngineState* _Parent)
+			{
+				
+
+
+
+			};
+
+		LevelState.CreateState(TitleState::Anime, StateParmeter);
 	}
 
+	{
+		CreateStateParameter StateParameter;
+
+		
+		StateParameter.Start = [=](class GameEngineState* _Parent)
+			{
+				
+				float4 Logopos = { GameEngineCore::MainWindow.GetScale().hX(), -GameEngineCore::MainWindow.GetScale().Half().Y + GameEngineCore::MainWindow.GetScale().Half().Half().hY() };
+				Logo->Transform.SetLocalPosition(Logopos);
+
+				std::shared_ptr<BasicButton> NewQuitButton = CreateActor<QuitButton>(GameObjectType::UIButton);
+				NewQuitButton->Transform.SetWorldPosition({ 1100,-50 });
+
+			};
+		StateParameter.Stay = [=](float _Delta, class GameEngineState* _Parent)
+			{
+
+				if (0.0f >= DeltaCheck)
+				{
+
+
+					if (true == isAnimaitonPause)
+					{
+						isAnimaitonPause = false;
+
+						if (float4::UP == AnimationDir)
+						{
+							AnimationDir = float4::DOWN;
+						}
+						else if (float4::DOWN == AnimationDir)
+						{
+							AnimationDir = float4::UP;
+						}
+
+					}
+					else
+					{
+						isAnimaitonPause = true;
+					}
+
+					DeltaCheck = 0.6f;
+				}
+
+				if (false == isAnimaitonPause)
+				{
+					Logo->Transform.AddLocalPosition(AnimationDir / 4 * 250 * _Delta);
+				}
+
+				DeltaCheck -= _Delta;
+			};
+
+		LevelState.CreateState(TitleState::Waiting,StateParameter);
+	}
+
+
+	LevelState.ChangeState(TitleState::Anime);
 }
 
 
@@ -105,47 +222,10 @@ void TitleLevel::Update(float _Delta)
 
 	float4 WindowSize = GameEngineCore::MainWindow.GetScale();
 
-	if (true == isAnimation)
-	{
-		if (GameEngineInput::IsDown(VK_RETURN,this)||
-			GameEngineInput::IsDown(VK_LBUTTON,this)||
-			(GameEngineCore::MainWindow.GetScale().Half().Y+ GameEngineCore::MainWindow.GetScale().Half().Half().hY()) <=Logo->Transform.GetWorldPosition().Y
-			)
-		{
-			float4 Logopos={GameEngineCore::MainWindow.GetScale().hX(), -GameEngineCore::MainWindow.GetScale().Half().Y + GameEngineCore::MainWindow.GetScale().Half().Half().hY()};
-			Logo->Transform.SetLocalPosition(Logopos);
 
-			std::shared_ptr<QuitButton> newbutton = CreateActor<QuitButton>();
+	LevelState.Update(_Delta);
+	
 
-			isAnimation = false;
-		}
-
-		if (false == isAnimaitonPause)
-		{
-			Logo->Transform.AddLocalPosition(AnimationDir/4 *250*_Delta);
-		}
-
-
-		float y = Logo->Transform.GetWorldPosition().Y;
-
-	}
-	else
-	{
-		if (false == isAnimaitonPause)
-		{
-			Logo->Transform.AddLocalPosition(AnimationDir/4*250*_Delta);
-		}
-	}
-
-	if (GameEngineInput::IsDown('A', this))
-	{
-		Logo->GetSpriteRenderer()->On();
-	}
-
-	if (GameEngineInput::IsDown('D', this))
-	{
-		Logo->GetSpriteRenderer()->Off();
-	}
 
 
 	if (GameEngineInput::IsDown('P', this))
@@ -164,35 +244,6 @@ void TitleLevel::Update(float _Delta)
 		UIOn();
 	}
 
-
-	DeltaCheck -= _Delta;
-	if (0.0f >= DeltaCheck)
-	{
-		
-
-
-		if (true == isAnimaitonPause)
-		{
-			isAnimaitonPause = false;
-			if (false == isAnimation)
-			{
-				if (float4::UP == AnimationDir)
-				{
-					AnimationDir = float4::DOWN;
-				}
-				else if (float4::DOWN == AnimationDir)
-				{
-					AnimationDir = float4::UP;
-				}
-			}
-		}
-		else
-		{
-			isAnimaitonPause = true;
-		}
-
-		DeltaCheck = 0.6f;
-	}
 }
 
 

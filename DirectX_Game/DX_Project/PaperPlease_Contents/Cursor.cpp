@@ -1,6 +1,7 @@
 #include "PreCompile.h"
 #include "Cursor.h"
 
+
 #include "BasicActor.h"
 #include<GameEnginePlatform/GameEngineWindow.h>
 #include <GameEngineCore/GameEngineCollision.h>
@@ -20,6 +21,13 @@ Cursor::~Cursor()
 void Cursor::Start()
 {
 	
+	if (nullptr == GameEngineSprite::Find("CursorArrow.png"))
+	{
+		GameEngineSprite::CreateSingle("CursorArrow.png");
+		GameEngineSprite::CreateSingle("CursorHand.png");
+
+	}
+
 
 	{
 	SetOrder(GameObjectType::Cursor);
@@ -42,18 +50,20 @@ void Cursor::Start()
 		CursorCollision->Transform.AddLocalPosition({ CollisionScale.hX(),-CollisionScale.hY() });
 	}
 
+	PrivCursorPos= GetLevel()->GetMainCamera()->GetWorldMousePos2D();
+	GameEngineInput::AddInputObject(this);
 }
 
 void Cursor::Update(float _Delta)
 {
 
-	{
+	
 	float4 CusorPos = GetLevel()->GetMainCamera()->GetWorldMousePos2D();
-	
-	
 	Transform.SetLocalPosition(CusorPos);
 	
-	}
+	
+	
+	
 	
 
 	/*if (콜리전조건)
@@ -66,30 +76,53 @@ void Cursor::Update(float _Delta)
 	Renderer->SetSprite("CursorArrow.png");
 	}*/
 
-	/*EventParameter Para;
-	Para.Stay = [](class GameEngineCollision* _This, class GameEngineCollision* _Other)
-		{
-
-
-			if (GameEngineInput::IsDown(VK_LBUTTON))
+	{
+		EventParameter Para;
+		Para.Stay = [=](class GameEngineCollision* _This, class GameEngineCollision* _Other)
 			{
 
-				std::shared_ptr<GameEngineActor> Actor = static_cast<std::shared_ptr<GameEngineActor>>(_This->GetActor());
-				_Other->GetActor()->SetParent(Actor);
 
-			}
+				if (GameEngineInput::IsDown(VK_LBUTTON, this))
+				{
+					float4 PrevPos = _Other->GetActor()->Transform.GetWorldPosition();
 
-
-			if (GameEngineInput::IsDown(VK_RBUTTON))
-			{
+					_Other->GetActor()->ChangeParent( dynamic_cast<GameEngineObject*>(this),0);
+					_Other->GetActor()->Transform.SetLocalPosition(PrevPos - this->Transform.GetLocalPosition());
 				
 				
 
-			}
+				}
 
-		};
+				if (GameEngineInput::IsPress(VK_LBUTTON,this))
+				{
 
-	CursorCollision->CollisionEvent(CollisionOrder::Papers, Para);*/
+					
+					//_Other->GetActor()->Transform.AddLocalPosition(CusorPos - PrivCursorPos);
 
+				}
 
+				GameEngineObject* paobj =_Other->GetActor()->GetParentObject();
+				
+					if (paobj ==this&&GameEngineInput::IsFree(VK_LBUTTON, this))
+					{
+
+						
+						_Other->GetActor()->ChangeParent(dynamic_cast<GameEngineObject*>(GetLevel()),0);
+						
+						float4 PrevLocalPos = _Other->GetActor()->Transform.GetLocalPosition();
+						_Other->GetActor()->Transform.SetLocalPosition(this->Transform.GetLocalPosition()+PrevLocalPos);
+						
+					}
+			
+
+		
+
+			};
+
+		CursorCollision->CollisionEvent(CollisionOrder::Papers, Para);
+	
+
+	}
+
+	
 }
