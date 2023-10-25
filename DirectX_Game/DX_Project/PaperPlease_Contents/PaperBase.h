@@ -29,6 +29,9 @@ protected:
 	std::shared_ptr<GameEngineCollision> Collision;
 private:
 
+	float4 InnerLocalPos=float4::ZERO;
+	
+
 
 
 	
