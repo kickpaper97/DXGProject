@@ -1,6 +1,7 @@
 
 #pragma once
 #include <GameEngineCore/GameEngineLevel.h>
+#include <GameEngineCore/GameEngineState.h>
 
 class LevelBase : public GameEngineLevel
 {
