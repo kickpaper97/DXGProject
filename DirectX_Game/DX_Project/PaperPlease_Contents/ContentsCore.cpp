@@ -10,6 +10,7 @@
 #include "TitleLevel.h"
 #include "PlayLevel.h"
 #include"DayOffLevel.h"
+#include "StartIntroLevel.h"
 
 //#include<GameEnginePlatform/GameEngineWindow.h>
 
@@ -23,6 +24,35 @@ ContentsCore::~ContentsCore()
 
 void ContentsCore::UserRes()
 {
+
+	{
+
+		{
+			// 엔진용 쉐이더를 전부다 전부다 로드하는 코드를 친다.
+			GameEngineDirectory Dir;
+			Dir.MoveParentToExistsChild("PaperPlease_Contents");
+			Dir.MoveChild("PaperPlease_Contents");
+			//Dir.MoveChild("Shader");
+			std::vector<GameEngineFile> Files = Dir.GetAllFile({ ".fx" });
+
+			for (size_t i = 0; i < Files.size(); i++)
+			{
+				// 구조적으로 잘 이해하고 있는지를 자신이 명확하게 인지하기 위해서
+				GameEngineFile& File = Files[i];
+				GameEngineShader::AutoCompile(File);
+			}
+			
+		}
+	}
+
+	{
+		std::shared_ptr<GameEngineMaterial> Mat = GameEngineMaterial::Create("Custom2DTexture");
+		Mat->SetVertexShader("CustomTextureShader_VS");
+		Mat->SetPixelShader("CustomTextureShader_PS");
+	}
+
+
+
 	{
 		D3D11_BLEND_DESC Desc = {};
 		Desc.IndependentBlendEnable = false;
@@ -65,8 +95,10 @@ void ContentsCore::Start()
 	GameEngineCore::CreateLevel<TitleLevel>("TitleLevel");
 	GameEngineCore::CreateLevel<DayOffLevel>("DayOffLevel");
 	GameEngineCore::CreateLevel<PlayLevel>("PlayLevel");
+	GameEngineCore::CreateLevel<StartIntroLevel>("StartIntroLevel");
 
-	GameEngineCore::ChangeLevel("PlayLevel");
+
+	GameEngineCore::ChangeLevel("TitleLevel");
 
 	// 자기 텍스처 로드해야 한다.
 
