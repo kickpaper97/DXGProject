@@ -218,6 +218,7 @@ public:
 		return ColorDataValue;
 	}
 
+
 	void SetMaskTexture(std::string_view _Texture, MaskMode _Mask = MaskMode::StaticMask);
 
 protected:
@@ -248,6 +249,7 @@ private:
 	float4 Pivot = {0.5f, 0.5f};
 
 	ColorData ColorDataValue;
+	
 
 	GameEngineTransform ImageTransform;
 };

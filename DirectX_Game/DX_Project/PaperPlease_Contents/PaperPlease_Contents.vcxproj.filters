@@ -23,9 +23,6 @@
     <ClCompile Include="BasicButton.cpp">
       <Filter>Global\Button</Filter>
     </ClCompile>
-    <ClCompile Include="Cursor.cpp">
-      <Filter>Global</Filter>
-    </ClCompile>
     <ClCompile Include="DayOffLevel.cpp">
       <Filter>Level\DAY</Filter>
     </ClCompile>
@@ -66,6 +63,18 @@
     <ClCompile Include="StampBar.cpp">
       <Filter>Global\Stamp</Filter>
     </ClCompile>
+    <ClCompile Include="Cursor.cpp">
+      <Filter>Cursor</Filter>
+    </ClCompile>
+    <ClCompile Include="CursorCollisionParameter.cpp">
+      <Filter>Cursor</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomSpriteRenderer.cpp">
+      <Filter>EngineCustom</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroPicture.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
@@ -92,9 +101,6 @@
     </ClInclude>
     <ClInclude Include="BasicButton.h">
       <Filter>Global\Button</Filter>
-    </ClInclude>
-    <ClInclude Include="Cursor.h">
-      <Filter>Global</Filter>
     </ClInclude>
     <ClInclude Include="DayOffLevel.h">
       <Filter>Level\DAY</Filter>
@@ -138,6 +144,15 @@
     <ClInclude Include="StampBar.h">
       <Filter>Global\Stamp</Filter>
     </ClInclude>
+    <ClInclude Include="Cursor.h">
+      <Filter>Cursor</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomSpriteRenderer.h">
+      <Filter>EngineCustom</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroPicture.h">
+      <Filter>Global</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Level">
@@ -179,5 +194,19 @@
     <Filter Include="Global\Stamp">
       <UniqueIdentifier>{e35b34de-9d03-4bd0-8b22-03a90caf31df}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Cursor">
+      <UniqueIdentifier>{4c477498-041f-419f-8e2d-07f98a90afff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineCustom">
+      <UniqueIdentifier>{b9d9b331-002e-4fe2-8b01-72a772311dd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{ee200901-4e2d-4748-b6e1-e08b3167f39b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="CustomTextureShader.fx">
+      <Filter>Shader</Filter>
+    </FxCompile>
   </ItemGroup>
 </Project>
