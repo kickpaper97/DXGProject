@@ -135,12 +135,16 @@ public:
 		Transform.SetParent(_Parent->Transform);
 	}
 
+
 	template<typename ParentType>
 	void SetParent(std::shared_ptr<ParentType> _Parent)
 	{
 		Parent = _Parent.get();
 		Transform.SetParent(_Parent->Transform);
 	}
+
+	void ChangeParent(GameEngineObject* _Parent, int _Order);
+	
 
 	GameEngineObject* GetParentObject()
 	{
