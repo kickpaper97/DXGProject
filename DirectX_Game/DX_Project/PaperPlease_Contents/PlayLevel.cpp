@@ -2,6 +2,7 @@
 #include "PlayLevel.h"
 #include "BasicActor.h"
 #include "PlayMap.h"
+#include "NextBell.h"
 #include "Cursor.h"
 #include "RuleBook.h"
 #include "WaitingLine.h"
@@ -20,26 +21,6 @@ PlayLevel::~PlayLevel()
 void PlayLevel::Start()
 {
 
-	{
-	//	GameEngineDirectory Dir;
-	//	Dir.MoveParentToExistsChild("GameEngineResources");
-	//	Dir.MoveChild("ContentsResources");
-	//	Dir.MoveChild("assets");
-	//	std::vector<GameEngineFile> Files = Dir.GetAllFile();
-
-	//	for (size_t i = 0; i < Files.size(); i++)
-	//	{
-	//		// 구조적으로 잘 이해하고 있는지를 자신이 명확하게 인지하기 위해서
-	//		GameEngineFile& File = Files[i];
-	//		GameEngineTexture::Load(File.GetStringPath());
-	//	}
-
-		
-		
-
-
-
-	}
 
 	
 	float4 HalfWindowScale = GameEngineCore::MainWindow.GetScale().Half();
@@ -55,6 +36,8 @@ void PlayLevel::Start()
 
 	{
 		std::shared_ptr<PlayMap> NewMap = CreateActor<PlayMap>(GameObjectType::BackGround);
+		std::shared_ptr<NextBell> NewBell = CreateActor <NextBell>(GameObjectType::Play);
+		NewBell->Transform.SetLocalPosition({ 348.0f,-168.0f });
 	}
 
 	{

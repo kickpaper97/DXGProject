@@ -28,6 +28,12 @@ void StampBar::Start()
 	std::shared_ptr<GameEngineSpriteRenderer> BarMidRenderer = CreateComponent<GameEngineSpriteRenderer>();
 	std::shared_ptr<GameEngineSpriteRenderer> BarTopRenderer = CreateComponent<GameEngineSpriteRenderer>();
 
+	BarBotRenderer->AutoSpriteSizeOn();
+	BarMidRenderer->AutoSpriteSizeOn();
+	BarTopRenderer->AutoSpriteSizeOn();
+	BarBotRenderer->SetAutoScaleRatio(2.0f);
+	BarMidRenderer->SetAutoScaleRatio(2.0f);
+	BarTopRenderer->SetAutoScaleRatio(2.0f);
 	BarBotRenderer-> SetSprite("StampBarBot.png");
 	BarMidRenderer->SetSprite("StampBarMid.png");
 	BarTopRenderer->SetSprite("StampBarTop.png");

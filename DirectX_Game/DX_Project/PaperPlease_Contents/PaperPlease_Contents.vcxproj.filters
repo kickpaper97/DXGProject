@@ -75,6 +75,9 @@
     <ClCompile Include="IntroPicture.cpp">
       <Filter>Global</Filter>
     </ClCompile>
+    <ClCompile Include="NextBell.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
@@ -151,6 +154,9 @@
       <Filter>EngineCustom</Filter>
     </ClInclude>
     <ClInclude Include="IntroPicture.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="NextBell.h">
       <Filter>Global</Filter>
     </ClInclude>
   </ItemGroup>

@@ -232,7 +232,7 @@ void NomalTraveler::RandomSetFace()
 		FaceRenderer->ChangeAnimation("Face");
 		FaceRenderer->AutoSpriteSizeOn();
 		FaceRenderer->SetAutoScaleRatio(2.0f);
-		FaceRenderer->On();
+		FaceRenderer->Off();
 
 
 
