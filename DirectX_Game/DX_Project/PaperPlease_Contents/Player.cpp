@@ -4,9 +4,11 @@
 #include <GameEngineCore/GameEngineTexture.h>
 #include "PlayMap.h"
 
+Player* Player::MainPlayer;
+
 Player::Player() 
 {
-	
+	MainPlayer = this;
 }
 
 Player::~Player() 
@@ -15,8 +17,20 @@ Player::~Player()
 
 void Player::Start()
 {
+	if (nullptr == GameEngineSprite::Find("NomalTravelerAni.Png"))
 	{
-		//MainSpriteRenderer = CreateComponent<GameEngineSpriteRenderer>();
+		GameEngineSprite::CreateCut("NomalTravelerAni.Png", 10, 5);
+	}
+
+	{
+		OuterSpriteRenderer = CreateComponent<GameEngineSpriteRenderer>(RenderOrder::People);
+		OuterSpriteRenderer->SetRenderOrder(RenderOrder::People);
+		OuterSpriteRenderer->AutoSpriteSizeOn();
+		OuterSpriteRenderer->SetAutoScaleRatio(2.0f);
+		OuterSpriteRenderer->CreateAnimation("NomalTravelerHorizonWalk", "NomalTravelerAni.Png", 0.1f, 40, 43, true);
+		OuterSpriteRenderer->ChangeAnimation("NomalTravelerHorizonWalk");
+		
+		OuterSpriteRenderer->LeftFlip();
 		//MainSpriteRenderer->CreateAnimation("Run", "HoHoYee_AttackABC", 0.05f, -1, -1, true);
 		//MainSpriteRenderer->ChangeAnimation("Run");
 		//MainSpriteRenderer->SetSamplerState(SamplerOption::LINEAR);
@@ -25,12 +39,11 @@ void Player::Start()
 		//MainSpriteRenderer->SetEndEvent("Run", std::bind(&Player::TestEvent, this, std::placeholders::_1));
 
 		//// MainSpriteRenderer->Transform.SetLocalScale({5, 5});
-		//MainSpriteRenderer->AutoSpriteSizeOn();
-		//MainSpriteRenderer->SetAutoScaleRatio(2.0f);
+		
 	}
 
 	float4 HalfWindowScale = GameEngineCore::MainWindow.GetScale().Half();
-	Transform.SetLocalPosition({ HalfWindowScale.X, -HalfWindowScale.Y, -500.0f });
+	Transform.SetLocalPosition({ 480.0f, -170.0f, -500.0f });
 
 }
 
@@ -40,7 +53,24 @@ void Player::TestEvent(GameEngineRenderer* _Renderer)
 }
 
 void Player::Update(float _Delta)
-{/*
+{
+	
+
+
+	if(OuterSpriteRenderer->IsUpdate() && 350.0f <= Transform.GetLocalPosition().X)
+	{
+		Transform.AddLocalPosition(float4::LEFT*10 * _Delta);
+		if (370.0f >= Transform.GetLocalPosition().X)
+		{
+			OuterSpriteRenderer->Off();
+		}
+	}
+	
+	
+	/*
+
+	
+
 	float Speed = 100.0f;
 
 	if (GameEngineInput::IsDown('A'))

@@ -12,7 +12,11 @@ class Player : public GameEngineActor
 		int Class = 8;
 		
 	};
+
 public:
+
+	static Player* MainPlayer;
+
 	// constrcuter destructer
 	Player();
 	~Player();
@@ -30,7 +34,7 @@ protected:
 	void Update(float _Delta) override;
 
 private:
-	std::shared_ptr<class GameEngineSpriteRenderer> MainSpriteRenderer;
-	float4 GrivityForce = {0.0f, 0.0f, 0.0f, 1.0f};
+	std::shared_ptr<class GameEngineSpriteRenderer> OuterSpriteRenderer;
+
 };
 
