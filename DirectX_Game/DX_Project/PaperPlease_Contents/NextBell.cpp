@@ -19,6 +19,7 @@ void NextBell::Start()
 
 	{
 		SpriteRenderer = CreateComponent<GameEngineSpriteRenderer>();
+		SpriteRenderer->SetRenderOrder(RenderOrder::OuterBox);
 		SpriteRenderer->AutoSpriteSizeOn();
 		SpriteRenderer->SetAutoScaleRatio(2.0f);
 		SpriteRenderer->CreateAnimation("NextBellAble", "OuterBooth.png", 0.5f, 0, 1, true);
@@ -47,8 +48,9 @@ void NextBell::Update(float _Delta)
 
 				if (GameEngineInput::IsDown(VK_LBUTTON, this))
 				{
-					DestroyWindow(GameEngineCore::MainWindow.GetHWND());
+					isPress = true;
 
+					SpriteRenderer->ChangeAnimation("NextBellDisAble");
 				}
 
 

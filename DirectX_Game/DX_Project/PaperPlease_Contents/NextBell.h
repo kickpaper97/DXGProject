@@ -12,6 +12,20 @@ public:
 	NextBell& operator=(const NextBell& _Other) = delete;
 	NextBell& operator=(const NextBell&& _Other) noexcept = delete;
 
+	std::shared_ptr<GameEngineSpriteRenderer> GetSpriteRenderer()
+	{
+		return SpriteRenderer;
+	}
+
+	void SetIsPress(bool _IsPress)
+	{
+		isPress = _IsPress;
+	}
+
+	bool GetIsPress()
+	{
+		return isPress;
+	}
 
 protected:
 	void Start() override;
@@ -19,7 +33,8 @@ protected:
 
 private:
 	std::shared_ptr<GameEngineSpriteRenderer> SpriteRenderer;
-
 	std::shared_ptr<GameEngineCollision> Collision;
+
+	bool isPress = false;
 };
 
