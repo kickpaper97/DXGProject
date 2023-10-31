@@ -120,6 +120,12 @@ void GameEngineObject::AllUpdate(float _Delta)
 
 void GameEngineObject::ChangeParent(GameEngineObject* _Parent, int _Order)
 {
+	if (nullptr == Parent)
+	{
+		SetParent(_Parent,_Order);
+		return;
+	}
+
 	for (std::pair<const int, std::list<std::shared_ptr<GameEngineObject>>>& _Pair : Parent->Childs)
 	{
 		std::list<std::shared_ptr<GameEngineObject>>& Group = _Pair.second;
@@ -135,8 +141,10 @@ void GameEngineObject::ChangeParent(GameEngineObject* _Parent, int _Order)
 				continue;
 			}
 			Start->get()->SetParent(_Parent, _Order);
-			Start=Group.erase(Start);
+			Group.erase(Start);
 			
+			return;
+
 		}
 	}
 }

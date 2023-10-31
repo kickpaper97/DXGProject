@@ -135,7 +135,6 @@ public:
 		Transform.SetParent(_Parent->Transform);
 	}
 
-
 	template<typename ParentType>
 	void SetParent(std::shared_ptr<ParentType> _Parent)
 	{
@@ -144,7 +143,6 @@ public:
 	}
 
 	void ChangeParent(GameEngineObject* _Parent, int _Order);
-	
 
 	GameEngineObject* GetParentObject()
 	{
@@ -187,16 +185,16 @@ public:
 
 
 	template<typename ObjectType, typename EnumType>
-	std::list<std::shared_ptr<ObjectType>> GetObjectGroupConvert(EnumType _GroupIndex)
+	std::vector<std::shared_ptr<ObjectType>> GetObjectGroupConvert(EnumType _GroupIndex)
 	{
 		return GetObjectGroupConvert<ObjectType>(static_cast<int>(_GroupIndex));
 	}
 
 
 	template<typename ObjectType>
-	std::list<std::shared_ptr<ObjectType>> GetObjectGroupConvert(int _GroupIndex)
+	std::vector<std::shared_ptr<ObjectType>> GetObjectGroupConvert(int _GroupIndex)
 	{
-		std::list<std::shared_ptr<ObjectType>> Result;
+		std::vector<std::shared_ptr<ObjectType>> Result;
 		std::list<std::shared_ptr<class GameEngineObject>>& Group = Childs[_GroupIndex];
 
 		for (std::shared_ptr<class GameEngineObject> Obejct : Group)

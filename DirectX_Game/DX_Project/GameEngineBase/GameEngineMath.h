@@ -85,10 +85,31 @@ public:
 
 	}
 
+	float4(DirectX::XMFLOAT3 _Float3)
+		: Float3(_Float3)
+	{
+
+	}
+
 	float4(float _X = 0.0f, float _Y = 0.0f, float _Z = 0.0f, float _W = 1.0f)
 		: X(_X), Y(_Y), Z(_Z), W(_W)
 	{
 
+	}
+
+	UINT ColorToUint() const
+	{
+		UINT Return;
+
+		char* Ptr = reinterpret_cast<char*>(&Return);
+
+		// 0~1
+		Ptr[0] = static_cast<int>(R * 255.0f);
+		Ptr[1] = static_cast<int>(G * 255.0f);
+		Ptr[2] = static_cast<int>(B * 255.0f);
+		Ptr[3] = static_cast<int>(A * 255.0f);
+
+		return Return;
 	}
 
 	inline int iX() const

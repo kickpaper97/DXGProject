@@ -47,7 +47,7 @@ SpriteData GameEngineFrameAnimation::Update(float _DeltaTime)
 		++CurIndex;
 		EventCheck = true;
 
-		if (CurIndex > End - Start)
+		if (CurIndex > InterIndex)
 		{
 			if (nullptr != EndEvent && false == IsEnd)
 			{
@@ -59,7 +59,8 @@ SpriteData GameEngineFrameAnimation::Update(float _DeltaTime)
 			if (true == Loop)
 			{
 				CurIndex = 0;
-			} else
+			}
+			else
 			{
 				--CurIndex;
 			}
@@ -69,15 +70,15 @@ SpriteData GameEngineFrameAnimation::Update(float _DeltaTime)
 	return Sprite->GetSpriteData(Index[CurIndex]);
 }
 
-GameEngineSpriteRenderer::GameEngineSpriteRenderer() 
+GameEngineSpriteRenderer::GameEngineSpriteRenderer()
 {
 }
 
-GameEngineSpriteRenderer::~GameEngineSpriteRenderer() 
+GameEngineSpriteRenderer::~GameEngineSpriteRenderer()
 {
 }
 
-void GameEngineSpriteRenderer::Start() 
+void GameEngineSpriteRenderer::Start()
 {
 	GameEngineRenderer::Start();
 
@@ -137,7 +138,7 @@ void GameEngineSpriteRenderer::Render(GameEngineCamera* _Camera, float _Delta)
 	ImageTransform.TransformUpdate();
 	ImageTransform.CalculationViewAndProjection(Transform.GetConstTransformDataRef());
 
-	GetShaderResHelper().SetTexture("DiffuseTex", CurSprite.Texture);
+	GetShaderResHelper().SetTexture("DiffuseTex", CurSprite.Texture, IsUserSampler);
 
 
 	GameEngineRenderer::Render(_Camera, _Delta);
@@ -161,6 +162,18 @@ void GameEngineSpriteRenderer::SetSprite(std::string_view _Name, unsigned int in
 	SetImageScale(CurSprite.GetScale() * AutoScaleRatio);
 }
 
+void GameEngineSpriteRenderer::ChangeCurSprite(int _Index)
+{
+	CurFrameAnimations = nullptr;
+
+	if (nullptr == Sprite)
+	{
+		MsgBoxAssert("존재하지 않는 스프라이트를 사용하려고 했습니다.");
+	}
+
+	CurSprite = Sprite->GetSpriteData(_Index);
+}
+
 void GameEngineSpriteRenderer::CreateAnimation(
 	std::string_view _AnimationName,
 	std::string_view _SpriteName,
@@ -168,7 +181,7 @@ void GameEngineSpriteRenderer::CreateAnimation(
 	unsigned int _Start /*= -1*/,
 	unsigned int _End /*= -1*/,
 	bool _Loop /*= true*/
-) 
+)
 {
 	std::string SpriteName = GameEngineString::ToUpperReturn(_SpriteName);
 
@@ -199,7 +212,7 @@ void GameEngineSpriteRenderer::CreateAnimation(
 	{
 		NewAnimation->Start = _Start;
 	}
-	else 
+	else
 	{
 		NewAnimation->Start = 0;
 	}
@@ -213,10 +226,29 @@ void GameEngineSpriteRenderer::CreateAnimation(
 		NewAnimation->End = Sprite->GetSpriteCount() - 1;
 	}
 
+	int Plus = 1;
 
-	for (unsigned int i = NewAnimation->Start; i <= NewAnimation->End; i++)
+	if (NewAnimation->Start > NewAnimation->End)
 	{
-		NewAnimation->Index.push_back(i);
+		for (
+			int i = NewAnimation->Start;
+			i >= NewAnimation->End;
+			i--
+			)
+		{
+			NewAnimation->Index.push_back(i);
+		}
+
+		NewAnimation->InterIndex = NewAnimation->Start - NewAnimation->End;
+	}
+	else
+	{
+		for (int i = NewAnimation->Start; i <= NewAnimation->End; i++)
+		{
+			NewAnimation->Index.push_back(i);
+		}
+
+		NewAnimation->InterIndex = NewAnimation->End - NewAnimation->Start;
 	}
 
 	NewAnimation->Inter.resize(NewAnimation->Index.size());
@@ -234,7 +266,7 @@ void GameEngineSpriteRenderer::ChangeAnimation(std::string_view _AnimationName, 
 {
 	std::string UpperName = GameEngineString::ToUpperReturn(_AnimationName);
 
-	std::map<std::string, std::shared_ptr<GameEngineFrameAnimation>>::iterator FindIter 
+	std::map<std::string, std::shared_ptr<GameEngineFrameAnimation>>::iterator FindIter
 		= FrameAnimations.find(UpperName);
 
 	if (FindIter == FrameAnimations.end())
@@ -333,7 +365,7 @@ void GameEngineSpriteRenderer::SetPivotType(PivotType _Type)
 	switch (_Type)
 	{
 	case PivotType::Center:
-		Pivot = {0.5f, 0.5f};
+		Pivot = { 0.5f, 0.5f };
 		break;
 	case PivotType::Top:
 		Pivot = { 0.5f, 0.0f };
@@ -371,7 +403,6 @@ void GameEngineSpriteRenderer::SetMaterialEvent(std::string_view _Name, int _Ind
 	GetShaderResHelper().SetConstantBufferLink("SpriteData", CurSprite.SpritePivot);
 	GetShaderResHelper().SetConstantBufferLink("SpriteRendererInfo", SpriteRendererInfoValue);
 	GetShaderResHelper().SetConstantBufferLink("ColorData", ColorDataValue);
-
 	SetSprite("NSet.png");
 }
 
@@ -400,4 +431,17 @@ void GameEngineSpriteRenderer::SetMaskTexture(std::string_view _Texture, MaskMod
 	GetShaderResHelper().SetTexture("MaskTex", _Texture);
 	std::shared_ptr<GameEngineTexture> Ptr = GameEngineTexture::Find(_Texture);
 	RenderBaseInfoValue.MaskScreeneScale = Ptr->GetScale();
+}
+
+void GameEngineSpriteRenderer::SetText(const std::string& _Font, const std::string& _Text, float _Scale /*= 20.0f*/, float4 Color /*= float4::RED*/, FW1_TEXT_FLAG Flag /*= FW1_LEFT*/)
+{
+	std::shared_ptr<GameEngineRenderUnit> Unit = CreateAndFindRenderUnit(0);
+	Unit->SetText(_Font, _Text, _Scale, Color, Flag);
+}
+
+void GameEngineSpriteRenderer::SetSampler(std::string_view _Name)
+{
+	std::shared_ptr<GameEngineRenderUnit> Unit = CreateAndFindRenderUnit(0);
+	Unit->ShaderResHelper.SetSampler("DiffuseTexSampler", _Name);
+	IsUserSampler = false;
 }

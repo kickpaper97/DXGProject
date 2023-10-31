@@ -20,9 +20,10 @@ public:
 
 	bool EventCheck = false;
 
-	unsigned int Start;
-	unsigned int End;
-	unsigned int CurIndex;
+	int Start;
+	int End;
+	int InterIndex;
+	int CurIndex;
 	float CurTime = 0.0f;
 
 	std::vector<int> Index;
@@ -94,6 +95,7 @@ public:
 	// 스프라이트는 기본적으로 
 	// 강제로 애니메이션을 정지한다는 뜻으로 받아들이겠다.
 	void SetSprite(std::string_view _Name, unsigned int index = 0);
+	void ChangeCurSprite(int _Index);
 
 	void CreateAnimation(
 		std::string_view _AnimationName,
@@ -175,6 +177,9 @@ public:
 	void SetEndEvent(std::string_view _AnimationName, std::function<void(GameEngineSpriteRenderer*)> _Function);
 	void SetFrameEvent(std::string_view _AnimationName, int _Frame, std::function<void(GameEngineSpriteRenderer*)> _Function);
 
+	// "EngineBaseWRAPSampler"
+	void SetSampler(std::string_view _Name);
+
 	void SetPivotValue(const float4& _Value)
 	{
 		Pivot = _Value;
@@ -218,8 +223,9 @@ public:
 		return ColorDataValue;
 	}
 
-
 	void SetMaskTexture(std::string_view _Texture, MaskMode _Mask = MaskMode::StaticMask);
+
+	void SetText(const std::string& _Font, const std::string& _Text, float _Scale = 20.0f, float4 Color = float4::RED, FW1_TEXT_FLAG Flag = FW1_LEFT);
 
 protected:
 	void Start() override;
@@ -249,7 +255,8 @@ private:
 	float4 Pivot = {0.5f, 0.5f};
 
 	ColorData ColorDataValue;
-	
 
 	GameEngineTransform ImageTransform;
+
+	bool IsUserSampler = true;
 };
