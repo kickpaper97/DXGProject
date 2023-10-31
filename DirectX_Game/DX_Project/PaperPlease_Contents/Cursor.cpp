@@ -50,16 +50,22 @@ void Cursor::Start()
 		CursorCollision->Transform.AddLocalPosition({ CollisionScale.hX(),-CollisionScale.hY() });
 	}
 
-	PrivCursorPos= GetLevel()->GetMainCamera()->GetWorldMousePos2D();
+	PrevCursorPos= GetLevel()->GetMainCamera()->GetWorldMousePos2D();
 	GameEngineInput::AddInputObject(this);
 }
 
 void Cursor::Update(float _Delta)
 {
-
+	
 	
 	float4 CusorPos = GetLevel()->GetMainCamera()->GetWorldMousePos2D();
 	Transform.SetLocalPosition(CusorPos);
+	
+
+		
+
+
+
 	
 	
 	
@@ -123,6 +129,8 @@ void Cursor::Update(float _Delta)
 	
 
 	}
+
+	PrevCursorPos = Transform.SetLocalPosition();
 
 	
 }

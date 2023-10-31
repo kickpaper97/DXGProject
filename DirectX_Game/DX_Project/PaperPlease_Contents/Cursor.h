@@ -32,7 +32,8 @@ protected:
 	void Start() override;
 	void Update(float _Delta) override;
 private:
-	float4 PrivCursorPos = float4::ZERO;
+	float4 PrevCursorPos = float4::ZERO;
+	float CursorSpeed = 0.0f;
 
 	std::shared_ptr<GameEngineUIRenderer> Renderer;
 	std::shared_ptr<GameEngineCollision> CursorCollision;
