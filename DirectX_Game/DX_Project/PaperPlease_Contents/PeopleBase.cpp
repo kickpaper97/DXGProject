@@ -13,7 +13,7 @@ PeopleBase::~PeopleBase()
 void PeopleBase::Start()
 {
 
-
+	OuterRenderer->SetRenderOrder(RenderOrder::People);
 	
 }
 

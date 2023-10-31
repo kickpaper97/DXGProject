@@ -8,9 +8,6 @@
     <ClCompile Include="PreCompile.cpp">
       <Filter>PreCompile</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Global</Filter>
-    </ClCompile>
     <ClCompile Include="StartIntroLevel.cpp">
       <Filter>Level</Filter>
     </ClCompile>
@@ -48,9 +45,6 @@
       <Filter>Paper\RuleBook</Filter>
     </ClCompile>
     <ClCompile Include="BasicActor.cpp" />
-    <ClCompile Include="NomalTraveler.cpp">
-      <Filter>Global\People</Filter>
-    </ClCompile>
     <ClCompile Include="WaitingLine.cpp">
       <Filter>Global\People</Filter>
     </ClCompile>
@@ -78,6 +72,24 @@
     <ClCompile Include="NextBell.cpp">
       <Filter>Global</Filter>
     </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Global\People</Filter>
+    </ClCompile>
+    <ClCompile Include="StampApproved.cpp">
+      <Filter>Global\Stamp</Filter>
+    </ClCompile>
+    <ClCompile Include="StampDenied.cpp">
+      <Filter>Global\Stamp</Filter>
+    </ClCompile>
+    <ClCompile Include="PassPort.cpp">
+      <Filter>Paper\Passport</Filter>
+    </ClCompile>
+    <ClCompile Include="TravelerInfo.cpp">
+      <Filter>Global\People</Filter>
+    </ClCompile>
+    <ClCompile Include="NormalTraveler.cpp">
+      <Filter>Global\People</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
@@ -88,9 +100,6 @@
       <Filter>PreCompile</Filter>
     </ClInclude>
     <ClInclude Include="BasicActor.h">
-      <Filter>Global</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
       <Filter>Global</Filter>
     </ClInclude>
     <ClInclude Include="StartIntroLevel.h">
@@ -132,9 +141,6 @@
     <ClInclude Include="RuleBook.h">
       <Filter>Paper\RuleBook</Filter>
     </ClInclude>
-    <ClInclude Include="NomalTraveler.h">
-      <Filter>Global\People</Filter>
-    </ClInclude>
     <ClInclude Include="WaitingLine.h">
       <Filter>Global\People</Filter>
     </ClInclude>
@@ -158,6 +164,24 @@
     </ClInclude>
     <ClInclude Include="NextBell.h">
       <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Global\People</Filter>
+    </ClInclude>
+    <ClInclude Include="StampApproved.h">
+      <Filter>Global\Stamp</Filter>
+    </ClInclude>
+    <ClInclude Include="StampDenied.h">
+      <Filter>Global\Stamp</Filter>
+    </ClInclude>
+    <ClInclude Include="TravelerInfo.h">
+      <Filter>Global\People</Filter>
+    </ClInclude>
+    <ClInclude Include="PassPort.h">
+      <Filter>Paper\Passport</Filter>
+    </ClInclude>
+    <ClInclude Include="NormalTraveler.h">
+      <Filter>Global\People</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -214,5 +238,10 @@
     <FxCompile Include="CustomTextureShader.fx">
       <Filter>Shader</Filter>
     </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FacePaletteTextureShader.hx">
+      <Filter>Shader</Filter>
+    </None>
   </ItemGroup>
 </Project>

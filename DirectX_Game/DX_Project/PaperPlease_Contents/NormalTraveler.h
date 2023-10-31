@@ -1,8 +1,8 @@
 
 #pragma once
 #include "PeopleBase.h"
-#include "ContentsEnum.h"
-#include <vector>
+#include "TravelerInfo.h"
+
 
 enum TravelerState
 {
@@ -16,38 +16,24 @@ enum TravelerState
 };
 
 
-class TravelerInfo
+
+
+class NormalTraveler : public PeopleBase
 {
 public:
+	NormalTraveler();
+	~NormalTraveler();
 
-	class FaceInfo
+	NormalTraveler(const NormalTraveler& _Other) = delete;
+	NormalTraveler(NormalTraveler&& _Other) noexcept = delete;
+	NormalTraveler& operator=(const NormalTraveler& _Other) = delete;
+	NormalTraveler& operator=(const NormalTraveler&& _Other) noexcept = delete;
+
+
+	class TravelerInfo GetInfo() const
 	{
-	public:
-		std::string SheetName="";
-		int SheetX = -1;
-		int SheetY = -1;
-
-	};
-
-
-	int Sex=-1;
-	Country OriginCountry;
-	int City=-1;
-	std::vector<int> Date_of_Birth;
-	FaceInfo Face;
-
-};
-
-class NomalTraveler : public PeopleBase
-{
-public:
-	NomalTraveler();
-	~NomalTraveler();
-
-	NomalTraveler(const NomalTraveler& _Other) = delete;
-	NomalTraveler(NomalTraveler&& _Other) noexcept = delete;
-	NomalTraveler& operator=(const NomalTraveler& _Other) = delete;
-	NomalTraveler& operator=(const NomalTraveler&& _Other) noexcept = delete;
+		return Info;
+	}
 
 
 protected:
@@ -56,11 +42,11 @@ protected:
 
 	void LevelEnd(GameEngineLevel* _Next) override;
 
-	
+
 	void RandomSetTravelerInfo();
 	void RandomSetFace();
 
-	
+
 	std::shared_ptr<GameEngineSpriteRenderer> GetFaceRenderer()
 	{
 		return FaceRenderer;
@@ -90,7 +76,7 @@ protected:
 
 private:
 	GameEngineRandom TimeRand;
-	
+
 	std::shared_ptr<GameEngineSpriteRenderer> FaceRenderer = nullptr;
 	TravelerInfo Info;
 

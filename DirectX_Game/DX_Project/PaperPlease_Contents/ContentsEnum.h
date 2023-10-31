@@ -1,7 +1,12 @@
 #pragma once
 
-#define LINEPOS_X  356.0f
-#define LINEPOS_Y  434.0f
+#define MASKLINEPOS_X  356.0f
+#define MASKLINEPOS_Y 206.0f
+
+//#define MASKLINEPOS_Y  434.0f
+
+#define DayLimit 300.0f
+
 
 enum class RenderOrder
 {

@@ -1,7 +1,7 @@
 #include "PreCompile.h"
 #include "WaitingLine.h"
 
-#include "NomalTraveler.h"
+#include "NormalTraveler.h"
 #include "Cursor.h"
 
 WaitingLine::WaitingLine()
@@ -21,7 +21,7 @@ void WaitingLine::AddPerson()
 
 void WaitingLine::AddPerson(const float4& _Position)
 {
-	std::shared_ptr<PeopleBase> NewPerson = GetLevel()->CreateActor<NomalTraveler>();
+	std::shared_ptr<PeopleBase> NewPerson = GetLevel()->CreateActor<NormalTraveler>();
 	NewPerson.get()->Transform.SetLocalPosition(_Position);
 	Waitings.push_back(static_cast<std::shared_ptr<PeopleBase>>(NewPerson));
 }

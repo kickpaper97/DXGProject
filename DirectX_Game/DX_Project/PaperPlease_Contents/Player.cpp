@@ -17,9 +17,9 @@ Player::~Player()
 
 void Player::Start()
 {
-	if (nullptr == GameEngineSprite::Find("NomalTravelerAni.Png"))
+	if (nullptr == GameEngineSprite::Find("NormalTravelerAni.Png"))
 	{
-		GameEngineSprite::CreateCut("NomalTravelerAni.Png", 10, 5);
+		GameEngineSprite::CreateCut("NormalTravelerAni.Png", 10, 5);
 	}
 
 	{
@@ -27,8 +27,8 @@ void Player::Start()
 		OuterSpriteRenderer->SetRenderOrder(RenderOrder::People);
 		OuterSpriteRenderer->AutoSpriteSizeOn();
 		OuterSpriteRenderer->SetAutoScaleRatio(2.0f);
-		OuterSpriteRenderer->CreateAnimation("NomalTravelerHorizonWalk", "NomalTravelerAni.Png", 0.1f, 40, 43, true);
-		OuterSpriteRenderer->ChangeAnimation("NomalTravelerHorizonWalk");
+		OuterSpriteRenderer->CreateAnimation("NormalTravelerHorizonWalk", "NormalTravelerAni.Png", 0.1f, 40, 43, true);
+		OuterSpriteRenderer->ChangeAnimation("NormalTravelerHorizonWalk");
 		
 		OuterSpriteRenderer->LeftFlip();
 		//MainSpriteRenderer->CreateAnimation("Run", "HoHoYee_AttackABC", 0.05f, -1, -1, true);

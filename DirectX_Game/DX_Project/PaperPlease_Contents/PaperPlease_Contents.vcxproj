@@ -214,7 +214,7 @@
       <SubType>
       </SubType>
     </ClCompile>
-    <ClCompile Include="NomalTraveler.cpp">
+    <ClCompile Include="NormalTraveler.cpp">
       <SubType>
       </SubType>
     </ClCompile>
@@ -223,6 +223,10 @@
       </SubType>
     </ClCompile>
     <ClCompile Include="PaperManager.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PassPort.cpp">
       <SubType>
       </SubType>
     </ClCompile>
@@ -247,7 +251,15 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="StampApproved.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="StampBar.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="StampDenied.cpp">
       <SubType>
       </SubType>
     </ClCompile>
@@ -256,6 +268,7 @@
       </SubType>
     </ClCompile>
     <ClCompile Include="TitleLevel.cpp" />
+    <ClCompile Include="TravelerInfo.cpp" />
     <ClCompile Include="WaitingLine.cpp">
       <SubType>
       </SubType>
@@ -308,7 +321,7 @@
       <SubType>
       </SubType>
     </ClInclude>
-    <ClInclude Include="NomalTraveler.h">
+    <ClInclude Include="NormalTraveler.h">
       <SubType>
       </SubType>
     </ClInclude>
@@ -317,6 +330,10 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="PaperManager.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PassPort.h">
       <SubType>
       </SubType>
     </ClInclude>
@@ -336,7 +353,15 @@
       <SubType>
       </SubType>
     </ClInclude>
+    <ClInclude Include="StampApproved.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="StampBar.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="StampDenied.h">
       <SubType>
       </SubType>
     </ClInclude>
@@ -345,6 +370,7 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="TitleLevel.h" />
+    <ClInclude Include="TravelerInfo.h" />
     <ClInclude Include="WaitingLine.h">
       <SubType>
       </SubType>
@@ -367,6 +393,14 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FacePaletteTextureShader.hx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

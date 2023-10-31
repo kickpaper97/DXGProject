@@ -2095,7 +2095,7 @@ void ImGui::TableBeginCell(ImGuiTable* table, int column_n)
     if (g.LogEnabled && !column->IsSkipItems)
     {
         LogRenderedText(&window->DC.CursorPos, "|");
-        g.LogLinePosY = FLT_MAX;
+        g.LogMASKLINEPOSY = FLT_MAX;
     }
 }
 

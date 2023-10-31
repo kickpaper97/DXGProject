@@ -1,29 +1,29 @@
 #include "PreCompile.h"
-#include "NomalTraveler.h"
+#include "NormalTraveler.h"
 
 
 
-NomalTraveler::NomalTraveler()
+NormalTraveler::NormalTraveler()
 {
 
 
 }
 
-NomalTraveler::~NomalTraveler()
+NormalTraveler::~NormalTraveler()
 {
 }
 
 
 
-void NomalTraveler::Start()
+void NormalTraveler::Start()
 {
 
-	
 
-	if (nullptr == GameEngineSprite::Find("NomalTravelerAni.Png"))
+
+	if (nullptr == GameEngineSprite::Find("NormalTravelerAni.Png"))
 	{
-		GameEngineSprite::CreateCut("NomalTravelerAni.Png", 10, 5);
-		GameEngineSprite::CreateCut("SheetF0.png",2, 2);
+		GameEngineSprite::CreateCut("NormalTravelerAni.Png", 10, 5);
+		GameEngineSprite::CreateCut("SheetF0.png", 2, 2);
 		GameEngineSprite::CreateCut("SheetF1.png", 2, 2);
 		GameEngineSprite::CreateCut("SheetF2.png", 2, 2);
 		GameEngineSprite::CreateCut("SheetF3.png", 2, 2);
@@ -35,45 +35,45 @@ void NomalTraveler::Start()
 		GameEngineSprite::CreateCut("SheetM3.png", 2, 2);
 		GameEngineSprite::CreateCut("SheetM4.png", 2, 2);
 		GameEngineSprite::CreateCut("SheetM5.png", 2, 2);
-	
+
 
 	}
 
 	OuterRenderer = CreateComponent<GameEngineSpriteRenderer>(RenderOrder::People);
 
-	
+
 
 	{
-		OuterRenderer->CreateAnimation("NomalTravelerStand1", "NomalTravelerAni.Png", 0.1f, 13, 13,false);
-		OuterRenderer->CreateAnimation("NomalTravelerStand2", "NomalTravelerAni.Png", 0.1f, 14, 14,false);
+		OuterRenderer->CreateAnimation("NormalTravelerStand1", "NormalTravelerAni.Png", 0.1f, 13, 13, false);
+		OuterRenderer->CreateAnimation("NormalTravelerStand2", "NormalTravelerAni.Png", 0.1f, 14, 14, false);
 
-		OuterRenderer->CreateAnimation("NomalTravelerHorizonWalk", "NomalTravelerAni.Png", 0.1f, 40, 43,  true);
-		OuterRenderer->CreateAnimation("NomalTravelerVerticalWalk", "NomalTravelerAni.Png", 0.1f, 44, 47,  true);
+		OuterRenderer->CreateAnimation("NormalTravelerHorizonWalk", "NormalTravelerAni.Png", 0.1f, 40, 43, true);
+		OuterRenderer->CreateAnimation("NormalTravelerVerticalWalk", "NormalTravelerAni.Png", 0.1f, 44, 47, true);
 
-		OuterRenderer->ChangeAnimation("NomalTravelerStand1");
-		
+		OuterRenderer->ChangeAnimation("NormalTravelerStand1");
+
 	}
 
 	{
-	
+
 		TimeRand.SetSeed(reinterpret_cast<long long>(this));
 		int FirstPose = TimeRand.RandomInt(0, 1);
 		StandingChangeTime = TimeRand.RandomFloat(1.0f, 3.0f);
-		
-		
+
+
 		switch (FirstPose)
 		{
 		case 0:
-			OuterRenderer->ChangeAnimation("NomalTravelerStand1");
+			OuterRenderer->ChangeAnimation("NormalTravelerStand1");
 			break;
 		case 1:
-			OuterRenderer->ChangeAnimation("NomalTravelerStand2");
+			OuterRenderer->ChangeAnimation("NormalTravelerStand2");
 			break;
 		default:
 			break;
 		}
 
-		OuterRenderer->GetImageTransform().SetLocalScale({64.0f,64.0f});
+		OuterRenderer->GetImageTransform().SetLocalScale({ 64.0f,64.0f });
 		OuterRenderer->SetRenderOrder(RenderOrder::People);
 
 		ChanageState(TravelerState::WaitingStand);
@@ -82,19 +82,19 @@ void NomalTraveler::Start()
 	{
 		RandomSetTravelerInfo();
 	}
-	
+
 
 }
 
-void NomalTraveler::Update(float _Delta)
+void NormalTraveler::Update(float _Delta)
 {
 
-	
 
 
 
 
-	
+
+
 
 
 	/*float FirstPoseChange = NewRand.RandomFloat(0.5f, 2.0f);
@@ -104,13 +104,13 @@ void NomalTraveler::Update(float _Delta)
 
 }
 
-void NomalTraveler::LevelEnd(GameEngineLevel* _Next)
+void NormalTraveler::LevelEnd(GameEngineLevel* _Next)
 {
 	Death();
 }
 
 
-void NomalTraveler::RandomSetTravelerInfo()
+void NormalTraveler::RandomSetTravelerInfo()
 {
 
 	int intRand = TimeRand.RandomInt(0, 1);
@@ -158,14 +158,14 @@ void NomalTraveler::RandomSetTravelerInfo()
 	}
 
 }
-	
 
-void NomalTraveler::RandomSetFace()
+
+void NormalTraveler::RandomSetFace()
 {
 	{
 
 		int SheetNum = -1;
-		
+
 		if (Info.Sex == 0)
 		{
 			SheetNum = TimeRand.RandomInt(0, 4);
@@ -228,7 +228,7 @@ void NomalTraveler::RandomSetFace()
 		}
 		Info.Face.SheetName += ".png";
 		FaceRenderer = CreateComponent<GameEngineSpriteRenderer>();
-		FaceRenderer->CreateAnimation("Face", Info.Face.SheetName.c_str(), 1.0f, Info.Face.SheetX*2+ Info.Face.SheetY, Info.Face.SheetX * 2 +Info.Face.SheetY, false);
+		FaceRenderer->CreateAnimation("Face", Info.Face.SheetName.c_str(), 1.0f, Info.Face.SheetX * 2 + Info.Face.SheetY, Info.Face.SheetX * 2 + Info.Face.SheetY, false);
 		FaceRenderer->ChangeAnimation("Face");
 		FaceRenderer->AutoSpriteSizeOn();
 		FaceRenderer->SetAutoScaleRatio(2.0f);
@@ -241,42 +241,42 @@ void NomalTraveler::RandomSetFace()
 
 }
 
-void NomalTraveler::WaitingStandStart()
+void NormalTraveler::WaitingStandStart()
 {
 }
 
 
-void NomalTraveler::WaitingMoveStart()
+void NormalTraveler::WaitingMoveStart()
 {
 }
 
-void NomalTraveler::TurnStartStart()
+void NormalTraveler::TurnStartStart()
 {
 }
 
-void NomalTraveler::TurnStayStart()
+void NormalTraveler::TurnStayStart()
 {
 }
 
-void NomalTraveler::TurnEndStart()
+void NormalTraveler::TurnEndStart()
 {
 }
 
 
-void NomalTraveler::WaitingStandUpdate(float _Delta)
+void NormalTraveler::WaitingStandUpdate(float _Delta)
 {
 
 
 	if (0.0f >= StandingChangeTime)
 	{
-		if (OuterRenderer->IsCurAnimation("NomalTravelerStand1"))
+		if (OuterRenderer->IsCurAnimation("NormalTravelerStand1"))
 		{
-			OuterRenderer->ChangeAnimation("NomalTravelerStand2");
+			OuterRenderer->ChangeAnimation("NormalTravelerStand2");
 		}
 
-		else if (OuterRenderer->IsCurAnimation("NomalTravelerStand2"))
+		else if (OuterRenderer->IsCurAnimation("NormalTravelerStand2"))
 		{
-			OuterRenderer->ChangeAnimation("NomalTravelerStand1");
+			OuterRenderer->ChangeAnimation("NormalTravelerStand1");
 		}
 
 
@@ -290,24 +290,24 @@ void NomalTraveler::WaitingStandUpdate(float _Delta)
 
 }
 
-void NomalTraveler::WaitingMoveUpdate(float _Delta)
+void NormalTraveler::WaitingMoveUpdate(float _Delta)
 {
-	
+
 }
 
-void NomalTraveler::TurnStartUpdate(float _Delta)
-{
-}
-
-void NomalTraveler::TurnStayUpdate(float _Delta)
+void NormalTraveler::TurnStartUpdate(float _Delta)
 {
 }
 
-void NomalTraveler::TurnEndUpdate(float _Delta)
+void NormalTraveler::TurnStayUpdate(float _Delta)
 {
 }
 
-void NomalTraveler::StateUpdate(float _Delta)
+void NormalTraveler::TurnEndUpdate(float _Delta)
+{
+}
+
+void NormalTraveler::StateUpdate(float _Delta)
 {
 	switch (State)
 	{
@@ -327,7 +327,7 @@ void NomalTraveler::StateUpdate(float _Delta)
 	}
 }
 
-void NomalTraveler::ChanageState(TravelerState _State)
+void NormalTraveler::ChanageState(TravelerState _State)
 {
 	if (_State != State)
 	{
@@ -358,7 +358,7 @@ void NomalTraveler::ChanageState(TravelerState _State)
 	State = _State;
 }
 
-void NomalTraveler::ChangeAnimationState(std::string_view _State)
+void NormalTraveler::ChangeAnimationState(std::string_view _State)
 {
 }
 

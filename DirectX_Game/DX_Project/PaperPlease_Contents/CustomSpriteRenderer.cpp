@@ -83,6 +83,8 @@ void CustomSpriteRenderer::Start()
 
 	GameEngineRenderer::SetMesh("Rect");
 	GameEngineRenderer::SetMaterial("Custom2DTexture");
+
+	
 }
 
 // Update Order에 영향을 받는다.

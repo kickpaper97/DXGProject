@@ -48,13 +48,15 @@ void PaperBase::SetPaperTexture(std::string_view _InnerName, std::string_view _O
 	OuterRenderer->Transform.TransformUpdate();
 	
 
-	if (LINEPOS_X > Transform.GetWorldPosition().X)
+	if (MASKLINEPOS_X > Transform.GetWorldPosition().X)
 	{
 
 			OuterRenderer->Off();
 			InnerRenderer->On();
 			float4 SpriteRenderScale = InnerRenderer->GetImageTransform().GetLocalScale();
 			Collision->Transform.SetLocalScale(SpriteRenderScale);
+
+		
 
 	}
 	else
@@ -92,7 +94,7 @@ void PaperBase::Update(float _Delta)
 		float4 CursorPos = Cursor::MainCursor->Transform.GetLocalPosition();
 
 
-		if (LINEPOS_X<= CursorPos.X)
+		if (MASKLINEPOS_X<= CursorPos.X)
 		{
 
 			
@@ -103,6 +105,7 @@ void PaperBase::Update(float _Delta)
 
 				OuterRenderer->Off();
 				InnerRenderer->On();
+				Transform.SetLocalPosition(InnerLocalPos);
 				float4 SpriteRenderScale = InnerRenderer->GetImageTransform().GetLocalScale();
 				Collision->Transform.SetLocalScale(SpriteRenderScale );
 				
@@ -112,18 +115,33 @@ void PaperBase::Update(float _Delta)
 
 		else 
 		{
-			InnerLocalPos = Transform.GetLocalPosition();
+			
+			if (-MASKLINEPOS_Y <= Transform.GetWorldPosition().Y)
+			{
+				
+				return;
+			}
+
+
 
 			if (InnerRenderer.get()->IsUpdate())
 			{
 
+				InnerLocalPos = Transform.GetLocalPosition();
 				InnerRenderer->Off();
 				OuterRenderer->On();
 				Transform.SetLocalPosition(float4::ZERO);
 				float4 SpriteRenderScale = OuterRenderer->GetImageTransform().GetLocalScale();
 				Collision->Transform.SetLocalScale(SpriteRenderScale );
 
+
 			}
+
+			/*if (-MASKLINEPOS_Y <= CursorPos.Y)
+			{
+				Transform.SetWorldPosition({ Transform.GetWorldPosition().X,-MASKLINEPOS_Y - Transform.GetLocalScale().hY() });
+			}*/
+
 		}
 
 	}

@@ -51,6 +51,14 @@ void ContentsCore::UserRes()
 		Mat->SetPixelShader("CustomTextureShader_PS");
 	}
 
+	{
+		{
+			std::shared_ptr<GameEngineMaterial> Mat = GameEngineMaterial::Create("FacePaletteTexture");
+			Mat->SetVertexShader("FacePaletteTexture_VS");
+			Mat->SetPixelShader("FacePaletteTexture_PS");
+		}
+	}
+
 
 
 	{

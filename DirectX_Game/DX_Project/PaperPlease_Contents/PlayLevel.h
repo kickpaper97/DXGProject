@@ -2,6 +2,17 @@
 #include "LevelBase.h"
 
 // Ό³Έν :
+enum class PlayState
+{
+	DayStart,
+	BeforeWork,
+	Working,
+	Event,
+	Waiting,
+	AfterWork,
+};
+
+
 class PlayLevel : public LevelBase
 {
 public:
@@ -33,5 +44,12 @@ private:
 
 	std::shared_ptr<GameEngineActor> NewStamp = nullptr;
 	std::shared_ptr<class WaitingLine> NewLine = nullptr;
+	std::shared_ptr<class NextBell> NewBell = nullptr;
+
+
+
+	float WorkTime=0;
+	GameEngineState LevelState;
+
 };
 
