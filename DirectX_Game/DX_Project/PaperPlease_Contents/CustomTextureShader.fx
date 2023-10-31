@@ -68,6 +68,8 @@ PixelOutPut CustomTextureShader_VS(GameEngineVertex2D _Input)
     
     float4 CalUV = _Input.TEXCOORD;
     
+    float test = mul(CurTexCoord, _Input.TEXCOORD);
+    
     // hlsl은 사용하지 않은 녀석은 인식하지 못합니다.
     // 결과에 유의미한 영향을 주는 리소스가 아니면 hlsl은 최적화를 통해서 그 리소스를 배제한다.
     // 결과에 영향을 안주는 상수버퍼가 의미가 있어? 그런 상수버퍼는 내가 알아서 삭제할께.
@@ -83,20 +85,17 @@ PixelOutPut CustomTextureShader_VS(GameEngineVertex2D _Input)
         CalUV.y += 1;
     }
     
-    if (0 != IsUseTexCoord)
-    {
-        CalUV.x -= CurTexCoord;
-
-    }
-    
-    Result.TEXCOORD.x = (CalUV.x * Scale2DX) + Pos2DX  ;
-    Result.TEXCOORD.y = (CalUV.y * Scale2DY) + Pos2DY;
     
     
+    
+        Result.TEXCOORD.x = (CalUV.x * Scale2DX) + Pos2DX;
+        Result.TEXCOORD.y = (CalUV.y * Scale2DY) + Pos2DY;
+    
+   
     // 버텍스 들은 어떻게 되어있나?
     
         return Result;
-}
+    }
 
 // b버퍼 14
 // t텍스처 
@@ -129,6 +128,8 @@ float4 CustomTextureShader_PS(PixelOutPut _Input) : SV_Target0
     
     int2 ScreenPos = int2(_Input.POSITION.x, _Input.POSITION.y);
     
+    float4 CalUV = _Input.TEXCOORD;
+    
     // ScreenPos
 
     // 1280 720 MaskScreenScale;
@@ -138,41 +139,45 @@ float4 CustomTextureShader_PS(PixelOutPut _Input) : SV_Target0
     // BaseScreenPos // 액터의 위치.
     
     // ScreenPos -= BaseScreenPos;
-
-    
-    
-    if (MaskMode == 1)
-    {
-        ScreenPos.x = RendererScreenPos.x - ScreenPos.x;
-        ScreenPos.y = RendererScreenPos.y - ScreenPos.y;
-        
-        ScreenPos.x += MaskScreenScale.x * 0.5f;
-        ScreenPos.y += MaskScreenScale.y * 0.5f;
-        
-        ScreenPos.x += MaskPivot.x;
-        ScreenPos.y += MaskPivot.y;
-    }
-    
-    if (IsMask == 1 && MaskTex[ScreenPos].r <= 0.0f)
+    if (0 != IsUseTexCoord && CalUV.x>=CurTexCoord)
     {
         clip(-1);
     }
     
-    if (0.0f >= Color.a)
-    {
-        clip(-1);
-    }
     
-    if (BaseColorOnly != 0)
-    {
-        Color = BaseColor;
-        Color.a = 1;
-    }
+    
+        if (MaskMode == 1)
+        {
+            ScreenPos.x = RendererScreenPos.x - ScreenPos.x;
+            ScreenPos.y = RendererScreenPos.y - ScreenPos.y;
+        
+            ScreenPos.x += MaskScreenScale.x * 0.5f;
+            ScreenPos.y += MaskScreenScale.y * 0.5f;
+        
+            ScreenPos.x += MaskPivot.x;
+            ScreenPos.y += MaskPivot.y;
+        }
+    
+        if (IsMask == 1 && MaskTex[ScreenPos].r <= 0.0f)
+        {
+            clip(-1);
+        }
+    
+        if (0.0f >= Color.a)
+        {
+            clip(-1);
+        }
+    
+        if (BaseColorOnly != 0)
+        {
+            Color = BaseColor;
+            Color.a = 1;
+        }
     
 
         
-    Color += PlusColor;
-    Color *= MulColor;
+        Color += PlusColor;
+        Color *= MulColor;
     
-    return Color;
-}
+        return Color;
+    }
