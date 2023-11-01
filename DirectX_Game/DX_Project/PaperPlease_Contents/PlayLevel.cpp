@@ -10,6 +10,7 @@
 #include "NormalTraveler.h"
 #include "Player.h"
 #include "StampBar.h"
+#include "PassPort.h"
 
 
 PlayLevel::PlayLevel() 
@@ -242,6 +243,7 @@ void PlayLevel::LevelStart(GameEngineLevel* _PrevLevel)
 	std::shared_ptr<Cursor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
 
 	std::shared_ptr<RuleBook> NewRuleBook = CreateActor<RuleBook>();
+	std::shared_ptr<PassPort> Newpassport = CreateActor<PassPort>();
 
 
 	LevelState.ChangeState(PlayState::DayStart);

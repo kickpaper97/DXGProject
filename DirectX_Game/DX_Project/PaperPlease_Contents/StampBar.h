@@ -1,6 +1,12 @@
 
 #pragma once
 
+enum StampBarState
+{
+	ON,
+	OFF,
+};
+
 class StampBar : public	GameEngineActor
 {
 public:
@@ -24,5 +30,6 @@ private:
 	std::shared_ptr<GameEngineComponent> ApprovedStamp = nullptr;
 	std::shared_ptr<GameEngineComponent> DeniedStamp = nullptr;
 
+	GameEngineState State;
 };
 

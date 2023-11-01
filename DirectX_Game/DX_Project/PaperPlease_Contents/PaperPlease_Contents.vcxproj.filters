@@ -238,10 +238,8 @@
     <FxCompile Include="CustomTextureShader.fx">
       <Filter>Shader</Filter>
     </FxCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FacePaletteTextureShader.hx">
+    <FxCompile Include="FacePaletteTextureShader.fx">
       <Filter>Shader</Filter>
-    </None>
+    </FxCompile>
   </ItemGroup>
 </Project>

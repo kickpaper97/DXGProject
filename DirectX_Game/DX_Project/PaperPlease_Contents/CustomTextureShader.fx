@@ -107,6 +107,13 @@ PixelOutPut CustomTextureShader_VS(GameEngineVertex2D _Input)
 // 사용해주는 용도가 있다.
 
 // 우리 규칙
+cbuffer PassPortMaskData : register(b3)
+{
+    int IsStamp = 0;
+    float temp3;
+    float temp4;
+    float temp5;
+};
 
 
 cbuffer ColorData : register(b1)
@@ -115,14 +122,19 @@ cbuffer ColorData : register(b1)
     float4 MulColor; // 최종색상에 곱한다.
 };
 
+
+
 Texture2D DiffuseTex : register(t0);
 Texture2D MaskTex : register(t1);
+Texture2D PassPortTex : register(t2);
+
 SamplerState DiffuseTexSampler : register(s0);
 
 float4 CustomTextureShader_PS(PixelOutPut _Input) : SV_Target0
 {
    
     float4 Color = DiffuseTex.Sample(DiffuseTexSampler, _Input.TEXCOORD.xy);
+    
     // 블랜드라는 작업을 해줘야 한다.
     
     
@@ -146,22 +158,35 @@ float4 CustomTextureShader_PS(PixelOutPut _Input) : SV_Target0
     
     
     
-        if (MaskMode == 1)
-        {
-            ScreenPos.x = RendererScreenPos.x - ScreenPos.x;
-            ScreenPos.y = RendererScreenPos.y - ScreenPos.y;
+    if (MaskMode == 1)
+    {
+        ScreenPos.x = ScreenPos.x - RendererScreenPos.x;
+        ScreenPos.y = ScreenPos.y - RendererScreenPos.y;
         
-            ScreenPos.x += MaskScreenScale.x * 0.5f;
-            ScreenPos.y += MaskScreenScale.y * 0.5f;
+        ScreenPos.x += MaskScreenScale.x * 0.5f;
+        ScreenPos.y += MaskScreenScale.y * 0.5f;
         
-            ScreenPos.x += MaskPivot.x;
-            ScreenPos.y += MaskPivot.y;
-        }
+        ScreenPos.x -= MaskPivot.x;
+        ScreenPos.y += MaskPivot.y;
+           
+        
+    }
     
-        if (IsMask == 1 && MaskTex[ScreenPos].r <= 0.0f)
-        {
-            clip(-1);
-        }
+   
+    
+    if (IsMask == 1 && MaskTex[ScreenPos].r <= 0.0f)
+    {
+      
+       clip(-1);
+    }
+    
+   
+    if (IsMask==1&&IsStamp == 1 && PassPortTex[ScreenPos].a>=1.0f)
+    {
+        
+        
+        clip(-1);
+    }
     
         if (0.0f >= Color.a)
         {

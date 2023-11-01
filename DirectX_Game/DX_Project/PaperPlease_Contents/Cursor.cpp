@@ -130,7 +130,7 @@ void Cursor::Update(float _Delta)
 
 	}
 
-	PrevCursorPos = Transform.SetLocalPosition();
+	PrevCursorPos = Transform.GetLocalPosition();
 
 	
 }

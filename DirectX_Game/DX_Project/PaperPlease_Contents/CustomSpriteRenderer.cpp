@@ -371,6 +371,11 @@ void CustomSpriteRenderer::SetMaterialEvent(std::string_view _Name, int _Index)
 	GetShaderResHelper().SetConstantBufferLink("SpriteData", CurSprite.SpritePivot);
 	GetShaderResHelper().SetConstantBufferLink("SpriteRendererInfo", SpriteRendererInfoValue);
 	GetShaderResHelper().SetConstantBufferLink("ColorData", ColorDataValue);
+	GetShaderResHelper().SetConstantBufferLink("TexcoordData", TexCoordDataValue);
+	GetShaderResHelper().SetConstantBufferLink("PassPortMaskData", PassPortMaskDataValue);
+
+
+
 	SetSprite("NSet.png");
 }
 
@@ -397,7 +402,22 @@ void CustomSpriteRenderer::SetMaskTexture(std::string_view _Texture, MaskMode _M
 	RenderBaseInfoValue.IsMask = 1;
 	RenderBaseInfoValue.MaskMode = static_cast<int>(_Mask);
 	GetShaderResHelper().SetTexture("MaskTex", _Texture);
+
 	std::shared_ptr<GameEngineTexture> Ptr = GameEngineTexture::Find(_Texture);
+	RenderBaseInfoValue.MaskScreeneScale = Ptr->GetScale();
+}
+
+void CustomSpriteRenderer::SetPassPortTexture(std::string_view _Texture)
+{
+	
+	RenderBaseInfoValue.IsMask = 1;
+	RenderBaseInfoValue.MaskMode = static_cast<int>(MaskMode::DynamicMask);
+	PassPortMaskDataValue.IsStamp = 1;
+
+	GetShaderResHelper().SetTexture("PassPortTex", _Texture);
+
+	std::shared_ptr<GameEngineTexture> Ptr = GameEngineTexture::Find(_Texture);
+	
 	RenderBaseInfoValue.MaskScreeneScale = Ptr->GetScale();
 }
 
@@ -409,3 +429,11 @@ void CustomSpriteRenderer::SetIntroSprite()
 	GetShaderResHelper().SetConstantBufferLink("TexcoordData", TexCoordDataValue);
 }
 
+
+void CustomSpriteRenderer::SetPaletteTexture(std::string_view _Texture)
+{
+	// 이녀석한테 있는
+	GameEngineRenderer::SetMaterial("2DTextureMask");
+
+	GetShaderResHelper().SetTexture("FacePalette", _Texture);
+}

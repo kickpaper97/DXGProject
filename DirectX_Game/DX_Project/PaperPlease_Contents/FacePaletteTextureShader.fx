@@ -51,7 +51,7 @@ cbuffer TexcoordData : register(b2)
 
 // 파일명과 함수명을 일치시키고 버텍스 쉐이더면 무조건 뒤에 _VS를 붙입니다.
 // 의미있는 버텍스 쉐이더이다.
-PixelOutPut FacePaletteTexture_VS_VS(GameEngineVertex2D _Input)
+PixelOutPut FacePaletteTexture_VS(GameEngineVertex2D _Input)
 {
  
     
@@ -89,13 +89,13 @@ PixelOutPut FacePaletteTexture_VS_VS(GameEngineVertex2D _Input)
 
     }
     
-    Result.TEXCOORD.x = (CalUV.x * Scale2DX) + Pos2DX  ;
+    Result.TEXCOORD.x = (CalUV.x * Scale2DX) + Pos2DX;
     Result.TEXCOORD.y = (CalUV.y * Scale2DY) + Pos2DY;
     
     
     // 버텍스 들은 어떻게 되어있나?
     
-        return Result;
+    return Result;
 }
 
 // b버퍼 14
@@ -109,9 +109,9 @@ PixelOutPut FacePaletteTexture_VS_VS(GameEngineVertex2D _Input)
 
 // 우리 규칙
 
-cbuffer PaletteData :register(b2)
+cbuffer PaletteData : register(b2)
 {
-    int 
+    
 };
 
 cbuffer ColorData : register(b1)
@@ -125,9 +125,9 @@ Texture2D MaskTex : register(t1);
 Texture2D FacePalettTex : register(t2);
 SamplerState DiffuseTexSampler : register(s0);
 
-float4 FacePaletteTexture_VS_PS(PixelOutPut _Input) : SV_Target0
+float4 FacePaletteTexture_PS(PixelOutPut _Input) : SV_Target0
 {
-    float4 PaletteColor =FacePa
+   
    
     float4 Color = DiffuseTex.Sample(DiffuseTexSampler, _Input.TEXCOORD.xy);
     // 블랜드라는 작업을 해줘야 한다.

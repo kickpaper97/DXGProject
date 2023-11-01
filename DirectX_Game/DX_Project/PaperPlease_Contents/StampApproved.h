@@ -1,7 +1,7 @@
 
 #pragma once
 
-class StampApproved
+class StampApproved :public GameEngineActor 
 {
 public:
 	StampApproved();
@@ -14,7 +14,8 @@ public:
 
 
 protected:
-
+	void Start() override;
+	void Update(float _Delta) override;
 private:
 
 };

@@ -1,8 +1,11 @@
 
 #pragma once
+#include "PaperBase.h"
 #include "TravelerInfo.h"
 
-class PassPort
+
+
+class PassPort : public PaperBase
 {
 public:
 	PassPort();
@@ -19,12 +22,21 @@ public:
 	{
 		return Owner;
 	}
+	void StampPassPort(PassPortChecked _Check, float4 _StampPos);
 
 protected:
+	void Start() override;
+	void Update(float _Delta) override;
+	void SetPaperTexture(std::string_view _Name) override;
 
 private:
 
 	std::shared_ptr<class NormalTraveler> Owner=nullptr;
+
+	
+	
+	
 	TravelerInfo Info;
+	PassPortChecked EntryCheck = PassPortChecked::Yet;
 };
 

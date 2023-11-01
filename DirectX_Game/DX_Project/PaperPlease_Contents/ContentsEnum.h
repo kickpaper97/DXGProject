@@ -99,3 +99,10 @@ enum class United_Federation_City
 	Shingleton,
 	Korista_City,
 };
+
+enum class PassPortChecked
+{
+	Approved,
+	Denied,
+	Yet,
+};

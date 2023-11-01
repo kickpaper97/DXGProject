@@ -19,6 +19,15 @@ void PaperBase::SetPaperTexture(std::string_view _Name)
 	//std::shared_ptr< GameEngineSprite > InnerSprite= GameEngineSprite::Find(Name + "Inner.png");
 	//std::shared_ptr< GameEngineSprite > OuterSprite = GameEngineSprite::Find(Name + "Outer.png");
 
+	if (nullptr == GameEngineSprite::Find(Name + "Inner.png"))
+	{
+		GameEngineSprite::CreateSingle(Name + "Inner.png");
+		GameEngineSprite::CreateSingle(Name + "Outer.png");
+
+	}
+
+	
+
 	SetPaperTexture(Name + "Inner.png", Name + "Outer.png");
 
 	/*InnerRenderer->SetSprite(Name + "Inner.png");

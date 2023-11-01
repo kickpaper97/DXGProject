@@ -12,7 +12,7 @@ StampBar::~StampBar()
 void StampBar::Start()
 {
 
-	if (nullptr == GameEngineSprite::Find("Sta"))
+	if (nullptr == GameEngineSprite::Find("StampBarBot.png"))
 	{
 		GameEngineSprite::CreateSingle("StampBarBot.png");
 		GameEngineSprite::CreateSingle("StampBarMid.png");
@@ -41,6 +41,45 @@ void StampBar::Start()
 	BarBotRenderer->SetRenderOrder(RenderOrder::StampBarBot);
 	BarMidRenderer->SetRenderOrder(RenderOrder::StampBars);
 	BarTopRenderer->SetRenderOrder(RenderOrder::StampBars);
+
+
+	//ON
+	{
+		
+		CreateStateParameter StatePara;
+		StatePara.Start = [=](GameEngineState* _Parent)
+			{
+
+			};
+		StatePara.Stay = [=](float _Delta,GameEngineState* _Parent)
+			{
+
+			};
+		StatePara.End = [=](GameEngineState* _Parent)
+			{
+
+			};
+		State.CreateState(StampBarState::ON, StatePara);
+	}
+
+	//Off
+	{
+
+		CreateStateParameter StatePara;
+		StatePara.Start = [=](GameEngineState* _Parent)
+			{
+
+			};
+		StatePara.Stay = [=](float _Delta, GameEngineState* _Parent)
+			{
+
+			};
+		StatePara.End = [=](GameEngineState* _Parent)
+			{
+
+			};
+		State.CreateState(StampBarState::OFF, StatePara);
+	}
 
 }
 

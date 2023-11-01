@@ -120,6 +120,7 @@ void GameEngineObject::AllUpdate(float _Delta)
 
 void GameEngineObject::ChangeParent(GameEngineObject* _Parent, int _Order)
 {
+	
 	if (nullptr == Parent)
 	{
 		SetParent(_Parent,_Order);
@@ -140,6 +141,7 @@ void GameEngineObject::ChangeParent(GameEngineObject* _Parent, int _Order)
 				Start++;
 				continue;
 			}
+
 			Start->get()->SetParent(_Parent, _Order);
 			Group.erase(Start);
 			

@@ -10,6 +10,8 @@
 #include <GameEngineCore/GameEngineLevel.h>
 #include <GameEngineCore/GameEngineCamera.h>
 
+#include <GameEngineCore/GameEngineState.h>
+
 // Rendering
 #include <GameEngineCore/GameEngineRenderer.h>
 #include <GameEngineCore/GameEngineSprite.h>
@@ -18,6 +20,8 @@
 #include <GameEngineCore/GameEngineCollision.h>
 #include <GameEngineCore/GameEngineRenderTarget.h>
 #include <GameEngineCore/GameEngineTexture.h>
+
+
 
 
 
