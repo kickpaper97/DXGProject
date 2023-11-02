@@ -107,13 +107,13 @@ PixelOutPut CustomTextureShader_VS(GameEngineVertex2D _Input)
 // 사용해주는 용도가 있다.
 
 // 우리 규칙
-cbuffer PassPortMaskData : register(b3)
-{
-    int IsStamp = 0;
-    float temp3;
-    float temp4;
-    float temp5;
-};
+//cbuffer PassPortMaskData : register(b3)
+//{
+//    int IsStamp = 0;
+//    float temp3;
+//    float temp4;
+//    float temp5;
+//};
 
 
 cbuffer ColorData : register(b1)
@@ -160,8 +160,8 @@ float4 CustomTextureShader_PS(PixelOutPut _Input) : SV_Target0
     
     if (MaskMode == 1)
     {
-        ScreenPos.x = ScreenPos.x - RendererScreenPos.x;
-        ScreenPos.y = ScreenPos.y - RendererScreenPos.y;
+       ScreenPos.x = ScreenPos.x + RendererScreenPos.x;
+       ScreenPos.y = ScreenPos.y + RendererScreenPos.y;
         
         ScreenPos.x += MaskScreenScale.x * 0.5f;
         ScreenPos.y += MaskScreenScale.y * 0.5f;
@@ -174,19 +174,19 @@ float4 CustomTextureShader_PS(PixelOutPut _Input) : SV_Target0
     
    
     
-    if (IsMask == 1 && MaskTex[ScreenPos].r <= 0.0f)
+    if (IsMask == 1 && MaskTex[ScreenPos].a <=0.0f)
     {
       
        clip(-1);
     }
     
    
-    if (IsMask==1&&IsStamp == 1 && PassPortTex[ScreenPos].a>=1.0f)
-    {
+    //if (IsMask==1&&IsStamp == 1 && PassPortTex[ScreenPos].a>=1.0f)
+    //{
         
         
-        clip(-1);
-    }
+    //    clip(-1);
+    //}
     
         if (0.0f >= Color.a)
         {

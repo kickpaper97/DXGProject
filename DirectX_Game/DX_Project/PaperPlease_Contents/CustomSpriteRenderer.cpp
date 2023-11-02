@@ -372,7 +372,7 @@ void CustomSpriteRenderer::SetMaterialEvent(std::string_view _Name, int _Index)
 	GetShaderResHelper().SetConstantBufferLink("SpriteRendererInfo", SpriteRendererInfoValue);
 	GetShaderResHelper().SetConstantBufferLink("ColorData", ColorDataValue);
 	GetShaderResHelper().SetConstantBufferLink("TexcoordData", TexCoordDataValue);
-	GetShaderResHelper().SetConstantBufferLink("PassPortMaskData", PassPortMaskDataValue);
+	//GetShaderResHelper().SetConstantBufferLink("PassPortMaskData", PassPortMaskDataValue);
 
 
 
@@ -412,7 +412,7 @@ void CustomSpriteRenderer::SetPassPortTexture(std::string_view _Texture)
 	
 	RenderBaseInfoValue.IsMask = 1;
 	RenderBaseInfoValue.MaskMode = static_cast<int>(MaskMode::DynamicMask);
-	PassPortMaskDataValue.IsStamp = 1;
+	//PassPortMaskDataValue.IsStamp = 1;
 
 	GetShaderResHelper().SetTexture("PassPortTex", _Texture);
 

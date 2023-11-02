@@ -247,7 +247,7 @@ private:
 
 	ColorData ColorDataValue;
 	TexCoordData TexCoordDataValue;
-	PassPortMaskData PassPortMaskDataValue;
+	//PassPortMaskData PassPortMaskDataValue;
 	GameEngineTransform ImageTransform;
 };
 
