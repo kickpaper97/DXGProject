@@ -120,10 +120,10 @@ void GameEngineObject::AllUpdate(float _Delta)
 
 void GameEngineObject::ChangeParent(GameEngineObject* _Parent, int _Order)
 {
-	
+
 	if (nullptr == Parent)
 	{
-		SetParent(_Parent,_Order);
+		SetParent(_Parent, _Order);
 		return;
 	}
 
@@ -133,10 +133,10 @@ void GameEngineObject::ChangeParent(GameEngineObject* _Parent, int _Order)
 
 		std::list<std::shared_ptr<GameEngineObject>>::iterator Start = Group.begin();
 		std::list<std::shared_ptr<GameEngineObject>>::iterator End = Group.end();
-		for (;Start!=End;)
+		for (; Start != End;)
 
 		{
-			if (shared_from_this() !=*Start)
+			if (shared_from_this() != *Start)
 			{
 				Start++;
 				continue;
@@ -144,7 +144,7 @@ void GameEngineObject::ChangeParent(GameEngineObject* _Parent, int _Order)
 
 			Start->get()->SetParent(_Parent, _Order);
 			Group.erase(Start);
-			
+
 			return;
 
 		}

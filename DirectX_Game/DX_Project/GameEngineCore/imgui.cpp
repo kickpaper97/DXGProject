@@ -5803,7 +5803,7 @@ void ImGui::EndChild()
             g.LastItemData.StatusFlags |= ImGuiItemStatusFlags_HoveredWindow;
     }
     g.WithinEndChild = false;
-    g.LogMASKLINEPOSY = -FLT_MAX; // To enforce a carriage return
+    g.LogLinePosY = -FLT_MAX; // To enforce a carriage return
 }
 
 // Helper to create a child window / scrolling region that looks like a normal widget frame.
@@ -10547,7 +10547,7 @@ void ImGui::BeginGroup()
     window->DC.CursorMaxPos = window->DC.CursorPos;
     window->DC.CurrLineSize = ImVec2(0.0f, 0.0f);
     if (g.LogEnabled)
-        g.LogMASKLINEPOSY = -FLT_MAX; // To enforce a carriage return
+        g.LogLinePosY = -FLT_MAX; // To enforce a carriage return
 }
 
 void ImGui::EndGroup()
@@ -10573,7 +10573,7 @@ void ImGui::EndGroup()
     window->DC.CurrLineTextBaseOffset = group_data.BackupCurrLineTextBaseOffset;
     window->DC.IsSameLine = group_data.BackupIsSameLine;
     if (g.LogEnabled)
-        g.LogMASKLINEPOSY = -FLT_MAX; // To enforce a carriage return
+        g.LogLinePosY = -FLT_MAX; // To enforce a carriage return
 
     if (!group_data.EmitItem)
     {
@@ -13469,9 +13469,9 @@ void ImGui::LogRenderedText(const ImVec2* ref_pos, const char* text, const char*
     if (!text_end)
         text_end = FindRenderedTextEnd(text, text_end);
 
-    const bool log_new_line = ref_pos && (ref_pos->y > g.LogMASKLINEPOSY + g.Style.FramePadding.y + 1);
+    const bool log_new_line = ref_pos && (ref_pos->y > g.LogLinePosY + g.Style.FramePadding.y + 1);
     if (ref_pos)
-        g.LogMASKLINEPOSY = ref_pos->y;
+        g.LogLinePosY = ref_pos->y;
     if (log_new_line)
     {
         LogText(IM_NEWLINE);
@@ -13528,7 +13528,7 @@ void ImGui::LogBegin(ImGuiLogType type, int auto_open_depth)
     g.LogNextPrefix = g.LogNextSuffix = NULL;
     g.LogDepthRef = window->DC.TreeDepth;
     g.LogDepthToExpand = ((auto_open_depth >= 0) ? auto_open_depth : g.LogDepthToExpandDefault);
-    g.LogMASKLINEPOSY = FLT_MAX;
+    g.LogLinePosY = FLT_MAX;
     g.LogLineFirstItem = true;
 }
 

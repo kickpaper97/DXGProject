@@ -2331,7 +2331,7 @@ struct ImGuiContext
     ImGuiTextBuffer         LogBuffer;                          // Accumulation buffer when log to clipboard. This is pointer so our GImGui static constructor doesn't call heap allocators.
     const char*             LogNextPrefix;
     const char*             LogNextSuffix;
-    float                   LogMASKLINEPOSY;
+    float                   LogLinePosY;
     bool                    LogLineFirstItem;
     int                     LogDepthRef;
     int                     LogDepthToExpand;
@@ -2527,7 +2527,7 @@ struct ImGuiContext
         LogType = ImGuiLogType_None;
         LogNextPrefix = LogNextSuffix = NULL;
         LogFile = NULL;
-        LogMASKLINEPOSY = FLT_MAX;
+        LogLinePosY = FLT_MAX;
         LogLineFirstItem = false;
         LogDepthRef = 0;
         LogDepthToExpand = LogDepthToExpandDefault = 2;

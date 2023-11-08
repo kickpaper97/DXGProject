@@ -9,6 +9,7 @@
 // Ό³Έν :
 class GameEngineCamera : public GameEngineActor
 {
+
 	friend class GameEngineRenderer;
 	friend class GameEngineActor;
 	friend class GameEngineLevel;
@@ -92,6 +93,20 @@ public:
 		YSortMap.insert(_SortOrder);
 	}
 
+	std::shared_ptr<class GameEngineRenderTarget> GetCameraAllRenderTarget()
+	{
+		return AllRenderTarget;
+	}
+
+	void SetFar(float _Far)
+	{
+		Far = _Far;
+	}
+
+	void SetNear(float _Near)
+	{
+		Near = _Near;
+	}
 
 protected:
 	void Start() override;
@@ -103,7 +118,7 @@ protected:
 	void AllReleaseCheck() override;
 
 	
-
+	
 
 private:
 	float4 Pivot = float4::ZERO;
@@ -111,7 +126,7 @@ private:
 
 	EPROJECTIONTYPE ProjectionType = EPROJECTIONTYPE::Orthographic;
 	float Far = 10000.0f;
-	float Near = 0.1f;
+	float Near = 10.0f;
 	float FOV = 60.0f;
 	float ZoomValue = 0.0f;
 
@@ -130,6 +145,8 @@ private:
 
 	std::set<int> ZSortMap;
 	std::set<int> YSortMap;
+
+	std::shared_ptr<class GameEngineRenderTarget> AllRenderTarget;
 
 	void CameraUpdate(float _DeltaTime);
 };
