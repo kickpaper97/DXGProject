@@ -1,7 +1,9 @@
 
 #pragma once
+#include "Stamp.h"
 
-class StampApproved :public GameEngineActor 
+
+class StampApproved :public Stamp
 {
 public:
 	StampApproved();

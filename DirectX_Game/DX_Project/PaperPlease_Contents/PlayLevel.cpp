@@ -1,16 +1,24 @@
 #include "PreCompile.h"
 #include "PlayLevel.h"
+
 #include "BasicActor.h"
+
 #include "PlayMap.h"
 #include "NextBell.h"
+
 #include "Cursor.h"
-#include "RuleBook.h"
+
 #include "WaitingLine.h"
 #include "PeopleBase.h"
 #include "NormalTraveler.h"
+
 #include "Player.h"
-#include "StampBar.h"
 #include "PassPort.h"
+#include "RuleBook.h"
+
+#include "StampBar.h"
+#include "StampApproved.h"
+#include "StampDenied.h"
 
 
 PlayLevel::PlayLevel() 
@@ -42,6 +50,14 @@ void PlayLevel::Start()
 		NewBell = CreateActor <NextBell>(GameObjectType::Play);
 		NewBell->Transform.SetLocalPosition({ 348.0f,-168.0f });
 	}
+	{
+		NewStamp  = CreateActor<StampBar>(GameObjectType::Stamp);
+		std::shared_ptr<GameEngineActor>	NewApprovedStamp = CreateActor<StampApproved>();
+		NewApprovedStamp->SetParent(NewStamp);
+		std::shared_ptr<GameEngineActor>	NewDeniedStamp = CreateActor<StampDenied>();
+		NewDeniedStamp->SetParent(NewStamp);
+
+	}
 
 	{
 		GameEngineInput::AddInputObject(this);
@@ -53,9 +69,6 @@ void PlayLevel::Start()
 	}
 
 	
-	{
-		NewStamp = CreateActor<StampBar>(GameObjectType::Stamp);
-	}
 
 	//State::DayStart
 	{
@@ -209,7 +222,7 @@ void PlayLevel::Start()
 			};
 		StatePara.Stay = [=](float _Delta, GameEngineState* _Parent)
 			{
-
+				NewStamp-
 			};
 
 		LevelState.CreateState(PlayState::AfterWork, StatePara);

@@ -90,6 +90,9 @@
     <ClCompile Include="NormalTraveler.cpp">
       <Filter>Global\People</Filter>
     </ClCompile>
+    <ClCompile Include="Stamp.cpp">
+      <Filter>Global\Stamp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
@@ -182,6 +185,9 @@
     </ClInclude>
     <ClInclude Include="NormalTraveler.h">
       <Filter>Global\People</Filter>
+    </ClInclude>
+    <ClInclude Include="Stamp.h">
+      <Filter>Global\Stamp</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

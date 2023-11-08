@@ -251,6 +251,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="Stamp.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="StampApproved.cpp">
       <SubType>
       </SubType>
@@ -350,6 +354,10 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="RuleBook.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Stamp.h">
       <SubType>
       </SubType>
     </ClInclude>

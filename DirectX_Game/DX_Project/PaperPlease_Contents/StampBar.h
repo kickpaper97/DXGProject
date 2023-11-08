@@ -27,8 +27,8 @@ protected:
 	//void LevelEnd(GameEngineLevel* _Next) override;
 private:
 
-	std::shared_ptr<GameEngineComponent> ApprovedStamp = nullptr;
-	std::shared_ptr<GameEngineComponent> DeniedStamp = nullptr;
+	
+	
 
 	GameEngineState State;
 };

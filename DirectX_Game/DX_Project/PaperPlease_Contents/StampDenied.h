@@ -1,7 +1,9 @@
 
 #pragma once
+#include "Stamp.h"
 
-class StampDenied
+
+class StampDenied :  public Stamp
 {
 public:
 	StampDenied();
@@ -14,7 +16,8 @@ public:
 
 
 protected:
-
+	void Start() override;
+	void Update(float _Delta) override;
 private:
 
 };

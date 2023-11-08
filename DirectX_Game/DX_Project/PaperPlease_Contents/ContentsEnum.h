@@ -17,6 +17,7 @@ enum class RenderOrder
 	OuterBox,
 	Play,
 	StampBarBot,
+	StampTop,
 	Stamp,
 	StampBars,
 	UI,
@@ -39,6 +40,9 @@ enum class CollisionOrder
 	UI_Button,
 	Papers,
 	Play,
+	StampSwitch,
+	StampApproved,
+	StampDenied,
 };
 
 
