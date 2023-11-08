@@ -34,6 +34,7 @@ private:
 	std::shared_ptr<class NormalTraveler> Owner=nullptr;
 
 	
+
 	
 	
 	TravelerInfo Info;

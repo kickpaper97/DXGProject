@@ -25,8 +25,15 @@ protected:
 	void LevelStart(GameEngineLevel* _PrevLevel) override;
 	void LevelEnd(GameEngineLevel* _NextLevel) override;
 
+
+
+
 private:
-	int Curday = 0;
+
+	std::shared_ptr<class DayOffBackGround> BackGround = nullptr;
+
+
+	int Curday = 1;
 
 };
 

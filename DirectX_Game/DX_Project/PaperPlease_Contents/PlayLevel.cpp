@@ -128,6 +128,10 @@ void PlayLevel::Start()
 			};
 		StatePara.Stay = [=](float _Delta, GameEngineState* _Parent)
 			{
+				if (5.0f <= LevelState.GetStateTime())
+				{
+					LevelState.ChangeState(PlayState::BeforeWork);
+				}
 
 			};
 
@@ -218,11 +222,12 @@ void PlayLevel::Start()
 			};
 		StatePara.End = [=](GameEngineState* _Parent)
 			{
-
+				
 			};
 		StatePara.Stay = [=](float _Delta, GameEngineState* _Parent)
 			{
-				NewStamp-
+				
+			
 			};
 
 		LevelState.CreateState(PlayState::AfterWork, StatePara);

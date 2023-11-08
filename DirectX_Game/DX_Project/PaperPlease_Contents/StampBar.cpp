@@ -124,7 +124,10 @@ void StampBar::Start()
 
 	State.ChangeState(StampBarState::OFF);
 
-	Transform.SetLocalPosition({ 700,-500 });
+	PosOn = { 1400,-500 };
+	
+
+	//Transform.SetLocalPosition(PosOff);
 }
 
 void StampBar::Update(float _Delta)

@@ -4,14 +4,7 @@
 // Ό³Έν :
 class Player : public GameEngineActor
 {
-	class PlayerData 
-	{
-	public:
-		int Savings = 0;
-		int PassPort = 0;
-		int Class = 8;
-		
-	};
+	
 
 public:
 
@@ -35,6 +28,10 @@ protected:
 
 private:
 	std::shared_ptr<class GameEngineSpriteRenderer> OuterSpriteRenderer;
+
+	int Savings = 0;
+	int FamillyPassPort = 0;
+	int Class = 8;
 
 };
 

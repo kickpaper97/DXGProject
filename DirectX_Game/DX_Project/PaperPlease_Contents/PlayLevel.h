@@ -40,7 +40,7 @@ protected:
 	void LevelEnd(GameEngineLevel* _NextLevel) override;
 
 private:
-	int CurDay=-1;
+	int CurDay=30;
 
 	
 	std::shared_ptr<class WaitingLine> NewLine = nullptr;

@@ -26,7 +26,7 @@ void PassPort::StampPassPort(PassPortChecked _Check, float4 _WorldStampPos)
 	StampSpriteRenderer->AutoSpriteSizeOn();
 	StampSpriteRenderer->SetAutoScaleRatio(2.0f);
 
-	StampSpriteRenderer->SetMaskTexture(InnerRenderer->GetSprite()->GetName(),MaskMode::DynamicMask	);
+	//StampSpriteRenderer->SetMaskTexture(InnerRenderer->GetSprite()->GetName(),MaskMode::DynamicMask	);
 	
 
 
@@ -55,8 +55,8 @@ void PassPort::StampPassPort(PassPortChecked _Check, float4 _WorldStampPos)
 	default:
 		break;
 	}
-	//std::string ad = InnerRenderer->GetSprite()->GetName().data();
-	//StampSpriteRenderer->SetPassPortTexture(InnerRenderer->GetSprite()->GetName());
+	std::string ad = InnerRenderer->GetSprite()->GetName().data();
+	StampSpriteRenderer->SetPassPortTexture(InnerRenderer->GetSprite()->GetName(), Transform.GetLocalPosition());
 
 
 	float4 StampPos = this->Transform.GetWorldPosition() - _WorldStampPos;
@@ -135,7 +135,12 @@ void PassPort::Update(float _Delta)
 	{
 		float4 pos = Cursor::MainCursor->Transform.GetWorldPosition();
 		StampPassPort(PassPortChecked::Approved, pos );
+
+
+
 	}
+
+
 
 }
 

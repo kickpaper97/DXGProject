@@ -27,7 +27,8 @@ protected:
 	//void LevelEnd(GameEngineLevel* _Next) override;
 private:
 
-	
+	float4 PosOn;
+	float4 PosOff;
 	
 
 	GameEngineState State;

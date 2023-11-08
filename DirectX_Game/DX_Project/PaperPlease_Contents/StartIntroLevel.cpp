@@ -55,7 +55,7 @@ void StartIntroLevel::Start()
 			};
 		Para.Stay = [=](float _Delta,GameEngineState* _Parent)
 			{
-				IntroPic->GetSpriteRenderer()->GetTexCoordData().CurTexCoord -= _Delta;
+				IntroPic->GetSpriteRenderer()->GetTexCoordData().CurTexCoord -= _Delta*0.75f;
 
 				if (3.0f <= LevelState.GetStateTime())
 				{

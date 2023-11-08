@@ -107,13 +107,6 @@ PixelOutPut CustomTextureShader_VS(GameEngineVertex2D _Input)
 // 사용해주는 용도가 있다.
 
 // 우리 규칙
-//cbuffer PassPortMaskData : register(b3)
-//{
-//    int IsStamp = 0;
-//    float temp3;
-//    float temp4;
-//    float temp5;
-//};
 
 
 cbuffer ColorData : register(b1)
@@ -123,6 +116,13 @@ cbuffer ColorData : register(b1)
 };
 
 
+cbuffer PassPortMaskData : register(b3)
+{
+    int IsStamp = 0;
+    float4 PassPortPos;
+    float4 PassportScale;
+    
+};
 
 Texture2D DiffuseTex : register(t0);
 Texture2D MaskTex : register(t1);
@@ -139,6 +139,7 @@ float4 CustomTextureShader_PS(PixelOutPut _Input) : SV_Target0
     
     
     int2 ScreenPos = int2(_Input.POSITION.x, _Input.POSITION.y);
+    
     
     float4 CalUV = _Input.TEXCOORD;
     
@@ -158,10 +159,11 @@ float4 CustomTextureShader_PS(PixelOutPut _Input) : SV_Target0
     
     
     
-    if (MaskMode == 1)
+    if (MaskMode == 1&&IsStamp!=1)
     {
        ScreenPos.x = ScreenPos.x + RendererScreenPos.x;
        ScreenPos.y = ScreenPos.y + RendererScreenPos.y;
+        
         
         ScreenPos.x += MaskScreenScale.x * 0.5f;
         ScreenPos.y += MaskScreenScale.y * 0.5f;
@@ -172,21 +174,35 @@ float4 CustomTextureShader_PS(PixelOutPut _Input) : SV_Target0
         
     }
     
-   
     
-    if (IsMask == 1 && MaskTex[ScreenPos].a <=0.0f)
+    if (IsMask == 1 &&MaskMode==0&& MaskTex[ScreenPos].a <=0.0f)
     {
       
        clip(-1);
     }
     
+    
+        if(IsStamp==1)
+        {
+            
+        
+        ScreenPos.x = ScreenPos.x + PassPortPos.x;
+        ScreenPos.y = ScreenPos.y + PassPortPos.y;
+        ScreenPos.x += PassportScale.x * 0.5f;
+        ScreenPos.y += PassportScale.y * 0.5f;
+        
+        }
+    
    
-    //if (IsMask==1&&IsStamp == 1 && PassPortTex[ScreenPos].a>=1.0f)
-    //{
-        
-        
-    //    clip(-1);
-    //}
+    
+    
+    
+   
+    if (IsMask == 1 && IsStamp == 1 && PassPortTex[ScreenPos].a <= 0.0f)
+    {
+
+        clip(-1);
+    }
     
         if (0.0f >= Color.a)
         {

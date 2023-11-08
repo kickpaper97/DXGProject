@@ -372,7 +372,7 @@ void CustomSpriteRenderer::SetMaterialEvent(std::string_view _Name, int _Index)
 	GetShaderResHelper().SetConstantBufferLink("SpriteRendererInfo", SpriteRendererInfoValue);
 	GetShaderResHelper().SetConstantBufferLink("ColorData", ColorDataValue);
 	GetShaderResHelper().SetConstantBufferLink("TexcoordData", TexCoordDataValue);
-	//GetShaderResHelper().SetConstantBufferLink("PassPortMaskData", PassPortMaskDataValue);
+	GetShaderResHelper().SetConstantBufferLink("PassPortMaskData", PassPortMaskDataValue);
 
 
 
@@ -407,18 +407,18 @@ void CustomSpriteRenderer::SetMaskTexture(std::string_view _Texture, MaskMode _M
 	RenderBaseInfoValue.MaskScreeneScale = Ptr->GetScale();
 }
 
-void CustomSpriteRenderer::SetPassPortTexture(std::string_view _Texture)
+void CustomSpriteRenderer::SetPassPortTexture(std::string_view _Texture,const float4& _TexturePos)
 {
 	
 	RenderBaseInfoValue.IsMask = 1;
 	RenderBaseInfoValue.MaskMode = static_cast<int>(MaskMode::DynamicMask);
-	//PassPortMaskDataValue.IsStamp = 1;
+	PassPortMaskDataValue.IsStamp = 1;
 
 	GetShaderResHelper().SetTexture("PassPortTex", _Texture);
-
 	std::shared_ptr<GameEngineTexture> Ptr = GameEngineTexture::Find(_Texture);
 	
-	RenderBaseInfoValue.MaskScreeneScale = Ptr->GetScale();
+	PassPortMaskDataValue.PassportPos = _TexturePos;
+	PassPortMaskDataValue.PassportScale = Ptr->GetScale();
 }
 
 

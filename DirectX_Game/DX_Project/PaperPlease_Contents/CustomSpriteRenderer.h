@@ -55,9 +55,9 @@ struct TexCoordData
 struct  PassPortMaskData
 {
 	int IsStamp = 0;
-	float temp3;
-	float temp4;
-	float temp5;
+	float4 PassportPos;
+	float4 PassportScale;
+	
 
 };
 
@@ -214,8 +214,11 @@ public:
 
 
 	void SetMaskTexture(std::string_view _Texture, MaskMode _Mask = MaskMode::StaticMask);
-	void SetPassPortTexture(std::string_view _Texture);
-
+	void SetPassPortTexture(std::string_view _Texture,const float4& _TexturePos);
+	void SetPassPortTexturePos(const float4& _Pos)
+	{
+		PassPortMaskDataValue.PassportPos = _Pos;
+	}
 	void SetPaletteTexture(std::string_view _Texture);
 
 protected:
@@ -247,7 +250,7 @@ private:
 
 	ColorData ColorDataValue;
 	TexCoordData TexCoordDataValue;
-	//PassPortMaskData PassPortMaskDataValue;
+	PassPortMaskData PassPortMaskDataValue;
 	GameEngineTransform ImageTransform;
 };
 
