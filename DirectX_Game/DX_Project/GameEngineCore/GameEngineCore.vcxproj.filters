@@ -73,6 +73,15 @@
     <Filter Include="Resources\Font">
       <UniqueIdentifier>{2daf8ac3-5083-4432-8087-9a72920cc2be}</UniqueIdentifier>
     </Filter>
+    <Filter Include="PathFind">
+      <UniqueIdentifier>{42e6d193-b105-43a9-8297-21cee754cbbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\PostEffect">
+      <UniqueIdentifier>{7a06941c-f095-41e6-84ae-6f3e8d4bb1cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Engine">
+      <UniqueIdentifier>{a1c76b10-1235-4917-ad9a-f0aab4a27cc4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameEngineActor.h">
@@ -232,6 +241,21 @@
     <ClInclude Include="ThirdParty\FW1FontWrapper\inc\FW1FontWrapper.h">
       <Filter>ThirdParty\inc</Filter>
     </ClInclude>
+    <ClInclude Include="AStartPathFinder.h">
+      <Filter>PathFind</Filter>
+    </ClInclude>
+    <ClInclude Include="BlurPostEffect.h">
+      <Filter>Rendering\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="FadePostEffect.h">
+      <Filter>Rendering\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineCoreWindow.h">
+      <Filter>GUI\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineStructuredBuffer.h">
+      <Filter>Resources\Buffer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameEngineActor.cpp">
@@ -378,6 +402,21 @@
     </ClCompile>
     <ClCompile Include="GameEngineFont.cpp">
       <Filter>Resources\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="AStartPathFinder.cpp">
+      <Filter>PathFind</Filter>
+    </ClCompile>
+    <ClCompile Include="BlurPostEffect.cpp">
+      <Filter>Rendering\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="FadePostEffect.cpp">
+      <Filter>Rendering\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineCoreWindow.cpp">
+      <Filter>GUI\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineStructuredBuffer.cpp">
+      <Filter>Resources\Buffer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

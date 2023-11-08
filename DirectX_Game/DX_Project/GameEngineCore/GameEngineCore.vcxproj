@@ -171,7 +171,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AStartPathFinder.h" />
+    <ClInclude Include="BlurPostEffect.h" />
     <ClInclude Include="EngineEnum.h" />
+    <ClInclude Include="FadePostEffect.h" />
     <ClInclude Include="GameEngineActor.h">
       <SubType>
       </SubType>
@@ -196,6 +199,7 @@
       <SubType>
       </SubType>
     </ClInclude>
+    <ClInclude Include="GameEngineCoreWindow.h" />
     <ClInclude Include="GameEngineDebugCore.h" />
     <ClInclude Include="GameEngineDepthStencil.h" />
     <ClInclude Include="GameEngineDevice.h" />
@@ -230,6 +234,7 @@
     <ClInclude Include="GameEngineSprite.h" />
     <ClInclude Include="GameEngineSpriteRenderer.h" />
     <ClInclude Include="GameEngineState.h" />
+    <ClInclude Include="GameEngineStructuredBuffer.h" />
     <ClInclude Include="GameEngineTexture.h" />
     <ClInclude Include="GameEngineTileMap.h" />
     <ClInclude Include="GameEngineTransform.h">
@@ -253,6 +258,9 @@
     <ClInclude Include="ThirdParty\FW1FontWrapper\inc\FW1FontWrapper.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AStartPathFinder.cpp" />
+    <ClCompile Include="BlurPostEffect.cpp" />
+    <ClCompile Include="FadePostEffect.cpp" />
     <ClCompile Include="GameEngineActor.cpp">
       <SubType>
       </SubType>
@@ -277,6 +285,7 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="GameEngineCoreWindow.cpp" />
     <ClCompile Include="GameEngineDebugCore.cpp" />
     <ClCompile Include="GameEngineDepthStencil.cpp" />
     <ClCompile Include="GameEngineDevice.cpp" />
@@ -312,6 +321,7 @@
     <ClCompile Include="GameEngineSprite.cpp" />
     <ClCompile Include="GameEngineSpriteRenderer.cpp" />
     <ClCompile Include="GameEngineState.cpp" />
+    <ClCompile Include="GameEngineStructuredBuffer.cpp" />
     <ClCompile Include="GameEngineTexture.cpp" />
     <ClCompile Include="GameEngineTileMap.cpp" />
     <ClCompile Include="GameEngineTransform.cpp">
