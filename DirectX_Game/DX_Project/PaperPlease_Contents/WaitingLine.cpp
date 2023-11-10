@@ -21,15 +21,15 @@ void WaitingLine::AddPerson()
 
 void WaitingLine::AddPerson(const float4& _Position)
 {
-	std::shared_ptr<PeopleBase> NewPerson = GetLevel()->CreateActor<NormalTraveler>();
+	std::shared_ptr<NormalTraveler> NewPerson = GetLevel()->CreateActor<NormalTraveler>();
 	NewPerson.get()->Transform.SetLocalPosition(_Position);
-	Waitings.push_back(static_cast<std::shared_ptr<PeopleBase>>(NewPerson));
+	Waitings.push_back(static_cast<std::shared_ptr<NormalTraveler>>(NewPerson));
 }
 
-std::shared_ptr<PeopleBase> WaitingLine::CallFirstPerson()
+std::shared_ptr<NormalTraveler> WaitingLine::CallFirstPerson()
 {
 
-	std::shared_ptr<PeopleBase> First = Waitings.front();
+	std::shared_ptr<NormalTraveler> First = Waitings.front();
 	Waitings.pop_front();
 	/*std::list<std::shared_ptr<PeopleBase>>::iterator beginiter = Waitings.get()->begin();
 	Waitings.get()->erase(beginiter);*/

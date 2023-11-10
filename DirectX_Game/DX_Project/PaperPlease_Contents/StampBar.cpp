@@ -124,10 +124,11 @@ void StampBar::Start()
 
 	State.ChangeState(StampBarState::OFF);
 
-	PosOn = { 1400,-500 };
+	PosOff = { 1400,-500 };
 	
 
-	//Transform.SetLocalPosition(PosOff);
+	Transform.SetLocalPosition(PosOff);
+	GameEngineInput::AddInputObject(this);
 }
 
 void StampBar::Update(float _Delta)

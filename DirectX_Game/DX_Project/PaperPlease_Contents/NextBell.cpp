@@ -36,6 +36,7 @@ void NextBell::Start()
 		Collision.get()->Transform.SetLocalScale({ RenderScale.X/2.5f ,RenderScale .Y/3.5f});
 	}
 
+	GameEngineInput::AddInputObject(this);
 }
 
 void NextBell::Update(float _Delta)
@@ -46,11 +47,14 @@ void NextBell::Update(float _Delta)
 		Para.Stay = [=](class GameEngineCollision* _This, class GameEngineCollision* _Other)
 			{
 
+
+
 				if (GameEngineInput::IsDown(VK_LBUTTON, this))
 				{
 					isPress = true;
 
 					SpriteRenderer->ChangeAnimation("NextBellDisAble");
+					
 				}
 
 

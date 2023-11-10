@@ -117,8 +117,12 @@ void PlayLevel::Start()
 					NewLine->AddPerson({ 11.70f,-152.60f });
 				}
 				// 군인 배치
+
 				//Player 배치
 				std::shared_ptr<Player> NewPlayer = CreateActor<Player>();
+
+				//
+
 				WorkTime = 0;
 
 			};
@@ -128,6 +132,8 @@ void PlayLevel::Start()
 			};
 		StatePara.Stay = [=](float _Delta, GameEngineState* _Parent)
 			{
+				
+				
 				if (5.0f <= LevelState.GetStateTime())
 				{
 					LevelState.ChangeState(PlayState::BeforeWork);
@@ -145,6 +151,7 @@ void PlayLevel::Start()
 		StatePara.Start = [=](GameEngineState* _Parent)
 			{
 				NewBell.get()->GetSpriteRenderer()->ChangeAnimation("NextBellAble");
+				NewBell->SetIsPress(false);
 			};
 		StatePara.End= [=](GameEngineState* _Parent)
 			{
@@ -154,6 +161,7 @@ void PlayLevel::Start()
 			{
 				if (NewBell.get()->GetIsPress())
 				{
+					
 					LevelState.ChangeState(PlayState::Working);
 					return;
 				}
@@ -167,11 +175,15 @@ void PlayLevel::Start()
 		CreateStateParameter StatePara;
 		StatePara.Start = [=](GameEngineState* _Parent)
 			{
-
+				std::shared_ptr<NormalTraveler>CurTravler = NewLine->CallFirstPerson();
+				CurTravler->FaceRenderer->On();
 			};
 		StatePara.End = [=](GameEngineState* _Parent)
 			{
 				NewBell.get()->GetSpriteRenderer()->ChangeAnimation("NextBellAble");
+
+
+				
 
 			};
 		StatePara.Stay = [=](float _Delta, GameEngineState* _Parent)
@@ -193,7 +205,9 @@ void PlayLevel::Start()
 		CreateStateParameter StatePara;
 		StatePara.Start = [=](GameEngineState* _Parent)
 			{
-
+				NewBell.get()->GetSpriteRenderer()->ChangeAnimation("NextBellAble");
+				NewBell->SetIsPress(false);
+			
 			};
 		StatePara.End = [=](GameEngineState* _Parent)
 			{
@@ -201,6 +215,13 @@ void PlayLevel::Start()
 			};
 		StatePara.Stay = [=](float _Delta, GameEngineState* _Parent)
 			{
+				if (NewBell.get()->GetIsPress())
+				{
+					LevelState.ChangeState(PlayState::Working);
+					return;
+				}
+
+
 				if (0.0f <= DayLimit - WorkTime)
 				{
 					LevelState.ChangeState(PlayState::AfterWork);

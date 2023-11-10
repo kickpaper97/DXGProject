@@ -190,8 +190,9 @@ float4 CustomTextureShader_PS(PixelOutPut _Input) : SV_Target0
         ScreenPos.y = ScreenPos.y + PassPortPos.y;
         ScreenPos.x += PassportScale.x * 0.5f;
         ScreenPos.y += PassportScale.y * 0.5f;
-        
-        }
+        ScreenPos.x -= MaskPivot.x;
+        ScreenPos.y += MaskPivot.y;
+    }
     
    
     

@@ -3,6 +3,7 @@
 #include "NormalTraveler.h"
 #include "CustomSpriteRenderer.h"
 #include "Cursor.h"
+#include "InkApproved.h"
 
 PassPort::PassPort()
 {
@@ -20,13 +21,13 @@ void PassPort::SetOwner(std::shared_ptr<class NormalTraveler> _Owner)
 
 void PassPort::StampPassPort(PassPortChecked _Check, float4 _WorldStampPos)
 {
-	std::shared_ptr<CustomSpriteRenderer>StampSpriteRenderer=  std::dynamic_pointer_cast<CustomSpriteRenderer>(InnerRenderer->CreateChild<CustomSpriteRenderer>(0));
+	std::shared_ptr<CustomSpriteRenderer>StampSpriteRenderer=  std::dynamic_pointer_cast<CustomSpriteRenderer>(InnerRenderer->CreateChild<CustomSpriteRenderer>(10));
 	
 	//std::shared_ptr<CustomSpriteRenderer>StampSpriteRenderer = CreateComponent <CustomSpriteRenderer>();
 	StampSpriteRenderer->AutoSpriteSizeOn();
 	StampSpriteRenderer->SetAutoScaleRatio(2.0f);
 
-	//StampSpriteRenderer->SetMaskTexture(InnerRenderer->GetSprite()->GetName(),MaskMode::DynamicMask	);
+	StampSpriteRenderer->SetMaskTexture("Desk_Mask.png");
 	
 
 
@@ -34,7 +35,10 @@ void PassPort::StampPassPort(PassPortChecked _Check, float4 _WorldStampPos)
 	{
 	case PassPortChecked::Approved:
 
-		StampSpriteRenderer->SetSprite("InkApproved.png");
+	{
+		//std::shared_ptr<InkApproved> NewInk = CreateComponent<InkApproved>();
+
+	}
 		if (EntryCheck == PassPortChecked::Yet)
 		{
 			EntryCheck = PassPortChecked::Approved;
@@ -140,6 +144,8 @@ void PassPort::Update(float _Delta)
 
 	}
 
+
+	//this->Childs
 
 
 }

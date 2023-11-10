@@ -35,6 +35,8 @@ public:
 		return Info;
 	}
 
+	
+	std::shared_ptr<GameEngineSpriteRenderer> FaceRenderer = nullptr;
 
 protected:
 	void Start() override;
@@ -75,9 +77,9 @@ protected:
 	std::string_view CurState = "";
 
 private:
+	//std::shared_ptr<GameEngineSpriteRenderer> FaceRenderer = nullptr;
 	GameEngineRandom TimeRand;
 
-	std::shared_ptr<GameEngineSpriteRenderer> FaceRenderer = nullptr;
 	TravelerInfo Info;
 
 	float StandingChangeTime = 0.0f;

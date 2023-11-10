@@ -96,6 +96,9 @@
     <ClCompile Include="DayOffBackGround.cpp">
       <Filter>Global</Filter>
     </ClCompile>
+    <ClCompile Include="InkApproved.cpp">
+      <Filter>Global\Stamp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
@@ -194,6 +197,9 @@
     </ClInclude>
     <ClInclude Include="DayOffBackGround.h">
       <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="InkApproved.h">
+      <Filter>Global\Stamp</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

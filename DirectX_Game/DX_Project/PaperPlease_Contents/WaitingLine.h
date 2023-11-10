@@ -18,13 +18,13 @@ public:
 	void AddPerson();
 	void AddPerson(const float4& _Position);
 
-	std::shared_ptr<class PeopleBase> CallFirstPerson();
+	std::shared_ptr<class NormalTraveler> CallFirstPerson();
 
 
 protected:
 
 private:
-	std::list<std::shared_ptr<class PeopleBase>> Waitings;
+	std::list<std::shared_ptr<class NormalTraveler>> Waitings;
 
 };
 

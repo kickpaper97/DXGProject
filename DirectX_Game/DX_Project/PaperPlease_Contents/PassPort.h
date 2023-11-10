@@ -24,6 +24,11 @@ public:
 	}
 	void StampPassPort(PassPortChecked _Check, float4 _StampPos);
 
+	PassPortChecked GetEntryCheck() const
+	{
+		return EntryCheck;
+	}
+
 protected:
 	void Start() override;
 	void Update(float _Delta) override;
