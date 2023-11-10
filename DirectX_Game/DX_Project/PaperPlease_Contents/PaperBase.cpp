@@ -57,7 +57,7 @@ void PaperBase::SetPaperTexture(std::string_view _InnerName, std::string_view _O
 	OuterRenderer->Transform.TransformUpdate();
 	
 
-	if (MASKLINEPOS_X > Transform.GetWorldPosition().X)
+	if (MASKLINEPOS_X <= Transform.GetWorldPosition().X)
 	{
 
 			OuterRenderer->Off();
@@ -146,10 +146,7 @@ void PaperBase::Update(float _Delta)
 
 			}
 
-			/*if (-MASKLINEPOS_Y <= CursorPos.Y)
-			{
-				Transform.SetWorldPosition({ Transform.GetWorldPosition().X,-MASKLINEPOS_Y - Transform.GetLocalScale().hY() });
-			}*/
+			
 
 		}
 

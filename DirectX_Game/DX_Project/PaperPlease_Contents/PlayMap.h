@@ -20,10 +20,24 @@ public:
 
 	GameEngineColor GetColor(float4 _Pos, GameEngineColor _DefaultColor = {255, 255, 255, 255});
 
+	void BoothOn()
+	{
+		BoothWall->On();
+		Desk->On();
+	}
+
+	void BoothOff()
+	{
+		BoothWall->Off();
+		Desk->Off();
+	}
+
 protected:
 	void Start() override;
 
 private:
+	std::shared_ptr<GameEngineSpriteRenderer> BoothWall = nullptr;
+	std::shared_ptr<GameEngineSpriteRenderer> Desk = nullptr;
 
 };
 

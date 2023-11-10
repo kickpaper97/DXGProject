@@ -42,7 +42,7 @@ protected:
 private:
 	int CurDay=30;
 
-	
+	std::shared_ptr<class PlayMap> NewMap;
 	std::shared_ptr<class WaitingLine> NewLine = nullptr;
 	std::shared_ptr<class NextBell> NewBell = nullptr;
 

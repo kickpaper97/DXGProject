@@ -46,7 +46,7 @@ void PlayLevel::Start()
 	}
 
 	{
-		std::shared_ptr<PlayMap> NewMap = CreateActor<PlayMap>(GameObjectType::BackGround);
+		NewMap = CreateActor<PlayMap>(GameObjectType::BackGround);
 		NewBell = CreateActor <NextBell>(GameObjectType::Play);
 		NewBell->Transform.SetLocalPosition({ 348.0f,-168.0f });
 	}
@@ -75,7 +75,7 @@ void PlayLevel::Start()
 		CreateStateParameter StatePara;
 		StatePara.Start = [=](GameEngineState* _Parent)
 			{
-
+				NewMap->BoothOff();
 
 				//대기자 배치
 				{
@@ -134,7 +134,7 @@ void PlayLevel::Start()
 			{
 				
 				
-				if (5.0f <= LevelState.GetStateTime())
+				if (false==Player::MainPlayer->GetOuterSpriteRenderer()->IsUpdate())
 				{
 					LevelState.ChangeState(PlayState::BeforeWork);
 				}
@@ -150,6 +150,10 @@ void PlayLevel::Start()
 		CreateStateParameter StatePara;
 		StatePara.Start = [=](GameEngineState* _Parent)
 			{
+				NewMap->BoothOn();
+
+				std::shared_ptr<RuleBook> NewRuleBook = CreateActor<RuleBook>();
+
 				NewBell.get()->GetSpriteRenderer()->ChangeAnimation("NextBellAble");
 				NewBell->SetIsPress(false);
 			};
@@ -281,7 +285,6 @@ void PlayLevel::LevelStart(GameEngineLevel* _PrevLevel)
 {
 	std::shared_ptr<Cursor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
 
-	std::shared_ptr<RuleBook> NewRuleBook = CreateActor<RuleBook>();
 	std::shared_ptr<PassPort> Newpassport = CreateActor<PassPort>();
 
 

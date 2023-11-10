@@ -43,7 +43,7 @@ void Player::Start()
 	}
 
 	float4 HalfWindowScale = GameEngineCore::MainWindow.GetScale().Half();
-	Transform.SetLocalPosition({ 480.0f, -170.0f, -500.0f });
+	Transform.SetLocalPosition({ 450.0f, -170.0f, -500.0f });
 
 
 	OuterSpriteRenderer->LeftFlip();
@@ -61,7 +61,7 @@ void Player::Update(float _Delta)
 
 	if(OuterSpriteRenderer->IsUpdate() && 350.0f <= Transform.GetLocalPosition().X)
 	{
-		Transform.AddLocalPosition(float4::LEFT*10 * _Delta);
+		Transform.AddLocalPosition(float4::LEFT*20 * _Delta);
 		if (370.0f >= Transform.GetLocalPosition().X)
 		{
 			OuterSpriteRenderer->Off();

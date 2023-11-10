@@ -21,6 +21,10 @@ public:
 	Player& operator=(Player&& _Other) noexcept = delete;
 
 	void TestEvent(GameEngineRenderer* _Renderer);
+	std::shared_ptr<class GameEngineSpriteRenderer> GetOuterSpriteRenderer() const
+	{
+		return OuterSpriteRenderer;
+	}
 
 protected:
 	void Start() override;

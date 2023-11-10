@@ -33,7 +33,7 @@ void RuleBook::Start()
 
 	{
 		GameEngineInput::AddInputObject(this);
-		Transform.SetLocalPosition({ 500,-150 });
+		Transform.SetLocalPosition({ 200,-300 });
 
 	}
 	
@@ -43,6 +43,48 @@ void RuleBook::Start()
 void RuleBook::Update(float _Delta)
 {
 	PaperBase::Update(_Delta);
+
+	/*if (MASKLINEPOS_X>=Transform.GetWorldPosition().X && -MASKLINEPOS_Y <= Transform.GetWorldPosition().Y)
+	{
+		float OverPos = -MASKLINEPOS_Y - Transform.GetLocalScale().hY();
+		
+		Transform.SetWorldPosition({ Transform.GetWorldPosition().X,OverPos });
+	}*/
+
+	if (OuterRenderer->IsUpdate() && MASKLINEPOS_X >= Transform.GetWorldPosition().X &&- MASKLINEPOS_Y >= Transform.GetWorldPosition().Y)
+	{
+		if (dynamic_cast<GameEngineLevel*>(Parent))
+		{
+			if (Transform.GetLocalPosition().X > BoothPos.X)
+			{
+				Transform.AddLocalPosition(float4::LEFT*600*_Delta);
+				if (Transform.GetLocalPosition().X <= BoothPos.X)
+				{
+					Transform.SetLocalPosition({ BoothPos.X, Transform.GetLocalPosition().Y });
+				}
+			}
+			else if(Transform.GetLocalPosition().X < BoothPos.X)
+			{
+				Transform.AddLocalPosition(float4::RIGHT*600*_Delta);
+				if (Transform.GetLocalPosition().X >= BoothPos.X)
+				{
+					Transform.SetLocalPosition({ BoothPos.X ,Transform.GetLocalPosition().Y});
+				}
+			}
+
+			if (BoothPos.X == Transform.GetLocalPosition().X&&BoothPos.Y!=Transform.GetLocalPosition().Y)
+			{
+				Transform.AddLocalPosition(float4::DOWN * 600 * _Delta);
+				if (BoothPos.Y >= Transform.GetLocalPosition().Y)
+				{
+					Transform.SetLocalPosition(BoothPos);
+				}
+			}
+			
+		}
+
+	}
+
 
 	if (GameEngineInput::IsPress('A',this))
 	{

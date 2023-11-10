@@ -43,7 +43,7 @@ void PlayMap::Start()
 		}
 
 		{
-			std::shared_ptr<GameEngineSpriteRenderer> BoothWall = CreateComponent<GameEngineSpriteRenderer>(RenderOrder::BackGround);
+			BoothWall = CreateComponent<GameEngineSpriteRenderer>(RenderOrder::BackGround);
 			BoothWall->SetSprite("BoothWall.png");
 			BoothWall->SetRenderOrder(RenderOrder::BackGround);
 			//OutsideRenderer->Transform.SetLocalPosition(GameEngineCore::MainWindow.GetScale().Half());
@@ -56,10 +56,12 @@ void PlayMap::Start()
 			float4 HScale = Tex->GetScale();
 			HScale.Y *= -1.0f;
 			BoothWall->Transform.SetLocalPosition({HScale.X,HScale.Y+ OSRScale.Y*2.0f});
+
+			BoothWall->Off();
 		}
 
 		{
-			std::shared_ptr<GameEngineSpriteRenderer> Desk = CreateComponent<GameEngineSpriteRenderer>(RenderOrder::BackGround);
+			Desk = CreateComponent<GameEngineSpriteRenderer>(RenderOrder::BackGround);
 			Desk->SetSprite("Desk.png");
 			Desk->SetRenderOrder(RenderOrder::BackGround);
 			//OutsideRenderer->Transform.SetLocalPosition(GameEngineCore::MainWindow.GetScale().Half());
@@ -72,7 +74,7 @@ void PlayMap::Start()
 			float4 HScale = Tex->GetScale();
 			HScale.Y *= -1.0f;
 			Desk->Transform.SetLocalPosition({ HScale.X,HScale.Y + OSRScale.Y * 2.0f });
-
+			Desk->Off();
 		}
 
 		{
