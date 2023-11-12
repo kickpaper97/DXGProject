@@ -5,6 +5,7 @@
 
 #include "PlayMap.h"
 #include "NextBell.h"
+#include "Guard.h"
 
 #include "Cursor.h"
 
@@ -117,6 +118,39 @@ void PlayLevel::Start()
 					NewLine->AddPerson({ 11.70f,-152.60f });
 				}
 				// 군인 배치
+				{
+					std::shared_ptr<Guard>NewGaurd = CreateActor<Guard>();
+					NewGaurd->Transform.SetLocalPosition({257,0});
+					NewGaurd->SetDestinationPos({257,-135});
+
+				}
+				{
+					std::shared_ptr<Guard>NewGaurd = CreateActor<Guard>();
+					NewGaurd->Transform.SetLocalPosition({ 245,60 });
+					NewGaurd->SetDestinationPos({ 245,-40 });
+
+				}
+
+				{
+					std::shared_ptr<Guard>NewGaurd = CreateActor<Guard>();
+					NewGaurd->Transform.SetLocalPosition({ 972,5 });
+					NewGaurd->SetDestinationPos({ 888,-40 });
+
+				}
+
+				{
+					std::shared_ptr<Guard>NewGaurd = CreateActor<Guard>();
+					NewGaurd->Transform.SetLocalPosition({ 978,60 });
+					NewGaurd->SetDestinationPos({ 890,-90 });
+
+				}
+
+				{
+					std::shared_ptr<Guard>NewGaurd = CreateActor<Guard>();
+					NewGaurd->Transform.SetLocalPosition({ 965,100 });
+					NewGaurd->SetDestinationPos({ 888,-150 });
+
+				}
 
 				//Player 배치
 				std::shared_ptr<Player> NewPlayer = CreateActor<Player>();
@@ -138,6 +172,12 @@ void PlayLevel::Start()
 				{
 					LevelState.ChangeState(PlayState::BeforeWork);
 				}
+
+				if (GameEngineInput::IsDown('M', this))
+				{
+					LevelState.ChangeState(PlayState::BeforeWork);
+				}
+
 
 			};
 
@@ -166,12 +206,61 @@ void PlayLevel::Start()
 				if (NewBell.get()->GetIsPress())
 				{
 					
-					LevelState.ChangeState(PlayState::Working);
+					LevelState.ChangeState(PlayState::WalkingTravler);
 					return;
 				}
+
+				
+
 			};
 
 		LevelState.CreateState(PlayState::BeforeWork,StatePara);
+	}
+
+	//walkingtravler
+	{
+		CreateStateParameter StatePara;
+		StatePara.Start = [=](GameEngineState* _Parent)
+			{
+				CurTravler = NewLine->CallFirstPerson();
+				
+					
+			};
+		StatePara.End = [=](GameEngineState* _Parent)
+			{
+				
+
+
+
+
+			};
+		StatePara.Stay = [=](float _Delta, GameEngineState* _Parent)
+			{
+
+				
+					
+					CurTravler->WalkToBooth(_Delta);
+
+					if (CurTravler->Transform.GetLocalPosition().X >= BoothPos.X || CurTravler->Transform.GetLocalPosition().Y <= BoothPos.Y)
+					{
+						LevelState.ChangeState(PlayState::Working);
+						return;
+					}
+
+				
+
+
+				
+				if (0.0f >= DayLimit - WorkTime)
+				{
+					LevelState.ChangeState(PlayState::AfterWork);
+					return;
+				}
+
+				WorkTime += _Delta;
+			};
+
+		LevelState.CreateState(PlayState::WalkingTravler, StatePara);
 	}
 
 	//State::Working
@@ -179,12 +268,13 @@ void PlayLevel::Start()
 		CreateStateParameter StatePara;
 		StatePara.Start = [=](GameEngineState* _Parent)
 			{
-				std::shared_ptr<NormalTraveler>CurTravler = NewLine->CallFirstPerson();
-				CurTravler->FaceRenderer->On();
+				std::shared_ptr<PassPort> NewPassport = CreateActor<PassPort>();
+				NewPassport->SetOwner(CurTravler);
+				
 			};
 		StatePara.End = [=](GameEngineState* _Parent)
 			{
-				NewBell.get()->GetSpriteRenderer()->ChangeAnimation("NextBellAble");
+				
 
 
 				
@@ -192,7 +282,7 @@ void PlayLevel::Start()
 			};
 		StatePara.Stay = [=](float _Delta, GameEngineState* _Parent)
 			{
-				if (0.0f <= DayLimit - WorkTime)
+				if (0.0f >= DayLimit - WorkTime)
 				{
 					LevelState.ChangeState(PlayState::AfterWork);
 					return;
@@ -221,7 +311,7 @@ void PlayLevel::Start()
 			{
 				if (NewBell.get()->GetIsPress())
 				{
-					LevelState.ChangeState(PlayState::Working);
+					LevelState.ChangeState(PlayState::WalkingTravler);
 					return;
 				}
 
@@ -285,7 +375,7 @@ void PlayLevel::LevelStart(GameEngineLevel* _PrevLevel)
 {
 	std::shared_ptr<Cursor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
 
-	std::shared_ptr<PassPort> Newpassport = CreateActor<PassPort>();
+	
 
 
 	LevelState.ChangeState(PlayState::DayStart);

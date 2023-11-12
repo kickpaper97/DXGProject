@@ -35,8 +35,20 @@ public:
 		return Info;
 	}
 
+	void WalkToBooth(float _Delta);
+	
 	
 	std::shared_ptr<GameEngineSpriteRenderer> FaceRenderer = nullptr;
+
+	std::shared_ptr<GameEngineSpriteRenderer> GetFaceRenderer()
+	{
+		return FaceRenderer;
+	}
+
+	std::shared_ptr<GameEngineSpriteRenderer> GetOuterRenderer()
+	{
+		return OuterRenderer;
+	}
 
 protected:
 	void Start() override;
@@ -48,11 +60,6 @@ protected:
 	void RandomSetTravelerInfo();
 	void RandomSetFace();
 
-
-	std::shared_ptr<GameEngineSpriteRenderer> GetFaceRenderer()
-	{
-		return FaceRenderer;
-	}
 
 
 	void WaitingStandStart();

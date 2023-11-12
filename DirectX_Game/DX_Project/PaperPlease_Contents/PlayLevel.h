@@ -8,6 +8,7 @@ enum class PlayState
 	BeforeWork,
 	Working,
 	Event,
+	WalkingTravler,
 	Waiting,
 	AfterWork,
 };
@@ -41,6 +42,7 @@ protected:
 
 private:
 	int CurDay=30;
+	std::shared_ptr<class NormalTraveler>CurTravler = nullptr;
 
 	std::shared_ptr<class PlayMap> NewMap;
 	std::shared_ptr<class WaitingLine> NewLine = nullptr;

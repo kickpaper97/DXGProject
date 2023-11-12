@@ -99,6 +99,9 @@
     <ClCompile Include="InkApproved.cpp">
       <Filter>Global\Stamp</Filter>
     </ClCompile>
+    <ClCompile Include="Guard.cpp">
+      <Filter>Global\People</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
@@ -200,6 +203,9 @@
     </ClInclude>
     <ClInclude Include="InkApproved.h">
       <Filter>Global\Stamp</Filter>
+    </ClInclude>
+    <ClInclude Include="Guard.h">
+      <Filter>Global\People</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

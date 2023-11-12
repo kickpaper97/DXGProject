@@ -22,6 +22,6 @@ private:
 	std::vector<std::shared_ptr<class GameEngineSprite>> Pages;
 	
 
-	float4 BoothPos = { 252,-591 };
+	float4 AtBoothPos = float4{ 252,-591 };
 };
 

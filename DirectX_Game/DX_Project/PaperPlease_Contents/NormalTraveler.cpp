@@ -15,6 +15,18 @@ NormalTraveler::~NormalTraveler()
 
 
 
+void NormalTraveler::WalkToBooth(float _Delta)
+{
+
+	if (!OuterRenderer->IsCurAnimation("NormalTravelerHorizonWalk"))
+	{
+		OuterRenderer->ChangeAnimation("NormalTravelerHorizonWalk");
+	}
+	float4 curPos = Transform.GetLocalPosition();
+	float4 chek = (BoothPos - curPos).NormalizeReturn();
+	Transform.AddLocalPosition(chek *20* _Delta);
+}
+
 void NormalTraveler::Start()
 {
 

@@ -55,29 +55,29 @@ void RuleBook::Update(float _Delta)
 	{
 		if (dynamic_cast<GameEngineLevel*>(Parent))
 		{
-			if (Transform.GetLocalPosition().X > BoothPos.X)
+			if (Transform.GetLocalPosition().X > AtBoothPos.X)
 			{
 				Transform.AddLocalPosition(float4::LEFT*600*_Delta);
-				if (Transform.GetLocalPosition().X <= BoothPos.X)
+				if (Transform.GetLocalPosition().X <= AtBoothPos.X)
 				{
-					Transform.SetLocalPosition({ BoothPos.X, Transform.GetLocalPosition().Y });
+					Transform.SetLocalPosition({ AtBoothPos.X, Transform.GetLocalPosition().Y });
 				}
 			}
-			else if(Transform.GetLocalPosition().X < BoothPos.X)
+			else if(Transform.GetLocalPosition().X < AtBoothPos.X)
 			{
 				Transform.AddLocalPosition(float4::RIGHT*600*_Delta);
-				if (Transform.GetLocalPosition().X >= BoothPos.X)
+				if (Transform.GetLocalPosition().X >= AtBoothPos.X)
 				{
-					Transform.SetLocalPosition({ BoothPos.X ,Transform.GetLocalPosition().Y});
+					Transform.SetLocalPosition({ AtBoothPos.X ,Transform.GetLocalPosition().Y});
 				}
 			}
 
-			if (BoothPos.X == Transform.GetLocalPosition().X&&BoothPos.Y!=Transform.GetLocalPosition().Y)
+			if (AtBoothPos.X == Transform.GetLocalPosition().X&&AtBoothPos.Y!=Transform.GetLocalPosition().Y)
 			{
 				Transform.AddLocalPosition(float4::DOWN * 600 * _Delta);
-				if (BoothPos.Y >= Transform.GetLocalPosition().Y)
+				if (AtBoothPos.Y >= Transform.GetLocalPosition().Y)
 				{
-					Transform.SetLocalPosition(BoothPos);
+					Transform.SetLocalPosition(AtBoothPos);
 				}
 			}
 			

@@ -3,7 +3,12 @@
 #define MASKLINEPOS_X  356.0f
 #define MASKLINEPOS_Y 206.0f
 
+
+
 //#define MASKLINEPOS_Y  434.0f
+
+
+#define BoothPos float4{370.0f,-170.0f}
 
 #define DayLimit 300.0f
 

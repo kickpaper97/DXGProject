@@ -198,6 +198,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="Guard.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="InkApproved.cpp">
       <SubType>
       </SubType>
@@ -314,6 +318,10 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="DayOffLevel.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Guard.h">
       <SubType>
       </SubType>
     </ClInclude>
