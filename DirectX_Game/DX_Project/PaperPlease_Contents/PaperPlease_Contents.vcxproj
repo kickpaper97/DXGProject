@@ -176,6 +176,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="Car.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="ContentsCore.cpp" />
     <ClCompile Include="ControlManager.cpp">
       <SubType>
@@ -296,6 +300,10 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="BasicButton.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Car.h">
       <SubType>
       </SubType>
     </ClInclude>

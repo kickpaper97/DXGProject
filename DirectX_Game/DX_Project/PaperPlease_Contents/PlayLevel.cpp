@@ -6,6 +6,7 @@
 #include "PlayMap.h"
 #include "NextBell.h"
 #include "Guard.h"
+#include "Car.h"
 
 #include "Cursor.h"
 
@@ -42,9 +43,7 @@ void PlayLevel::Start()
 
 
 
-	{
-		
-	}
+
 
 	{
 		NewMap = CreateActor<PlayMap>(GameObjectType::BackGround);
@@ -150,6 +149,10 @@ void PlayLevel::Start()
 					NewGaurd->Transform.SetLocalPosition({ 965,100 });
 					NewGaurd->SetDestinationPos({ 888,-150 });
 
+				}
+
+				{
+					std::shared_ptr<Car> NewCar = CreateActor<Car>();
 				}
 
 				//Player ¹èÄ¡
