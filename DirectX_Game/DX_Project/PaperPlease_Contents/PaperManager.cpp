@@ -19,7 +19,14 @@ void PaperManager::ReleasePaper(std::shared_ptr<class PaperBase> _Paper)
 	std::vector<std::shared_ptr<PaperBase>>::iterator it = std::find(Papers.begin(), Papers.end(), _Paper);
 	Papers.erase(it);
 	_Paper->Death();
+	if (Papers.empty())
+	{
+		IsPapersEmpty = true;
+	}
+
 }
+
+
 
 int PaperManager::FindIndex(std::shared_ptr<class PaperBase> _Paper)
 {
