@@ -81,7 +81,7 @@ void PaperBase::SetPaperTexture(std::string_view _InnerName, std::string_view _O
 	GameEngineRandom RotationRand;
 	RotationRand.SetSeed(reinterpret_cast<long long>( this));
 	
-	OuterPaperRotation = { 0.0f,0.0fRotationRand.RandomFloat(-18.0f, 18.0f) };
+	OuterPaperRotation = { 0.0f,0.0f,RotationRand.RandomFloat(-18.0f, 18.0f) };
 	OuterRenderer->Transform.SetLocalRotation(OuterPaperRotation);
 	
 
@@ -115,6 +115,8 @@ void PaperBase::Update(float _Delta)
 
 	if(Parent==Cursor::MainCursor)
 	{
+	
+
 		float4 Position = Transform.GetWorldPosition();
 		float4 CursorPos = Cursor::MainCursor->Transform.GetLocalPosition();
 
@@ -122,6 +124,7 @@ void PaperBase::Update(float _Delta)
 		{
 			
 			float4 check = (OuterRenderer->GetImageTransform().GetLocalScale() + Transform.GetLocalPosition().Y);
+			float ck = -MASKLINEPOS_Y - Parent->Transform.GetLocalPosition().Y - OuterRenderer->GetImageTransform().GetLocalScale().hY();
 			float4 OverPos = { Transform.GetLocalPosition().X,-MASKLINEPOS_Y- Parent->Transform.GetLocalPosition().Y- OuterRenderer->GetImageTransform().GetLocalScale().hY()};
 			Transform.SetLocalPosition(OverPos);
 			

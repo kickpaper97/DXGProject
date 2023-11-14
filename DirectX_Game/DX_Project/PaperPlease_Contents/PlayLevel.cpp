@@ -15,6 +15,7 @@
 #include "NormalTraveler.h"
 
 #include "Player.h"
+#include "PaperManager.h"
 #include "PassPort.h"
 #include "RuleBook.h"
 
@@ -274,6 +275,7 @@ void PlayLevel::Start()
 			{
 				CurTravler->ChanageState(TravelerState::TurnStart);
 				std::shared_ptr<PassPort> NewPassport = CreateActor<PassPort>();
+				NewPaperManger.push_back(NewPassport->GetDynamic_Cast_This<PaperBase>());
 				NewPassport->SetOwner(CurTravler);
 				
 			};

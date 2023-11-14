@@ -32,9 +32,6 @@
     <ClCompile Include="LevelBase.cpp">
       <Filter>Level</Filter>
     </ClCompile>
-    <ClCompile Include="PaperManager.cpp">
-      <Filter>Paper</Filter>
-    </ClCompile>
     <ClCompile Include="PaperBase.cpp">
       <Filter>Paper</Filter>
     </ClCompile>
@@ -103,6 +100,9 @@
       <Filter>Global\People</Filter>
     </ClCompile>
     <ClCompile Include="Car.cpp" />
+    <ClCompile Include="PaperManager.cpp">
+      <Filter>Paper</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
@@ -141,9 +141,6 @@
     </ClInclude>
     <ClInclude Include="LevelBase.h">
       <Filter>Level</Filter>
-    </ClInclude>
-    <ClInclude Include="PaperManager.h">
-      <Filter>Paper</Filter>
     </ClInclude>
     <ClInclude Include="PaperBase.h">
       <Filter>Paper</Filter>
@@ -209,6 +206,9 @@
       <Filter>Global\People</Filter>
     </ClInclude>
     <ClInclude Include="Car.h" />
+    <ClInclude Include="PaperManager.h">
+      <Filter>Paper</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Level">

@@ -50,6 +50,9 @@ private:
 
 	std::shared_ptr<GameEngineActor> NewStamp = nullptr;
 
+
+	//std::vector<std::shared_ptr<class PaperBase>>NewPaperManger;
+
 	float WorkTime=0;
 	GameEngineState LevelState;
 
