@@ -56,6 +56,7 @@ void PlayLevel::Start()
 		NewApprovedStamp->SetParent(NewStamp);
 		std::shared_ptr<GameEngineActor>	NewDeniedStamp = CreateActor<StampDenied>();
 		NewDeniedStamp->SetParent(NewStamp);
+		NewStamp->Off();
 
 	}
 
@@ -271,6 +272,7 @@ void PlayLevel::Start()
 		CreateStateParameter StatePara;
 		StatePara.Start = [=](GameEngineState* _Parent)
 			{
+				CurTravler->FaceRenderer->On();
 				std::shared_ptr<PassPort> NewPassport = CreateActor<PassPort>();
 				NewPassport->SetOwner(CurTravler);
 				

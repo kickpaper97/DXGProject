@@ -96,11 +96,23 @@ void PaperBase::Start()
 
 void PaperBase::Update(float _Delta)
 {
+	
+
+
 
 	if(Parent==Cursor::MainCursor)
 	{
 		float4 Position = Transform.GetWorldPosition();
 		float4 CursorPos = Cursor::MainCursor->Transform.GetLocalPosition();
+
+		if (MASKLINEPOS_X >= Transform.GetWorldPosition().X && -MASKLINEPOS_Y <= Transform.GetWorldPosition().Y + OuterRenderer->GetImageTransform().GetLocalScale().hY() )
+		{
+			
+			float4 check = (OuterRenderer->GetImageTransform().GetLocalScale() + Transform.GetLocalPosition().Y);
+			float4 OverPos = { Transform.GetLocalPosition().X,-MASKLINEPOS_Y- Parent->Transform.GetLocalPosition().Y- OuterRenderer->GetImageTransform().GetLocalScale().hY()};
+			Transform.SetLocalPosition(OverPos);
+			
+		}
 
 
 		if (MASKLINEPOS_X<= CursorPos.X)
@@ -125,11 +137,11 @@ void PaperBase::Update(float _Delta)
 		else 
 		{
 			
-			if (-MASKLINEPOS_Y <= Transform.GetWorldPosition().Y)
+		/*	if (-MASKLINEPOS_Y <= Transform.GetWorldPosition().Y)
 			{
 				
 				return;
-			}
+			}*/
 
 
 
@@ -151,4 +163,13 @@ void PaperBase::Update(float _Delta)
 		}
 
 	}
+
+
+
+	
+	
+		
+	
+
+
 }
