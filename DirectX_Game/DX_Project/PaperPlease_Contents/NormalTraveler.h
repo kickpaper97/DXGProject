@@ -50,6 +50,9 @@ public:
 		return OuterRenderer;
 	}
 
+	void ChanageState(TravelerState _State);
+
+
 protected:
 	void Start() override;
 	void Update(float _Delta) override;
@@ -77,7 +80,6 @@ protected:
 
 
 	void StateUpdate(float _Delta);
-	void ChanageState(TravelerState _State);
 	void ChangeAnimationState(std::string_view _State);
 
 	TravelerState State = TravelerState::Max;

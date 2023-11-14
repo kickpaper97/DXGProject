@@ -23,8 +23,8 @@ void Player::Start()
 	}
 
 	{
-		OuterSpriteRenderer = CreateComponent<GameEngineSpriteRenderer>(RenderOrder::People);
-		OuterSpriteRenderer->SetRenderOrder(RenderOrder::People);
+		OuterSpriteRenderer = CreateComponent<GameEngineSpriteRenderer>(RenderOrder::NormalTraveler);
+		OuterSpriteRenderer->SetRenderOrder(RenderOrder::NormalTraveler);
 		OuterSpriteRenderer->AutoSpriteSizeOn();
 		OuterSpriteRenderer->SetAutoScaleRatio(2.0f);
 		OuterSpriteRenderer->CreateAnimation("NormalTravelerHorizonWalk", "NormalTravelerAni.Png", 0.1f, 40, 43, true);
