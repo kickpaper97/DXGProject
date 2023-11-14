@@ -126,6 +126,7 @@ void PassPort::Start()
 
 	OuterRenderer->SetAutoScaleRatio(1.0f);
 	
+	
 	GameEngineInput::AddInputObject(this);
 
 

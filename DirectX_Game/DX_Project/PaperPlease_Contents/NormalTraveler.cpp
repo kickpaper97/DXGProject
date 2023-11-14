@@ -23,7 +23,7 @@ void NormalTraveler::WalkToBooth(float _Delta)
 		OuterRenderer->ChangeAnimation("NormalTravelerHorizonWalk");
 	}
 	float4 curPos = Transform.GetLocalPosition();
-	float4 chek = (BoothPos - curPos).NormalizeReturn();
+	float4 chek = ((BoothPos - float4{10,0}) - curPos).NormalizeReturn();
 	Transform.AddLocalPosition(chek *20* _Delta);
 }
 
@@ -51,8 +51,7 @@ void NormalTraveler::Start()
 
 	}
 
-	OuterRenderer = CreateComponent<GameEngineSpriteRenderer>(RenderOrder::People);
-
+	OuterRenderer = CreateComponent<GameEngineSpriteRenderer>(RenderOrder::NormalTraveler);
 
 
 	{
@@ -86,7 +85,7 @@ void NormalTraveler::Start()
 		}
 
 		OuterRenderer->GetImageTransform().SetLocalScale({ 64.0f,64.0f });
-		OuterRenderer->SetRenderOrder(RenderOrder::People);
+		OuterRenderer->SetRenderOrder(RenderOrder::NormalTraveler);
 
 		ChanageState(TravelerState::WaitingStand);
 	}
@@ -264,6 +263,9 @@ void NormalTraveler::WaitingMoveStart()
 
 void NormalTraveler::TurnStartStart()
 {
+	FaceRenderer->On();
+	FaceRenderer->Transform.SetWorldPosition({ -10,-400 });
+
 }
 
 void NormalTraveler::TurnStayStart()

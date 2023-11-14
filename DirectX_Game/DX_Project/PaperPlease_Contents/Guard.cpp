@@ -21,6 +21,7 @@ void Guard::Start()
 	}
 
 	OuterRenderer = CreateComponent<GameEngineSpriteRenderer>();
+	OuterRenderer->SetRenderOrder(RenderOrder::Guard);
 	
 	PeopleBase::Start();
 	OuterRenderer->CreateAnimation("GuardStand1", "GuardAni.Png", 1.0f, 12, 13, true);
@@ -31,6 +32,8 @@ void Guard::Start()
 	OuterRenderer->ChangeAnimation("VerticalMove");
 	OuterRenderer->GetImageTransform().SetLocalScale({ 64.0f,64.0f });
 	OuterRenderer->LeftFlip();
+
+
 
 	GameEngineRandom StandRand;
 	StandRand.SetSeed(reinterpret_cast<long long>(this));

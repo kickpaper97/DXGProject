@@ -245,7 +245,7 @@ void PlayLevel::Start()
 					
 					CurTravler->WalkToBooth(_Delta);
 
-					if (CurTravler->Transform.GetLocalPosition().X >= BoothPos.X || CurTravler->Transform.GetLocalPosition().Y <= BoothPos.Y)
+					if (CurTravler->Transform.GetLocalPosition().X >= BoothPos.X-10 || CurTravler->Transform.GetLocalPosition().Y <= BoothPos.Y)
 					{
 						LevelState.ChangeState(PlayState::Working);
 						return;
@@ -272,7 +272,7 @@ void PlayLevel::Start()
 		CreateStateParameter StatePara;
 		StatePara.Start = [=](GameEngineState* _Parent)
 			{
-				CurTravler->FaceRenderer->On();
+				CurTravler->ChanageState(TravelerState::TurnStart);
 				std::shared_ptr<PassPort> NewPassport = CreateActor<PassPort>();
 				NewPassport->SetOwner(CurTravler);
 				
@@ -280,7 +280,7 @@ void PlayLevel::Start()
 		StatePara.End = [=](GameEngineState* _Parent)
 			{
 				
-
+				CurTravler->ChanageState(TravelerState::TurnEnd);
 
 				
 

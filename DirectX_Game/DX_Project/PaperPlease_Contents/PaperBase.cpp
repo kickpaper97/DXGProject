@@ -75,9 +75,22 @@ void PaperBase::SetPaperTexture(std::string_view _InnerName, std::string_view _O
 			OuterRenderer->On();
 			float4 SpriteRenderScale = OuterRenderer->GetImageTransform().GetLocalScale();
 			Collision->Transform.SetLocalScale(SpriteRenderScale);
-
+			Collision->Transform.SetLocalRotation(OuterPaperRotation);
 	}
 
+	GameEngineRandom RotationRand;
+	RotationRand.SetSeed(reinterpret_cast<long long>( this));
+	
+	OuterPaperRotation = { 0.0f,0.0fRotationRand.RandomFloat(-18.0f, 18.0f) };
+	OuterRenderer->Transform.SetLocalRotation(OuterPaperRotation);
+	
+
+}
+
+void PaperBase::SetOuterPaperRotation(const float4& _Rotation)
+{
+	OuterPaperRotation = _Rotation;
+	OuterRenderer->Transform.SetLocalRotation(OuterPaperRotation);
 }
 
 
@@ -90,7 +103,7 @@ void PaperBase::Start()
 	
 	{
 		Collision = CreateComponent<GameEngineCollision>(CollisionOrder::Papers);
-		Collision->SetCollisionType(ColType::AABBBOX2D);
+		Collision->SetCollisionType(ColType::OBBBOX2D);
 	}
 }
 
@@ -129,7 +142,7 @@ void PaperBase::Update(float _Delta)
 				Transform.SetLocalPosition(InnerLocalPos);
 				float4 SpriteRenderScale = InnerRenderer->GetImageTransform().GetLocalScale();
 				Collision->Transform.SetLocalScale(SpriteRenderScale );
-				
+				Collision->Transform.SetLocalRotation(float4::ZERO);
 				
 			}
 		}
@@ -154,7 +167,7 @@ void PaperBase::Update(float _Delta)
 				Transform.SetLocalPosition(float4::ZERO);
 				float4 SpriteRenderScale = OuterRenderer->GetImageTransform().GetLocalScale();
 				Collision->Transform.SetLocalScale(SpriteRenderScale );
-
+				Collision->Transform.SetLocalRotation(OuterPaperRotation);
 
 			}
 
