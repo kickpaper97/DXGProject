@@ -57,7 +57,7 @@ void PlayMap::Start()
 			HScale.Y *= -1.0f;
 			BoothWall->Transform.SetLocalPosition({HScale.X,HScale.Y+ OSRScale.Y*2.0f});
 
-			BoothWall->Off();
+			
 		}
 
 		{
@@ -74,7 +74,7 @@ void PlayMap::Start()
 			float4 HScale = Tex->GetScale();
 			HScale.Y *= -1.0f;
 			Desk->Transform.SetLocalPosition({ HScale.X,HScale.Y + OSRScale.Y * 2.0f });
-			Desk->Off();
+			
 		}
 
 		{

@@ -29,7 +29,7 @@ private:
 
 	float4 PosOn;
 	float4 PosOff;
-	
+	bool IsMoving;
 
 	GameEngineState State;
 };

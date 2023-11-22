@@ -14,9 +14,6 @@
     <ClCompile Include="PlayLevel.cpp">
       <Filter>Level\DAY</Filter>
     </ClCompile>
-    <ClCompile Include="PlayMap.cpp">
-      <Filter>Global</Filter>
-    </ClCompile>
     <ClCompile Include="BasicButton.cpp">
       <Filter>Global\Button</Filter>
     </ClCompile>
@@ -41,7 +38,6 @@
     <ClCompile Include="RuleBook.cpp">
       <Filter>Paper\RuleBook</Filter>
     </ClCompile>
-    <ClCompile Include="BasicActor.cpp" />
     <ClCompile Include="WaitingLine.cpp">
       <Filter>Global\People</Filter>
     </ClCompile>
@@ -62,12 +58,6 @@
     </ClCompile>
     <ClCompile Include="CustomSpriteRenderer.cpp">
       <Filter>EngineCustom</Filter>
-    </ClCompile>
-    <ClCompile Include="IntroPicture.cpp">
-      <Filter>Global</Filter>
-    </ClCompile>
-    <ClCompile Include="NextBell.cpp">
-      <Filter>Global</Filter>
     </ClCompile>
     <ClCompile Include="Player.cpp">
       <Filter>Global\People</Filter>
@@ -90,18 +80,35 @@
     <ClCompile Include="Stamp.cpp">
       <Filter>Global\Stamp</Filter>
     </ClCompile>
-    <ClCompile Include="DayOffBackGround.cpp">
-      <Filter>Global</Filter>
-    </ClCompile>
     <ClCompile Include="InkApproved.cpp">
       <Filter>Global\Stamp</Filter>
     </ClCompile>
     <ClCompile Include="Guard.cpp">
       <Filter>Global\People</Filter>
     </ClCompile>
-    <ClCompile Include="Car.cpp" />
     <ClCompile Include="PaperManager.cpp">
       <Filter>Paper</Filter>
+    </ClCompile>
+    <ClCompile Include="Car.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicActor.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayMap.cpp">
+      <Filter>Global\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="NextBell.cpp">
+      <Filter>Global\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroPicture.cpp">
+      <Filter>Global\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="DayOffBackGround.cpp">
+      <Filter>Global\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="BoothDoor.cpp">
+      <Filter>Global\Stage</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -120,9 +127,6 @@
     </ClInclude>
     <ClInclude Include="PlayLevel.h">
       <Filter>Level\DAY</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayMap.h">
-      <Filter>Global</Filter>
     </ClInclude>
     <ClInclude Include="BasicButton.h">
       <Filter>Global\Button</Filter>
@@ -169,12 +173,6 @@
     <ClInclude Include="CustomSpriteRenderer.h">
       <Filter>EngineCustom</Filter>
     </ClInclude>
-    <ClInclude Include="IntroPicture.h">
-      <Filter>Global</Filter>
-    </ClInclude>
-    <ClInclude Include="NextBell.h">
-      <Filter>Global</Filter>
-    </ClInclude>
     <ClInclude Include="Player.h">
       <Filter>Global\People</Filter>
     </ClInclude>
@@ -196,18 +194,32 @@
     <ClInclude Include="Stamp.h">
       <Filter>Global\Stamp</Filter>
     </ClInclude>
-    <ClInclude Include="DayOffBackGround.h">
-      <Filter>Global</Filter>
-    </ClInclude>
     <ClInclude Include="InkApproved.h">
       <Filter>Global\Stamp</Filter>
     </ClInclude>
     <ClInclude Include="Guard.h">
       <Filter>Global\People</Filter>
     </ClInclude>
-    <ClInclude Include="Car.h" />
     <ClInclude Include="PaperManager.h">
       <Filter>Paper</Filter>
+    </ClInclude>
+    <ClInclude Include="Car.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayMap.h">
+      <Filter>Global\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="NextBell.h">
+      <Filter>Global\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroPicture.h">
+      <Filter>Global\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="DayOffBackGround.h">
+      <Filter>Global\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="BoothDoor.h">
+      <Filter>Global\Stage</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -258,6 +270,9 @@
     </Filter>
     <Filter Include="Shader">
       <UniqueIdentifier>{ee200901-4e2d-4748-b6e1-e08b3167f39b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global\Stage">
+      <UniqueIdentifier>{1cfe47e4-215a-46cf-a51b-d879d921f0f7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

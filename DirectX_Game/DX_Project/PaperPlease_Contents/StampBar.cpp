@@ -82,7 +82,8 @@ void StampBar::Start()
 
 	}
 
-	
+	PosOff = { 1400,-500 };
+	PosOn = { 1000, -500 };
 
 	//ON
 	{
@@ -90,11 +91,13 @@ void StampBar::Start()
 		CreateStateParameter StatePara;
 		StatePara.Start = [=](GameEngineState* _Parent)
 			{
-
+				float4 MidlePos = { 1200, -500 };
+				IsMoving = true;
 			};
 		StatePara.Stay = [=](float _Delta,GameEngineState* _Parent)
 			{
-
+				
+				
 			};
 		StatePara.End = [=](GameEngineState* _Parent)
 			{
@@ -109,11 +112,11 @@ void StampBar::Start()
 		CreateStateParameter StatePara;
 		StatePara.Start = [=](GameEngineState* _Parent)
 			{
-
+				IsMoving = true;
 			};
 		StatePara.Stay = [=](float _Delta, GameEngineState* _Parent)
 			{
-
+				
 			};
 		StatePara.End = [=](GameEngineState* _Parent)
 			{
@@ -124,7 +127,6 @@ void StampBar::Start()
 
 	State.ChangeState(StampBarState::OFF);
 
-	PosOff = { 1400,-500 };
 	
 
 	Transform.SetLocalPosition(PosOff);
@@ -141,7 +143,19 @@ void StampBar::Update(float _Delta)
 		EventParameter Para;
 		Para.Stay = [=](GameEngineCollision* _This, class GameEngineCollision* _Other)
 			{
-
+				if (GameEngineInput::IsDown(VK_LBUTTON, this))
+				{
+					if (Transform.GetLocalPosition() == PosOn&&false==IsMoving)
+					{
+						State.ChangeState(StampBarState::OFF);
+						return;
+					}
+					else if(Transform.GetLocalPosition() == PosOff && false == IsMoving)
+					{
+						State.ChangeState(StampBarState::ON);
+						return;
+					}
+				}
 			};
 		
 	}

@@ -102,7 +102,11 @@ void NormalTraveler::Update(float _Delta)
 
 
 
-
+	if (FaceRenderer->IsUpdate() == true)
+	{
+		
+		
+	}
 
 
 
@@ -264,7 +268,8 @@ void NormalTraveler::WaitingMoveStart()
 void NormalTraveler::TurnStartStart()
 {
 	FaceRenderer->On();
-	FaceRenderer->Transform.SetWorldPosition({ -10,-400 });
+	FaceRenderer->Transform.SetWorldPosition({ 20,-350 });
+	
 
 }
 

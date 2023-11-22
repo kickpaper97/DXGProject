@@ -92,5 +92,5 @@ private:
 	TravelerInfo Info;
 
 	float StandingChangeTime = 0.0f;
-
+	float pop = 0.0f;
 };

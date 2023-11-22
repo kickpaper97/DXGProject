@@ -2,7 +2,10 @@
 #include "Cursor.h"
 
 
+
 #include "BasicActor.h"
+
+#include "PaperBase.h"
 #include<GameEnginePlatform/GameEngineWindow.h>
 #include <GameEngineCore/GameEngineCollision.h>
 
@@ -87,40 +90,49 @@ void Cursor::Update(float _Delta)
 		Para.Stay = [=](class GameEngineCollision* _This, class GameEngineCollision* _Other)
 			{
 
-
-				if (GameEngineInput::IsDown(VK_LBUTTON, this))
-				{
-					float4 PrevPos = _Other->GetActor()->Transform.GetWorldPosition();
-
-					_Other->GetActor()->ChangeParent( dynamic_cast<GameEngineObject*>(this),0);
-					_Other->GetActor()->Transform.SetLocalPosition(PrevPos - this->Transform.GetLocalPosition());
-				
-				
-
-				}
-
-				if (GameEngineInput::IsPress(VK_LBUTTON,this))
+				if (nullptr!=_Other->GetActor()->GetDynamic_Cast_This<PaperBase>())
 				{
 
-					
-					//_Other->GetActor()->Transform.AddLocalPosition(CusorPos - PrivCursorPos);
-
-				}
-
-				GameEngineObject* paobj =_Other->GetActor()->GetParentObject();
-				
-					if (paobj ==this&&GameEngineInput::IsFree(VK_LBUTTON, this))
+					if (GameEngineInput::IsDown(VK_LBUTTON, this))
 					{
 
-						
-						_Other->GetActor()->ChangeParent(dynamic_cast<GameEngineObject*>(GetLevel()),0);
-						
-						float4 PrevLocalPos = _Other->GetActor()->Transform.GetLocalPosition();
-						_Other->GetActor()->Transform.SetLocalPosition(this->Transform.GetLocalPosition()+PrevLocalPos);
-						
-					}
-			
 
+
+						float4 PrevPos = _Other->GetActor()->Transform.GetWorldPosition();
+
+						_Other->GetActor()->ChangeParent(dynamic_cast<GameEngineObject*>(this), 0);
+						_Other->GetActor()->Transform.SetLocalPosition(PrevPos - this->Transform.GetLocalPosition());
+
+
+
+					}
+
+					if (GameEngineInput::IsPress(VK_LBUTTON, this))
+					{
+
+
+						//_Other->GetActor()->Transform.AddLocalPosition(CusorPos - PrivCursorPos);
+
+					}
+
+					GameEngineObject* paobj = _Other->GetActor()->GetParentObject();
+
+					if (paobj == this && GameEngineInput::IsFree(VK_LBUTTON, this))
+					{
+
+
+						_Other->GetActor()->ChangeParent(dynamic_cast<GameEngineObject*>(GetLevel()), 0);
+
+						float4 PrevLocalPos = _Other->GetActor()->Transform.GetLocalPosition();
+						_Other->GetActor()->Transform.SetLocalPosition(this->Transform.GetLocalPosition() + PrevLocalPos);
+
+					}
+
+
+				}
+				
+				
+				
 		
 
 			};

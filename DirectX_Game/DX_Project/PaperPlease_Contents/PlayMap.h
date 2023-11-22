@@ -20,17 +20,7 @@ public:
 
 	GameEngineColor GetColor(float4 _Pos, GameEngineColor _DefaultColor = {255, 255, 255, 255});
 
-	void BoothOn()
-	{
-		BoothWall->On();
-		Desk->On();
-	}
 
-	void BoothOff()
-	{
-		BoothWall->Off();
-		Desk->Off();
-	}
 
 protected:
 	void Start() override;

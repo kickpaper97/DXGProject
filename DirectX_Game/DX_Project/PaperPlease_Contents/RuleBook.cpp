@@ -33,7 +33,7 @@ void RuleBook::Start()
 
 	{
 		GameEngineInput::AddInputObject(this);
-		Transform.SetLocalPosition({ 200,-300 });
+		Transform.SetLocalPosition({ 252,-591 });
 
 	}
 	

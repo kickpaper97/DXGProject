@@ -3,7 +3,9 @@
 
 #include "BasicActor.h"
 
+
 #include "PlayMap.h"
+#include "BoothDoor.h"
 #include "NextBell.h"
 #include "Guard.h"
 #include "Car.h"
@@ -50,6 +52,8 @@ void PlayLevel::Start()
 		NewMap = CreateActor<PlayMap>(GameObjectType::BackGround);
 		NewBell = CreateActor <NextBell>(GameObjectType::Play);
 		NewBell->Transform.SetLocalPosition({ 348.0f,-168.0f });
+
+		
 	}
 	{
 		NewStamp  = CreateActor<StampBar>(GameObjectType::Stamp);
@@ -77,7 +81,7 @@ void PlayLevel::Start()
 		CreateStateParameter StatePara;
 		StatePara.Start = [=](GameEngineState* _Parent)
 			{
-				NewMap->BoothOff();
+				
 
 				//대기자 배치
 				{
@@ -162,6 +166,8 @@ void PlayLevel::Start()
 
 				//
 
+				std::shared_ptr<BoothDoor> NewBoothDoor = CreateActor<BoothDoor>();
+
 				WorkTime = 0;
 
 			};
@@ -195,12 +201,14 @@ void PlayLevel::Start()
 		CreateStateParameter StatePara;
 		StatePara.Start = [=](GameEngineState* _Parent)
 			{
-				NewMap->BoothOn();
+				
 
 				std::shared_ptr<RuleBook> NewRuleBook = CreateActor<RuleBook>();
 
 				NewBell.get()->GetSpriteRenderer()->ChangeAnimation("NextBellAble");
 				NewBell->SetIsPress(false);
+
+				
 			};
 		StatePara.End= [=](GameEngineState* _Parent)
 			{
@@ -275,7 +283,7 @@ void PlayLevel::Start()
 			{
 				CurTravler->ChanageState(TravelerState::TurnStart);
 				std::shared_ptr<PassPort> NewPassport = CreateActor<PassPort>();
-				NewPaperManger.push_back(NewPassport->GetDynamic_Cast_This<PaperBase>());
+				//NewPaperManger.push_back(NewPassport->GetDynamic_Cast_This<PaperBase>());
 				NewPassport->SetOwner(CurTravler);
 				
 			};
