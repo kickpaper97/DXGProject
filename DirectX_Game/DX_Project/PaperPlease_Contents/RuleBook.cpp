@@ -27,8 +27,10 @@ void RuleBook::Start()
 	PaperBase::Start();
 
 	SetPaperTexture(Pages[0]->GetName(), "RulesOuter.png");
-	
+	OuterRenderer->SetAutoScaleRatio(2.0f); 
+	Collision->Transform.SetLocalScale(OuterRenderer->GetImageTransform().GetLocalScale()*2.0f);
 	SetOuterPaperRotation(float4::ZERO);
+	
 
 
 	{

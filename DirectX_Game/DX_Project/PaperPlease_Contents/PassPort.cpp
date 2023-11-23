@@ -127,6 +127,7 @@ void PassPort::Start()
 	OuterRenderer->SetAutoScaleRatio(1.0f);
 	
 	
+	Transform.SetLocalPosition({150,-450 });
 	GameEngineInput::AddInputObject(this);
 
 
@@ -169,6 +170,7 @@ void PassPort::SetPaperTexture(std::string_view _Name)
 
 
 	PaperBase::SetPaperTexture(Name + "Inner.png", Name + "Outer.png");
+	OuterRenderer->SetAutoScaleRatio(1.0f);
 	
 	/*InnerRenderer->SetSprite(Name + "Inner.png");
 	OuterRenderer->SetSprite(Name + "Outer.png");*/

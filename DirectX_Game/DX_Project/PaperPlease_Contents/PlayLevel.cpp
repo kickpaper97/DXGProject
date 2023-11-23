@@ -169,7 +169,7 @@ void PlayLevel::Start()
 				//
 
 				std::shared_ptr<BoothDoor> NewBoothDoor = CreateActor<BoothDoor>();
-
+				NewStamp->On();
 				WorkTime = 0;
 
 			};
@@ -256,7 +256,7 @@ void PlayLevel::Start()
 					
 					CurTravler->WalkToBooth(_Delta);
 
-					if (CurTravler->Transform.GetLocalPosition().X >= BoothPos.X-10 || CurTravler->Transform.GetLocalPosition().Y <= BoothPos.Y)
+					if (CurTravler->Transform.GetLocalPosition().X >= BoothPos.X-40 )
 					{
 						LevelState.ChangeState(PlayState::Working);
 						return;

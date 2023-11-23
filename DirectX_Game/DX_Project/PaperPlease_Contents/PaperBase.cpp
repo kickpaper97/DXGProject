@@ -47,10 +47,17 @@ void PaperBase::SetPaperTexture(std::string_view _InnerName, std::string_view _O
 		OuterRenderer->SetMaskTexture("Inner_Mask.png");
 	}
 
+	GameEngineRandom RotationRand;
+	RotationRand.SetSeed(reinterpret_cast<long long>(this));
+
+	OuterPaperRotation = { 0.0f,0.0f,RotationRand.RandomFloat(-18.0f, 18.0f) };
+	OuterRenderer->Transform.SetLocalRotation(OuterPaperRotation);
+
+
 	InnerRenderer->AutoSpriteSizeOn();
 	OuterRenderer->AutoSpriteSizeOn();
 	InnerRenderer->SetAutoScaleRatio(2.0f);
-	OuterRenderer->SetAutoScaleRatio(2.0f);
+	//OuterRenderer->SetAutoScaleRatio(2.0f);
 	InnerRenderer->SetSprite(_InnerName);
 	OuterRenderer->SetSprite(_OuterName);
 	InnerRenderer->Transform.TransformUpdate();
@@ -78,19 +85,17 @@ void PaperBase::SetPaperTexture(std::string_view _InnerName, std::string_view _O
 			Collision->Transform.SetLocalRotation(OuterPaperRotation);
 	}
 
-	GameEngineRandom RotationRand;
-	RotationRand.SetSeed(reinterpret_cast<long long>( this));
 	
-	OuterPaperRotation = { 0.0f,0.0f,RotationRand.RandomFloat(-18.0f, 18.0f) };
-	OuterRenderer->Transform.SetLocalRotation(OuterPaperRotation);
 	
-
 }
 
 void PaperBase::SetOuterPaperRotation(const float4& _Rotation)
 {
 	OuterPaperRotation = _Rotation;
 	OuterRenderer->Transform.SetLocalRotation(OuterPaperRotation);
+	Collision->Transform.SetLocalRotation(OuterPaperRotation);
+	
+	OuterRenderer->Transform.TransformUpdate();
 }
 
 
