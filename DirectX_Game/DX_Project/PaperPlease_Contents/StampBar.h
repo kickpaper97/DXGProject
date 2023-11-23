@@ -31,6 +31,8 @@ private:
 	float4 PosOff;
 	bool IsMoving;
 
+	std::vector<std::shared_ptr<GameEngineCollision>> Collisions;
+
 	GameEngineState State;
 };
 

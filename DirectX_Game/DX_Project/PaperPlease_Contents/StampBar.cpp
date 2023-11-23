@@ -60,6 +60,7 @@ void StampBar::Start()
 	SwitchCol->Transform.SetLocalScale({ 76,115 });
 	SwitchCol->Transform.SetLocalPosition({ -5,40 });
 
+	Collisions.push_back(SwitchCol);
 	}
 
 	{
@@ -68,6 +69,7 @@ void StampBar::Start()
 		SwitchCol->SetCollisionType(ColType::AABBBOX2D);
 		SwitchCol->Transform.SetLocalScale({ 74,115 });
 		SwitchCol->Transform.SetLocalPosition({ -240,40 });
+		Collisions.push_back(SwitchCol);
 
 	}
 
@@ -77,13 +79,14 @@ void StampBar::Start()
 		SwitchCol->SetCollisionType(ColType::AABBBOX2D);
 		SwitchCol->Transform.SetLocalScale({ 74,115 });
 		SwitchCol->Transform.SetLocalPosition({ 235,40 });
+		Collisions.push_back(SwitchCol);
 
 	}
 
 	}
 
 	PosOff = { 1400,-500 };
-	PosOn = { 1000, -500 };
+	PosOn = { 890, -500 };
 
 	//ON
 	{
@@ -94,9 +97,39 @@ void StampBar::Start()
 				float4 MidlePos = { 1200, -500 };
 				IsMoving = true;
 			};
+
 		StatePara.Stay = [=](float _Delta,GameEngineState* _Parent)
 			{
-				
+
+
+				if (PosOn != Transform.GetLocalPosition())
+				{
+					Transform.AddLocalPosition(float4::LEFT * 1500 * _Delta);
+					if (PosOn.X >= Transform.GetLocalPosition().X)
+					{
+						Transform.SetLocalPosition(PosOn);
+						IsMoving = false;
+					}
+				}
+
+				{
+					EventParameter Para;
+					Para.Stay = [=](GameEngineCollision* _This, class GameEngineCollision* _Other)
+						{
+							if (GameEngineInput::IsDown(VK_LBUTTON, this))
+							{
+								{
+									State.ChangeState(StampBarState::OFF);
+									return;
+								}
+							}
+						};
+					for (int i = 0; i < Collisions.size(); i++)
+					{
+						Collisions[i]->CollisionEvent(CollisionOrder::Cursor, Para);
+					}
+				}
+
 				
 			};
 		StatePara.End = [=](GameEngineState* _Parent)
@@ -117,6 +150,41 @@ void StampBar::Start()
 		StatePara.Stay = [=](float _Delta, GameEngineState* _Parent)
 			{
 				
+				if (PosOff != Transform.GetLocalPosition())
+				{
+					Transform.AddLocalPosition(float4::RIGHT*1500* _Delta);
+					if ( PosOff.X<=Transform.GetLocalPosition().X)
+					{
+						Transform.SetLocalPosition( PosOff);
+						IsMoving = false;
+					}
+				}
+
+
+				{
+					EventParameter Para;
+					Para.Stay = [=](GameEngineCollision* _This, class GameEngineCollision* _Other)
+						{
+
+
+							if (GameEngineInput::IsDown(VK_LBUTTON, this))
+							{
+								{
+									State.ChangeState(StampBarState::ON);
+									return;
+								}
+							}
+						};
+
+					for (int i = 0; i < Collisions.size(); i++)
+					{
+						Collisions[i]->CollisionEvent(CollisionOrder::Cursor,Para);
+					}
+
+				}
+				
+
+
 			};
 		StatePara.End = [=](GameEngineState* _Parent)
 			{
@@ -135,11 +203,7 @@ void StampBar::Start()
 
 void StampBar::Update(float _Delta)
 {
-	if (GameEngineInput::IsPress('D', this))
-	{
-		Transform.AddLocalPosition(float4::RIGHT);
-	}
-	{
+	/*{
 		EventParameter Para;
 		Para.Stay = [=](GameEngineCollision* _This, class GameEngineCollision* _Other)
 			{
@@ -158,7 +222,7 @@ void StampBar::Update(float _Delta)
 				}
 			};
 		
-	}
+	}*/
 
-
+	State.Update(_Delta);
 }
