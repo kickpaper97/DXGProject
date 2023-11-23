@@ -11,17 +11,17 @@ public:
 	PaperManager(PaperManager&& _Other) noexcept = delete;
 	PaperManager& operator=(const PaperManager& _Other) = delete;
 	PaperManager& operator=(const PaperManager&& _Other) noexcept = delete;
-
-
-protected:
-	void Start() override;
 	
 	
 	void AddPaper(std::shared_ptr<class PaperBase> _Paper)
 	{
 
 		Papers.push_back(_Paper);
+		if (false == IsPapersEmpty)
+		{
 		IsPapersEmpty = false;
+
+		}
 	}
 
 	void ReleasePaper(std::shared_ptr<class PaperBase> _Paper);
@@ -29,10 +29,16 @@ protected:
 
 	int FindIndex(std::shared_ptr<class PaperBase> _Paper);
 
-	bool GetIsEmpty() const
+	bool GetIsPapersEmpty() const
 	{
 		return IsPapersEmpty;
 	}
+
+protected:
+	void Start() override;
+	
+	
+
 
 private:
 	bool IsPapersEmpty=true;

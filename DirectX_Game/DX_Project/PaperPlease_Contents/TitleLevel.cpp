@@ -51,13 +51,27 @@ void TitleLevel::Start()
 	}
 
 
+	if (nullptr == GameEngineSound::FindSound("Theme.WAV"))
+	{
+		GameEnginePath FilePath;
+		FilePath.SetCurrentPath();
+		FilePath.MoveParentToExistsChild("ContentsResources");
+		FilePath.MoveChild("ContentsResources\\Audio");
+
+		GameEngineSound::SoundLoad(FilePath.PlusFilePath("Theme.WAV"));
+	
+	}
+	{
+		
+	}
+
+
 	///나중에 각자의 객체로 들어가야한다
 	if(nullptr==GameEngineSprite::Find("Title.png"))
 	{
 		
 		GameEngineSprite::CreateSingle("Title.png");
 		//GameEngineSprite::CreateCut("QuitButton.png",1,2);
-		
 
 	}
 
@@ -102,6 +116,9 @@ void TitleLevel::Start()
 					std::shared_ptr<Cursor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
 					NewCursor->On();
 				}
+
+				Sound = GameEngineSound::SoundPlay("Theme.wav");
+				Sound.SetLoop(100);
 
 			};
 
@@ -255,13 +272,10 @@ void TitleLevel::Update(float _Delta)
 
 void TitleLevel::LevelStart(GameEngineLevel* _PrevLevel)
 {
-	if (true == isAnimation)
-	{
-
-	}
+	
 }
 
 void TitleLevel::LevelEnd(GameEngineLevel* _NextLevel)
 {
-	int a = 0;
+	
 }

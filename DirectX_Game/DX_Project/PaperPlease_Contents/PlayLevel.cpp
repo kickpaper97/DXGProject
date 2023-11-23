@@ -76,6 +76,10 @@ void PlayLevel::Start()
 
 	}
 
+	{
+		NewPapers = CreateActor<PaperManager>();
+	}
+
 	
 
 	//State::DayStart
@@ -285,8 +289,11 @@ void PlayLevel::Start()
 			{
 				CurTravler->ChanageState(TravelerState::TurnStart);
 				std::shared_ptr<PassPort> NewPassport = CreateActor<PassPort>();
+
 				//NewPaperManger.push_back(NewPassport->GetDynamic_Cast_This<PaperBase>());
 				NewPassport->SetOwner(CurTravler);
+
+				NewPapers->AddPaper(NewPassport);
 				
 			};
 		StatePara.End = [=](GameEngineState* _Parent)
@@ -303,6 +310,11 @@ void PlayLevel::Start()
 				{
 					LevelState.ChangeState(PlayState::AfterWork);
 					return;
+				}
+
+				if (true == NewPapers->GetIsPapersEmpty())
+				{
+					LevelState.ChangeState(PlayState::Waiting);
 				}
 
 				WorkTime += _Delta;

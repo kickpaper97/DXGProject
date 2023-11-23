@@ -24,12 +24,20 @@ public:
 	TitleLevel& operator=(const TitleLevel& _Other) = delete;
 	TitleLevel& operator=(TitleLevel&& _Other) noexcept = delete;
 
+
+	GameEngineSoundPlayer GetSound() const
+	{
+		return Sound;
+	}
+
 protected:
 	void Start() override;
 	void Update(float _Delta) override;
 
 	void LevelStart(GameEngineLevel* _PrevLevel) override;
 	void LevelEnd(GameEngineLevel* _NextLevel) override;
+
+	
 
 private:
 	float DeltaCheck = 0.5f;
@@ -38,6 +46,8 @@ private:
 	bool isAnimaitonPause = false;
 
 	std::shared_ptr<class BasicActor> Logo = nullptr;
+
+	GameEngineSoundPlayer Sound;
 	GameEngineState LevelState;
 	
 };

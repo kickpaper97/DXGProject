@@ -1,5 +1,6 @@
 #include "PreCompile.h"
 #include "StartIntroLevel.h"
+#include "TitleLevel.h"
 
 #include "CustomSpriteRenderer.h"
 #include "IntroPicture.h"
@@ -230,10 +231,11 @@ void StartIntroLevel::Update(float _Delta)
 void StartIntroLevel::LevelStart(GameEngineLevel* _PrevLevel)
 {
 	
-
+	TitleLevel* PrevLevel = dynamic_cast<TitleLevel*>(_PrevLevel);
+	Sound=PrevLevel->GetSound();
 }
 
 void StartIntroLevel::LevelEnd(GameEngineLevel* _NextLevel)
 {
-
+	Sound.Stop();
 }

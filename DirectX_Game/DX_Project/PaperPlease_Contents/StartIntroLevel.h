@@ -35,7 +35,7 @@ private:
 
 	bool IsPress = false;
 
-	
+	GameEngineSoundPlayer Sound;
 	GameEngineState LevelState;
 };
 
