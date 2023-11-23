@@ -25,6 +25,8 @@
 #include "StampApproved.h"
 #include "StampDenied.h"
 
+#include <GameEngineCore/FadePostEffect.h>
+
 
 PlayLevel::PlayLevel() 
 {
@@ -356,7 +358,16 @@ void PlayLevel::Start()
 			};
 		StatePara.Stay = [=](float _Delta, GameEngineState* _Parent)
 			{
-				
+				if (2.0f<=LevelState.GetStateTime())
+				{
+					NewFade= GetLevelRenderTarget()->CreateEffect<FadePostEffect>();
+					if (3.5f <= LevelState.GetStateTime())
+					{
+						GameEngineCore::ChangeLevel("DayOffLevel");
+							return;
+					}
+
+				}
 			
 			};
 

@@ -51,13 +51,21 @@ void StartIntroLevel::Start()
 				IntroPic->GetSpriteRenderer()->SetSprite("Intro0.png");
 				IntroPic->Transform.SetLocalPosition(PicPos);
 
+				IsPress = false;
 				
 			};
 		Para.Stay = [=](float _Delta,GameEngineState* _Parent)
 			{
+				if (true == IsPress)
+				{
 				IntroPic->GetSpriteRenderer()->GetTexCoordData().CurTexCoord -= _Delta*0.75f;
 
-				if (3.0f <= LevelState.GetStateTime())
+				}
+				if (GameEngineInput::IsDown(VK_LBUTTON, this))
+				{
+					IsPress = true;
+				}
+				if (0.0f>=IntroPic->GetSpriteRenderer()->GetTexCoordData().CurTexCoord)
 				{
 					LevelState.ChangeState(IntroState::Intro1);
 					return;
@@ -78,13 +86,21 @@ void StartIntroLevel::Start()
 			{
 				IntroPic->GetSpriteRenderer()->SetSprite("Intro1.png");
 				IntroPic->GetSpriteRenderer()->GetTexCoordData().CurTexCoord = 1.0f;
-
+				IsPress = false;
 			};
 		Para.Stay = [=](float _Delta, GameEngineState* _Parent)
 			{
-				IntroPic->GetSpriteRenderer()->GetTexCoordData().CurTexCoord -= _Delta;
+				if (true == IsPress)
+				{
+					IntroPic->GetSpriteRenderer()->GetTexCoordData().CurTexCoord -= _Delta * 0.75f;
 
-				if (3.0f <= LevelState.GetStateTime())
+				}
+				if (GameEngineInput::IsDown(VK_LBUTTON, this))
+				{
+					IsPress = true;
+				}
+
+				if (0.0f >= IntroPic->GetSpriteRenderer()->GetTexCoordData().CurTexCoord)
 				{
 					LevelState.ChangeState(IntroState::Intro2);
 					return;
@@ -105,13 +121,21 @@ void StartIntroLevel::Start()
 			{
 				IntroPic->GetSpriteRenderer()->SetSprite("Intro2.png");
 				IntroPic->GetSpriteRenderer()->GetTexCoordData().CurTexCoord = 1.0f;
-
+				IsPress = false;
 			};
 		Para.Stay = [=](float _Delta, GameEngineState* _Parent)
 			{
-				IntroPic->GetSpriteRenderer()->GetTexCoordData().CurTexCoord -= _Delta;
+				if (true == IsPress)
+				{
+					IntroPic->GetSpriteRenderer()->GetTexCoordData().CurTexCoord -= _Delta * 0.75f;
 
-				if (3.0f <= LevelState.GetStateTime())
+				}
+				if (GameEngineInput::IsDown(VK_LBUTTON, this))
+				{
+					IsPress = true;
+				}
+
+				if (0.0f >= IntroPic->GetSpriteRenderer()->GetTexCoordData().CurTexCoord)
 				{
 					LevelState.ChangeState(IntroState::Intro3);
 					return;
@@ -132,13 +156,21 @@ void StartIntroLevel::Start()
 			{
 				IntroPic->GetSpriteRenderer()->SetSprite("Intro3.png");
 				IntroPic->GetSpriteRenderer()->GetTexCoordData().CurTexCoord = 1.0f;
-
+				IsPress = false;
 			};
 		Para.Stay = [=](float _Delta, GameEngineState* _Parent)
 			{
-				IntroPic->GetSpriteRenderer()->GetTexCoordData().CurTexCoord -= _Delta;
+				if (true == IsPress)
+				{
+					IntroPic->GetSpriteRenderer()->GetTexCoordData().CurTexCoord -= _Delta * 0.75f;
 
-				if (3.0f <= LevelState.GetStateTime())
+				}
+				if (GameEngineInput::IsDown(VK_LBUTTON, this))
+				{
+					IsPress = true;
+				}
+
+				if (0.0f >= IntroPic->GetSpriteRenderer()->GetTexCoordData().CurTexCoord)
 				{
 					LevelState.ChangeState(IntroState::Intro4);
 					return;
@@ -159,11 +191,16 @@ void StartIntroLevel::Start()
 			{
 				IntroPic->GetSpriteRenderer()->SetSprite("Arstotzka.png");
 				IntroPic->GetSpriteRenderer()->GetTexCoordData().CurTexCoord =1.0f;
+				IsPress = false;
 			};
 		Para.Stay = [=](float _Delta, GameEngineState* _Parent)
 			{
-				IntroPic->GetSpriteRenderer()->GetTexCoordData().CurTexCoord -= _Delta;
-
+				
+				if (GameEngineInput::IsDown(VK_LBUTTON, this))
+				{
+					GameEngineCore::ChangeLevel("PlayLevel");
+					return;
+				}
 				
 			};
 		Para.End = [=](GameEngineState* _Parent)
@@ -175,6 +212,7 @@ void StartIntroLevel::Start()
 	}
 
 	LevelState.ChangeState(IntroState::Intro0);
+	GameEngineInput::AddInputObject(this);
 	
 }
 

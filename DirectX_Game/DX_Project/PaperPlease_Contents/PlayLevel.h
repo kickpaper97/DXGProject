@@ -50,7 +50,7 @@ private:
 
 	std::shared_ptr<GameEngineActor> NewStamp = nullptr;
 
-
+	std::shared_ptr<class FadePostEffect> NewFade;
 	//std::vector<std::shared_ptr<class PaperBase>>NewPaperManger;
 
 	float WorkTime=0;

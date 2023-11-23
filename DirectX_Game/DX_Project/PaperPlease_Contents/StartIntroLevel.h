@@ -33,6 +33,8 @@ private:
 	void LevelStart(GameEngineLevel* _PrevLevel) override;
 	void LevelEnd(GameEngineLevel* _NextLevel) override;
 
+	bool IsPress = false;
+
 	
 	GameEngineState LevelState;
 };
