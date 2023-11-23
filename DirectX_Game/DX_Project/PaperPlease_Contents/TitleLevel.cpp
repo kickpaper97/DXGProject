@@ -206,6 +206,12 @@ void TitleLevel::Start()
 					Logo->Transform.AddLocalPosition(AnimationDir / 4 * 250 * _Delta);
 				}
 
+				if (GameEngineInput::IsDown(VK_LBUTTON, this))
+				{
+					GameEngineCore::ChangeLevel("StartIntroLevel");
+				}
+
+
 				DeltaCheck -= _Delta;
 			};
 
