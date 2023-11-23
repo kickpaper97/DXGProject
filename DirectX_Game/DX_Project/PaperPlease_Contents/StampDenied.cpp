@@ -26,7 +26,7 @@ void StampDenied::Start()
 		StampRenderer->AutoSpriteSizeOn();
 		StampRenderer->SetAutoScaleRatio(2.0f);
 		StampRenderer->SetSprite("StampBotDenied.png");
-		StampRenderer->Transform.SetLocalPosition({ -124.5f,43 });
+		StampRenderer->Transform.SetLocalPosition({ 114.5f,43 });
 
 		StampTop = CreateComponent<GameEngineSpriteRenderer>();
 		StampTop->SetRenderOrder(RenderOrder::Stamp);
