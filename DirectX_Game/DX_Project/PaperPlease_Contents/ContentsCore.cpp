@@ -92,7 +92,7 @@ void ContentsCore::Start()
 
 	GameEngineRenderTarget::IsDepth = false;
 	GameEngineCore::MainWindow.CursorOff();
-
+	GameEngineLevel::IsDebug = false;
 
 	{
 		UIWindow =GameEngineGUI::CreateGUIWindow<ControlManager>("ControlManager");
