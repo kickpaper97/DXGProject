@@ -98,6 +98,10 @@ void PaperBase::SetOuterPaperRotation(const float4& _Rotation)
 	OuterRenderer->Transform.TransformUpdate();
 }
 
+void PaperBase::SetWrongInfo()
+{
+}
+
 
 
 

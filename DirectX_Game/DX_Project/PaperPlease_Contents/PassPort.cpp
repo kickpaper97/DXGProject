@@ -17,7 +17,14 @@ void PassPort::SetOwner(std::shared_ptr<class NormalTraveler> _Owner)
 {
 	Owner = _Owner;
 	Info = _Owner.get()->GetInfo();
+
+	
+
+
+
+
 }
+
 
 void PassPort::StampPassPort(PassPortChecked _Check, float4 _WorldStampPos)
 {
@@ -81,6 +88,7 @@ void PassPort::Start()
 		GameEngineSprite::CreateSingle("InkDenied.png");
 
 	}
+
 
 	PaperBase::Start();
 	
@@ -178,5 +186,6 @@ void PassPort::SetPaperTexture(std::string_view _Name)
 
 
 }
+
 
 

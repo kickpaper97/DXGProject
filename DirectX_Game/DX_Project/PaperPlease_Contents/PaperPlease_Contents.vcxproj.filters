@@ -110,6 +110,9 @@
     <ClCompile Include="BoothDoor.cpp">
       <Filter>Global\Stage</Filter>
     </ClCompile>
+    <ClCompile Include="Citation.cpp">
+      <Filter>Paper</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
@@ -220,6 +223,9 @@
     </ClInclude>
     <ClInclude Include="BoothDoor.h">
       <Filter>Global\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Citation.h">
+      <Filter>Paper</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -184,6 +184,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="Citation.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="ContentsCore.cpp" />
     <ClCompile Include="ControlManager.cpp">
       <SubType>
@@ -312,6 +316,10 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="Car.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Citation.h">
       <SubType>
       </SubType>
     </ClInclude>

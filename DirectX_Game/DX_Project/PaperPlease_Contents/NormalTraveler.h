@@ -11,6 +11,8 @@ enum TravelerState
 	TurnStart,
 	TurnStay,
 	TurnEnd,
+	Approved,
+	Denied,
 	Max,
 
 };
@@ -52,6 +54,12 @@ public:
 
 	void ChanageState(TravelerState _State);
 
+	void SetLier();
+
+	bool GetIsLier() const
+	{
+		return IsLier;
+	}
 
 protected:
 	void Start() override;
@@ -70,12 +78,16 @@ protected:
 	void TurnStartStart();
 	void TurnStayStart();
 	void TurnEndStart();
+	void ApprovedStart();
+	void DeniedStart();
 
 	void WaitingStandUpdate(float _Delta);
 	void WaitingMoveUpdate(float _Delta);
 	void TurnStartUpdate(float _Delta);
 	void TurnStayUpdate(float _Delta);
 	void TurnEndUpdate(float _Delta);
+	void ApprovedUpdate(float _Delta);
+	void DeniedUpdate(float _Delta);
 
 
 
@@ -86,9 +98,12 @@ protected:
 	std::string_view CurState = "";
 
 private:
+	
+
 	//std::shared_ptr<GameEngineSpriteRenderer> FaceRenderer = nullptr;
 	GameEngineRandom TimeRand;
 
+	bool IsLier = false;
 	TravelerInfo Info;
 
 	float StandingChangeTime = 0.0f;

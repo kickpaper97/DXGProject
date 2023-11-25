@@ -6,6 +6,9 @@
 
 Player* Player::MainPlayer;
 
+
+
+
 Player::Player() 
 {
 	MainPlayer = this;

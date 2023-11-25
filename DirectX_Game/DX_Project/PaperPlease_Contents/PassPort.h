@@ -29,12 +29,13 @@ public:
 		return EntryCheck;
 	}
 
-
+	
 
 protected:
 	void Start() override;
 	void Update(float _Delta) override;
 	void SetPaperTexture(std::string_view _Name) override;
+	
 
 private:
 

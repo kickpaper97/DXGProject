@@ -2,6 +2,58 @@
 #include <GameEngineCore/GameEngineActor.h>
 
 // Ό³Έν :
+class DayPlayInfo
+{
+	friend class Player;
+public:
+	void Clear()
+	{
+		CheckCorrectCount = 0;
+		CheckWrongCount = 0;
+	}
+
+	void AutoAddCount(int _Check) 
+	{
+		if (0 == _Check)
+		{
+			AddWrongCount();
+		}
+		else
+		{
+			AddCorrectCount();
+
+		}
+
+	}
+
+
+
+	void AddCorrectCount()
+	{
+		CheckCorrectCount++;
+	}
+	void AddWrongCount()
+	{
+		CheckWrongCount++;
+	}
+
+	int GetCorrectCount() const
+	{
+		return CheckCorrectCount;
+	}
+	int GetWrongCount() const
+	{
+		return CheckWrongCount;
+	}
+
+private:
+	int CheckCorrectCount = 0;
+	int CheckWrongCount = 0;
+
+};
+
+
+
 class Player : public GameEngineActor
 {
 	
@@ -25,6 +77,10 @@ public:
 	{
 		return OuterSpriteRenderer;
 	}
+
+
+	DayPlayInfo PlayerDayPlay;
+
 
 protected:
 	void Start() override;

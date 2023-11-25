@@ -169,6 +169,7 @@ void PlayLevel::Start()
 
 				//Player ¹èÄ¡
 				std::shared_ptr<Player> NewPlayer = CreateActor<Player>();
+				NewPlayer->PlayerDayPlay.Clear();
 
 				//
 
@@ -314,7 +315,10 @@ void PlayLevel::Start()
 
 				if (true == NewPapers->GetIsPapersEmpty())
 				{
+					Player::MainPlayer->PlayerDayPlay.AutoAddCount(NewPapers->GetIsCorrectCheck());
+
 					LevelState.ChangeState(PlayState::Waiting);
+					return;
 				}
 
 				WorkTime += _Delta;

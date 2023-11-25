@@ -25,6 +25,8 @@ protected:
 	void Start() override;
 	void Update(float _Delta) override;
 
+	virtual void SetWrongInfo();
+
 	std::shared_ptr<GameEngineSpriteRenderer> InnerRenderer=nullptr;
 	std::shared_ptr<GameEngineSpriteRenderer> OuterRenderer=nullptr;
 	std::shared_ptr<GameEngineCollision> Collision;

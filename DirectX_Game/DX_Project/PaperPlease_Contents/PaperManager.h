@@ -34,6 +34,16 @@ public:
 		return IsPapersEmpty;
 	}
 
+
+	void ClearIsCorrectCheck()
+	{
+		IsCorrectCheck = -1;
+	}
+	int GetIsCorrectCheck() const
+	{
+		return IsCorrectCheck;
+	}
+
 protected:
 	void Start() override;
 	
@@ -42,6 +52,7 @@ protected:
 
 private:
 	bool IsPapersEmpty=true;
+	int IsCorrectCheck = -1;
 
 	std::vector<std::shared_ptr<class PaperBase>> Papers;
 

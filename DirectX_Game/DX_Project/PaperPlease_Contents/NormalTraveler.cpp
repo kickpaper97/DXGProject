@@ -281,6 +281,17 @@ void NormalTraveler::TurnEndStart()
 {
 }
 
+void NormalTraveler::ApprovedStart()
+{
+	FaceRenderer->Off();
+}
+
+void NormalTraveler::DeniedStart()
+{
+	FaceRenderer->Off();
+
+}
+
 
 void NormalTraveler::WaitingStandUpdate(float _Delta)
 {
@@ -326,6 +337,17 @@ void NormalTraveler::TurnEndUpdate(float _Delta)
 {
 }
 
+void NormalTraveler::ApprovedUpdate(float _Delta)
+{
+
+}
+
+void NormalTraveler::DeniedUpdate(float _Delta)
+{
+
+}
+
+
 void NormalTraveler::StateUpdate(float _Delta)
 {
 	switch (State)
@@ -340,6 +362,8 @@ void NormalTraveler::StateUpdate(float _Delta)
 		return TurnStayUpdate(_Delta);
 	case TurnEnd:
 		return TurnEndUpdate(_Delta);
+	case Approved:
+		return ApprovedUpdate(_Delta);
 	case Max:
 	default:
 		break;
@@ -367,6 +391,12 @@ void NormalTraveler::ChanageState(TravelerState _State)
 		case TurnEnd:
 			TurnEndStart();
 			break;
+		case Approved:
+			ApprovedStart();
+			break;
+		case Denied:
+			DeniedStart();
+			break;
 		case Max:
 			break;
 		default:
@@ -382,3 +412,17 @@ void NormalTraveler::ChangeAnimationState(std::string_view _State)
 }
 
 //Inner 로 들어올때 와 나갈때 조금 Rotation을 돌린다?
+
+
+
+void NormalTraveler::SetLier()
+{
+
+
+	GameEngineRandom Rand;
+	Rand.SetSeed(reinterpret_cast<long long>(this));
+	int Num = Rand.RandomInt(0, 9);
+
+
+	IsLier= static_cast<bool>(Num / 6);
+}
