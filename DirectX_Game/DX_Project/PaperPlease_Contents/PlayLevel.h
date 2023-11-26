@@ -56,6 +56,8 @@ private:
 	//std::vector<std::shared_ptr<class PaperBase>>NewPaperManger;
 
 	float WorkTime=0;
+
+	GameEngineSoundPlayer BGSound;
 	GameEngineState LevelState;
 
 };

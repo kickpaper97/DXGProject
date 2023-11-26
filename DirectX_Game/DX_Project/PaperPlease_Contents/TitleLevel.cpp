@@ -3,6 +3,7 @@
 #include "QuitButton.h"
 #include "Cursor.h"
 
+#include "StartIntroLevel.h"
 #include <GameEngineCore/GameEngineComponent.h>
 
 TitleLevel::TitleLevel() 
@@ -277,5 +278,9 @@ void TitleLevel::LevelStart(GameEngineLevel* _PrevLevel)
 
 void TitleLevel::LevelEnd(GameEngineLevel* _NextLevel)
 {
-	
+	if ( nullptr ==dynamic_cast<StartIntroLevel*>(_NextLevel))
+	{
+		Sound.Stop();
+
+	}
 }

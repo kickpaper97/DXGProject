@@ -28,6 +28,21 @@ void StampBar::Start()
 		
 
 	}
+
+	if (nullptr == GameEngineSound::FindSound("stampbar-close.WAV"))
+	{
+		GameEnginePath FilePath;
+		FilePath.SetCurrentPath();
+		FilePath.MoveParentToExistsChild("ContentsResources");
+		FilePath.MoveChild("ContentsResources\\Audio");
+
+		GameEngineSound::SoundLoad(FilePath.PlusFilePath("stampbar-close.WAV"));
+		GameEngineSound::SoundLoad(FilePath.PlusFilePath("stampbar-open.WAV"));
+
+
+	}
+
+
 	
 	std::shared_ptr<GameEngineSpriteRenderer> BarBotRenderer = CreateComponent<GameEngineSpriteRenderer>();
 	std::shared_ptr<GameEngineSpriteRenderer> BarMidRenderer = CreateComponent<GameEngineSpriteRenderer>();
@@ -85,8 +100,8 @@ void StampBar::Start()
 
 	}
 
-	PosOff = { 1400,-500 };
-	PosOn = { 890, -500 };
+	PosOff = { 1400,-450 };
+	PosOn = { 890, -450 };
 
 	//ON
 	{
@@ -94,8 +109,10 @@ void StampBar::Start()
 		CreateStateParameter StatePara;
 		StatePara.Start = [=](GameEngineState* _Parent)
 			{
-				float4 MidlePos = { 1200, -500 };
+				
 				IsMoving = true;
+				//SoundEffect = GameEngineSound::SoundPlay("stampbar-open.WAV");
+
 			};
 
 		StatePara.Stay = [=](float _Delta,GameEngineState* _Parent)
@@ -134,6 +151,7 @@ void StampBar::Start()
 			};
 		StatePara.End = [=](GameEngineState* _Parent)
 			{
+				SoundEffect = GameEngineSound::SoundPlay("stampbar-close.WAV");
 
 			};
 		State.CreateState(StampBarState::ON, StatePara);
@@ -146,6 +164,7 @@ void StampBar::Start()
 		StatePara.Start = [=](GameEngineState* _Parent)
 			{
 				IsMoving = true;
+				//SoundEffect = GameEngineSound::SoundPlay("stampbar-close.WAV");
 			};
 		StatePara.Stay = [=](float _Delta, GameEngineState* _Parent)
 			{
@@ -188,7 +207,7 @@ void StampBar::Start()
 			};
 		StatePara.End = [=](GameEngineState* _Parent)
 			{
-
+				SoundEffect = GameEngineSound::SoundPlay("stampbar-open.WAV");
 			};
 		State.CreateState(StampBarState::OFF, StatePara);
 	}

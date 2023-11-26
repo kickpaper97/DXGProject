@@ -18,6 +18,7 @@ protected:
 	void Update(float _Delta) override;
 
 private:
-	
+	bool isSound=false;
+	GameEngineSoundPlayer Sound;
 };
 

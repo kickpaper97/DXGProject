@@ -35,6 +35,8 @@ private:
 	std::shared_ptr<GameEngineSpriteRenderer> SpriteRenderer;
 	std::shared_ptr<GameEngineCollision> Collision;
 
+	GameEngineSoundPlayer BoothSpeaker;
+
 	bool isPress = false;
 };
 

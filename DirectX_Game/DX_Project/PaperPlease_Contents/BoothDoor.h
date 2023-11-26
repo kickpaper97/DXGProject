@@ -22,5 +22,6 @@ private:
 	std::shared_ptr<GameEngineSpriteRenderer> sprite;
 	float Timer = 5.0f;
 	int Dir = 0;
+	bool isSoundEffect=false;
 };
 

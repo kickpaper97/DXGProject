@@ -17,6 +17,18 @@ void BoothDoor::Start()
 		GameEngineSprite::CreateSingle("BlackSquare20x20.png");
 		
 	}
+
+
+	if (nullptr == GameEngineSound::FindSound("booth-intro.WAV"))
+	{
+		GameEnginePath FilePath;
+		FilePath.SetCurrentPath();
+		FilePath.MoveParentToExistsChild("ContentsResources");
+		FilePath.MoveChild("ContentsResources\\Audio");
+
+		GameEngineSound::SoundLoad(FilePath.PlusFilePath("booth-intro.WAV"));
+	}
+
 	
 	sprite = CreateComponent<GameEngineSpriteRenderer>();
 	sprite->SetSprite("BlackSquare20x20.png");
@@ -32,8 +44,15 @@ void BoothDoor::Update(float _Delta)
 {
 	if (0.0f >= Timer)
 	{
+		if (false == isSoundEffect)
+		{
+			GameEngineSoundPlayer SoundEffect = GameEngineSound::SoundPlay("booth-intro.WAV");
+			isSoundEffect = true;
+		}
+
 		if (Dir == 0)
 		{
+
 			Transform.AddLocalPosition(float4::DOWN*(Scale.Y/0.35f)*_Delta);
 			if (-(GameEngineCore::MainWindow.GetScale().Y + Scale.hY()) >= Transform.GetLocalPosition().Y)
 			{

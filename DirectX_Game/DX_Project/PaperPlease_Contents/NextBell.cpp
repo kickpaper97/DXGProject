@@ -17,6 +17,19 @@ void NextBell::Start()
 		GameEngineSprite::CreateCut("OuterBooth.png", 1, 2);
 	}
 
+
+	if (nullptr == GameEngineSound::FindSound("speech-announce.WAV"))
+	{
+		GameEnginePath FilePath;
+		FilePath.SetCurrentPath();
+		FilePath.MoveParentToExistsChild("ContentsResources");
+		FilePath.MoveChild("ContentsResources\\Audio");
+
+		GameEngineSound::SoundLoad(FilePath.PlusFilePath("speech-announce.WAV"));
+	}
+
+	
+
 	{
 		SpriteRenderer = CreateComponent<GameEngineSpriteRenderer>();
 		SpriteRenderer->SetRenderOrder(RenderOrder::OuterBox);
@@ -51,8 +64,12 @@ void NextBell::Update(float _Delta)
 
 				if (GameEngineInput::IsDown(VK_LBUTTON, this))
 				{
-					isPress = true;
+					if (false == isPress)
+					{
+					BoothSpeaker = GameEngineSound::SoundPlay("speech-announce.WAV");
 
+					}
+					isPress = true;
 					SpriteRenderer->ChangeAnimation("NextBellDisAble");
 					
 				}

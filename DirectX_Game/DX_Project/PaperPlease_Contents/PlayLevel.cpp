@@ -39,6 +39,18 @@ PlayLevel::~PlayLevel()
 void PlayLevel::Start()
 {
 
+	if (nullptr == GameEngineSound::FindSound("booth-ambient.WAV"))
+	{
+		GameEnginePath FilePath;
+		FilePath.SetCurrentPath();
+		FilePath.MoveParentToExistsChild("ContentsResources");
+		FilePath.MoveChild("ContentsResources\\Audio");
+
+		GameEngineSound::SoundLoad(FilePath.PlusFilePath("booth-ambient.WAV"));
+
+
+	}
+
 
 	
 	float4 HalfWindowScale = GameEngineCore::MainWindow.GetScale().Half();
@@ -349,11 +361,11 @@ void PlayLevel::Start()
 				}
 
 
-				if (0.0f <= DayLimit - WorkTime)
+				/*if (0.0f <= DayLimit - WorkTime)
 				{
 					LevelState.ChangeState(PlayState::AfterWork);
 					return;
-				}
+				}*/
 
 				WorkTime += _Delta;
 			};
@@ -417,7 +429,9 @@ void PlayLevel::LevelStart(GameEngineLevel* _PrevLevel)
 {
 	std::shared_ptr<Cursor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
 
-	
+	BGSound = GameEngineSound::SoundPlay("booth-ambient.WAV");
+	BGSound.SetVolume(0.8f);
+	BGSound.SetLoop(10000);
 
 
 	LevelState.ChangeState(PlayState::DayStart);
@@ -429,5 +443,5 @@ void PlayLevel::LevelStart(GameEngineLevel* _PrevLevel)
 
 void PlayLevel::LevelEnd(GameEngineLevel* _NextLevel)
 {
-
+	BGSound.Stop();
 }

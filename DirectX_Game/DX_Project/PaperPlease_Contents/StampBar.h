@@ -33,6 +33,8 @@ private:
 
 	std::vector<std::shared_ptr<GameEngineCollision>> Collisions;
 
+	GameEngineSoundPlayer SoundEffect;
+
 	GameEngineState State;
 };
 
