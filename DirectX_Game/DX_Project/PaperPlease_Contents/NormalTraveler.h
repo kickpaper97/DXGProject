@@ -40,9 +40,9 @@ public:
 	void WalkToBooth(float _Delta);
 	
 	
-	std::shared_ptr<GameEngineSpriteRenderer> FaceRenderer = nullptr;
+	std::shared_ptr<class CustomSpriteRenderer> FaceRenderer = nullptr;
 
-	std::shared_ptr<GameEngineSpriteRenderer> GetFaceRenderer()
+	std::shared_ptr<class CustomSpriteRenderer> GetFaceRenderer()
 	{
 		return FaceRenderer;
 	}
@@ -99,7 +99,6 @@ protected:
 
 private:
 	
-
 	//std::shared_ptr<GameEngineSpriteRenderer> FaceRenderer = nullptr;
 	GameEngineRandom TimeRand;
 

@@ -1,5 +1,6 @@
 #include "PreCompile.h"
 #include "NormalTraveler.h"
+#include "CustomSpriteRenderer.h"
 
 
 
@@ -30,7 +31,7 @@ void NormalTraveler::WalkToBooth(float _Delta)
 void NormalTraveler::Start()
 {
 
-
+	
 
 	if (nullptr == GameEngineSprite::Find("NormalTravelerAni.Png"))
 	{
@@ -94,6 +95,9 @@ void NormalTraveler::Start()
 		RandomSetTravelerInfo();
 	}
 
+	{
+		
+	}
 
 }
 
@@ -109,7 +113,7 @@ void NormalTraveler::Update(float _Delta)
 	}
 
 
-
+	
 
 
 	/*float FirstPoseChange = NewRand.RandomFloat(0.5f, 2.0f);
@@ -242,7 +246,7 @@ void NormalTraveler::RandomSetFace()
 			Info.Face.SheetY = TimeRand.RandomInt(0, 1);
 		}
 		Info.Face.SheetName += ".png";
-		FaceRenderer = CreateComponent<GameEngineSpriteRenderer>();
+		FaceRenderer = CreateComponent<CustomSpriteRenderer>();
 		FaceRenderer->CreateAnimation("Face", Info.Face.SheetName.c_str(), 1.0f, Info.Face.SheetX * 2 + Info.Face.SheetY, Info.Face.SheetX * 2 + Info.Face.SheetY, false);
 		FaceRenderer->ChangeAnimation("Face");
 		FaceRenderer->AutoSpriteSizeOn();
@@ -268,6 +272,7 @@ void NormalTraveler::WaitingMoveStart()
 void NormalTraveler::TurnStartStart()
 {
 	FaceRenderer->On();
+	FaceRenderer->SetFaceFadeTexture(1);
 	FaceRenderer->Transform.SetWorldPosition({ 20,-350 });
 	
 
@@ -279,6 +284,7 @@ void NormalTraveler::TurnStayStart()
 
 void NormalTraveler::TurnEndStart()
 {
+	FaceRenderer->SetFaceFadeTexture(1);
 }
 
 void NormalTraveler::ApprovedStart()
@@ -289,6 +295,8 @@ void NormalTraveler::ApprovedStart()
 void NormalTraveler::DeniedStart()
 {
 	FaceRenderer->Off();
+	OuterRenderer->LeftFlip();
+	OuterRenderer->ChangeAnimation("NormalTravelerVerticalWalk");
 
 }
 
@@ -340,11 +348,49 @@ void NormalTraveler::TurnEndUpdate(float _Delta)
 void NormalTraveler::ApprovedUpdate(float _Delta)
 {
 
+	if (975 >= Transform.GetLocalPosition().X)
+	{
+		Transform.AddLocalPosition(float4::RIGHT * 20 * _Delta);
+		if (975 < Transform.GetLocalPosition().X)
+		{
+			OuterRenderer->ChangeAnimation("NormalTravelerVerticalWalk");
+		}
+	}
+	else
+	{
+		Transform.AddLocalPosition(float4::UP * 20 * _Delta);
+		if (20 < Transform.GetLocalPosition().Y)
+		{
+			Death();
+		}
+	}
+
+	
 }
 
 void NormalTraveler::DeniedUpdate(float _Delta)
 {
+	if (257 <= Transform.GetLocalPosition().X)
+	{
+		OuterRenderer->LeftFlip();
+		Transform.AddLocalPosition(float4::LEFT * 20 * _Delta);
+		if (257 > Transform.GetLocalPosition().X)
+		{
+			OuterRenderer->ChangeAnimation("NormalTravelerVerticalWalk");
+		}
 
+	}
+	else
+	{
+		float4 curPos = Transform.GetLocalPosition();
+		float4 chek = (float4{ 200,-670 } - curPos).NormalizeReturn();
+		
+		Transform.AddLocalPosition(chek * 20 * _Delta);
+		if (-670 >= Transform.GetLocalPosition().Y)
+		{
+			Death();
+		}
+	}
 }
 
 
