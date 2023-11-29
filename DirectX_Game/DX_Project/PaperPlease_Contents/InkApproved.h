@@ -15,8 +15,10 @@ public:
 	
 	float4 PassPortPos = float4::ZERO;
 
-protected:
+	void SetPassPortParent();
 
+protected:
+	std::shared_ptr<class CustomSpriteRenderer> StampSpriteRenderer;
 	void Start() override;
 	void Update(float _Delta) override;
 private:

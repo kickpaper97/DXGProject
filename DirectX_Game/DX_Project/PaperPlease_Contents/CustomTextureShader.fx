@@ -124,6 +124,13 @@ cbuffer PassPortMaskData : register(b3)
     
 };
 
+cbuffer FaceFadeData : register(b5)
+{
+    int isFaceFade = 0;
+    int FadeNum =0;
+    float4 tem;
+}
+
 Texture2D DiffuseTex : register(t0);
 Texture2D MaskTex : register(t1);
 Texture2D PassPortTex : register(t2);
@@ -139,7 +146,7 @@ float4 CustomTextureShader_PS(PixelOutPut _Input) : SV_Target0
     
     
     int2 ScreenPos = int2(_Input.POSITION.x, _Input.POSITION.y);
-    
+    int2 MaskScreenPos = int2(_Input.POSITION.x, _Input.POSITION.y);
     
     float4 CalUV = _Input.TEXCOORD;
     
@@ -161,29 +168,20 @@ float4 CustomTextureShader_PS(PixelOutPut _Input) : SV_Target0
     
     if (MaskMode == 1&&IsStamp!=1)
     {
-       ScreenPos.x = ScreenPos.x + RendererScreenPos.x;
-       ScreenPos.y = ScreenPos.y + RendererScreenPos.y;
-        
-        
-        ScreenPos.x += MaskScreenScale.x * 0.5f;
-        ScreenPos.y += MaskScreenScale.y * 0.5f;
-        
-        ScreenPos.x -= MaskPivot.x;
-        ScreenPos.y += MaskPivot.y;
+        MaskScreenPos.x = MaskScreenPos.x + RendererScreenPos.x;
+        MaskScreenPos.y = MaskScreenPos.y + RendererScreenPos.y;
+
+        MaskScreenPos.x += MaskScreenScale.x * 0.5f;
+        MaskScreenPos.y += MaskScreenScale.y * 0.5f;
+        MaskScreenPos.x -= MaskPivot.x;
+        MaskScreenPos.y += MaskPivot.y;
            
         
     }
     
     
-    if (IsMask == 1 &&MaskMode==0&& MaskTex[ScreenPos].a <=0.0f)
+    if (IsStamp == 1)
     {
-      
-       clip(-1);
-    }
-    
-    
-        if(IsStamp==1)
-        {
             
         
         ScreenPos.x = ScreenPos.x + PassPortPos.x;
@@ -192,18 +190,36 @@ float4 CustomTextureShader_PS(PixelOutPut _Input) : SV_Target0
         ScreenPos.y += PassportScale.y * 0.5f;
         ScreenPos.x -= MaskPivot.x;
         ScreenPos.y += MaskPivot.y;
-    }
-    
-   
-    
-    
-    
-   
-    if (IsMask == 1 && IsStamp == 1 && PassPortTex[ScreenPos].a <= 0.0f)
-    {
+        
+        if (IsMask == 1 && MaskTex[MaskScreenPos].r <= 0.0f)
+        {
+            clip(-1);
+        }
+        
+        if (IsMask == 1 &&  PassPortTex[ScreenPos].a <= 0.0f)
+        {
 
-        clip(-1);
+            clip(-1);
+        }
+        
     }
+    
+    if (IsMask == 1 && MaskTex[MaskScreenPos].r <=0.0f)
+    {
+      
+       clip(-1);
+    }
+    
+    
+     
+    
+    
+   
+    
+    
+    
+   
+   
     
         if (0.0f >= Color.a)
         {
@@ -216,10 +232,62 @@ float4 CustomTextureShader_PS(PixelOutPut _Input) : SV_Target0
             Color.a = 1;
         }
     
+    
+    
+    
+    
+    
+
+    
+    
 
         
         Color += PlusColor;
         Color *= MulColor;
+    
+    
+    
+    if (isFaceFade == 1)
+    {
+        if (FadeNum == 0)
+        {
+            Color.w = 1.0f;
+            
+            Color.xyz += AccDeltaTime;
+    
+    
+        }
+        
+        if (FadeNum == 1)
+        {
+            Color.w = 1.0f;
+    
+            Color.xyz -= AccDeltaTime;
+        }
+        //if (Color.r >= 1.0f)
+        //{
+        //    Color.r = 1.0f;
+        //}
+    
+        //if (Color.g >= 1.0f)
+        //{
+        //    Color.g = 1.0f;
+        //}
+    
+        //if (Color.b >= 1.0f)
+        //{
+        //    Color.b = 1.0f;
+        //}
+    
+        //if (Color.a >= 1.0f)
+        //{
+        //    Color.a = 1.0f;
+        //}
+    }
+    
+    
+    
+    
     
         return Color;
     }

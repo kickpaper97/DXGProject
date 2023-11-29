@@ -61,6 +61,13 @@ struct  PassPortMaskData
 
 };
 
+struct FaceFadeData
+{
+	int IsFaceFade = 0;
+	int FadeNum = 0;
+	float4 tem;
+};
+
 // Ό³Έν :
 class CustomSpriteRenderer : public GameEngineRenderer
 {
@@ -220,6 +227,7 @@ public:
 		PassPortMaskDataValue.PassportPos = _Pos;
 	}
 	void SetPaletteTexture(std::string_view _Texture);
+	void SetFaceFadeTexture(int _FadeNum);
 
 protected:
 	void Start() override;
@@ -251,6 +259,7 @@ private:
 	ColorData ColorDataValue;
 	TexCoordData TexCoordDataValue;
 	PassPortMaskData PassPortMaskDataValue;
+	FaceFadeData FaceFadeDataValue;
 	GameEngineTransform ImageTransform;
 };
 

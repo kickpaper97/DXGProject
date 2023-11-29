@@ -362,6 +362,7 @@ void NormalTraveler::ApprovedUpdate(float _Delta)
 		if (20 < Transform.GetLocalPosition().Y)
 		{
 			Death();
+			return;
 		}
 	}
 
@@ -389,6 +390,7 @@ void NormalTraveler::DeniedUpdate(float _Delta)
 		if (-670 >= Transform.GetLocalPosition().Y)
 		{
 			Death();
+			return;
 		}
 	}
 }

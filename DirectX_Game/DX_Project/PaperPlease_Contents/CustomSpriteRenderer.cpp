@@ -373,6 +373,8 @@ void CustomSpriteRenderer::SetMaterialEvent(std::string_view _Name, int _Index)
 	GetShaderResHelper().SetConstantBufferLink("ColorData", ColorDataValue);
 	GetShaderResHelper().SetConstantBufferLink("TexcoordData", TexCoordDataValue);
 	GetShaderResHelper().SetConstantBufferLink("PassPortMaskData", PassPortMaskDataValue);
+	GetShaderResHelper().SetConstantBufferLink("FaceFadeData", FaceFadeDataValue);
+
 
 
 
@@ -413,6 +415,7 @@ void CustomSpriteRenderer::SetPassPortTexture(std::string_view _Texture,const fl
 	RenderBaseInfoValue.IsMask = 1;
 	RenderBaseInfoValue.MaskMode = static_cast<int>(MaskMode::DynamicMask);
 	PassPortMaskDataValue.IsStamp = 1;
+	RenderBaseInfoValue.MaskPivot = { _TexturePos };
 
 	GetShaderResHelper().SetTexture("PassPortTex", _Texture);
 	std::shared_ptr<GameEngineTexture> Ptr = GameEngineTexture::Find(_Texture);
@@ -420,6 +423,7 @@ void CustomSpriteRenderer::SetPassPortTexture(std::string_view _Texture,const fl
 	PassPortMaskDataValue.PassportPos = _TexturePos;
 	PassPortMaskDataValue.PassportScale = Ptr->GetScale();
 }
+
 
 
 void CustomSpriteRenderer::SetIntroSprite()
@@ -436,4 +440,12 @@ void CustomSpriteRenderer::SetPaletteTexture(std::string_view _Texture)
 	GameEngineRenderer::SetMaterial("2DTextureMask");
 
 	GetShaderResHelper().SetTexture("FacePalette", _Texture);
+}
+
+void CustomSpriteRenderer::SetFaceFadeTexture(int _FadeNum)
+{
+	FaceFadeDataValue.IsFaceFade = 1;
+	FaceFadeDataValue.FadeNum = _FadeNum;
+	GetShaderResHelper().SetConstantBufferLink("FaceFadeData", FaceFadeDataValue);
+
 }

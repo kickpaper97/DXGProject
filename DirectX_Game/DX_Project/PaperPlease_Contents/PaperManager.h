@@ -4,6 +4,9 @@
 class PaperManager :public GameEngineActor
 {
 public:
+
+	static PaperManager* MainPaperManager;
+
 	PaperManager();
 	~PaperManager();
 
@@ -13,6 +16,8 @@ public:
 	PaperManager& operator=(const PaperManager&& _Other) noexcept = delete;
 	
 	
+
+
 	void AddPaper(std::shared_ptr<class PaperBase> _Paper)
 	{
 
@@ -34,6 +39,8 @@ public:
 		return IsPapersEmpty;
 	}
 
+	std::shared_ptr<class PassPort> GetCurPassPort();
+
 
 	void ClearIsCorrectCheck()
 	{
@@ -51,6 +58,7 @@ protected:
 
 
 private:
+
 	bool IsPapersEmpty=true;
 	int IsCorrectCheck = -1;
 

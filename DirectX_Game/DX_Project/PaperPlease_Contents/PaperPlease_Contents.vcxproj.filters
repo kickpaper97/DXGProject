@@ -113,6 +113,9 @@
     <ClCompile Include="Citation.cpp">
       <Filter>Paper</Filter>
     </ClCompile>
+    <ClCompile Include="StartButton.cpp">
+      <Filter>Global\Button</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
@@ -227,6 +230,9 @@
     <ClInclude Include="Citation.h">
       <Filter>Paper</Filter>
     </ClInclude>
+    <ClInclude Include="StartButton.h">
+      <Filter>Global\Button</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Level">
@@ -279,6 +285,12 @@
     </Filter>
     <Filter Include="Global\Stage">
       <UniqueIdentifier>{1cfe47e4-215a-46cf-a51b-d879d921f0f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\Effect">
+      <UniqueIdentifier>{85606c74-aed8-4103-bbd9-c8aeb98c4566}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global\People\person">
+      <UniqueIdentifier>{c2fbe1c8-f883-4c8f-b80c-07529d2dd718}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

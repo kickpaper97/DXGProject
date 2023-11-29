@@ -48,6 +48,8 @@ void StampApproved::Start()
 			StampCollision->SetCollisionType(ColType::AABBBOX2D);
 			StampCollision->Transform.SetLocalScale({ 150,130 });
 			StampCollision->Transform.SetLocalPosition(float4::ZERO);
+			Collisions.push_back(StampCollision);
+
 		}
 		{
 			std::shared_ptr<GameEngineCollision> StampCollision = CreateComponent<GameEngineCollision>(CollisionOrder::StampApproved);
@@ -55,6 +57,8 @@ void StampApproved::Start()
 			StampCollision->SetCollisionType(ColType::SPHERE2D);
 			StampCollision->Transform.SetLocalScale({ 54,54 });
 			StampCollision->Transform.SetLocalPosition({ 0,9 });
+			Collisions.push_back(StampCollision);
+
 
 		}
 		{
@@ -63,6 +67,8 @@ void StampApproved::Start()
 			StampCollision->SetCollisionType(ColType::AABBBOX2D);
 			StampCollision->Transform.SetLocalScale({ 52,30 });
 			StampCollision->Transform.SetLocalPosition({ 0,-10 });
+			Collisions.push_back(StampCollision);
+
 		}
 
 	}
@@ -71,6 +77,25 @@ void StampApproved::Start()
 
 void StampApproved::Update(float _Delta)
 {
-	
+	{
+		EventParameter Para;
+		Para.Stay = [=](GameEngineCollision* _This, class GameEngineCollision* _Other)
+			{
+
+
+				if (GameEngineInput::IsDown(VK_LBUTTON, this))
+				{
+					{
+						
+					}
+				}
+			};
+
+		for (int i = 0; i < Collisions.size(); i++)
+		{
+			Collisions[i]->CollisionEvent(CollisionOrder::Cursor, Para);
+		}
+
+	}
 
 }

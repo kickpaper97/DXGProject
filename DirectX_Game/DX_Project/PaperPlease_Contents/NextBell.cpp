@@ -93,7 +93,7 @@ void NextBell::Update(float _Delta)
 		Para.Exit = [=](class GameEngineCollision* _This, class GameEngineCollision* _Other)
 			{
 				
-				Cursor::MainCursor->GetRenderer().get()->SetSprite("CursorArrow.png");
+				Cursor::MainCursor->GetRenderer()->SetSprite("CursorArrow.png");
 
 			};
 		Collision->CollisionEvent(CollisionOrder::Cursor, Para);

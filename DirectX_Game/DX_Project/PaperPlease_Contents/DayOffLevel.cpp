@@ -2,6 +2,7 @@
 
 #include "DayOffLevel.h"
 #include "PlayLevel.h"
+#include "Cursor.h"
 
 #include "DayOffBackGround.h"
 
@@ -37,6 +38,7 @@ void DayOffLevel::Update(float _Delta)
 void DayOffLevel::LevelStart(GameEngineLevel* _PrevLevel)
 {
 	//Curday = dynamic_cast<PlayLevel*>(_PrevLevel)->GetCurDay();
+	std::shared_ptr<Cursor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
 }
 
 void DayOffLevel::LevelEnd(GameEngineLevel* _NextLevel)

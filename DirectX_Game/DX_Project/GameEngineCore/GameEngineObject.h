@@ -202,6 +202,7 @@ public:
 			// 컴파일타임어써션을 통해서 애초에 이게 가능한 일인지 알수 있는데
 			// 빠르게 만들어야 하니까.
 			std::shared_ptr<ObjectType> Ptr = Obejct->GetDynamic_Cast_This<ObjectType>();
+			
 
 			if (nullptr == Ptr)
 			{

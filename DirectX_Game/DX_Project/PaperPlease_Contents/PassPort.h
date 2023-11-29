@@ -38,6 +38,7 @@ protected:
 	
 
 private:
+	std::shared_ptr<GameEngineSpriteRenderer> Picture;
 
 	std::shared_ptr<class NormalTraveler> Owner=nullptr;
 

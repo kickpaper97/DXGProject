@@ -27,26 +27,25 @@ void StartIntroLevel::Start()
 	}
 
 	float4 HalfWindowScale = GameEngineCore::MainWindow.GetScale().Half();
-
-	GetMainCamera()->Transform.SetLocalPosition({ HalfWindowScale.X, HalfWindowScale.Y, -500.0f });
+	GetMainCamera()->Transform.SetLocalPosition({ HalfWindowScale.X, -HalfWindowScale.Y, -500.0f });
 	GetMainCamera()->SetProjectionType(EPROJECTIONTYPE::Orthographic);
+
 
 	GameEngineInput::AddInputObject(this);
 
 
-	IntroPic = CreateActor<IntroPicture>(GameObjectType::BackGround);
+	IntroPic = CreateActor<IntroPicture>();
 	IntroPic->GetSpriteRenderer()->SetIntroSprite();
 
 
-	
 	{
 		CreateStateParameter Para;
 
 		Para.Start = [=](GameEngineState* _Parent)
 			{
-				std::shared_ptr<Cursor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
-				float4 PicPos = GameEngineCore::MainWindow.GetScale().Half();
-
+				
+				float4 PicPos = { GameEngineCore::MainWindow.GetScale().hX(), -GameEngineCore::MainWindow.GetScale().hY()};
+				PicPos += {0, 100};
 
 				
 				IntroPic->GetSpriteRenderer()->SetSprite("Intro0.png");
@@ -230,8 +229,10 @@ void StartIntroLevel::Update(float _Delta)
 
 void StartIntroLevel::LevelStart(GameEngineLevel* _PrevLevel)
 {
-	
+	std::shared_ptr<Cursor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
+
 	TitleLevel* PrevLevel = dynamic_cast<TitleLevel*>(_PrevLevel);
+
 	Sound=PrevLevel->GetSound();
 }
 

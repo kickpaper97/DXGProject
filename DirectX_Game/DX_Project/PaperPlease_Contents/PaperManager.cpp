@@ -5,8 +5,11 @@
 #include "NormalTraveler.h"
 #include "Player.h"
 
+PaperManager* PaperManager::MainPaperManager;
+
 PaperManager::PaperManager()
 {
+	MainPaperManager = this;
 }
 
 PaperManager::~PaperManager()
@@ -93,6 +96,34 @@ int PaperManager::FindIndex(std::shared_ptr<class PaperBase> _Paper)
 	
 	return index;
 	
+}
+
+std::shared_ptr<class PassPort> PaperManager::GetCurPassPort()
+{
+	
+	{
+		
+		std::vector<std::shared_ptr<class PaperBase>>::iterator Start = Papers.begin();
+		std::vector<std::shared_ptr<class PaperBase>>::iterator End = Papers.end();
+
+		for (; Start != End;)
+		{
+			std::shared_ptr<class PaperBase> ptr = *Start;
+			
+
+			if (nullptr== ptr->GetDynamic_Cast_This<PassPort>())
+			{
+				
+				++Start;
+				continue;
+			}
+	       return ptr->GetDynamic_Cast_This<PassPort>();
+		
+		}
+
+	}
+	return nullptr;
+
 }
 
 

@@ -1,5 +1,6 @@
 #include "PreCompile.h"
 #include "TitleLevel.h"
+#include "StartButton.h"
 #include "QuitButton.h"
 #include "Cursor.h"
 
@@ -115,7 +116,7 @@ void TitleLevel::Start()
 				if (nullptr == Cursor::MainCursor)
 				{
 					std::shared_ptr<Cursor> NewCursor = CreateActor<Cursor>(GameObjectType::Cursor);
-					NewCursor->On();
+					
 				}
 
 				Sound = GameEngineSound::SoundPlay("Theme.wav");
@@ -186,8 +187,11 @@ void TitleLevel::Start()
 				float4 Logopos = { GameEngineCore::MainWindow.GetScale().hX(), -GameEngineCore::MainWindow.GetScale().Half().Y + GameEngineCore::MainWindow.GetScale().Half().Half().hY() };
 				Logo->Transform.SetLocalPosition(Logopos);
 
-				std::shared_ptr<BasicButton> NewQuitButton = CreateActor<QuitButton>(GameObjectType::UIButton);
+				std::shared_ptr<QuitButton> NewQuitButton = CreateActor<QuitButton>(GameObjectType::UIButton);
 				NewQuitButton->Transform.SetWorldPosition({ 1100,-50 });
+
+				std::shared_ptr<StartButton> NewStartButton = CreateActor<StartButton>(GameObjectType::UIButton);
+				NewStartButton->Transform.SetWorldPosition({ WindowSize.hX(),-540});
 
 			};
 		StateParameter.Stay = [=](float _Delta, class GameEngineState* _Parent)
@@ -224,10 +228,7 @@ void TitleLevel::Start()
 					Logo->Transform.AddLocalPosition(AnimationDir / 4 * 250 * _Delta);
 				}
 
-				if (GameEngineInput::IsDown(VK_LBUTTON, this))
-				{
-					GameEngineCore::ChangeLevel("StartIntroLevel");
-				}
+			
 
 
 				DeltaCheck -= _Delta;
@@ -257,16 +258,6 @@ void TitleLevel::Update(float _Delta)
 		GameEngineCore::ChangeLevel("PlayLevel");
 	}
 
-
-	if (GameEngineInput::IsDown('M', this))
-	{
-		UIOff();
-	}
-
-	if (GameEngineInput::IsDown('N',this))
-	{
-		UIOn();
-	}
 
 }
 

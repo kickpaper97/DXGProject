@@ -18,9 +18,59 @@ void PassPort::SetOwner(std::shared_ptr<class NormalTraveler> _Owner)
 	Owner = _Owner;
 	Info = _Owner.get()->GetInfo();
 
+
+	switch (Info.OriginCountry)
+	{
+	case Country::Arstotzka:
+		SetPaperTexture("PassportArstotzka");
+		break;
+	case Country::Antegria:
+		SetPaperTexture("PassportAntegria");
+
+		break;
+	case Country::Impor:
+		SetPaperTexture("PassportAImpor");
+
+		break;
+	case Country::Kolechia:
+		SetPaperTexture("PassportKolechia");
+
+		break;
+	case Country::Obristan:
+		SetPaperTexture("PassportObristan");
+
+		break;
+	case Country::Republia:
+		SetPaperTexture("PassportRepublia");
+
+		break;
+	case Country::United_Federation:
+		SetPaperTexture("PassportUnitedFed");
+
+
+		break;
+
+
+	default:
+
+
+		break;
+	}
+
+
+	
+
+	
+	
+	
 	
 
 
+
+	
+
+	
+	//Picture->Transform.SetLocalPosition()
 
 
 }
@@ -46,6 +96,9 @@ void PassPort::StampPassPort(PassPortChecked _Check, float4 _WorldStampPos)
 		//std::shared_ptr<InkApproved> NewInk = CreateComponent<InkApproved>();
 
 	}
+	StampSpriteRenderer->SetSprite("InkApproved.png");
+
+
 		if (EntryCheck == PassPortChecked::Yet)
 		{
 			EntryCheck = PassPortChecked::Approved;
@@ -90,49 +143,36 @@ void PassPort::Start()
 	}
 
 
-	PaperBase::Start();
-	
 
-	switch (Info.OriginCountry)
+	if (nullptr == GameEngineSprite::Find("dSheetF0.Png"))
 	{
-	case Country::Arstotzka:
-		SetPaperTexture("PassportArstotzka");
-		break;
-	case Country::Antegria:
-		SetPaperTexture("PassportAntegria");
+		
+		GameEngineSprite::CreateCut("dSheetF0.png", 2, 2);
+		GameEngineSprite::CreateCut("dSheetF1.png", 2, 2);
+		GameEngineSprite::CreateCut("dSheetF2.png", 2, 2);
+		GameEngineSprite::CreateCut("dSheetF3.png", 2, 2);
+		GameEngineSprite::CreateCut("dSheetF4.png", 2, 2);
 
-		break;
-	case Country::Impor:
-		SetPaperTexture("PassportAImpor");
-
-		break;
-	case Country::Kolechia:
-		SetPaperTexture("PassportKolechia");
-
-		break;
-	case Country::Obristan:
-		SetPaperTexture("PassportObristan");
-
-		break;
-	case Country::Republia:
-		SetPaperTexture("PassportRepublia");
-
-		break;
-	case Country::United_Federation:
-		SetPaperTexture("PassportUnitedFed");
+		GameEngineSprite::CreateCut("dSheetM0.png", 2, 2);
+		GameEngineSprite::CreateCut("dSheetM1.png", 2, 2);
+		GameEngineSprite::CreateCut("dSheetM2.png", 2, 2);
+		GameEngineSprite::CreateCut("dSheetM3.png", 2, 2);
+		GameEngineSprite::CreateCut("dSheetM4.png", 2, 2);
+		GameEngineSprite::CreateCut("dSheetM5.png", 2, 2);
 
 
-		break;
-
-
-	default:
-		SetPaperTexture("PassportArstotzka");
-
-		break;
 	}
-	
 
-	OuterRenderer->SetAutoScaleRatio(1.0f);
+
+
+	PaperBase::Start();
+
+
+
+
+
+
+	
 	
 	
 	Transform.SetLocalPosition({150,-450 });
@@ -179,6 +219,18 @@ void PassPort::SetPaperTexture(std::string_view _Name)
 
 	PaperBase::SetPaperTexture(Name + "Inner.png", Name + "Outer.png");
 	OuterRenderer->SetAutoScaleRatio(1.0f);
+
+
+	Picture = CreateComponent<GameEngineSpriteRenderer>();
+	Picture->SetMaskTexture("Desk_Mask.png");
+	//Picture->ChangeParent(dynamic_cast<GameEngineObject*>(InnerRenderer));
+	std::string PictureName = "d" + Info.Face.SheetName;
+	Picture->CreateAnimation("FacePicture", PictureName, 0.1f, Info.Face.SheetX * 2 + Info.Face.SheetY, Info.Face.SheetX * 2 + Info.Face.SheetY, false);
+	Picture->ChangeAnimation("FacePicture");
+	Picture->AutoSpriteSizeOn();
+	Picture->SetAutoScaleRatio(0.5f);
+	//Picture->Transform.SetLocalScale({})
+		
 	
 	/*InnerRenderer->SetSprite(Name + "Inner.png");
 	OuterRenderer->SetSprite(Name + "Outer.png");*/

@@ -41,7 +41,6 @@ void QuitButton::Start()
 void QuitButton::Update(float _Delta)
 {
 
-	BasicButton::Update(_Delta);
 	
 	
 	{
@@ -74,7 +73,7 @@ void QuitButton::Update(float _Delta)
 		SubPara.Exit = [=](class GameEngineCollision* _This, class GameEngineCollision* _Other)
 			{
 				SpriteRenderer->ChangeAnimation("QuitButtonOFF");
-				Cursor::MainCursor->GetRenderer().get()->SetSprite("CursorArrow.png");
+				Cursor::MainCursor->GetRenderer()->SetSprite("CursorArrow.png");
 
 			};
 		Collision->CollisionEvent(CollisionOrder::Cursor, SubPara);
