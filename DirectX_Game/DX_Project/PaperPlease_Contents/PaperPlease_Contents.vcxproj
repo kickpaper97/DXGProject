@@ -171,6 +171,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AccessPermitInner.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="BasicActor.cpp" />
     <ClCompile Include="BasicButton.cpp">
       <SubType>
@@ -307,6 +311,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AccessPermitInner.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="BasicActor.h">
       <SubType>
       </SubType>

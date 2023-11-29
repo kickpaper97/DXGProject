@@ -116,6 +116,9 @@
     <ClCompile Include="StartButton.cpp">
       <Filter>Global\Button</Filter>
     </ClCompile>
+    <ClCompile Include="AccessPermitInner.cpp">
+      <Filter>Paper</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
@@ -232,6 +235,9 @@
     </ClInclude>
     <ClInclude Include="StartButton.h">
       <Filter>Global\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="AccessPermitInner.h">
+      <Filter>Paper</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

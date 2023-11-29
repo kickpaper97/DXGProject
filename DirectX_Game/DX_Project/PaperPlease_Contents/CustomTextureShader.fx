@@ -191,12 +191,9 @@ float4 CustomTextureShader_PS(PixelOutPut _Input) : SV_Target0
         ScreenPos.x -= MaskPivot.x;
         ScreenPos.y += MaskPivot.y;
         
-        if (IsMask == 1 && MaskTex[MaskScreenPos].r <= 0.0f)
-        {
-            clip(-1);
-        }
+     
         
-        if (IsMask == 1 &&  PassPortTex[ScreenPos].a <= 0.0f)
+        if (PassPortTex[ScreenPos].r <= 0.0f)
         {
 
             clip(-1);

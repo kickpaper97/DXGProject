@@ -413,13 +413,15 @@ void CustomSpriteRenderer::SetPassPortTexture(std::string_view _Texture,const fl
 {
 	
 	RenderBaseInfoValue.IsMask = 1;
-	RenderBaseInfoValue.MaskMode = static_cast<int>(MaskMode::DynamicMask);
+	
 	PassPortMaskDataValue.IsStamp = 1;
 	RenderBaseInfoValue.MaskPivot = { _TexturePos };
 
 	GetShaderResHelper().SetTexture("PassPortTex", _Texture);
 	std::shared_ptr<GameEngineTexture> Ptr = GameEngineTexture::Find(_Texture);
 	
+	RenderBaseInfoValue.MaskScreeneScale = Ptr->GetScale();
+
 	PassPortMaskDataValue.PassportPos = _TexturePos;
 	PassPortMaskDataValue.PassportScale = Ptr->GetScale();
 }

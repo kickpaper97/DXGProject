@@ -29,7 +29,7 @@ void PassPort::SetOwner(std::shared_ptr<class NormalTraveler> _Owner)
 
 		break;
 	case Country::Impor:
-		SetPaperTexture("PassportAImpor");
+		SetPaperTexture("PassportImpor");
 
 		break;
 	case Country::Kolechia:
@@ -78,13 +78,19 @@ void PassPort::SetOwner(std::shared_ptr<class NormalTraveler> _Owner)
 
 void PassPort::StampPassPort(PassPortChecked _Check, float4 _WorldStampPos)
 {
-	std::shared_ptr<CustomSpriteRenderer>StampSpriteRenderer=  std::dynamic_pointer_cast<CustomSpriteRenderer>(InnerRenderer->CreateChild<CustomSpriteRenderer>(10));
+	std::shared_ptr<GameEngineSpriteRenderer>StampSpriteRenderer= CreateComponent <GameEngineSpriteRenderer>();
+	StampSpriteRenderer->SetMaskTexture("Desk_Mask.png");
+	//StampSpriteRenderer->SetMaskTexture("Testmask.png",MaskMode::DynamicMask);
+	/*float4 ss = Transform.GetLocalPosition() - (float4{ Transform.GetLocalScale().hX(),-Transform.GetLocalScale().hY() }*2.0f);
+	StampSpriteRenderer->RenderBaseInfoValue.MaskPivot = ss;*/
+	
+	StampSpriteRenderer->SetParent(InnerRenderer);
+
+	StampSpriteRenderer->Transform.SetLocalPosition(_WorldStampPos-Transform.GetWorldPosition());
 	
 	//std::shared_ptr<CustomSpriteRenderer>StampSpriteRenderer = CreateComponent <CustomSpriteRenderer>();
 	StampSpriteRenderer->AutoSpriteSizeOn();
 	StampSpriteRenderer->SetAutoScaleRatio(2.0f);
-
-	StampSpriteRenderer->SetMaskTexture("Desk_Mask.png");
 	
 
 
@@ -92,10 +98,6 @@ void PassPort::StampPassPort(PassPortChecked _Check, float4 _WorldStampPos)
 	{
 	case PassPortChecked::Approved:
 
-	{
-		//std::shared_ptr<InkApproved> NewInk = CreateComponent<InkApproved>();
-
-	}
 	StampSpriteRenderer->SetSprite("InkApproved.png");
 
 
@@ -120,14 +122,11 @@ void PassPort::StampPassPort(PassPortChecked _Check, float4 _WorldStampPos)
 		break;
 	}
 	std::string ad = InnerRenderer->GetSprite()->GetName().data();
-	StampSpriteRenderer->SetPassPortTexture(InnerRenderer->GetSprite()->GetName(), Transform.GetLocalPosition());
+	//StampSpriteRenderer->SetPassPortTexture("Testmask.png", Transform.GetLocalPosition() - float4{Transform.GetLocalScale().hX(),-Transform.GetLocalScale().hY()});
+
+	//StampSpriteRenderer->RenderBaseInfoValue.MaskPivot = Transform.GetLocalPosition();
 
 
-	float4 StampPos = this->Transform.GetWorldPosition() - _WorldStampPos;
-	StampPos *= -1;
-	StampSpriteRenderer->RenderBaseInfoValue.RendererScreenPos = StampPos;
-	StampSpriteRenderer->Transform.SetLocalPosition(StampPos);
-	
 }
 
 void PassPort::Start()
@@ -160,6 +159,7 @@ void PassPort::Start()
 		GameEngineSprite::CreateCut("dSheetM4.png", 2, 2);
 		GameEngineSprite::CreateCut("dSheetM5.png", 2, 2);
 
+		GameEngineSprite::CreateSingle("Testmask.png");
 
 	}
 
@@ -169,7 +169,7 @@ void PassPort::Start()
 
 
 
-
+	
 
 
 	
@@ -193,6 +193,43 @@ void PassPort::Update(float _Delta)
 
 
 	}
+
+
+
+
+	{
+		EventParameter Para;
+		Para.Stay = [=](class GameEngineCollision* _This, class GameEngineCollision* _Other)
+			{
+
+
+
+
+
+			};
+
+		Para.Enter = [=](class GameEngineCollision* _This, class GameEngineCollision* _Other)
+			{
+
+				StampPassPort(PassPortChecked::Approved, _Other->Transform.GetWorldPosition());
+
+			};
+
+
+
+
+		Para.Exit = [=](class GameEngineCollision* _This, class GameEngineCollision* _Other)
+			{
+
+
+			};
+		Collision->CollisionEvent(CollisionOrder::Ink, Para);
+
+
+	}
+
+
+
 
 
 	//this->Childs

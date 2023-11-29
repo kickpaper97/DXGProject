@@ -45,6 +45,7 @@ enum class CollisionOrder
 	Cursor,
 	UI_Button,
 	Papers,
+	Ink,
 	Play,
 	StampSwitch,
 	StampApproved,
