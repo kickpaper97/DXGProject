@@ -22,8 +22,9 @@ public:
 	{
 
 		Papers.push_back(_Paper);
-		if (false == IsPapersEmpty)
+		if (true == IsPapersEmpty)
 		{
+
 		IsPapersEmpty = false;
 
 		}
@@ -62,6 +63,7 @@ private:
 	bool IsPapersEmpty=true;
 	int IsCorrectCheck = -1;
 
+	std::shared_ptr<class NormalTraveler> CurTraveler;
 	std::vector<std::shared_ptr<class PaperBase>> Papers;
 
 };

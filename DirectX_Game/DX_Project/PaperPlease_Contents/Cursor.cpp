@@ -117,7 +117,7 @@ void Cursor::Update(float _Delta)
 
 					GameEngineObject* paobj = _Other->GetActor()->GetParentObject();
 
-					if (paobj == this && GameEngineInput::IsFree(VK_LBUTTON, this))
+					if (paobj == this && GameEngineInput::IsUp(VK_LBUTTON, this))
 					{
 
 

@@ -283,11 +283,11 @@ void PlayLevel::Start()
 
 
 				
-				if (0.0f >= DayLimit - WorkTime)
+				/*if (0.0f >= DayLimit - WorkTime)
 				{
 					LevelState.ChangeState(PlayState::AfterWork);
 					return;
-				}
+				}*/
 
 				WorkTime += _Delta;
 			};
@@ -327,8 +327,7 @@ void PlayLevel::Start()
 
 				if (true == NewPapers->GetIsPapersEmpty())
 				{
-					Player::MainPlayer->PlayerDayPlay.AutoAddCount(NewPapers->GetIsCorrectCheck());
-
+					
 					LevelState.ChangeState(PlayState::Waiting);
 					return;
 				}

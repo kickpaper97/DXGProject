@@ -272,8 +272,9 @@ void NormalTraveler::WaitingMoveStart()
 void NormalTraveler::TurnStartStart()
 {
 	FaceRenderer->On();
-	FaceRenderer->SetFaceFadeTexture(1);
-	FaceRenderer->Transform.SetWorldPosition({ 20,-350 });
+	//FaceRenderer->SetFaceFadeTexture(1);
+	FaceRenderer->SetMaskTexture("PaperOut_Mask.png");
+	FaceRenderer->Transform.SetLocalPosition({-330,-150 });
 	
 
 }
@@ -284,7 +285,23 @@ void NormalTraveler::TurnStayStart()
 
 void NormalTraveler::TurnEndStart()
 {
-	FaceRenderer->SetFaceFadeTexture(1);
+	//FaceRenderer->SetFaceFadeTexture(1);
+	switch (Check)
+	{
+	case PassPortChecked::Approved:
+
+		ChanageState(TravelerState::Approved);
+		return;
+		break;
+	case PassPortChecked::Denied:
+		ChanageState(TravelerState::Denied);
+		return;
+		break;
+	case PassPortChecked::Yet:
+		break;
+	default:
+		break;
+	}
 }
 
 void NormalTraveler::ApprovedStart()
@@ -335,14 +352,52 @@ void NormalTraveler::WaitingMoveUpdate(float _Delta)
 
 void NormalTraveler::TurnStartUpdate(float _Delta)
 {
+	if (-160 > FaceRenderer->Transform.GetLocalPosition().X)
+	{
+		FaceRenderer->Transform.AddLocalPosition(float4::RIGHT * 150 * _Delta);
+		if (-160 <= FaceRenderer->Transform.GetLocalPosition().X)
+		{
+			FaceRenderer->Transform.SetLocalPosition({ -160 , FaceRenderer->Transform.GetLocalPosition().Y });
+			ChanageState(TravelerState::TurnStay);
+			return;
+		}
+	}
 }
 
 void NormalTraveler::TurnStayUpdate(float _Delta)
 {
+
 }
 
 void NormalTraveler::TurnEndUpdate(float _Delta)
 {
+	if (130 > FaceRenderer->Transform.GetLocalPosition().X)
+	{
+		FaceRenderer->Transform.AddLocalPosition(float4::RIGHT * 150 * _Delta);
+		if (130 <= FaceRenderer->Transform.GetLocalPosition().X)
+		{
+			FaceRenderer->Off();
+
+			switch (Check)
+			{
+			case PassPortChecked::Approved:
+
+				ChanageState(TravelerState::Approved);
+				return;
+				break;
+			case PassPortChecked::Denied:
+				ChanageState(TravelerState::Denied);
+				return;
+				break;
+			case PassPortChecked::Yet:
+				break;
+			default:
+				break;
+			}
+			return;
+		}
+
+	}
 }
 
 void NormalTraveler::ApprovedUpdate(float _Delta)

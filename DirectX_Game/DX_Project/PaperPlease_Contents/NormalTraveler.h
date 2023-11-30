@@ -61,6 +61,11 @@ public:
 		return IsLier;
 	}
 
+	void SetPassPortChecked(PassPortChecked _Check)
+	{
+		Check = _Check;
+	}
+
 protected:
 	void Start() override;
 	void Update(float _Delta) override;
@@ -103,6 +108,7 @@ private:
 	GameEngineRandom TimeRand;
 
 	bool IsLier = false;
+	PassPortChecked Check = PassPortChecked::Yet;
 	TravelerInfo Info;
 
 	float StandingChangeTime = 0.0f;

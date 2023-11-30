@@ -28,10 +28,14 @@ void AccessPermitInner::Start()
 	PaperBase::Start();
 	SetPaperTexture("AccessPermit");
 
-	S
+	
 
 }
 
 void AccessPermitInner::Update(float _Delta)
 {
+	PaperBase::Update(_Delta);
+
+
+
 }

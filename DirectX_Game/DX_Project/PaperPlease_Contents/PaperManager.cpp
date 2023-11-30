@@ -3,6 +3,7 @@
 #include "PaperBase.h"
 #include "PassPort.h"
 #include "NormalTraveler.h"
+#include "Citation.h"
 #include "Player.h"
 
 PaperManager* PaperManager::MainPaperManager;
@@ -26,13 +27,14 @@ void PaperManager::ReleasePaper(std::shared_ptr<class PaperBase> _Paper)
 	Papers.erase(it);
 
 	std::shared_ptr PassPortCheck = _Paper->GetDynamic_Cast_This<PassPort>();
+	CurTraveler = PassPortCheck->GetOwner();
 	if (nullptr != PassPortCheck)
 	{
 		switch (PassPortCheck->GetEntryCheck())
 		{
 		case PassPortChecked::Approved:
-		
-			if (true == PassPortCheck->GetOwner()->GetIsLier())
+			CurTraveler->SetPassPortChecked(PassPortChecked::Approved);
+			if (true == CurTraveler->GetIsLier())
 			{
 				IsCorrectCheck = 0;
 			}
@@ -44,7 +46,8 @@ void PaperManager::ReleasePaper(std::shared_ptr<class PaperBase> _Paper)
 			break;
 		
 		case PassPortChecked::Denied:
-			if (true == PassPortCheck->GetOwner()->GetIsLier())
+			CurTraveler->SetPassPortChecked(PassPortChecked::Denied);
+			if (true == CurTraveler->GetIsLier())
 			{
 				IsCorrectCheck = 1;
 			}
@@ -62,6 +65,19 @@ void PaperManager::ReleasePaper(std::shared_ptr<class PaperBase> _Paper)
 
 	_Paper->Death();
 
+	if (0 == IsCorrectCheck)
+	{
+		Player::MainPlayer->PlayerDayPlay.AddWrongCount();
+	}
+	else if (1 == IsCorrectCheck)
+	{
+		std::shared_ptr<Citation> NewCitation = GetLevel()->CreateActor<Citation>();
+		
+		Player::MainPlayer->PlayerDayPlay.AddCorrectCount();
+
+	}
+
+	
 
 	if (Papers.empty())
 	{
@@ -71,9 +87,9 @@ void PaperManager::ReleasePaper(std::shared_ptr<class PaperBase> _Paper)
 			return;
 		}
 
-
+		CurTraveler->ChanageState(TravelerState::TurnEnd);
 		IsPapersEmpty = true;
-
+		ClearIsCorrectCheck();
 		
 
 	}

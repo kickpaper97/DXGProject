@@ -3,7 +3,11 @@
 #include "PaperBase.h"
 #include "TravelerInfo.h"
 
-
+enum class PassPortState
+{
+	PassportIn,
+	PassportOut,
+};
 
 class PassPort : public PaperBase
 {
@@ -44,7 +48,7 @@ private:
 
 	
 
-	
+	GameEngineState State;
 	
 	TravelerInfo Info;
 	PassPortChecked EntryCheck = PassPortChecked::Yet;

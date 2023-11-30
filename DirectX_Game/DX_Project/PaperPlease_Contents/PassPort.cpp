@@ -4,6 +4,7 @@
 #include "CustomSpriteRenderer.h"
 #include "Cursor.h"
 #include "InkApproved.h"
+#include "PaperManager.h"
 
 PassPort::PassPort()
 {
@@ -190,10 +191,30 @@ void PassPort::Update(float _Delta)
 		float4 pos = Cursor::MainCursor->Transform.GetWorldPosition();
 		StampPassPort(PassPortChecked::Approved, pos );
 
+		EntryCheck = PassPortChecked::Approved;
 
 
 	}
 
+	if (GameEngineInput::IsFree(VK_LBUTTON, this))
+	{
+		
+			if (0 <= Transform.GetLocalPosition().X && MASKLINEPOS_X > Transform.GetLocalPosition().X)
+			{
+				if (-410 <= Transform.GetLocalPosition().Y && MASKLINEPOS_Y > Transform.GetLocalPosition().Y)
+				{
+					if (PassPortChecked::Yet != EntryCheck)
+					{
+						std::shared_ptr<PaperBase> ptr = this->GetDynamic_Cast_This<PaperBase>();
+						PaperManager::MainPaperManager->ReleasePaper(ptr);
+					}
+				
+				}
+			}
+		
+			
+			
+	}
 
 
 
