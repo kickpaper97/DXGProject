@@ -24,12 +24,13 @@ void PaperManager::Start()
 void PaperManager::ReleasePaper(std::shared_ptr<class PaperBase> _Paper)
 {
 	std::vector<std::shared_ptr<PaperBase>>::iterator it = std::find(Papers.begin(), Papers.end(), _Paper);
+	std::shared_ptr<PaperBase>ptr = *it;
 	Papers.erase(it);
 
 	std::shared_ptr PassPortCheck = _Paper->GetDynamic_Cast_This<PassPort>();
-	CurTraveler = PassPortCheck->GetOwner();
 	if (nullptr != PassPortCheck)
 	{
+		CurTraveler = PassPortCheck->GetOwner();
 		switch (PassPortCheck->GetEntryCheck())
 		{
 		case PassPortChecked::Approved:
@@ -63,7 +64,7 @@ void PaperManager::ReleasePaper(std::shared_ptr<class PaperBase> _Paper)
 		
 	}
 
-	_Paper->Death();
+	ptr->Death();
 
 	if (0 == IsCorrectCheck)
 	{

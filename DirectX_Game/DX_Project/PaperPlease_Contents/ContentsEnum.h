@@ -54,6 +54,14 @@ enum class CollisionOrder
 
 
 
+enum StampState
+{
+	StampON,
+	Stamp,
+	StampOFF,
+};
+
+
 ////////////////////////////////////////
 
 enum class Country

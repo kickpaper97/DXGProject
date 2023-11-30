@@ -90,11 +90,11 @@ void StampApproved::Start()
 	{
 	StampCheck = CreateComponent<GameEngineCollision>(CollisionOrder::Ink);
 	StampCheck->SetCollisionType(ColType::AABBBOX2D);
-	float4 test = GameEngineTexture::Find("InkApproved.png")->GetScale()*2.0f;/*->GetSpriteData(0).GetScale() * 2.0f*/;
+	float4 InkScale = GameEngineTexture::Find("InkApproved.png")->GetScale()*2.0f;/*->GetSpriteData(0).GetScale() * 2.0f*/;
 	
 	
 	StampCheck->Transform.AddLocalPosition({ float4::DOWN * 40 });
-	StampCheck->Transform.SetLocalScale(test);
+	StampCheck->Transform.SetLocalScale(InkScale);
 	StampCheck->Off();
 	}
 
@@ -124,16 +124,7 @@ void StampApproved::Start()
 					if (13 >= Transform.GetLocalPosition().Y)
 					{
 						Transform.SetLocalPosition({ Transform.GetLocalPosition().X,13});
-
-						{
-							{
-								StampCheck->On();
-							}
-						}
-
-
-
-
+						
 						State.ChangeState(StampState::StampOFF);
 						return;
 					}
@@ -144,7 +135,7 @@ void StampApproved::Start()
 		StatePara.End = [=](GameEngineState* _Parent)
 			{
 				
-
+				
 			};
 		State.CreateState(StampState::StampON, StatePara);
 	}
@@ -156,11 +147,11 @@ void StampApproved::Start()
 		StatePara.Start = [=](GameEngineState* _Parent)
 			{
 				
-				//StampCheck->Off();
+				
 				if (true == IsMoving)
 				{
 				SoundEffect = GameEngineSound::SoundPlay("stamp-up.WAV");
-
+				
 				}
 			};
 		StatePara.Stay = [=](float _Delta, GameEngineState* _Parent)
@@ -204,7 +195,7 @@ void StampApproved::Update(float _Delta)
 				if (GameEngineInput::IsDown(VK_LBUTTON, this))
 				{
 					{
-						
+						IsMoving = true;
 						State.ChangeState(StampState::StampON);
 						return;
 					}
@@ -217,6 +208,27 @@ void StampApproved::Update(float _Delta)
 		}
 
 	}
+
+
+	
+	
+
+
+	if (true == IsMoving)
+	{
+		if (13 != Transform.GetLocalPosition().Y)
+		{
+
+			StampCheck->Off();
+			
+		}
+		else
+		{
+			StampCheck->On();
+
+		}
+	}
+
 
 	State.Update(_Delta);
 }

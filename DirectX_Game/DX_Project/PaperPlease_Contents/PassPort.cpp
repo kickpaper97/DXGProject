@@ -3,7 +3,8 @@
 #include "NormalTraveler.h"
 #include "CustomSpriteRenderer.h"
 #include "Cursor.h"
-#include "InkApproved.h"
+#include "StampApproved.h"
+#include "StampDenied.h"
 #include "PaperManager.h"
 
 PassPort::PassPort()
@@ -82,21 +83,11 @@ void PassPort::StampPassPort(PassPortChecked _Check, float4 _WorldStampPos)
 	std::shared_ptr<CustomSpriteRenderer>StampSpriteRenderer= CreateComponent <CustomSpriteRenderer>();
 	StampSpriteRenderer->Transform.SetLocalPosition(_WorldStampPos-Transform.GetWorldPosition());
 	StampSpriteRenderer->SetMaskTexture("PassportMask.png", MyMaskMode::DynamicMask);
-	
 	StampSpriteRenderer->SetPassPortTexture("Desk_Mask.png");
-	
-	
+
 	StampSpriteRenderer->RenderBaseInfoValue.MaskPivot =-(StampSpriteRenderer->Transform.GetLocalPosition());
 
-	//StampSpriteRenderer->RenderBaseInfoValue.MaskScreeneScale * 2.0f;
-	//StampSpriteRenderer->SetMaskTexture("Testmask.png",MaskMode::DynamicMask);
-	/*float4 ss = Transform.GetLocalPosition() - (float4{ Transform.GetLocalScale().hX(),-Transform.GetLocalScale().hY() }*2.0f);
-	StampSpriteRenderer->RenderBaseInfoValue.MaskPivot = ss;*/
 	
-	//StampSpriteRenderer->SetParent(InnerRenderer);
-
-	
-	//std::shared_ptr<CustomSpriteRenderer>StampSpriteRenderer = CreateComponent <CustomSpriteRenderer>();
 	StampSpriteRenderer->AutoSpriteSizeOn();
 	StampSpriteRenderer->SetAutoScaleRatio(2.0f);
 	
@@ -129,10 +120,6 @@ void PassPort::StampPassPort(PassPortChecked _Check, float4 _WorldStampPos)
 	default:
 		break;
 	}
-	std::string ad = InnerRenderer->GetSprite()->GetName().data();
-
-	//StampSpriteRenderer->RenderBaseInfoValue.MaskPivot = Transform.GetLocalPosition();
-
 
 }
 
@@ -192,70 +179,63 @@ void PassPort::Update(float _Delta)
 {
 	PaperBase::Update(_Delta);
 
-	if (GameEngineInput::IsDown(VK_RBUTTON, this))
+
+	if (GameEngineInput::IsFree(VK_LBUTTON, this))
 	{
-		float4 pos = Cursor::MainCursor->Transform.GetWorldPosition();
-		StampPassPort(PassPortChecked::Approved, pos );
-
-		EntryCheck = PassPortChecked::Approved;
-
-
+		
+			if (0 <= Transform.GetLocalPosition().X && MASKLINEPOS_X > Transform.GetLocalPosition().X)
+			{
+				if (-410 <= Transform.GetLocalPosition().Y && MASKLINEPOS_Y > Transform.GetLocalPosition().Y)
+				{
+					if (PassPortChecked::Yet != EntryCheck)
+					{
+						std::shared_ptr<PaperBase> ptr = this->GetDynamic_Cast_This<PaperBase>();
+						ptr->ChangeParent(GetLevel(),0);
+						PaperManager::MainPaperManager->ReleasePaper(ptr);
+					}
+				
+				}
+			}
+		
+			
+			
 	}
-
-	//if (GameEngineInput::IsFree(VK_LBUTTON, this))
-	//{
-	//	
-	//		if (0 <= Transform.GetLocalPosition().X && MASKLINEPOS_X > Transform.GetLocalPosition().X)
-	//		{
-	//			if (-410 <= Transform.GetLocalPosition().Y && MASKLINEPOS_Y > Transform.GetLocalPosition().Y)
-	//			{
-	//				if (PassPortChecked::Yet != EntryCheck)
-	//				{
-	//					std::shared_ptr<PaperBase> ptr = this->GetDynamic_Cast_This<PaperBase>();
-	//					ptr->ChangeParent(GetLevel(),0);
-	//					PaperManager::MainPaperManager->ReleasePaper(ptr);
-	//				}
-	//			
-	//			}
-	//		}
-	//	
-	//		
-	//		
-	//}
 
 
 
 	{
 		EventParameter Para;
-		Para.Stay = [=](class GameEngineCollision* _This, class GameEngineCollision* _Other)
-			{
 
-
-
-
-
-			};
-
+		
 		Para.Enter = [=](class GameEngineCollision* _This, class GameEngineCollision* _Other)
 			{
 
-				StampPassPort(PassPortChecked::Approved, _Other->Transform.GetWorldPosition());
 
 			};
-
-
-
-
-		Para.Exit = [=](class GameEngineCollision* _This, class GameEngineCollision* _Other)
+		Para.Stay = [=](class GameEngineCollision* _This, class GameEngineCollision*_Other)
 			{
+				std::shared_ptr< StampApproved> Approvedptr = _Other->GetActor()->GetDynamic_Cast_This<StampApproved>();
+				if (nullptr != Approvedptr)
+				{
 
+						StampPassPort(PassPortChecked::Approved, _Other->Transform.GetWorldPosition());
+
+				}
+
+				std::shared_ptr< StampDenied> Deniedptr = _Other->GetActor()->GetDynamic_Cast_This<StampDenied>();
+				if (nullptr != Deniedptr)
+				{
+
+					StampPassPort(PassPortChecked::Denied, _Other->Transform.GetWorldPosition());
+
+				}
+				//std::shared_ptr< StampApproved> ptr = _Other->GetActor()->GetDynamic_Cast_This<StampApproved>()
 
 			};
+
 		Collision->CollisionEvent(CollisionOrder::Ink, Para);
 
-
 	}
-
 
 
 

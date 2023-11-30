@@ -2,11 +2,7 @@
 #pragma once
 #include "Stamp.h"
 
-enum StampState
-{
-	StampON,
-	StampOFF,
-};
+
 
 class StampApproved :public Stamp
 {
@@ -19,6 +15,7 @@ public:
 	StampApproved& operator=(const StampApproved& _Other) = delete;
 	StampApproved& operator=(const StampApproved&& _Other) noexcept = delete;
 
+	
 
 protected:
 	void Start() override;
@@ -26,6 +23,7 @@ protected:
 private:
 
 	bool IsMoving = false;
+	
 	std::vector<std::shared_ptr<GameEngineCollision>> Collisions;
 
 	std::shared_ptr<GameEngineCollision> StampCheck;
