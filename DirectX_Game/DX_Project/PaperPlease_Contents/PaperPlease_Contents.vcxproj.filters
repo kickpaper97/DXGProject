@@ -119,6 +119,9 @@
     <ClCompile Include="AccessPermitInner.cpp">
       <Filter>Paper</Filter>
     </ClCompile>
+    <ClCompile Include="TestLevel.cpp">
+      <Filter>Level</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
@@ -238,6 +241,9 @@
     </ClInclude>
     <ClInclude Include="AccessPermitInner.h">
       <Filter>Paper</Filter>
+    </ClInclude>
+    <ClInclude Include="TestLevel.h">
+      <Filter>Level</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

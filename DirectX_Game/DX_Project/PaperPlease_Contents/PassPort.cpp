@@ -79,15 +79,22 @@ void PassPort::SetOwner(std::shared_ptr<class NormalTraveler> _Owner)
 
 void PassPort::StampPassPort(PassPortChecked _Check, float4 _WorldStampPos)
 {
-	std::shared_ptr<GameEngineSpriteRenderer>StampSpriteRenderer= CreateComponent <GameEngineSpriteRenderer>();
-	StampSpriteRenderer->SetMaskTexture("Desk_Mask.png");
+	std::shared_ptr<CustomSpriteRenderer>StampSpriteRenderer= CreateComponent <CustomSpriteRenderer>();
+	StampSpriteRenderer->Transform.SetLocalPosition(_WorldStampPos-Transform.GetWorldPosition());
+	StampSpriteRenderer->SetMaskTexture("PassportMask.png", MyMaskMode::DynamicMask);
+	
+	StampSpriteRenderer->SetPassPortTexture("Desk_Mask.png");
+	
+	
+	StampSpriteRenderer->RenderBaseInfoValue.MaskPivot =-(StampSpriteRenderer->Transform.GetLocalPosition());
+
+	//StampSpriteRenderer->RenderBaseInfoValue.MaskScreeneScale * 2.0f;
 	//StampSpriteRenderer->SetMaskTexture("Testmask.png",MaskMode::DynamicMask);
 	/*float4 ss = Transform.GetLocalPosition() - (float4{ Transform.GetLocalScale().hX(),-Transform.GetLocalScale().hY() }*2.0f);
 	StampSpriteRenderer->RenderBaseInfoValue.MaskPivot = ss;*/
 	
-	StampSpriteRenderer->SetParent(InnerRenderer);
+	//StampSpriteRenderer->SetParent(InnerRenderer);
 
-	StampSpriteRenderer->Transform.SetLocalPosition(_WorldStampPos-Transform.GetWorldPosition());
 	
 	//std::shared_ptr<CustomSpriteRenderer>StampSpriteRenderer = CreateComponent <CustomSpriteRenderer>();
 	StampSpriteRenderer->AutoSpriteSizeOn();
@@ -123,7 +130,6 @@ void PassPort::StampPassPort(PassPortChecked _Check, float4 _WorldStampPos)
 		break;
 	}
 	std::string ad = InnerRenderer->GetSprite()->GetName().data();
-	//StampSpriteRenderer->SetPassPortTexture("Testmask.png", Transform.GetLocalPosition() - float4{Transform.GetLocalScale().hX(),-Transform.GetLocalScale().hY()});
 
 	//StampSpriteRenderer->RenderBaseInfoValue.MaskPivot = Transform.GetLocalPosition();
 
@@ -196,25 +202,26 @@ void PassPort::Update(float _Delta)
 
 	}
 
-	if (GameEngineInput::IsFree(VK_LBUTTON, this))
-	{
-		
-			if (0 <= Transform.GetLocalPosition().X && MASKLINEPOS_X > Transform.GetLocalPosition().X)
-			{
-				if (-410 <= Transform.GetLocalPosition().Y && MASKLINEPOS_Y > Transform.GetLocalPosition().Y)
-				{
-					if (PassPortChecked::Yet != EntryCheck)
-					{
-						std::shared_ptr<PaperBase> ptr = this->GetDynamic_Cast_This<PaperBase>();
-						PaperManager::MainPaperManager->ReleasePaper(ptr);
-					}
-				
-				}
-			}
-		
-			
-			
-	}
+	//if (GameEngineInput::IsFree(VK_LBUTTON, this))
+	//{
+	//	
+	//		if (0 <= Transform.GetLocalPosition().X && MASKLINEPOS_X > Transform.GetLocalPosition().X)
+	//		{
+	//			if (-410 <= Transform.GetLocalPosition().Y && MASKLINEPOS_Y > Transform.GetLocalPosition().Y)
+	//			{
+	//				if (PassPortChecked::Yet != EntryCheck)
+	//				{
+	//					std::shared_ptr<PaperBase> ptr = this->GetDynamic_Cast_This<PaperBase>();
+	//					ptr->ChangeParent(GetLevel(),0);
+	//					PaperManager::MainPaperManager->ReleasePaper(ptr);
+	//				}
+	//			
+	//			}
+	//		}
+	//	
+	//		
+	//		
+	//}
 
 
 

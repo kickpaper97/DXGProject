@@ -116,13 +116,6 @@ cbuffer ColorData : register(b1)
 };
 
 
-cbuffer PassPortMaskData : register(b3)
-{
-    int IsStamp = 0;
-    float4 PassPortPos;
-    float4 PassportScale;
-    
-};
 
 cbuffer FaceFadeData : register(b5)
 {
@@ -146,7 +139,7 @@ float4 CustomTextureShader_PS(PixelOutPut _Input) : SV_Target0
     
     
     int2 ScreenPos = int2(_Input.POSITION.x, _Input.POSITION.y);
-    int2 MaskScreenPos = int2(_Input.POSITION.x, _Input.POSITION.y);
+    int2 MaskPos = int2(_Input.POSITION.x, _Input.POSITION.y);
     
     float4 CalUV = _Input.TEXCOORD;
     
@@ -166,45 +159,41 @@ float4 CustomTextureShader_PS(PixelOutPut _Input) : SV_Target0
     
     
     
-    if (MaskMode == 1&&IsStamp!=1)
+    if (MaskMode == 1)
     {
-        MaskScreenPos.x = MaskScreenPos.x + RendererScreenPos.x;
-        MaskScreenPos.y = MaskScreenPos.y + RendererScreenPos.y;
+        ScreenPos.x = ScreenPos.x + RendererScreenPos.x;
+        ScreenPos.y = ScreenPos.y + RendererScreenPos.y;
 
-        MaskScreenPos.x += MaskScreenScale.x * 0.5f;
-        MaskScreenPos.y += MaskScreenScale.y * 0.5f;
-        MaskScreenPos.x -= MaskPivot.x;
-        MaskScreenPos.y += MaskPivot.y;
-           
-        
+        ScreenPos.x += MaskScreenScale.x * 0.5f;
+        ScreenPos.y += MaskScreenScale.y * 0.5f;
+        ScreenPos.x -= MaskPivot.x;
+        ScreenPos.y += MaskPivot.y;
+
     }
     
     
-    if (IsStamp == 1)
+    if (MaskMode == 2)
     {
-            
+        ScreenPos.x = ScreenPos.x - RendererScreenPos.x;
+        ScreenPos.y = ScreenPos.y - RendererScreenPos.y;
         
-        ScreenPos.x = ScreenPos.x + PassPortPos.x;
-        ScreenPos.y = ScreenPos.y + PassPortPos.y;
-        ScreenPos.x += PassportScale.x * 0.5f;
-        ScreenPos.y += PassportScale.y * 0.5f;
+        ScreenPos.x += MaskScreenScale.x * 0.5f;
+        ScreenPos.y += MaskScreenScale.y * 0.5f;
+        
         ScreenPos.x -= MaskPivot.x;
         ScreenPos.y += MaskPivot.y;
         
-     
         
-        if (PassPortTex[ScreenPos].r <= 0.0f)
+        if (PassPortTex[MaskPos].r <= 0.0f)
         {
-
             clip(-1);
         }
         
     }
     
-    if (IsMask == 1 && MaskTex[MaskScreenPos].r <=0.0f)
+    if (IsMask == 1 && MaskTex[ScreenPos].a <= 0.0f)
     {
-      
-       clip(-1);
+        clip(-1);
     }
     
     

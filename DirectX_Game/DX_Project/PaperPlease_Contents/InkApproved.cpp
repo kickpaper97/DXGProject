@@ -31,11 +31,11 @@ void InkApproved::Start()
 			StampSpriteRenderer->AutoSpriteSizeOn();
 		StampSpriteRenderer->SetAutoScaleRatio(2.0f);
 		StampSpriteRenderer->SetSprite("InkApproved.png");
+		//StampSpriteRenderer->SetPassPortTexture(PaperManager::MainPaperManager->GetCurPassPort()->InnerRenderer->GetSprite()->GetName(), Transform.GetLocalPosition());
 		
 		
 
 
-	//StampSpriteRenderer->SetPassPortTexture(PaperManager::MainPaperManager->GetCurPassPort()->InnerRenderer->GetSprite()->GetName(), Transform.GetLocalPosition());
 	}
 
 	/*float4 StampPos = this->Transform.GetWorldPosition() - _WorldStampPos;

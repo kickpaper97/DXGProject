@@ -41,7 +41,12 @@ public:
 	std::vector<float> Inter;
 };
 
-
+enum class MyMaskMode
+{
+	StaticMask, // 스크린 좌표계로 마스크를 
+	DynamicMask, // 스크린좌표계인데 랜더러의 위치에 따라서 마스크 위치를 변경한다.
+	Both,
+};
 
 struct TexCoordData
 {
@@ -52,14 +57,6 @@ struct TexCoordData
 };
 
 
-struct  PassPortMaskData
-{
-	int IsStamp = 0;
-	float4 PassportPos;
-	float4 PassportScale;
-	
-
-};
 
 struct FaceFadeData
 {
@@ -220,12 +217,9 @@ public:
 
 
 
-	void SetMaskTexture(std::string_view _Texture, MaskMode _Mask = MaskMode::StaticMask);
-	void SetPassPortTexture(std::string_view _Texture,const float4& _TexturePos);
-	void SetPassPortTexturePos(const float4& _Pos)
-	{
-		PassPortMaskDataValue.PassportPos = _Pos;
-	}
+	void SetMaskTexture(std::string_view _Texture, MyMaskMode _Mask = MyMaskMode::StaticMask);
+	void SetPassPortTexture(std::string_view _Texture,MyMaskMode _Mask =MyMaskMode::Both);
+
 	void SetPaletteTexture(std::string_view _Texture);
 	void SetFaceFadeTexture(int _FadeNum);
 
@@ -258,7 +252,6 @@ private:
 
 	ColorData ColorDataValue;
 	TexCoordData TexCoordDataValue;
-	PassPortMaskData PassPortMaskDataValue;
 	FaceFadeData FaceFadeDataValue;
 	GameEngineTransform ImageTransform;
 };

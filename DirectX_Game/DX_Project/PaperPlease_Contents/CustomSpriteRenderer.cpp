@@ -372,7 +372,6 @@ void CustomSpriteRenderer::SetMaterialEvent(std::string_view _Name, int _Index)
 	GetShaderResHelper().SetConstantBufferLink("SpriteRendererInfo", SpriteRendererInfoValue);
 	GetShaderResHelper().SetConstantBufferLink("ColorData", ColorDataValue);
 	GetShaderResHelper().SetConstantBufferLink("TexcoordData", TexCoordDataValue);
-	GetShaderResHelper().SetConstantBufferLink("PassPortMaskData", PassPortMaskDataValue);
 	GetShaderResHelper().SetConstantBufferLink("FaceFadeData", FaceFadeDataValue);
 
 
@@ -382,7 +381,7 @@ void CustomSpriteRenderer::SetMaterialEvent(std::string_view _Name, int _Index)
 }
 
 
-void CustomSpriteRenderer::SetMaskTexture(std::string_view _Texture, MaskMode _Mask)
+void CustomSpriteRenderer::SetMaskTexture(std::string_view _Texture, MyMaskMode _Mask)
 {
 	//std::shared_ptr<CustomFrameAnimation> TempCurFrameAnimation = CurFrameAnimations;
 	//std::shared_ptr<GameEngineSprite> TempSprite = Sprite;
@@ -404,26 +403,21 @@ void CustomSpriteRenderer::SetMaskTexture(std::string_view _Texture, MaskMode _M
 	RenderBaseInfoValue.IsMask = 1;
 	RenderBaseInfoValue.MaskMode = static_cast<int>(_Mask);
 	GetShaderResHelper().SetTexture("MaskTex", _Texture);
-
 	std::shared_ptr<GameEngineTexture> Ptr = GameEngineTexture::Find(_Texture);
 	RenderBaseInfoValue.MaskScreeneScale = Ptr->GetScale();
+
 }
 
-void CustomSpriteRenderer::SetPassPortTexture(std::string_view _Texture,const float4& _TexturePos)
+void CustomSpriteRenderer::SetPassPortTexture(std::string_view _Texture, MyMaskMode _Mask)
 {
 	
 	RenderBaseInfoValue.IsMask = 1;
-	
-	PassPortMaskDataValue.IsStamp = 1;
-	RenderBaseInfoValue.MaskPivot = { _TexturePos };
-
+	RenderBaseInfoValue.MaskMode = static_cast<int>(_Mask);
 	GetShaderResHelper().SetTexture("PassPortTex", _Texture);
-	std::shared_ptr<GameEngineTexture> Ptr = GameEngineTexture::Find(_Texture);
-	
-	RenderBaseInfoValue.MaskScreeneScale = Ptr->GetScale();
 
-	PassPortMaskDataValue.PassportPos = _TexturePos;
-	PassPortMaskDataValue.PassportScale = Ptr->GetScale();
+
+	//std::shared_ptr<GameEngineTexture> Ptr = GameEngineTexture::Find(_Texture);
+	//RenderBaseInfoValue.MaskScreeneScale = Ptr->GetScale();
 }
 
 

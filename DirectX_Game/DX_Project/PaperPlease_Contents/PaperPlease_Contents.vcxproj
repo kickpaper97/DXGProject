@@ -303,6 +303,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="TestLevel.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="TitleLevel.cpp" />
     <ClCompile Include="TravelerInfo.cpp" />
     <ClCompile Include="WaitingLine.cpp">
@@ -438,6 +442,10 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="StartIntroLevel.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TestLevel.h">
       <SubType>
       </SubType>
     </ClInclude>

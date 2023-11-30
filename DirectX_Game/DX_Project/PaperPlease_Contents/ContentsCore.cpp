@@ -10,6 +10,7 @@
 #include "TitleLevel.h"
 #include "PlayLevel.h"
 #include"DayOffLevel.h"
+#include"TestLevel.h"
 #include "StartIntroLevel.h"
 
 //#include<GameEnginePlatform/GameEngineWindow.h>
@@ -105,9 +106,11 @@ void ContentsCore::Start()
 	GameEngineCore::CreateLevel<DayOffLevel>("DayOffLevel");
 	GameEngineCore::CreateLevel<PlayLevel>("PlayLevel");
 	GameEngineCore::CreateLevel<StartIntroLevel>("StartIntroLevel");
+	GameEngineCore::CreateLevel<TestLevel>("testlevel");
 
 
-	GameEngineCore::ChangeLevel("TitleLevel");
+
+	GameEngineCore::ChangeLevel("testlevel");
 
 	// 자기 텍스처 로드해야 한다.
 
