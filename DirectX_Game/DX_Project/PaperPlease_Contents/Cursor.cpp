@@ -90,9 +90,7 @@ void Cursor::Update(float _Delta)
 		Para.Stay = [=](class GameEngineCollision* _This, class GameEngineCollision* _Other)
 			{
 
-				if (nullptr!=_Other->GetActor()->GetDynamic_Cast_This<PaperBase>())
-				{
-
+			
 					if (GameEngineInput::IsDown(VK_LBUTTON, this))
 					{
 
@@ -120,7 +118,6 @@ void Cursor::Update(float _Delta)
 					if (paobj == this && GameEngineInput::IsUp(VK_LBUTTON, this))
 					{
 
-
 						_Other->GetActor()->ChangeParent(dynamic_cast<GameEngineObject*>(GetLevel()), 0);
 
 						float4 PrevLocalPos = _Other->GetActor()->Transform.GetLocalPosition();
@@ -129,12 +126,56 @@ void Cursor::Update(float _Delta)
 					}
 
 
+			};
+
+		Para.Enter = [=](class GameEngineCollision* _This, class GameEngineCollision* _Other)
+			{
+				std::vector<class GameEngineCollision*>::iterator Start = PaperCollisions.begin();
+				std::vector<class GameEngineCollision*>::iterator End = PaperCollisions.end();
+
+				for (; Start != End;)
+				{
+					
+					if (*Start != _Other)
+					{
+						Start++;
+						continue;
+					}
+					else
+					{
+						return;
+					}
+					
+
+				}
+
+					PaperCollisions.push_back(_Other);
+
+			};
+
+		Para.Exit = [=](class GameEngineCollision* _This, class GameEngineCollision* _Other)
+			{
+				std::vector<class GameEngineCollision*>::iterator Start = PaperCollisions.begin();
+				std::vector<class GameEngineCollision*>::iterator End = PaperCollisions.end();
+
+
+				for (; Start != End;)
+				{
+
+					if (*Start != _Other)
+					{
+						Start++;
+						continue;
+					}
+					else
+					{
+						PaperCollisions.erase(Start);
+						return;
+					}
+
 				}
 				
 				
-				
-		
-
 			};
 
 		CursorCollision->CollisionEvent(CollisionOrder::Papers, Para);
@@ -143,6 +184,31 @@ void Cursor::Update(float _Delta)
 	}
 
 	PrevCursorPos = Transform.GetLocalPosition();
+
+
+	//if (GameEngineInput::IsDown(VK_LBUTTON, this))
+	//{
+	//	if (false == PaperCollisions.empty())
+	//	{
+	//		
+	//		std::vector<class GameEngineCollision*>::iterator Start = PaperCollisions.begin();
+	//		std::vector<class GameEngineCollision*>::iterator End = PaperCollisions.end();
+	//		
+
+	//		GameEngineCollision* PaperCollision=*Start;
+	//		
+	//		for (; Start != End;)
+	//		{
+	//			if(*Start)
+	//			
+	//				Start++;
+	//				continue;
+	//		}
+
+
+	//	}
+	//}
+
 
 	
 }

@@ -37,6 +37,7 @@ private:
 
 	std::shared_ptr<GameEngineUIRenderer> Renderer;
 	std::shared_ptr<GameEngineCollision> CursorCollision;
+	std::vector<GameEngineCollision*> PaperCollisions;
 
 };
 
