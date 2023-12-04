@@ -1,5 +1,6 @@
 #include "PreCompile.h"
 #include "PassPort.h"
+
 #include "NormalTraveler.h"
 #include "CustomSpriteRenderer.h"
 #include "Cursor.h"
@@ -13,6 +14,102 @@ PassPort::PassPort()
 
 PassPort::~PassPort()
 {
+}
+
+void PassPort::Start()
+{
+	
+	
+
+	if (nullptr == GameEngineSprite::Find("InkApproved.png"))
+	{
+		GameEngineSprite::CreateSingle("InkApproved.png");
+		GameEngineSprite::CreateSingle("InkDenied.png");
+
+	}
+
+
+
+	if (nullptr == GameEngineSprite::Find("dSheetF0.Png"))
+	{
+		
+		GameEngineSprite::CreateCut("dSheetF0.png", 2, 2);
+		GameEngineSprite::CreateCut("dSheetF1.png", 2, 2);
+		GameEngineSprite::CreateCut("dSheetF2.png", 2, 2);
+		GameEngineSprite::CreateCut("dSheetF3.png", 2, 2);
+		GameEngineSprite::CreateCut("dSheetF4.png", 2, 2);
+
+		GameEngineSprite::CreateCut("dSheetM0.png", 2, 2);
+		GameEngineSprite::CreateCut("dSheetM1.png", 2, 2);
+		GameEngineSprite::CreateCut("dSheetM2.png", 2, 2);
+		GameEngineSprite::CreateCut("dSheetM3.png", 2, 2);
+		GameEngineSprite::CreateCut("dSheetM4.png", 2, 2);
+		GameEngineSprite::CreateCut("dSheetM5.png", 2, 2);
+
+		GameEngineSprite::CreateSingle("Testmask.png");
+
+	}
+
+
+
+	PlayPaper::Start();
+
+	
+	Transform.SetLocalPosition({150,-450 });
+	GameEngineInput::AddInputObject(this);
+
+
+}
+
+void PassPort::Update(float _Delta)
+{
+	PlayPaper::Update(_Delta);
+
+
+
+	
+
+
+	{
+		EventParameter Para;
+
+		
+		Para.Enter = [=](class GameEngineCollision* _This, class GameEngineCollision* _Other)
+			{
+
+
+			};
+		Para.Stay = [=](class GameEngineCollision* _This, class GameEngineCollision*_Other)
+			{
+				std::shared_ptr< StampApproved> Approvedptr = _Other->GetActor()->GetDynamic_Cast_This<StampApproved>();
+				if (nullptr != Approvedptr)
+				{
+
+						StampPassPort(PassPortChecked::Approved, _Other->Transform.GetWorldPosition());
+
+				}
+
+				std::shared_ptr< StampDenied> Deniedptr = _Other->GetActor()->GetDynamic_Cast_This<StampDenied>();
+				if (nullptr != Deniedptr)
+				{
+
+					StampPassPort(PassPortChecked::Denied, _Other->Transform.GetWorldPosition());
+
+				}
+				//std::shared_ptr< StampApproved> ptr = _Other->GetActor()->GetDynamic_Cast_This<StampApproved>()
+
+			};
+
+		Collision->CollisionEvent(CollisionOrder::Ink, Para);
+
+	}
+
+
+
+
+	//this->Childs
+
+
 }
 
 void PassPort::SetOwner(std::shared_ptr<class NormalTraveler> _Owner)
@@ -76,175 +173,6 @@ void PassPort::SetOwner(std::shared_ptr<class NormalTraveler> _Owner)
 
 
 }
-
-
-void PassPort::StampPassPort(PassPortChecked _Check, float4 _WorldStampPos)
-{
-	std::shared_ptr<CustomSpriteRenderer>StampSpriteRenderer= CreateComponent <CustomSpriteRenderer>();
-	StampSpriteRenderer->Transform.SetLocalPosition(_WorldStampPos-Transform.GetWorldPosition());
-	StampSpriteRenderer->SetMaskTexture("PassportMask.png", MyMaskMode::DynamicMask);
-	StampSpriteRenderer->SetPassPortTexture("Desk_Mask.png");
-
-	StampSpriteRenderer->RenderBaseInfoValue.MaskPivot =-(StampSpriteRenderer->Transform.GetLocalPosition());
-
-	
-	StampSpriteRenderer->AutoSpriteSizeOn();
-	StampSpriteRenderer->SetAutoScaleRatio(2.0f);
-	
-
-
-	switch (_Check)
-	{
-	case PassPortChecked::Approved:
-
-	StampSpriteRenderer->SetSprite("InkApproved.png");
-
-
-		if (EntryCheck == PassPortChecked::Yet)
-		{
-			EntryCheck = PassPortChecked::Approved;
-		}
-		
-		break;
-	case PassPortChecked::Denied:
-		StampSpriteRenderer->SetSprite("InkDenied.png");
-		if (EntryCheck == PassPortChecked::Yet)
-		{
-			EntryCheck = PassPortChecked::Denied;
-		}
-
-		break;
-
-
-	
-	default:
-		break;
-	}
-
-}
-
-void PassPort::Start()
-{
-	
-	
-
-	if (nullptr == GameEngineSprite::Find("InkApproved.png"))
-	{
-		GameEngineSprite::CreateSingle("InkApproved.png");
-		GameEngineSprite::CreateSingle("InkDenied.png");
-
-	}
-
-
-
-	if (nullptr == GameEngineSprite::Find("dSheetF0.Png"))
-	{
-		
-		GameEngineSprite::CreateCut("dSheetF0.png", 2, 2);
-		GameEngineSprite::CreateCut("dSheetF1.png", 2, 2);
-		GameEngineSprite::CreateCut("dSheetF2.png", 2, 2);
-		GameEngineSprite::CreateCut("dSheetF3.png", 2, 2);
-		GameEngineSprite::CreateCut("dSheetF4.png", 2, 2);
-
-		GameEngineSprite::CreateCut("dSheetM0.png", 2, 2);
-		GameEngineSprite::CreateCut("dSheetM1.png", 2, 2);
-		GameEngineSprite::CreateCut("dSheetM2.png", 2, 2);
-		GameEngineSprite::CreateCut("dSheetM3.png", 2, 2);
-		GameEngineSprite::CreateCut("dSheetM4.png", 2, 2);
-		GameEngineSprite::CreateCut("dSheetM5.png", 2, 2);
-
-		GameEngineSprite::CreateSingle("Testmask.png");
-
-	}
-
-
-
-	PaperBase::Start();
-
-
-
-	
-
-
-	
-	
-	
-	Transform.SetLocalPosition({150,-450 });
-	GameEngineInput::AddInputObject(this);
-
-
-}
-
-void PassPort::Update(float _Delta)
-{
-	PaperBase::Update(_Delta);
-
-
-	if (GameEngineInput::IsFree(VK_LBUTTON, this))
-	{
-		
-			if (0 <= Transform.GetLocalPosition().X && MASKLINEPOS_X > Transform.GetLocalPosition().X)
-			{
-				if (-410 <= Transform.GetLocalPosition().Y && MASKLINEPOS_Y > Transform.GetLocalPosition().Y)
-				{
-					if (PassPortChecked::Yet != EntryCheck)
-					{
-						std::shared_ptr<PaperBase> ptr = this->GetDynamic_Cast_This<PaperBase>();
-						ptr->ChangeParent(GetLevel(),0);
-						PaperManager::MainPaperManager->ReleasePaper(ptr);
-					}
-				
-				}
-			}
-		
-			
-			
-	}
-
-
-
-	{
-		EventParameter Para;
-
-		
-		Para.Enter = [=](class GameEngineCollision* _This, class GameEngineCollision* _Other)
-			{
-
-
-			};
-		Para.Stay = [=](class GameEngineCollision* _This, class GameEngineCollision*_Other)
-			{
-				std::shared_ptr< StampApproved> Approvedptr = _Other->GetActor()->GetDynamic_Cast_This<StampApproved>();
-				if (nullptr != Approvedptr)
-				{
-
-						StampPassPort(PassPortChecked::Approved, _Other->Transform.GetWorldPosition());
-
-				}
-
-				std::shared_ptr< StampDenied> Deniedptr = _Other->GetActor()->GetDynamic_Cast_This<StampDenied>();
-				if (nullptr != Deniedptr)
-				{
-
-					StampPassPort(PassPortChecked::Denied, _Other->Transform.GetWorldPosition());
-
-				}
-				//std::shared_ptr< StampApproved> ptr = _Other->GetActor()->GetDynamic_Cast_This<StampApproved>()
-
-			};
-
-		Collision->CollisionEvent(CollisionOrder::Ink, Para);
-
-	}
-
-
-
-
-	//this->Childs
-
-
-}
-
 void PassPort::SetPaperTexture(std::string_view _Name)
 {
 
@@ -281,6 +209,59 @@ void PassPort::SetPaperTexture(std::string_view _Name)
 	OuterRenderer->SetSprite(Name + "Outer.png");*/
 
 
+
+}
+void PassPort::StampPassPort(PassPortChecked _Check, float4 _WorldStampPos)
+{
+	std::shared_ptr<CustomSpriteRenderer>StampSpriteRenderer= CreateComponent <CustomSpriteRenderer>();
+	StampSpriteRenderer->SetParent(InnerRenderer);
+	StampSpriteRenderer->Transform.SetLocalPosition(_WorldStampPos-Transform.GetWorldPosition());
+	StampSpriteRenderer->SetMaskTexture("PassportMask.png", MyMaskMode::DynamicMask);
+	StampSpriteRenderer->SetPassPortTexture("Desk_Mask.png");
+
+	StampSpriteRenderer->RenderBaseInfoValue.MaskPivot =-(StampSpriteRenderer->Transform.GetLocalPosition());
+
+	
+	StampSpriteRenderer->AutoSpriteSizeOn();
+	StampSpriteRenderer->SetAutoScaleRatio(2.0f);
+	
+
+
+	switch (_Check)
+	{
+	case PassPortChecked::Approved:
+
+	StampSpriteRenderer->SetSprite("InkApproved.png");
+
+
+		if (EntryCheck == PassPortChecked::Yet)
+		{
+			EntryCheck = PassPortChecked::Approved;
+			PaperManager::MainPaperManager->SetPassPortEntryCheck(EntryCheck);
+			
+		}
+		
+		break;
+	case PassPortChecked::Denied:
+		StampSpriteRenderer->SetSprite("InkDenied.png");
+		if (EntryCheck == PassPortChecked::Yet)
+		{
+			EntryCheck = PassPortChecked::Denied;
+			PaperManager::MainPaperManager->SetPassPortEntryCheck(EntryCheck);
+			
+
+
+		}
+
+		break;
+
+
+	
+	default:
+		break;
+	}
+
+	
 
 }
 

@@ -61,7 +61,7 @@ void PlayLevel::Start()
 
 
 
-
+	//Map
 	{
 		NewMap = CreateActor<PlayMap>(GameObjectType::BackGround);
 		NewBell = CreateActor <NextBell>(GameObjectType::Play);
@@ -69,6 +69,7 @@ void PlayLevel::Start()
 
 		
 	}
+	//Stamp
 	{
 		NewStamp  = CreateActor<StampBar>(GameObjectType::Stamp);
 		std::shared_ptr<GameEngineActor>	NewApprovedStamp = CreateActor<StampApproved>();
@@ -78,18 +79,14 @@ void PlayLevel::Start()
 		NewStamp->Off();
 
 	}
-
+	//ETC
 	{
 		GameEngineInput::AddInputObject(this);
 		NewLine = CreateActor<WaitingLine>();
-		
-		
-
-
-	}
-
-	{
 		NewPapers = CreateActor<PaperManager>();
+		
+
+
 	}
 
 	
@@ -142,36 +139,39 @@ void PlayLevel::Start()
 				}
 				// 군인 배치
 				{
-					std::shared_ptr<Guard>NewGaurd = CreateActor<Guard>();
-					NewGaurd->Transform.SetLocalPosition({257,0});
-					NewGaurd->SetDestinationPos({257,-135});
+					{
+						std::shared_ptr<Guard>NewGaurd = CreateActor<Guard>();
+						NewGaurd->Transform.SetLocalPosition({257,0});
+						NewGaurd->SetDestinationPos({257,-135});
 
-				}
-				{
-					std::shared_ptr<Guard>NewGaurd = CreateActor<Guard>();
-					NewGaurd->Transform.SetLocalPosition({ 245,60 });
-					NewGaurd->SetDestinationPos({ 245,-40 });
+					}
+					{
+						std::shared_ptr<Guard>NewGaurd = CreateActor<Guard>();
+						NewGaurd->Transform.SetLocalPosition({ 245,60 });
+						NewGaurd->SetDestinationPos({ 245,-40 });
 
-				}
+					}
 
-				{
-					std::shared_ptr<Guard>NewGaurd = CreateActor<Guard>();
-					NewGaurd->Transform.SetLocalPosition({ 972,5 });
-					NewGaurd->SetDestinationPos({ 888,-40 });
+					{
+						std::shared_ptr<Guard>NewGaurd = CreateActor<Guard>();
+						NewGaurd->Transform.SetLocalPosition({ 972,5 });
+						NewGaurd->SetDestinationPos({ 888,-40 });
 
-				}
+					}
 
-				{
-					std::shared_ptr<Guard>NewGaurd = CreateActor<Guard>();
-					NewGaurd->Transform.SetLocalPosition({ 978,60 });
-					NewGaurd->SetDestinationPos({ 890,-90 });
+					{
+						std::shared_ptr<Guard>NewGaurd = CreateActor<Guard>();
+						NewGaurd->Transform.SetLocalPosition({ 978,60 });
+						NewGaurd->SetDestinationPos({ 890,-90 });
 
-				}
+					}
 
-				{
-					std::shared_ptr<Guard>NewGaurd = CreateActor<Guard>();
-					NewGaurd->Transform.SetLocalPosition({ 965,100 });
-					NewGaurd->SetDestinationPos({ 888,-150 });
+					{
+						std::shared_ptr<Guard>NewGaurd = CreateActor<Guard>();
+						NewGaurd->Transform.SetLocalPosition({ 965,100 });
+						NewGaurd->SetDestinationPos({ 888,-150 });
+
+					}
 
 				}
 
@@ -301,12 +301,13 @@ void PlayLevel::Start()
 		StatePara.Start = [=](GameEngineState* _Parent)
 			{
 				CurTravler->ChanageState(TravelerState::TurnStart);
+				NewPapers->WorkInit(CurTravler);
 				std::shared_ptr<PassPort> NewPassport = CreateActor<PassPort>();
+				NewPassport->SetOwner(CurTravler);
+				NewPapers->AddPaper(NewPassport);
 
 				//NewPaperManger.push_back(NewPassport->GetDynamic_Cast_This<PaperBase>());
-				NewPassport->SetOwner(CurTravler);
 
-				NewPapers->AddPaper(NewPassport);
 				
 			};
 		StatePara.End = [=](GameEngineState* _Parent)
@@ -407,10 +408,10 @@ void PlayLevel::Start()
 void PlayLevel::Update(float _Delta)
 {
 
-	if (true == GameEngineInput::IsDown('C', this))
+	if (true == GameEngineInput::IsDown('O', this))
 	{
-		
-		
+		LevelState.ChangeState(PlayState::AfterWork);
+
 	}
 
 	if (true == GameEngineInput::IsDown('V', this))
@@ -419,6 +420,14 @@ void PlayLevel::Update(float _Delta)
 		Peoplecheck = NewLine->CallFirstPerson();
 		
 	}
+
+
+	if (true == GameEngineInput::IsDown('O', this))
+	{
+		LevelState.ChangeState(PlayState::AfterWork);
+
+	}
+
 
 	LevelState.Update(_Delta);
 

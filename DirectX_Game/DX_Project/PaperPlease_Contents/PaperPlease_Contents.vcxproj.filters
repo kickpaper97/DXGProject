@@ -122,6 +122,9 @@
     <ClCompile Include="TestLevel.cpp">
       <Filter>Level</Filter>
     </ClCompile>
+    <ClCompile Include="PlayPaper.cpp">
+      <Filter>Paper</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h" />
@@ -244,6 +247,9 @@
     </ClInclude>
     <ClInclude Include="TestLevel.h">
       <Filter>Level</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayPaper.h">
+      <Filter>Paper</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

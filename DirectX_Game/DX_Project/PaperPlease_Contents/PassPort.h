@@ -1,6 +1,6 @@
 
 #pragma once
-#include "PaperBase.h"
+#include "PlayPaper.h"
 #include "TravelerInfo.h"
 
 enum class PassPortState
@@ -9,7 +9,7 @@ enum class PassPortState
 	PassportOut,
 };
 
-class PassPort : public PaperBase
+class PassPort : public PlayPaper
 {
 public:
 	PassPort();

@@ -120,8 +120,6 @@ void PaperBase::Update(float _Delta)
 {
 	
 
-
-
 	if(Parent==Cursor::MainCursor)
 	{
 	
@@ -188,6 +186,7 @@ void PaperBase::Update(float _Delta)
 		}
 
 	}
+	
 
 
 

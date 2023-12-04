@@ -18,38 +18,39 @@ public:
 	
 
 
-	void AddPaper(std::shared_ptr<class PaperBase> _Paper)
-	{
 
-		Papers.push_back(_Paper);
-		if (true == IsPapersEmpty)
-		{
-
-		IsPapersEmpty = false;
-
-		}
-	}
-
-	void ReleasePaper(std::shared_ptr<class PaperBase> _Paper);
-
-
-	int FindIndex(std::shared_ptr<class PaperBase> _Paper);
 
 	bool GetIsPapersEmpty() const
 	{
 		return IsPapersEmpty;
 	}
 
-	std::shared_ptr<class PassPort> GetCurPassPort();
-
-
-	void ClearIsCorrectCheck()
-	{
-		IsCorrectCheck = -1;
-	}
+	
 	int GetIsCorrectCheck() const
 	{
 		return IsCorrectCheck;
+	}
+
+	bool GetIsPassPortChecked()
+	{
+		return IsPassPortChecked;
+	}
+
+	void AddPaper(std::shared_ptr<class PlayPaper> _Paper);
+	void WorkInit(std::shared_ptr<class NormalTraveler> _CurTraveler);
+
+
+	void ReleasePaper();
+__int64 FindIndex(std::shared_ptr<class PlayPaper> _Paper);
+
+
+	void PassPortCheck();
+	void PaperRenderChange();
+	
+	void SetPassPortEntryCheck(PassPortChecked _EntryCheck)
+	{
+		EntryCheck = _EntryCheck;
+		IsPassPortChecked = true;
 	}
 
 protected:
@@ -61,10 +62,13 @@ protected:
 private:
 
 	bool IsPapersEmpty=true;
+	bool IsPassPortChecked = false;
 	int IsCorrectCheck = -1;
 
+	PassPortChecked EntryCheck = PassPortChecked::Yet;
+
 	std::shared_ptr<class NormalTraveler> CurTraveler;
-	std::vector<std::shared_ptr<class PaperBase>> Papers;
+	std::vector<std::shared_ptr<class PlayPaper>> Papers;
 
 };
 

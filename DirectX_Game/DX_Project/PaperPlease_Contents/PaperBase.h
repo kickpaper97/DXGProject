@@ -30,6 +30,8 @@ protected:
 	std::shared_ptr<GameEngineSpriteRenderer> InnerRenderer=nullptr;
 	std::shared_ptr<GameEngineSpriteRenderer> OuterRenderer=nullptr;
 	std::shared_ptr<GameEngineCollision> Collision;
+
+	
 private:
 
 	float4 InnerLocalPos=float4::ZERO;

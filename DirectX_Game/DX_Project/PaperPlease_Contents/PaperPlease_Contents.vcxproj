@@ -265,6 +265,10 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayLevel.cpp" />
     <ClCompile Include="PlayMap.cpp" />
+    <ClCompile Include="PlayPaper.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="PreCompile.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -412,6 +416,10 @@
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayLevel.h" />
     <ClInclude Include="PlayMap.h" />
+    <ClInclude Include="PlayPaper.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="PreCompile.h" />
     <ClInclude Include="QuitButton.h">
       <SubType>

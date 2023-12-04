@@ -119,8 +119,7 @@ void TitleLevel::Start()
 					
 				}
 
-				Sound = GameEngineSound::SoundPlay("Theme.wav");
-				Sound.SetLoop(100);
+			
 
 			};
 
@@ -264,7 +263,8 @@ void TitleLevel::Update(float _Delta)
 
 void TitleLevel::LevelStart(GameEngineLevel* _PrevLevel)
 {
-	
+	Sound = GameEngineSound::SoundPlay("Theme.wav");
+	Sound.SetLoop(100);
 }
 
 void TitleLevel::LevelEnd(GameEngineLevel* _NextLevel)

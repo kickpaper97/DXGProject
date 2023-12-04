@@ -1,6 +1,6 @@
 #include "PreCompile.h"
 #include "PaperManager.h"
-#include "PaperBase.h"
+#include "PlayPaper.h"
 #include "PassPort.h"
 #include "NormalTraveler.h"
 #include "Citation.h"
@@ -17,21 +17,97 @@ PaperManager::~PaperManager()
 {
 }
 
+
 void PaperManager::Start()
 {
 }
 
-void PaperManager::ReleasePaper(std::shared_ptr<class PaperBase> _Paper)
+void PaperManager::WorkInit(std::shared_ptr<class NormalTraveler> _CurTraveler)
 {
-	std::vector<std::shared_ptr<PaperBase>>::iterator it = std::find(Papers.begin(), Papers.end(), _Paper);
-	std::shared_ptr<PaperBase>ptr = *it;
-	Papers.erase(it);
+	CurTraveler = _CurTraveler;
+	IsPassPortChecked = false;
+	IsCorrectCheck = -1;
+}
+void PaperManager::AddPaper(std::shared_ptr<class PlayPaper> _Paper)
+{
 
-	std::shared_ptr PassPortCheck = _Paper->GetDynamic_Cast_This<PassPort>();
-	if (nullptr != PassPortCheck)
+		Papers.push_back(_Paper);
+		if (true == IsPapersEmpty)
+		{
+			
+			IsPapersEmpty = false;
+
+		}
+
+}
+
+void PaperManager::ReleasePaper()
+{
+	std::vector<std::shared_ptr<class PlayPaper>>::iterator Start = Papers.begin();
+	std::vector<std::shared_ptr<class PlayPaper>>::iterator End = Papers.end();
+
+	for (; Start != End;)
 	{
-		CurTraveler = PassPortCheck->GetOwner();
-		switch (PassPortCheck->GetEntryCheck())
+		std::shared_ptr<class PlayPaper> ptr = *Start;
+
+
+		if (true == ptr->GetIsOut())
+		{
+
+			++Start;
+			continue;
+		}
+
+
+		Papers.erase(Start);
+
+
+	}
+
+	if (Papers.empty())
+	{
+
+		PaperManager::MainPaperManager->PassPortCheck();
+
+
+		if (IsCorrectCheck == -1)
+		{
+			MsgBoxAssert("여권이 검사되지않고 모든 서류를 돌려줬습니다.");
+			return;
+		}
+
+		
+		
+		CurTraveler->ChanageState(TravelerState::TurnEnd);
+		CurTraveler = nullptr;
+		IsPapersEmpty = true;
+		
+
+	}
+	
+
+}
+__int64 PaperManager::FindIndex(std::shared_ptr<class PlayPaper> _Paper)
+{
+	
+	std::vector<std::shared_ptr<PlayPaper>>::iterator it = std::find(Papers.begin(), Papers.end(), _Paper);
+	if (it == Papers.end())
+	{
+		MsgBoxAssert("Paper가 관리되고있지 않습니다.");
+		return -1;
+	}
+	int	index = std::distance(Papers.begin(), it);
+	
+	return index;
+	
+}
+
+
+
+void PaperManager::PassPortCheck()
+{
+	
+		switch (EntryCheck)
 		{
 		case PassPortChecked::Approved:
 			CurTraveler->SetPassPortChecked(PassPortChecked::Approved);
@@ -62,10 +138,6 @@ void PaperManager::ReleasePaper(std::shared_ptr<class PaperBase> _Paper)
 			break;
 		}
 		
-	}
-
-	ptr->Death();
-
 	if (0 == IsCorrectCheck)
 	{
 		Player::MainPlayer->PlayerDayPlay.AddWrongCount();
@@ -73,75 +145,40 @@ void PaperManager::ReleasePaper(std::shared_ptr<class PaperBase> _Paper)
 	else if (1 == IsCorrectCheck)
 	{
 		std::shared_ptr<Citation> NewCitation = GetLevel()->CreateActor<Citation>();
-		
+
 		Player::MainPlayer->PlayerDayPlay.AddCorrectCount();
 
 	}
-
 	
+	IsPassPortChecked = true;
+}
 
-	if (Papers.empty())
+void PaperManager::PaperRenderChange()
+{
+	std::vector<std::shared_ptr<class PlayPaper>>::iterator Start = Papers.begin();
+	std::vector<std::shared_ptr<class PlayPaper>>::iterator End = Papers.end();
+
+	for (; Start != End;)
 	{
-		if (IsCorrectCheck == -1)
+		std::shared_ptr<class PlayPaper> ptr = *Start;
+
+
+		if (nullptr == ptr->GetDynamic_Cast_This<PassPort>())
 		{
-			MsgBoxAssert("여권이 검사되지않고 모든 서류를 돌려줬습니다.");
-			return;
+
+			++Start;
+			continue;
 		}
 
-		CurTraveler->ChanageState(TravelerState::TurnEnd);
-		IsPapersEmpty = true;
-		ClearIsCorrectCheck();
-		
 
 	}
-	
+
+
 
 }
 
 
 
-int PaperManager::FindIndex(std::shared_ptr<class PaperBase> _Paper)
-{
-	
-	std::vector<std::shared_ptr<PaperBase>>::iterator it = std::find(Papers.begin(), Papers.end(), _Paper);
-	if (it == Papers.end())
-	{
-		MsgBoxAssert("Paper가 관리되고있지 않습니다.");
-		return -1;
-	}
-	int	index = std::distance(Papers.begin(), it);
-	
-	return index;
-	
-}
-
-std::shared_ptr<class PassPort> PaperManager::GetCurPassPort()
-{
-	
-	{
-		
-		std::vector<std::shared_ptr<class PaperBase>>::iterator Start = Papers.begin();
-		std::vector<std::shared_ptr<class PaperBase>>::iterator End = Papers.end();
-
-		for (; Start != End;)
-		{
-			std::shared_ptr<class PaperBase> ptr = *Start;
-			
-
-			if (nullptr== ptr->GetDynamic_Cast_This<PassPort>())
-			{
-				
-				++Start;
-				continue;
-			}
-	       return ptr->GetDynamic_Cast_This<PassPort>();
-		
-		}
-
-	}
-	return nullptr;
-
-}
 
 
 
